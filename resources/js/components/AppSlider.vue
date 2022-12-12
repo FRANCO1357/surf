@@ -7,27 +7,27 @@
         </ol>
         <div class="carousel-inner">
             <div class="carousel-item active">
-            <img src="../../../public/images/slider-1.jpg" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block">
+            <img src="../../../public/images/test/slider-1.jpg" class="d-block img-fluid w-100" alt="...">
+            <div class="carousel-caption">
                 <h2>First slide label</h2>
                 <p>Some representative placeholder content for the first slide.</p>
-                <a href="" class="btn btn-danger">Mettiti in contatto con noi</a>
+                <a href="" class="btn btn-danger">Contattaci</a>
             </div>
             </div>
             <div class="carousel-item">
-            <img src="../../../public/images/slider-2.jpg" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block">
+            <img src="../../../public/images/test/slider-2.jpg" class="d-block img-fluid w-100" alt="...">
+            <div class="carousel-caption">
                 <h2>Second slide label</h2>
                 <p>Some representative placeholder content for the second slide.</p>
-                <a href="" class="btn btn-danger">Mettiti in contatto con noi</a>
+                <a href="" class="btn btn-danger">Contattaci</a>
             </div>
             </div>
             <div class="carousel-item">
-            <img src="../../../public/images/slider-3.jpg" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block">
+            <img src="../../../public/images/test/slider-3.jpg" class="d-block img-fluid w-100" alt="...">
+            <div class="carousel-caption">
                 <h2>Third slide label</h2>
                 <p>Some representative placeholder content for the third slide.</p>
-                <a href="" class="btn btn-danger">Mettiti in contatto con noi</a>
+                <a href="" class="btn btn-danger">Contattaci</a>
             </div>
             </div>
         </div>
@@ -50,8 +50,13 @@ export default{
 
 <style scoped lang="scss">
 .carousel-inner{
-    height: calc(100vh - 55px);
+    height: 100vh;
     position: relative;
+
+    img{
+        height: 100vh;
+        object-fit: cover;
+    }
 
     .carousel-caption{
         position: absolute;
