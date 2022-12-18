@@ -44,7 +44,7 @@
 
 <script>
 export default{
-    name: 'AppSlider',
+    name: 'JumboSlider',
 }
 </script>
 
@@ -63,6 +63,10 @@ export default{
         top: 50%;
         left: 50%;
         transform: translate(-50%, -40%);
+        z-index: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
 
         h2{
             font-size: 46px;
@@ -75,4 +79,8 @@ export default{
         }
     }
 }
+
+.carousel-indicators{
+        z-index: 3;
+    }
 </style>
