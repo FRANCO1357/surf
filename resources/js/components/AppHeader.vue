@@ -1,7 +1,7 @@
 <template>
     <header>
         <nav class="navbar navbar-light bg-light">
-            <a class="navbar-brand text-white" href="#">Soul Events</a>
+            <a class="navbar-brand text-white" href="#"><h3 class="m-0">Soul Events</h3></a>
             <button @click="toggleMenu()" class="btn-menu d-flex align-items-center justify-content-center" id="btn-menu" type="button">
                 <i class="fa-solid fa-bars text-white"></i>
             </button>
@@ -11,14 +11,8 @@
                 </button>
                 <h2 class="my-5 text-white">Menu</h2>
                 <ul class="navbar-nav">
-                    <li class="nav-item active">
-                        <a class="nav-link py-3 text-white text-center border-bottom border-dark" href="#">Home<span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link py-3 text-white text-center border-bottom border-dark" href="#">Features</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link py-3 text-white text-center border-bottom border-dark" href="#">Pricing</a>
+                    <li v-for="link in links" class="nav-item">
+                        <router-link class="nav-link py-3 text-white text-center border-bottom border-dark" :to="{name: link.name}">{{link.label}}</router-link>
                     </li>
                 </ul>
             </div>
@@ -29,6 +23,12 @@
 <script>
 export default{
     name: 'AppHeader',
+    data: () => ({
+        links: [
+            {name: 'home', label: 'Home'},
+            {name: 'about', label: 'Chi siamo'},
+        ]
+    }),
     methods:{
       toggleMenu(){
         const navbarMenu = document.getElementById('navbarMenu');

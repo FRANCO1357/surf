@@ -11,7 +11,7 @@
             <div class="carousel-caption">
                 <h2>First slide label</h2>
                 <p>Some representative placeholder content for the first slide.</p>
-                <a href="" class="btn btn-danger">Contattaci</a>
+                <a href="#form" class="btn btn-danger">Contattaci</a>
             </div>
             </div>
             <div class="carousel-item">
@@ -19,15 +19,15 @@
             <div class="carousel-caption">
                 <h2>Second slide label</h2>
                 <p>Some representative placeholder content for the second slide.</p>
-                <a href="" class="btn btn-danger">Contattaci</a>
+                <a href="#form" class="btn btn-danger">Contattaci</a>
             </div>
             </div>
             <div class="carousel-item">
-            <img src="../../../public/images/test/slider-3.jpg" class="d-block img-fluid w-100" alt="...">
+            <img src="../../../public/images/test/slider-4.jpg" class="d-block img-fluid w-100" alt="...">
             <div class="carousel-caption">
                 <h2>Third slide label</h2>
                 <p>Some representative placeholder content for the third slide.</p>
-                <a href="" class="btn btn-danger">Contattaci</a>
+                <a href="#form" class="btn btn-danger">Contattaci</a>
             </div>
             </div>
         </div>

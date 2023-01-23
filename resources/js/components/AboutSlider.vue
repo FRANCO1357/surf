@@ -13,7 +13,7 @@
             <img src="../../../public/images/test/slider-2.jpg" class="d-block w-100" alt="...">
             </div>
             <div class="carousel-item">
-            <img src="../../../public/images/test/slider-3.jpg" class="d-block w-100" alt="...">
+            <img src="../../../public/images/test/slider-4.jpg" class="d-block w-100" alt="...">
             </div>
         </div>
         <button class="btn-prev d-none d-xl-block" type="button" data-target="#carouselExampleIndicators" data-slide="prev">

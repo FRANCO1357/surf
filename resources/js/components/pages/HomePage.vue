@@ -8,9 +8,10 @@
 
         <!-- about -->
         <div id="about" class="container pt-5 text-center">
-            <h2>Non siamo solo Bartenders:<br> siamo creatori di esperienze.</h2>
+            <h2 class="d-none d-md-block">Non siamo solo Bartenders:<br> siamo creatori di esperienze.</h2>
+            <h3 class="d-md-none">Non siamo solo Bartenders: siamo creatori di esperienze.</h3>
             <p class="mt-4">Soul Events Bar Catering</p>
-            <a href="" class="btn btn-danger my-5">CHI SIAMO</a>
+            <router-link class="btn btn-danger my-5" :to="{name: 'about'}">CHI SIAMO</router-link>
             <AboutSlider/>
             <div class="row py-5">
                 <div class="col-12 col-md-4 d-flex align-items-center justify-content-center">
@@ -43,7 +44,7 @@
                 <p class="text-center text-white my-5">Ogni evento ha la sua ragione e le sue esigenze, ma con gli esclusivi servizi di Fbs Barcatering ogni evento sarà esattamente come immaginato e voluto. Scegliere un Open bar Fbs Barcatering significa scegliere un servizio di altissima qualità ed efficienza, svolto da soli Barman professionisti e soltanto con i migliori prodotti.</p>
             <div class="row pt-4 px-4">
                     <div class="col-12 col-md-4 p-0">
-                        <img src="../../../public/images/test/barman-1.jpg" class="img-fluid" alt="...">
+                        <img src="../../../../public/images/test/barman-1.jpg" class="img-fluid" alt="...">
                     </div>
                     <div class="col-12 col-md-4 py-5 p-lg-5 bg-white d-flex flex-column align-items-center justify-content-around">
                         <a class="text-danger mb-3 mb-md-0" href="">SERVIZIO BAR</a>
@@ -52,7 +53,7 @@
                         <a class="btn btn-danger mt-3 mt-md-0" href="">VISUALIZZA DETTAGLI</a>
                     </div>
                     <div class="col-12 col-md-4 p-0">
-                        <img src="../../../public/images/test/barman-1.jpg" class="img-fluid" alt="...">
+                        <img src="../../../../public/images/test/barman-1.jpg" class="img-fluid" alt="...">
                     </div>
                     <div class="col-12 col-md-4 py-5 p-lg-5 bg-white d-flex flex-column align-items-center justify-content-around">
                         <a class="text-danger mb-3 mb-md-0" href="">SERVIZIO BAR</a>
@@ -61,7 +62,7 @@
                         <a class="btn btn-danger mt-3 mt-md-0" href="">VISUALIZZA DETTAGLI</a>
                     </div>
                     <div class="col-12 col-md-4 p-0">
-                        <img src="../../../public/images/test/barman-1.jpg" class="img-fluid" alt="...">
+                        <img src="../../../../public/images/test/barman-1.jpg" class="img-fluid" alt="...">
                     </div>
                     <div class="col-12 col-md-4 py-5 p-lg-5 bg-white d-flex flex-column align-items-center justify-content-around">
                         <a class="text-danger mb-3 mb-md-0" href="">SERVIZIO BAR</a>
@@ -108,16 +109,16 @@
 </template>
 
 <script>
-import AboutSlider from './AboutSlider.vue';
-import JumboSlider from './JumboSlider.vue';
-import ThreeSlider from './ThreeSlider.vue';
-import CounterSlider from './CounterSlider.vue';
-import AppForm from './AppForm.vue';
-import AppFooter from './AppFooter.vue';
+import JumboSlider from '../JumboSlider.vue';
+import ThreeSlider from '../ThreeSlider.vue';
+import CounterSlider from '../CounterSlider.vue';
+import AppForm from '../AppForm.vue';
+import AppFooter from '../AppFooter.vue';
+import AboutSlider from '../AboutSlider.vue';
 
 export default{
     name: "HomePage",
-    components: { JumboSlider, AboutSlider, ThreeSlider, CounterSlider, AppForm, AppFooter }
+    components: { JumboSlider, ThreeSlider, CounterSlider, AppForm, AppFooter, AboutSlider }
 }
 </script>
 
@@ -139,7 +140,7 @@ h2{
 }
 
 #event{
-    background-image: url('../../../public/images/test/event-1.jpg');
+    background-image: url('../../../../public/images/test/event-1.jpg');
     background-position: top;
     background-size: auto 100vh;
     background-repeat: no-repeat;

@@ -2,8 +2,8 @@
     <div class="container py-5 d-flex flex-column align-items-center">
         <h5 class="bg-danger p-2 text-white text-center d-inline">PREVENTIVO</h5>
         <h2 class="text-center d-none d-md-block">Vuoi un preventivo?</h2>
-        <h3 class="text-center d-md-none">Vuoi un preventivo?</h3>
-        <p>Se desideri ricevere un preventivo lascia qua sotto i tuoi dati e ti ricontatteremo il prima possibile!</p>
+        <h3 class="text-center d-md-none py-2">Vuoi un preventivo?</h3>
+        <p class="text-center px-3">Se desideri ricevere un preventivo lascia qua sotto i tuoi dati e ti ricontatteremo il prima possibile!</p>
         <form class="mt-5">
             <div class="form-row">
                 <div class="form-group col-md-4">
