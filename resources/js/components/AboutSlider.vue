@@ -7,13 +7,13 @@
         </ol>
         <div class="carousel-inner">
             <div class="carousel-item active">
-            <img src="../../../public/images/test/slider-1.jpg" class="d-block w-100" alt="...">
+            <img src="../../../public/images/test/IMG-20220922-WA0042.jpg" class="d-block w-100" alt="...">
             </div>
             <div class="carousel-item">
-            <img src="../../../public/images/test/slider-2.jpg" class="d-block w-100" alt="...">
+            <img src="../../../public/images/test/IMG-20220922-WA0042.jpg" class="d-block w-100" alt="...">
             </div>
             <div class="carousel-item">
-            <img src="../../../public/images/test/slider-4.jpg" class="d-block w-100" alt="...">
+            <img src="../../../public/images/test/IMG-20220922-WA0042.jpg" class="d-block w-100" alt="...">
             </div>
         </div>
         <button class="btn-prev d-none d-xl-block" type="button" data-target="#carouselExampleIndicators" data-slide="prev">
@@ -51,7 +51,8 @@ export default{
             font-size: 46px;
         }
 
-        .btn-danger{
+        .btn-soft{
+            background-color: #b48c80;
             border-radius: 0;
             padding: 12px 40px;
             font-size: 18px;

@@ -7,27 +7,27 @@
         </ol>
         <div class="carousel-inner">
             <div class="carousel-item active">
-            <img src="../../../public/images/test/slider-1.jpg" class="d-block img-fluid w-100" alt="...">
+            <img src="../../../public/images/test/IMG-20220922-WA0021.jpg" class="d-block img-fluid w-100" alt="...">
             <div class="carousel-caption">
-                <h2>First slide label</h2>
-                <p>Some representative placeholder content for the first slide.</p>
-                <a href="#form" class="btn btn-danger">Contattaci</a>
+                <h2>Un viaggio nella miscelazione alla ricerca di nuovi sapori</h2>
+                <p></p>
+                <a href="#form" class="btn btn-soft">Contattaci</a>
             </div>
             </div>
             <div class="carousel-item">
-            <img src="../../../public/images/test/slider-2.jpg" class="d-block img-fluid w-100" alt="...">
+            <img src="../../../public/images/test/IMG-20220922-WA0023.jpg" class="d-block img-fluid w-100" alt="...">
             <div class="carousel-caption">
-                <h2>Second slide label</h2>
-                <p>Some representative placeholder content for the second slide.</p>
-                <a href="#form" class="btn btn-danger">Contattaci</a>
+                <h2>Realizziamo il tuo evento in qualcosa di unico</h2>
+                <p></p>
+                <a href="#form" class="btn btn-soft">Contattaci</a>
             </div>
             </div>
             <div class="carousel-item">
-            <img src="../../../public/images/test/slider-4.jpg" class="d-block img-fluid w-100" alt="...">
+            <img src="../../../public/images/test/IMG-20220922-WA0046.jpg" class="d-block img-fluid w-100" alt="...">
             <div class="carousel-caption">
-                <h2>Third slide label</h2>
-                <p>Some representative placeholder content for the third slide.</p>
-                <a href="#form" class="btn btn-danger">Contattaci</a>
+                <h2>Compleanni,feste, matrimoni, quello che manacava al tuo evento!</h2>
+                <p></p>
+                <a href="#form" class="btn btn-soft">Contattaci</a>
             </div>
             </div>
         </div>
@@ -69,13 +69,17 @@ export default{
         align-items: center;
 
         h2{
-            font-size: 46px;
+            font-size: 42px;
+            text-shadow: 0 0 4px rgb(65, 65, 65);
         }
 
-        .btn-danger{
+        .btn-soft{
+            background-color: #b48c80;
+            border: 2px solid white;
             border-radius: 0;
             padding: 12px 40px;
             font-size: 18px;
+            color: white;
         }
     }
 }

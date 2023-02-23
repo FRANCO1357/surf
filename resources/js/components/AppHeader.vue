@@ -1,8 +1,11 @@
 <template>
     <header>
         <nav class="navbar navbar-light bg-light">
-            <a class="navbar-brand text-white" href="#"><h3 class="m-0">Soul Events</h3></a>
-            <button @click="toggleMenu()" class="btn-menu d-flex align-items-center justify-content-center" id="btn-menu" type="button">
+            <a class="btn-square d-flex align-items-center justify-content-center text-white text-decoration-none" href="tel:555-555-5555">
+                <i class="fa-solid fa-phone"></i>
+            </a>
+            <a class="navbar-brand text-white" href="#"><h2 class="m-0">Tenereza</h2></a>
+            <button @click="toggleMenu()" class="btn-square d-flex align-items-center justify-content-center" id="btn-menu" type="button">
                 <i class="fa-solid fa-bars text-white"></i>
             </button>
             <div class="nav-menu flex-column align-items-center" id="navbarMenu">
@@ -11,8 +14,9 @@
                 </button>
                 <h2 class="my-5 text-white">Menu</h2>
                 <ul class="navbar-nav">
-                    <li v-for="link in links" class="nav-item">
-                        <router-link class="nav-link py-3 text-white text-center border-bottom border-dark" :to="{name: link.name}">{{link.label}}</router-link>
+                    <li class="nav-item">
+                        <a @click="closeMenu()" class="nav-link py-3 text-white text-center border-bottom border-dark" href="#about">Chi siamo</a>
+                        <a @click="closeMenu()" class="nav-link py-3 text-white text-center border-bottom border-dark" href="#event-1">Bar Service</a>
                     </li>
                 </ul>
             </div>
@@ -33,6 +37,10 @@ export default{
       toggleMenu(){
         const navbarMenu = document.getElementById('navbarMenu');
         navbarMenu.classList.toggle('open')
+      },
+      closeMenu(){
+        const navbarMenu = document.getElementById('navbarMenu');
+        navbarMenu.classList.remove('open')
       },
     },
     mounted (){
@@ -56,7 +64,7 @@ background-color: transparent !important;
 padding: 80px 60px;
 transition: 1s;
 
-    .btn-menu{
+    .btn-square{
         width: 50px;
         height: 50px;
         background-color: transparent;
@@ -66,8 +74,8 @@ transition: 1s;
         transition: 0.8s;
 
         &:hover{
-            background-color: red;
-            border: red;
+            background-color: #b48c80;
+            border: #b48c80;
             color: white;
         }
 
@@ -75,6 +83,7 @@ transition: 1s;
             box-shadow: none;
         }
     }
+
    
     .nav-menu{
     display: flex;
@@ -98,7 +107,7 @@ transition: 1s;
         transition: 0.8s;
 
            &:hover{
-            color: red !important;
+            color: #b48c80 !important;
            } 
         }
 
@@ -117,6 +126,16 @@ nav.sticky{
     padding: 20px 60px;
     transition: 1s;
 }
+
+@media (max-width: 767px){
+        nav{
+            padding: 40px;
+        }
+
+        nav.sticky{
+            padding: 20px;
+        }
+    }
 
 
 </style>

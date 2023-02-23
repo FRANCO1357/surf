@@ -1,6 +1,6 @@
 <template>
     <div class="container py-5 d-flex flex-column align-items-center">
-        <h5 class="bg-danger p-2 text-white text-center d-inline">PREVENTIVO</h5>
+        <h5 class="bg-soft p-2 text-white text-center d-inline">PREVENTIVO</h5>
         <h2 class="text-center d-none d-md-block">Vuoi un preventivo?</h2>
         <h3 class="text-center d-md-none py-2">Vuoi un preventivo?</h3>
         <p class="text-center px-3">Se desideri ricevere un preventivo lascia qua sotto i tuoi dati e ti ricontatteremo il prima possibile!</p>
@@ -19,7 +19,7 @@
                     <input type="phone" class="form-control" id="phone">
                 </div>
             </div>
-            <button type="submit" class="btn btn-danger rounded-0">Invia</button>
+            <button type="submit" class="btn btn-soft rounded-0">Invia</button>
         </form>
     </div>
 
@@ -38,9 +38,11 @@ h2{
 form{
     width: 100%;
 
-    .btn-danger{
+    .btn-soft{
         font-size: 18px;
         padding: 10px 20px;
+        background-color: #b48c80;
+        color: white;
     }
 }
 </style>

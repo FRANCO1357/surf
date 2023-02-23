@@ -1990,6 +1990,10 @@ __webpack_require__.r(__webpack_exports__);
     toggleMenu: function toggleMenu() {
       var navbarMenu = document.getElementById('navbarMenu');
       navbarMenu.classList.toggle('open');
+    },
+    closeMenu: function closeMenu() {
+      var navbarMenu = document.getElementById('navbarMenu');
+      navbarMenu.classList.remove('open');
     }
   },
   mounted: function mounted() {
@@ -2122,17 +2126,79 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/ThreeSlider.vue?vue&type=script&lang=js&":
-/*!**********************************************************************************************************************************************************************!*\
-  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/ThreeSlider.vue?vue&type=script&lang=js& ***!
-  \**********************************************************************************************************************************************************************/
+/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/TestSlider.vue?vue&type=script&lang=js&":
+/*!*********************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/TestSlider.vue?vue&type=script&lang=js& ***!
+  \*********************************************************************************************************************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony default export */ __webpack_exports__["default"] = ({
-  name: 'ThreeSlider'
+  name: 'TestSlider',
+  mounted: function mounted() {
+    var swiper = new Swiper(".swiper", {
+      slidesPerView: 3,
+      spaceBetween: 30,
+      loop: true,
+      grabCursor: true,
+      centeredSlides: true,
+      slideActiveClass: "active",
+      navigation: {
+        nextEl: ".next",
+        prevEl: ".prev"
+      },
+      pagination: {
+        el: ".pagination",
+        clickable: true
+      },
+      autoplay: {
+        enabled: true,
+        delay: 5000
+      }
+    });
+    var swiperTablet = new Swiper(".swiper-tablet", {
+      slidesPerView: 2,
+      spaceBetween: 30,
+      loop: true,
+      grabCursor: true,
+      centeredSlides: true,
+      slideActiveClass: "active",
+      navigation: {
+        nextEl: ".next",
+        prevEl: ".prev"
+      },
+      pagination: {
+        el: ".pagination",
+        clickable: true
+      },
+      autoplay: {
+        enabled: true,
+        delay: 5000
+      }
+    });
+    var swiperMobile = new Swiper(".swiper-mobile", {
+      slidesPerView: 1,
+      spaceBetween: 30,
+      loop: true,
+      grabCursor: true,
+      centeredSlides: true,
+      slideActiveClass: "active",
+      navigation: {
+        nextEl: ".next",
+        prevEl: ".prev"
+      },
+      pagination: {
+        el: ".pagination",
+        clickable: true
+      },
+      autoplay: {
+        enabled: true,
+        delay: 5000
+      }
+    });
+  }
 });
 
 /***/ }),
@@ -2161,8 +2227,8 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _JumboSlider_vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../JumboSlider.vue */ "./resources/js/components/JumboSlider.vue");
-/* harmony import */ var _ThreeSlider_vue__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../ThreeSlider.vue */ "./resources/js/components/ThreeSlider.vue");
+/* harmony import */ var _TestSlider_vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../TestSlider.vue */ "./resources/js/components/TestSlider.vue");
+/* harmony import */ var _JumboSlider_vue__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../JumboSlider.vue */ "./resources/js/components/JumboSlider.vue");
 /* harmony import */ var _CounterSlider_vue__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../CounterSlider.vue */ "./resources/js/components/CounterSlider.vue");
 /* harmony import */ var _AppForm_vue__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../AppForm.vue */ "./resources/js/components/AppForm.vue");
 /* harmony import */ var _AppFooter_vue__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../AppFooter.vue */ "./resources/js/components/AppFooter.vue");
@@ -2176,12 +2242,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: "HomePage",
   components: {
-    JumboSlider: _JumboSlider_vue__WEBPACK_IMPORTED_MODULE_0__["default"],
-    ThreeSlider: _ThreeSlider_vue__WEBPACK_IMPORTED_MODULE_1__["default"],
+    JumboSlider: _JumboSlider_vue__WEBPACK_IMPORTED_MODULE_1__["default"],
     CounterSlider: _CounterSlider_vue__WEBPACK_IMPORTED_MODULE_2__["default"],
     AppForm: _AppForm_vue__WEBPACK_IMPORTED_MODULE_3__["default"],
     AppFooter: _AppFooter_vue__WEBPACK_IMPORTED_MODULE_4__["default"],
-    AboutSlider: _AboutSlider_vue__WEBPACK_IMPORTED_MODULE_5__["default"]
+    AboutSlider: _AboutSlider_vue__WEBPACK_IMPORTED_MODULE_5__["default"],
+    TestSlider: _TestSlider_vue__WEBPACK_IMPORTED_MODULE_0__["default"]
   }
 });
 
@@ -2252,7 +2318,7 @@ var staticRenderFns = [function () {
   }, [_c("img", {
     staticClass: "d-block w-100",
     attrs: {
-      src: __webpack_require__(/*! ../../../public/images/test/slider-1.jpg */ "./public/images/test/slider-1.jpg"),
+      src: __webpack_require__(/*! ../../../public/images/test/IMG-20220922-WA0042.jpg */ "./public/images/test/IMG-20220922-WA0042.jpg"),
       alt: "..."
     }
   })]), _vm._v(" "), _c("div", {
@@ -2260,7 +2326,7 @@ var staticRenderFns = [function () {
   }, [_c("img", {
     staticClass: "d-block w-100",
     attrs: {
-      src: __webpack_require__(/*! ../../../public/images/test/slider-2.jpg */ "./public/images/test/slider-2.jpg"),
+      src: __webpack_require__(/*! ../../../public/images/test/IMG-20220922-WA0042.jpg */ "./public/images/test/IMG-20220922-WA0042.jpg"),
       alt: "..."
     }
   })]), _vm._v(" "), _c("div", {
@@ -2268,7 +2334,7 @@ var staticRenderFns = [function () {
   }, [_c("img", {
     staticClass: "d-block w-100",
     attrs: {
-      src: __webpack_require__(/*! ../../../public/images/test/slider-4.jpg */ "./public/images/test/slider-4.jpg"),
+      src: __webpack_require__(/*! ../../../public/images/test/IMG-20220922-WA0042.jpg */ "./public/images/test/IMG-20220922-WA0042.jpg"),
       alt: "..."
     }
   })])]), _vm._v(" "), _c("button", {
@@ -2385,19 +2451,19 @@ var staticRenderFns = [function () {
   }, [_vm._v("Social")]), _vm._v(" "), _c("a", {
     staticClass: "btn",
     attrs: {
-      href: ""
+      href: "https://instagram.com/tenerezaeventi?igshid=YmMyMTA2M2Y="
     }
   }, [_c("h3", {
-    staticClass: "text-danger mb-4"
-  }, [_vm._v("@soulevents")])]), _vm._v(" "), _c("a", {
+    staticClass: "text-soft mb-4"
+  }, [_vm._v("@tenerezaeventi")])]), _vm._v(" "), _c("a", {
     staticClass: "px-5",
     attrs: {
-      href: ""
+      href: "https://instagram.com/tenerezaeventi?igshid=YmMyMTA2M2Y="
     }
   }, [_c("img", {
     staticClass: "img-fluid",
     attrs: {
-      src: __webpack_require__(/*! ../../../public/images/test/slider-1.jpg */ "./public/images/test/slider-1.jpg"),
+      src: __webpack_require__(/*! ../../../public/images/test/IMG-20220922-WA0066.jpg */ "./public/images/test/IMG-20220922-WA0066.jpg"),
       alt: ""
     }
   })])]), _vm._v(" "), _c("div", {
@@ -2407,16 +2473,6 @@ var staticRenderFns = [function () {
   }, [_vm._v("Informazioni")]), _vm._v(" "), _c("ul", {
     staticClass: "d-flex flex-column align-items-center p-0"
   }, [_c("li", [_c("a", {
-    staticClass: "text-white",
-    attrs: {
-      href: ""
-    }
-  }, [_vm._v("Privacy Policy")])]), _vm._v(" "), _c("li", [_c("a", {
-    staticClass: "text-white",
-    attrs: {
-      href: ""
-    }
-  }, [_vm._v("Cookie Policy")])]), _vm._v(" "), _c("li", [_c("a", {
     staticClass: "text-white",
     attrs: {
       href: ""
@@ -2450,7 +2506,7 @@ var staticRenderFns = [function () {
   return _c("div", {
     staticClass: "container py-5 d-flex flex-column align-items-center"
   }, [_c("h5", {
-    staticClass: "bg-danger p-2 text-white text-center d-inline"
+    staticClass: "bg-soft p-2 text-white text-center d-inline"
   }, [_vm._v("PREVENTIVO")]), _vm._v(" "), _c("h2", {
     staticClass: "text-center d-none d-md-block"
   }, [_vm._v("Vuoi un preventivo?")]), _vm._v(" "), _c("h3", {
@@ -2498,7 +2554,7 @@ var staticRenderFns = [function () {
       id: "phone"
     }
   })])]), _vm._v(" "), _c("button", {
-    staticClass: "btn btn-danger rounded-0",
+    staticClass: "btn btn-soft rounded-0",
     attrs: {
       type: "submit"
     }
@@ -2525,8 +2581,8 @@ var render = function render() {
     _c = _vm._self._c;
   return _c("header", [_c("nav", {
     staticClass: "navbar navbar-light bg-light"
-  }, [_vm._m(0), _vm._v(" "), _c("button", {
-    staticClass: "btn-menu d-flex align-items-center justify-content-center",
+  }, [_vm._m(0), _vm._v(" "), _vm._m(1), _vm._v(" "), _c("button", {
+    staticClass: "btn-square d-flex align-items-center justify-content-center",
     attrs: {
       id: "btn-menu",
       type: "button"
@@ -2560,20 +2616,42 @@ var render = function render() {
     staticClass: "my-5 text-white"
   }, [_vm._v("Menu")]), _vm._v(" "), _c("ul", {
     staticClass: "navbar-nav"
-  }, _vm._l(_vm.links, function (link) {
-    return _c("li", {
-      staticClass: "nav-item"
-    }, [_c("router-link", {
-      staticClass: "nav-link py-3 text-white text-center border-bottom border-dark",
-      attrs: {
-        to: {
-          name: link.name
-        }
+  }, [_c("li", {
+    staticClass: "nav-item"
+  }, [_c("a", {
+    staticClass: "nav-link py-3 text-white text-center border-bottom border-dark",
+    attrs: {
+      href: "#about"
+    },
+    on: {
+      click: function click($event) {
+        return _vm.closeMenu();
       }
-    }, [_vm._v(_vm._s(link.label))])], 1);
-  }), 0)])])]);
+    }
+  }, [_vm._v("Chi siamo")]), _vm._v(" "), _c("a", {
+    staticClass: "nav-link py-3 text-white text-center border-bottom border-dark",
+    attrs: {
+      href: "#event-1"
+    },
+    on: {
+      click: function click($event) {
+        return _vm.closeMenu();
+      }
+    }
+  }, [_vm._v("Bar Service")])])])])])]);
 };
 var staticRenderFns = [function () {
+  var _vm = this,
+    _c = _vm._self._c;
+  return _c("a", {
+    staticClass: "btn-square d-flex align-items-center justify-content-center text-white text-decoration-none",
+    attrs: {
+      href: "tel:555-555-5555"
+    }
+  }, [_c("i", {
+    staticClass: "fa-solid fa-phone"
+  })]);
+}, function () {
   var _vm = this,
     _c = _vm._self._c;
   return _c("a", {
@@ -2581,9 +2659,9 @@ var staticRenderFns = [function () {
     attrs: {
       href: "#"
     }
-  }, [_c("h3", {
+  }, [_c("h2", {
     staticClass: "m-0"
-  }, [_vm._v("Soul Events")])]);
+  }, [_vm._v("Tenereza")])]);
 }];
 render._withStripped = true;
 
@@ -2612,7 +2690,7 @@ var staticRenderFns = [function () {
   return _c("div", {
     staticClass: "container"
   }, [_c("div", {
-    staticClass: "row"
+    staticClass: "row carousel"
   }, [_c("div", {
     staticClass: "MultiCarousel",
     attrs: {
@@ -2636,7 +2714,7 @@ var staticRenderFns = [function () {
   }), _vm._v(" "), _c("div", {
     staticClass: "card-body bg-white d-flex flex-column align-items-center py-5"
   }, [_c("h3", {
-    staticClass: "border-bottom border-danger"
+    staticClass: "border-bottom border-soft"
   }, [_vm._v("ETABLI")])])])]), _vm._v(" "), _c("div", {
     staticClass: "item"
   }, [_c("div", {
@@ -2650,7 +2728,7 @@ var staticRenderFns = [function () {
   }), _vm._v(" "), _c("div", {
     staticClass: "card-body bg-white d-flex flex-column align-items-center py-5"
   }, [_c("h3", {
-    staticClass: "border-bottom border-danger"
+    staticClass: "border-bottom border-soft"
   }, [_vm._v("INDUSTRIAL")])])])]), _vm._v(" "), _c("div", {
     staticClass: "item"
   }, [_c("div", {
@@ -2664,7 +2742,7 @@ var staticRenderFns = [function () {
   }), _vm._v(" "), _c("div", {
     staticClass: "card-body bg-white d-flex flex-column align-items-center py-5"
   }, [_c("h3", {
-    staticClass: "border-bottom border-danger"
+    staticClass: "border-bottom border-soft"
   }, [_vm._v("WOOD")])])])]), _vm._v(" "), _c("div", {
     staticClass: "item"
   }, [_c("div", {
@@ -2678,7 +2756,7 @@ var staticRenderFns = [function () {
   }), _vm._v(" "), _c("div", {
     staticClass: "card-body bg-white d-flex flex-column align-items-center py-5"
   }, [_c("h3", {
-    staticClass: "border-bottom border-danger"
+    staticClass: "border-bottom border-soft"
   }, [_vm._v("VINTAGE")])])])]), _vm._v(" "), _c("div", {
     staticClass: "item"
   }, [_c("div", {
@@ -2692,7 +2770,7 @@ var staticRenderFns = [function () {
   }), _vm._v(" "), _c("div", {
     staticClass: "card-body bg-white d-flex flex-column align-items-center py-5"
   }, [_c("h3", {
-    staticClass: "border-bottom border-danger"
+    staticClass: "border-bottom border-soft"
   }, [_vm._v("ETABLI")])])])]), _vm._v(" "), _c("div", {
     staticClass: "item"
   }, [_c("div", {
@@ -2706,7 +2784,7 @@ var staticRenderFns = [function () {
   }), _vm._v(" "), _c("div", {
     staticClass: "card-body bg-white d-flex flex-column align-items-center py-5"
   }, [_c("h3", {
-    staticClass: "border-bottom border-danger"
+    staticClass: "border-bottom border-soft"
   }, [_vm._v("ETABLI")])])])]), _vm._v(" "), _c("div", {
     staticClass: "item"
   }, [_c("div", {
@@ -2720,7 +2798,7 @@ var staticRenderFns = [function () {
   }), _vm._v(" "), _c("div", {
     staticClass: "card-body bg-white d-flex flex-column align-items-center py-5"
   }, [_c("h3", {
-    staticClass: "border-bottom border-danger"
+    staticClass: "border-bottom border-soft"
   }, [_vm._v("ETABLI")])])])]), _vm._v(" "), _c("div", {
     staticClass: "item"
   }, [_c("div", {
@@ -2734,7 +2812,7 @@ var staticRenderFns = [function () {
   }), _vm._v(" "), _c("div", {
     staticClass: "card-body bg-white d-flex flex-column align-items-center py-5"
   }, [_c("h3", {
-    staticClass: "border-bottom border-danger"
+    staticClass: "border-bottom border-soft"
   }, [_vm._v("ETABLI")])])])]), _vm._v(" "), _c("div", {
     staticClass: "item"
   }, [_c("div", {
@@ -2748,7 +2826,7 @@ var staticRenderFns = [function () {
   }), _vm._v(" "), _c("div", {
     staticClass: "card-body bg-white d-flex flex-column align-items-center py-5"
   }, [_c("h3", {
-    staticClass: "border-bottom border-danger"
+    staticClass: "border-bottom border-soft"
   }, [_vm._v("ETABLI")])])])]), _vm._v(" "), _c("div", {
     staticClass: "item"
   }, [_c("div", {
@@ -2762,7 +2840,7 @@ var staticRenderFns = [function () {
   }), _vm._v(" "), _c("div", {
     staticClass: "card-body bg-white d-flex flex-column align-items-center py-5"
   }, [_c("h3", {
-    staticClass: "border-bottom border-danger"
+    staticClass: "border-bottom border-soft"
   }, [_vm._v("ETABLI")])])])]), _vm._v(" "), _c("div", {
     staticClass: "item"
   }, [_c("div", {
@@ -2776,7 +2854,7 @@ var staticRenderFns = [function () {
   }), _vm._v(" "), _c("div", {
     staticClass: "card-body bg-white d-flex flex-column align-items-center py-5"
   }, [_c("h3", {
-    staticClass: "border-bottom border-danger"
+    staticClass: "border-bottom border-soft"
   }, [_vm._v("ETABLI")])])])]), _vm._v(" "), _c("div", {
     staticClass: "item"
   }, [_c("div", {
@@ -2790,7 +2868,7 @@ var staticRenderFns = [function () {
   }), _vm._v(" "), _c("div", {
     staticClass: "card-body bg-white d-flex flex-column align-items-center py-5"
   }, [_c("h3", {
-    staticClass: "border-bottom border-danger"
+    staticClass: "border-bottom border-soft"
   }, [_vm._v("ETABLI")])])])]), _vm._v(" "), _c("div", {
     staticClass: "item"
   }, [_c("div", {
@@ -2804,7 +2882,7 @@ var staticRenderFns = [function () {
   }), _vm._v(" "), _c("div", {
     staticClass: "card-body bg-white d-flex flex-column align-items-center py-5"
   }, [_c("h3", {
-    staticClass: "border-bottom border-danger"
+    staticClass: "border-bottom border-soft"
   }, [_vm._v("ETABLI")])])])]), _vm._v(" "), _c("div", {
     staticClass: "item"
   }, [_c("div", {
@@ -2818,7 +2896,7 @@ var staticRenderFns = [function () {
   }), _vm._v(" "), _c("div", {
     staticClass: "card-body bg-white d-flex flex-column align-items-center py-5"
   }, [_c("h3", {
-    staticClass: "border-bottom border-danger"
+    staticClass: "border-bottom border-soft"
   }, [_vm._v("ETABLI")])])])]), _vm._v(" "), _c("div", {
     staticClass: "item"
   }, [_c("div", {
@@ -2832,7 +2910,7 @@ var staticRenderFns = [function () {
   }), _vm._v(" "), _c("div", {
     staticClass: "card-body bg-white d-flex flex-column align-items-center py-5"
   }, [_c("h3", {
-    staticClass: "border-bottom border-danger"
+    staticClass: "border-bottom border-soft"
   }, [_vm._v("ETABLI")])])])]), _vm._v(" "), _c("div", {
     staticClass: "item"
   }, [_c("div", {
@@ -2846,13 +2924,13 @@ var staticRenderFns = [function () {
   }), _vm._v(" "), _c("div", {
     staticClass: "card-body bg-white d-flex flex-column align-items-center py-5"
   }, [_c("h3", {
-    staticClass: "border-bottom border-danger"
+    staticClass: "border-bottom border-soft"
   }, [_vm._v("ETABLI")])])])])]), _vm._v(" "), _c("button", {
-    staticClass: "btn btn-danger leftLst"
+    staticClass: "btn btn-soft leftLst"
   }, [_c("i", {
     staticClass: "fa-solid fa-chevron-left"
   })]), _vm._v(" "), _c("button", {
-    staticClass: "btn btn-danger rightLst"
+    staticClass: "btn btn-soft rightLst"
   }, [_c("i", {
     staticClass: "fa-solid fa-chevron-right"
   })])])])]);
@@ -2912,13 +2990,13 @@ var staticRenderFns = [function () {
   }, [_c("img", {
     staticClass: "d-block img-fluid w-100",
     attrs: {
-      src: __webpack_require__(/*! ../../../public/images/test/slider-1.jpg */ "./public/images/test/slider-1.jpg"),
+      src: __webpack_require__(/*! ../../../public/images/test/IMG-20220922-WA0021.jpg */ "./public/images/test/IMG-20220922-WA0021.jpg"),
       alt: "..."
     }
   }), _vm._v(" "), _c("div", {
     staticClass: "carousel-caption"
-  }, [_c("h2", [_vm._v("First slide label")]), _vm._v(" "), _c("p", [_vm._v("Some representative placeholder content for the first slide.")]), _vm._v(" "), _c("a", {
-    staticClass: "btn btn-danger",
+  }, [_c("h2", [_vm._v("Un viaggio nella miscelazione alla ricerca di nuovi sapori")]), _vm._v(" "), _c("p"), _vm._v(" "), _c("a", {
+    staticClass: "btn btn-soft",
     attrs: {
       href: "#form"
     }
@@ -2927,13 +3005,13 @@ var staticRenderFns = [function () {
   }, [_c("img", {
     staticClass: "d-block img-fluid w-100",
     attrs: {
-      src: __webpack_require__(/*! ../../../public/images/test/slider-2.jpg */ "./public/images/test/slider-2.jpg"),
+      src: __webpack_require__(/*! ../../../public/images/test/IMG-20220922-WA0023.jpg */ "./public/images/test/IMG-20220922-WA0023.jpg"),
       alt: "..."
     }
   }), _vm._v(" "), _c("div", {
     staticClass: "carousel-caption"
-  }, [_c("h2", [_vm._v("Second slide label")]), _vm._v(" "), _c("p", [_vm._v("Some representative placeholder content for the second slide.")]), _vm._v(" "), _c("a", {
-    staticClass: "btn btn-danger",
+  }, [_c("h2", [_vm._v("Realizziamo il tuo evento in qualcosa di unico")]), _vm._v(" "), _c("p"), _vm._v(" "), _c("a", {
+    staticClass: "btn btn-soft",
     attrs: {
       href: "#form"
     }
@@ -2942,13 +3020,13 @@ var staticRenderFns = [function () {
   }, [_c("img", {
     staticClass: "d-block img-fluid w-100",
     attrs: {
-      src: __webpack_require__(/*! ../../../public/images/test/slider-4.jpg */ "./public/images/test/slider-4.jpg"),
+      src: __webpack_require__(/*! ../../../public/images/test/IMG-20220922-WA0046.jpg */ "./public/images/test/IMG-20220922-WA0046.jpg"),
       alt: "..."
     }
   }), _vm._v(" "), _c("div", {
     staticClass: "carousel-caption"
-  }, [_c("h2", [_vm._v("Third slide label")]), _vm._v(" "), _c("p", [_vm._v("Some representative placeholder content for the third slide.")]), _vm._v(" "), _c("a", {
-    staticClass: "btn btn-danger",
+  }, [_c("h2", [_vm._v("Compleanni,feste, matrimoni, quello che manacava al tuo evento!")]), _vm._v(" "), _c("p"), _vm._v(" "), _c("a", {
+    staticClass: "btn btn-soft",
     attrs: {
       href: "#form"
     }
@@ -2987,10 +3065,10 @@ render._withStripped = true;
 
 /***/ }),
 
-/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/ThreeSlider.vue?vue&type=template&id=1a8baf84&scoped=true&":
-/*!********************************************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib/loaders/templateLoader.js??ref--6!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/ThreeSlider.vue?vue&type=template&id=1a8baf84&scoped=true& ***!
-  \********************************************************************************************************************************************************************************************************************************************************/
+/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/TestSlider.vue?vue&type=template&id=b9fc4184&scoped=true&":
+/*!*******************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib/loaders/templateLoader.js??ref--6!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/TestSlider.vue?vue&type=template&id=b9fc4184&scoped=true& ***!
+  \*******************************************************************************************************************************************************************************************************************************************************/
 /*! exports provided: render, staticRenderFns */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -3001,68 +3079,185 @@ __webpack_require__.r(__webpack_exports__);
 var render = function render() {
   var _vm = this,
     _c = _vm._self._c;
-  return _vm._m(0);
+  return _c("section", [_c("h2", [_vm._v("SERVIZI AGGIUNTIVI")]), _vm._v(" "), _c("div", {
+    staticClass: "swiper d-none d-lg-block h-100"
+  }, [_vm._m(0), _vm._v(" "), _c("div", {
+    staticClass: "pagination"
+  }), _vm._v(" "), _c("div", {
+    staticClass: "prev"
+  }, [_c("svg", {
+    attrs: {
+      width: "10",
+      height: "15",
+      viewBox: "0 0 10 15",
+      fill: "none",
+      xmlns: "http://www.w3.org/2000/svg"
+    }
+  }, [_c("path", {
+    attrs: {
+      d: "M9.2625 13.2375L3.5375 7.5L9.2625 1.7625L7.5 0L0 7.5L7.5 15L9.2625 13.2375Z"
+    }
+  })])]), _vm._v(" "), _c("div", {
+    staticClass: "next"
+  }, [_c("svg", {
+    attrs: {
+      width: "10",
+      height: "15",
+      viewBox: "0 0 10 15",
+      fill: "none",
+      xmlns: "http://www.w3.org/2000/svg"
+    }
+  }, [_c("path", {
+    attrs: {
+      d: "M0.737305 13.2375L6.4623 7.5L0.737305 1.7625L2.4998 0L9.9998 7.5L2.4998 15L0.737305 13.2375Z"
+    }
+  })])])]), _vm._v(" "), _c("div", {
+    staticClass: "swiper-tablet d-none d-md-block d-lg-none h-100"
+  }, [_vm._m(1), _vm._v(" "), _c("div", {
+    staticClass: "pagination"
+  }), _vm._v(" "), _c("div", {
+    staticClass: "prev"
+  }, [_c("svg", {
+    attrs: {
+      width: "10",
+      height: "15",
+      viewBox: "0 0 10 15",
+      fill: "none",
+      xmlns: "http://www.w3.org/2000/svg"
+    }
+  }, [_c("path", {
+    attrs: {
+      d: "M9.2625 13.2375L3.5375 7.5L9.2625 1.7625L7.5 0L0 7.5L7.5 15L9.2625 13.2375Z"
+    }
+  })])]), _vm._v(" "), _c("div", {
+    staticClass: "next"
+  }, [_c("svg", {
+    attrs: {
+      width: "10",
+      height: "15",
+      viewBox: "0 0 10 15",
+      fill: "none",
+      xmlns: "http://www.w3.org/2000/svg"
+    }
+  }, [_c("path", {
+    attrs: {
+      d: "M0.737305 13.2375L6.4623 7.5L0.737305 1.7625L2.4998 0L9.9998 7.5L2.4998 15L0.737305 13.2375Z"
+    }
+  })])])]), _vm._v(" "), _c("div", {
+    staticClass: "swiper-mobile d-md-none h-100"
+  }, [_vm._m(2), _vm._v(" "), _c("div", {
+    staticClass: "pagination"
+  }), _vm._v(" "), _c("div", {
+    staticClass: "prev"
+  }, [_c("svg", {
+    attrs: {
+      width: "10",
+      height: "15",
+      viewBox: "0 0 10 15",
+      fill: "none",
+      xmlns: "http://www.w3.org/2000/svg"
+    }
+  }, [_c("path", {
+    attrs: {
+      d: "M9.2625 13.2375L3.5375 7.5L9.2625 1.7625L7.5 0L0 7.5L7.5 15L9.2625 13.2375Z"
+    }
+  })])]), _vm._v(" "), _c("div", {
+    staticClass: "next"
+  }, [_c("svg", {
+    attrs: {
+      width: "10",
+      height: "15",
+      viewBox: "0 0 10 15",
+      fill: "none",
+      xmlns: "http://www.w3.org/2000/svg"
+    }
+  }, [_c("path", {
+    attrs: {
+      d: "M0.737305 13.2375L6.4623 7.5L0.737305 1.7625L2.4998 0L9.9998 7.5L2.4998 15L0.737305 13.2375Z"
+    }
+  })])])])]);
 };
 var staticRenderFns = [function () {
   var _vm = this,
     _c = _vm._self._c;
   return _c("div", {
-    staticClass: "row align-items-end"
+    staticClass: "swiper-wrapper"
   }, [_c("div", {
-    staticClass: "col-8"
-  }, [_c("p", {
-    staticClass: "bg-danger text-white p-2 d-none d-md-inline"
-  }, [_vm._v("RENDI PERFETTO IL TUO EVENTO")]), _vm._v(" "), _c("h2", {
-    staticClass: "my-3"
-  }, [_vm._v("Servizi aggiuntivi")])]), _vm._v(" "), _c("div", {
-    staticClass: "col-4 text-right"
-  }, [_c("a", {
-    staticClass: "btn btn-danger mb-3 mr-1",
+    staticClass: "swiper-slide"
+  }, [_c("div", {
+    staticClass: "card-top d-flex flex-column align-items-center justify-content-around pt-3"
+  }, [_c("img", {
     attrs: {
-      href: "#carouselExampleIndicators2",
-      role: "button",
-      "data-slide": "prev"
+      src: __webpack_require__(/*! ../../../public/images/test/IMG-20220922-WA0085.jpg */ "./public/images/test/IMG-20220922-WA0085.jpg"),
+      alt: ""
     }
+  }), _vm._v(" "), _c("p", {
+    staticClass: "bg-danger text-white p-2 d-inline"
+  }, [_vm._v("SERVIZIO AGGIUNTIVO")]), _vm._v(" "), _c("h3", {
+    staticClass: "text-white text-center"
+  }, [_vm._v("RUM BAR")])]), _vm._v(" "), _c("div", {
+    staticClass: "card-body d-flex flex-column align-items-center justify-content-around py-4 px-5"
+  }, [_c("p", {
+    staticClass: "text-center border-bottom border-secondary py-3"
+  }, [_vm._v("Degustazione di Rum della Martinica, Santo Domingo, Portorico, Cuba abbinata a sigari e cioccolato fondente ed accompagnata da frutta secca e spezie, come arancia cannella e caffè.")]), _vm._v(" "), _c("div", {
+    staticClass: "icon d-flex pt-2"
   }, [_c("i", {
-    staticClass: "fa fa-arrow-left"
-  })]), _vm._v(" "), _c("a", {
-    staticClass: "btn btn-danger mb-3",
+    staticClass: "fa-solid fa-book fa-2x p-1 text-danger"
+  }), _vm._v(" "), _c("i", {
+    staticClass: "fa-solid fa-pencil fa-2x p-1 text-danger"
+  })]), _vm._v(" "), _c("h5", {
+    staticClass: "text-center border-bottom border-secondary pt-2 pb-4 w-100"
+  }, [_vm._v("+50 OSPITI")]), _vm._v(" "), _c("i", {
+    staticClass: "fa-solid fa-martini-glass fa-2x p-1 text-danger pt-3"
+  }), _vm._v(" "), _c("p", {
+    staticClass: "text-center"
+  }, [_vm._v("Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, reprehenderit laborum quibusdam.")])])]), _vm._v(" "), _c("div", {
+    staticClass: "swiper-slide"
+  }, [_c("div", {
+    staticClass: "card-top d-flex flex-column align-items-center justify-content-around pt-3"
+  }, [_c("img", {
     attrs: {
-      href: "#carouselExampleIndicators2",
-      role: "button",
-      "data-slide": "next"
+      src: __webpack_require__(/*! ../../../public/images/test/IMG-20220922-WA0071.jpg */ "./public/images/test/IMG-20220922-WA0071.jpg"),
+      alt: ""
     }
+  }), _vm._v(" "), _c("p", {
+    staticClass: "bg-danger text-white p-2 d-inline"
+  }, [_vm._v("SERVIZIO AGGIUNTIVO")]), _vm._v(" "), _c("h3", {
+    staticClass: "text-white text-center"
+  }, [_vm._v("WHISKY BAR")])]), _vm._v(" "), _c("div", {
+    staticClass: "card-body d-flex flex-column align-items-center justify-content-around py-4 px-5"
+  }, [_c("p", {
+    staticClass: "text-center border-bottom border-secondary py-3"
+  }, [_vm._v("Degustazione di Whisky della Scozia, Canada, Irlanda, Stati Uniti e Giappone abbinata a sigari e cioccolata fondente ed accompagnata da frutta secca e spezie, come arancia e cannella, zucchero di canna e caffè.")]), _vm._v(" "), _c("div", {
+    staticClass: "icon d-flex pt-2"
   }, [_c("i", {
-    staticClass: "fa fa-arrow-right"
-  })])]), _vm._v(" "), _c("div", {
-    staticClass: "col-12"
+    staticClass: "fa-solid fa-book fa-2x p-1 text-danger"
+  }), _vm._v(" "), _c("i", {
+    staticClass: "fa-solid fa-pencil fa-2x p-1 text-danger"
+  })]), _vm._v(" "), _c("h5", {
+    staticClass: "text-center border-bottom border-secondary pt-2 pb-4 w-100"
+  }, [_vm._v("+50 OSPITI")]), _vm._v(" "), _c("i", {
+    staticClass: "fa-solid fa-martini-glass fa-2x p-1 text-danger pt-3"
+  }), _vm._v(" "), _c("p", {
+    staticClass: "text-center"
+  }, [_vm._v("Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, reprehenderit laborum quibusdam.")])])]), _vm._v(" "), _c("div", {
+    staticClass: "swiper-slide"
   }, [_c("div", {
-    staticClass: "carousel slide",
+    staticClass: "card-top d-flex flex-column align-items-center justify-content-around pt-3"
+  }, [_c("img", {
     attrs: {
-      id: "carouselExampleIndicators2",
-      "data-ride": "carousel"
+      src: __webpack_require__(/*! ../../../public/images/test/IMG-20220922-WA0097.jpg */ "./public/images/test/IMG-20220922-WA0097.jpg"),
+      alt: ""
     }
-  }, [_c("div", {
-    staticClass: "carousel-inner"
-  }, [_c("div", {
-    staticClass: "carousel-item active"
-  }, [_c("div", {
-    staticClass: "row"
-  }, [_c("div", {
-    staticClass: "col-md-4 mb-3"
-  }, [_c("div", {
-    staticClass: "card border-0"
-  }, [_c("div", {
-    staticClass: "card-top d-flex flex-column align-items-center justify-content-around pt-3 mb-3"
-  }, [_c("p", {
+  }), _vm._v(" "), _c("p", {
     staticClass: "bg-danger text-white p-2 d-inline"
   }, [_vm._v("SERVIZIO AGGIUNTIVO")]), _vm._v(" "), _c("h3", {
     staticClass: "text-white text-center"
-  }, [_vm._v("ORGANIC BAR")])]), _vm._v(" "), _c("div", {
+  }, [_vm._v("TROPIC BAR")])]), _vm._v(" "), _c("div", {
     staticClass: "card-body d-flex flex-column align-items-center justify-content-around py-4 px-5"
   }, [_c("p", {
     staticClass: "text-center border-bottom border-secondary py-3"
-  }, [_vm._v("Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam eligendi ipsum facilis a aliquid, odit corporis dicta dolorum repudiandae tempore accusamus maxime id? Iure nemo rem tenetur numquam soluta. Praesentium.")]), _vm._v(" "), _c("div", {
+  }, [_vm._v("Alle proposte degli altri servizi è possibile aggiungere una fresca e tropicale drink list che prevede: Frozen drink, Coladas, Tiki cocktail")]), _vm._v(" "), _c("div", {
     staticClass: "icon d-flex pt-2"
   }, [_c("i", {
     staticClass: "fa-solid fa-book fa-2x p-1 text-danger"
@@ -3074,21 +3269,24 @@ var staticRenderFns = [function () {
     staticClass: "fa-solid fa-martini-glass fa-2x p-1 text-danger pt-3"
   }), _vm._v(" "), _c("p", {
     staticClass: "text-center"
-  }, [_vm._v("Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, reprehenderit laborum quibusdam.")])])])]), _vm._v(" "), _c("div", {
-    staticClass: "col-md-4 mb-3"
+  }, [_vm._v("Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, reprehenderit laborum quibusdam.")])])]), _vm._v(" "), _c("div", {
+    staticClass: "swiper-slide"
   }, [_c("div", {
-    staticClass: "card border-0"
-  }, [_c("div", {
-    staticClass: "card-top d-flex flex-column align-items-center justify-content-around pt-3 mb-3"
-  }, [_c("p", {
+    staticClass: "card-top d-flex flex-column align-items-center justify-content-around pt-3"
+  }, [_c("img", {
+    attrs: {
+      src: __webpack_require__(/*! ../../../public/images/test/IMG-20220922-WA0061.jpg */ "./public/images/test/IMG-20220922-WA0061.jpg"),
+      alt: ""
+    }
+  }), _vm._v(" "), _c("p", {
     staticClass: "bg-danger text-white p-2 d-inline"
   }, [_vm._v("SERVIZIO AGGIUNTIVO")]), _vm._v(" "), _c("h3", {
     staticClass: "text-white text-center"
-  }, [_vm._v("ORGANIC BAR")])]), _vm._v(" "), _c("div", {
+  }, [_vm._v("FLUO DRINK BAR")])]), _vm._v(" "), _c("div", {
     staticClass: "card-body d-flex flex-column align-items-center justify-content-around py-4 px-5"
   }, [_c("p", {
     staticClass: "text-center border-bottom border-secondary py-3"
-  }, [_vm._v("Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam eligendi ipsum facilis a aliquid, odit corporis dicta dolorum repudiandae tempore accusamus maxime id? Iure nemo rem tenetur numquam soluta. Praesentium.")]), _vm._v(" "), _c("div", {
+  }, [_vm._v("Espressamente pensato per illuminare i tuoi drink durante l’after dinner. La formula prevede un servizio di cocktail e shot fluo illuminati dalle luci UV per rendere il tuo dopocena più appariscente!")]), _vm._v(" "), _c("div", {
     staticClass: "icon d-flex pt-2"
   }, [_c("i", {
     staticClass: "fa-solid fa-book fa-2x p-1 text-danger"
@@ -3100,21 +3298,24 @@ var staticRenderFns = [function () {
     staticClass: "fa-solid fa-martini-glass fa-2x p-1 text-danger pt-3"
   }), _vm._v(" "), _c("p", {
     staticClass: "text-center"
-  }, [_vm._v("Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, reprehenderit laborum quibusdam.")])])])]), _vm._v(" "), _c("div", {
-    staticClass: "col-md-4 mb-3"
+  }, [_vm._v("Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, reprehenderit laborum quibusdam.")])])]), _vm._v(" "), _c("div", {
+    staticClass: "swiper-slide"
   }, [_c("div", {
-    staticClass: "card border-0"
-  }, [_c("div", {
-    staticClass: "card-top d-flex flex-column align-items-center justify-content-around pt-3 mb-3"
-  }, [_c("p", {
+    staticClass: "card-top d-flex flex-column align-items-center justify-content-around pt-3"
+  }, [_c("img", {
+    attrs: {
+      src: __webpack_require__(/*! ../../../public/images/test/IMG-20220922-WA0014.jpg */ "./public/images/test/IMG-20220922-WA0014.jpg"),
+      alt: ""
+    }
+  }), _vm._v(" "), _c("p", {
     staticClass: "bg-danger text-white p-2 d-inline"
   }, [_vm._v("SERVIZIO AGGIUNTIVO")]), _vm._v(" "), _c("h3", {
     staticClass: "text-white text-center"
-  }, [_vm._v("ORGANIC BAR")])]), _vm._v(" "), _c("div", {
+  }, [_vm._v("ESPRESSO MARTINI")])]), _vm._v(" "), _c("div", {
     staticClass: "card-body d-flex flex-column align-items-center justify-content-around py-4 px-5"
   }, [_c("p", {
     staticClass: "text-center border-bottom border-secondary py-3"
-  }, [_vm._v("Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam eligendi ipsum facilis a aliquid, odit corporis dicta dolorum repudiandae tempore accusamus maxime id? Iure nemo rem tenetur numquam soluta. Praesentium.")]), _vm._v(" "), _c("div", {
+  }, [_vm._v("Cosa c’è di meglio di un buon espresso martini dopocena?. Questo servizio offre al cliente una scenica presentazione e degustazione di un espresso martini eseguito nelle nostra moka con l’aggiunta di ghiaccio secco. Apparentemente caldo e fumante, ma realmente freddo e buono da degustare.")]), _vm._v(" "), _c("div", {
     staticClass: "icon d-flex pt-2"
   }, [_c("i", {
     staticClass: "fa-solid fa-book fa-2x p-1 text-danger"
@@ -3126,25 +3327,30 @@ var staticRenderFns = [function () {
     staticClass: "fa-solid fa-martini-glass fa-2x p-1 text-danger pt-3"
   }), _vm._v(" "), _c("p", {
     staticClass: "text-center"
-  }, [_vm._v("Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, reprehenderit laborum quibusdam.")])])])])])]), _vm._v(" "), _c("div", {
-    staticClass: "carousel-item"
+  }, [_vm._v("Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, reprehenderit laborum quibusdam.")])])])]);
+}, function () {
+  var _vm = this,
+    _c = _vm._self._c;
+  return _c("div", {
+    staticClass: "swiper-wrapper"
   }, [_c("div", {
-    staticClass: "row"
+    staticClass: "swiper-slide"
   }, [_c("div", {
-    staticClass: "col-md-4 mb-3"
-  }, [_c("div", {
-    staticClass: "card border-0"
-  }, [_c("div", {
-    staticClass: "card-top d-flex flex-column align-items-center justify-content-around pt-3 mb-3"
-  }, [_c("p", {
+    staticClass: "card-top d-flex flex-column align-items-center justify-content-around pt-3"
+  }, [_c("img", {
+    attrs: {
+      src: __webpack_require__(/*! ../../../public/images/test/IMG-20220922-WA0085.jpg */ "./public/images/test/IMG-20220922-WA0085.jpg"),
+      alt: ""
+    }
+  }), _vm._v(" "), _c("p", {
     staticClass: "bg-danger text-white p-2 d-inline"
   }, [_vm._v("SERVIZIO AGGIUNTIVO")]), _vm._v(" "), _c("h3", {
     staticClass: "text-white text-center"
-  }, [_vm._v("ORGANIC BAR")])]), _vm._v(" "), _c("div", {
+  }, [_vm._v("RUM BAR")])]), _vm._v(" "), _c("div", {
     staticClass: "card-body d-flex flex-column align-items-center justify-content-around py-4 px-5"
   }, [_c("p", {
     staticClass: "text-center border-bottom border-secondary py-3"
-  }, [_vm._v("Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam eligendi ipsum facilis a aliquid, odit corporis dicta dolorum repudiandae tempore accusamus maxime id? Iure nemo rem tenetur numquam soluta. Praesentium.")]), _vm._v(" "), _c("div", {
+  }, [_vm._v("Degustazione di Rum della Martinica, Santo Domingo, Portorico, Cuba abbinata a sigari e cioccolato fondente ed accompagnata da frutta secca e spezie, come arancia cannella e caffè.")]), _vm._v(" "), _c("div", {
     staticClass: "icon d-flex pt-2"
   }, [_c("i", {
     staticClass: "fa-solid fa-book fa-2x p-1 text-danger"
@@ -3156,21 +3362,24 @@ var staticRenderFns = [function () {
     staticClass: "fa-solid fa-martini-glass fa-2x p-1 text-danger pt-3"
   }), _vm._v(" "), _c("p", {
     staticClass: "text-center"
-  }, [_vm._v("Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, reprehenderit laborum quibusdam.")])])])]), _vm._v(" "), _c("div", {
-    staticClass: "col-md-4 mb-3"
+  }, [_vm._v("Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, reprehenderit laborum quibusdam.")])])]), _vm._v(" "), _c("div", {
+    staticClass: "swiper-slide"
   }, [_c("div", {
-    staticClass: "card border-0"
-  }, [_c("div", {
-    staticClass: "card-top d-flex flex-column align-items-center justify-content-around pt-3 mb-3"
-  }, [_c("p", {
+    staticClass: "card-top d-flex flex-column align-items-center justify-content-around pt-3"
+  }, [_c("img", {
+    attrs: {
+      src: __webpack_require__(/*! ../../../public/images/test/IMG-20220922-WA0071.jpg */ "./public/images/test/IMG-20220922-WA0071.jpg"),
+      alt: ""
+    }
+  }), _vm._v(" "), _c("p", {
     staticClass: "bg-danger text-white p-2 d-inline"
   }, [_vm._v("SERVIZIO AGGIUNTIVO")]), _vm._v(" "), _c("h3", {
     staticClass: "text-white text-center"
-  }, [_vm._v("ORGANIC BAR")])]), _vm._v(" "), _c("div", {
+  }, [_vm._v("WHISKY BAR")])]), _vm._v(" "), _c("div", {
     staticClass: "card-body d-flex flex-column align-items-center justify-content-around py-4 px-5"
   }, [_c("p", {
     staticClass: "text-center border-bottom border-secondary py-3"
-  }, [_vm._v("Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam eligendi ipsum facilis a aliquid, odit corporis dicta dolorum repudiandae tempore accusamus maxime id? Iure nemo rem tenetur numquam soluta. Praesentium.")]), _vm._v(" "), _c("div", {
+  }, [_vm._v("Degustazione di Whisky della Scozia, Canada, Irlanda, Stati Uniti e Giappone abbinata a sigari e cioccolata fondente ed accompagnata da frutta secca e spezie, come arancia e cannella, zucchero di canna e caffè.")]), _vm._v(" "), _c("div", {
     staticClass: "icon d-flex pt-2"
   }, [_c("i", {
     staticClass: "fa-solid fa-book fa-2x p-1 text-danger"
@@ -3182,21 +3391,24 @@ var staticRenderFns = [function () {
     staticClass: "fa-solid fa-martini-glass fa-2x p-1 text-danger pt-3"
   }), _vm._v(" "), _c("p", {
     staticClass: "text-center"
-  }, [_vm._v("Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, reprehenderit laborum quibusdam.")])])])]), _vm._v(" "), _c("div", {
-    staticClass: "col-md-4 mb-3"
+  }, [_vm._v("Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, reprehenderit laborum quibusdam.")])])]), _vm._v(" "), _c("div", {
+    staticClass: "swiper-slide"
   }, [_c("div", {
-    staticClass: "card border-0"
-  }, [_c("div", {
-    staticClass: "card-top d-flex flex-column align-items-center justify-content-around pt-3 mb-3"
-  }, [_c("p", {
+    staticClass: "card-top d-flex flex-column align-items-center justify-content-around pt-3"
+  }, [_c("img", {
+    attrs: {
+      src: __webpack_require__(/*! ../../../public/images/test/IMG-20220922-WA0097.jpg */ "./public/images/test/IMG-20220922-WA0097.jpg"),
+      alt: ""
+    }
+  }), _vm._v(" "), _c("p", {
     staticClass: "bg-danger text-white p-2 d-inline"
   }, [_vm._v("SERVIZIO AGGIUNTIVO")]), _vm._v(" "), _c("h3", {
     staticClass: "text-white text-center"
-  }, [_vm._v("ORGANIC BAR")])]), _vm._v(" "), _c("div", {
+  }, [_vm._v("TROPIC BAR")])]), _vm._v(" "), _c("div", {
     staticClass: "card-body d-flex flex-column align-items-center justify-content-around py-4 px-5"
   }, [_c("p", {
     staticClass: "text-center border-bottom border-secondary py-3"
-  }, [_vm._v("Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam eligendi ipsum facilis a aliquid, odit corporis dicta dolorum repudiandae tempore accusamus maxime id? Iure nemo rem tenetur numquam soluta. Praesentium.")]), _vm._v(" "), _c("div", {
+  }, [_vm._v("Alle proposte degli altri servizi è possibile aggiungere una fresca e tropicale drink list che prevede: Frozen drink, Coladas, Tiki cocktail")]), _vm._v(" "), _c("div", {
     staticClass: "icon d-flex pt-2"
   }, [_c("i", {
     staticClass: "fa-solid fa-book fa-2x p-1 text-danger"
@@ -3208,25 +3420,24 @@ var staticRenderFns = [function () {
     staticClass: "fa-solid fa-martini-glass fa-2x p-1 text-danger pt-3"
   }), _vm._v(" "), _c("p", {
     staticClass: "text-center"
-  }, [_vm._v("Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, reprehenderit laborum quibusdam.")])])])])])]), _vm._v(" "), _c("div", {
-    staticClass: "carousel-item"
+  }, [_vm._v("Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, reprehenderit laborum quibusdam.")])])]), _vm._v(" "), _c("div", {
+    staticClass: "swiper-slide"
   }, [_c("div", {
-    staticClass: "row"
-  }, [_c("div", {
-    staticClass: "col-md-4 mb-3"
-  }, [_c("div", {
-    staticClass: "card border-0"
-  }, [_c("div", {
-    staticClass: "card-top d-flex flex-column align-items-center justify-content-around pt-3 mb-3"
-  }, [_c("p", {
+    staticClass: "card-top d-flex flex-column align-items-center justify-content-around pt-3"
+  }, [_c("img", {
+    attrs: {
+      src: __webpack_require__(/*! ../../../public/images/test/IMG-20220922-WA0061.jpg */ "./public/images/test/IMG-20220922-WA0061.jpg"),
+      alt: ""
+    }
+  }), _vm._v(" "), _c("p", {
     staticClass: "bg-danger text-white p-2 d-inline"
   }, [_vm._v("SERVIZIO AGGIUNTIVO")]), _vm._v(" "), _c("h3", {
     staticClass: "text-white text-center"
-  }, [_vm._v("ORGANIC BAR")])]), _vm._v(" "), _c("div", {
+  }, [_vm._v("FLUO DRINK BAR")])]), _vm._v(" "), _c("div", {
     staticClass: "card-body d-flex flex-column align-items-center justify-content-around py-4 px-5"
   }, [_c("p", {
     staticClass: "text-center border-bottom border-secondary py-3"
-  }, [_vm._v("Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam eligendi ipsum facilis a aliquid, odit corporis dicta dolorum repudiandae tempore accusamus maxime id? Iure nemo rem tenetur numquam soluta. Praesentium.")]), _vm._v(" "), _c("div", {
+  }, [_vm._v("Espressamente pensato per illuminare i tuoi drink durante l’after dinner. La formula prevede un servizio di cocktail e shot fluo illuminati dalle luci UV per rendere il tuo dopocena più appariscente!")]), _vm._v(" "), _c("div", {
     staticClass: "icon d-flex pt-2"
   }, [_c("i", {
     staticClass: "fa-solid fa-book fa-2x p-1 text-danger"
@@ -3238,21 +3449,24 @@ var staticRenderFns = [function () {
     staticClass: "fa-solid fa-martini-glass fa-2x p-1 text-danger pt-3"
   }), _vm._v(" "), _c("p", {
     staticClass: "text-center"
-  }, [_vm._v("Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, reprehenderit laborum quibusdam.")])])])]), _vm._v(" "), _c("div", {
-    staticClass: "col-md-4 mb-3"
+  }, [_vm._v("Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, reprehenderit laborum quibusdam.")])])]), _vm._v(" "), _c("div", {
+    staticClass: "swiper-slide"
   }, [_c("div", {
-    staticClass: "card border-0"
-  }, [_c("div", {
-    staticClass: "card-top d-flex flex-column align-items-center justify-content-around pt-3 mb-3"
-  }, [_c("p", {
+    staticClass: "card-top d-flex flex-column align-items-center justify-content-around pt-3"
+  }, [_c("img", {
+    attrs: {
+      src: __webpack_require__(/*! ../../../public/images/test/IMG-20220922-WA0014.jpg */ "./public/images/test/IMG-20220922-WA0014.jpg"),
+      alt: ""
+    }
+  }), _vm._v(" "), _c("p", {
     staticClass: "bg-danger text-white p-2 d-inline"
   }, [_vm._v("SERVIZIO AGGIUNTIVO")]), _vm._v(" "), _c("h3", {
     staticClass: "text-white text-center"
-  }, [_vm._v("ORGANIC BAR")])]), _vm._v(" "), _c("div", {
+  }, [_vm._v("ESPRESSO MARTINI")])]), _vm._v(" "), _c("div", {
     staticClass: "card-body d-flex flex-column align-items-center justify-content-around py-4 px-5"
   }, [_c("p", {
     staticClass: "text-center border-bottom border-secondary py-3"
-  }, [_vm._v("Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam eligendi ipsum facilis a aliquid, odit corporis dicta dolorum repudiandae tempore accusamus maxime id? Iure nemo rem tenetur numquam soluta. Praesentium.")]), _vm._v(" "), _c("div", {
+  }, [_vm._v("Cosa c’è di meglio di un buon espresso martini dopocena?. Questo servizio offre al cliente una scenica presentazione e degustazione di un espresso martini eseguito nelle nostra moka con l’aggiunta di ghiaccio secco. Apparentemente caldo e fumante, ma realmente freddo e buono da degustare.")]), _vm._v(" "), _c("div", {
     staticClass: "icon d-flex pt-2"
   }, [_c("i", {
     staticClass: "fa-solid fa-book fa-2x p-1 text-danger"
@@ -3264,21 +3478,30 @@ var staticRenderFns = [function () {
     staticClass: "fa-solid fa-martini-glass fa-2x p-1 text-danger pt-3"
   }), _vm._v(" "), _c("p", {
     staticClass: "text-center"
-  }, [_vm._v("Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, reprehenderit laborum quibusdam.")])])])]), _vm._v(" "), _c("div", {
-    staticClass: "col-md-4 mb-3"
+  }, [_vm._v("Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, reprehenderit laborum quibusdam.")])])])]);
+}, function () {
+  var _vm = this,
+    _c = _vm._self._c;
+  return _c("div", {
+    staticClass: "swiper-wrapper"
   }, [_c("div", {
-    staticClass: "card border-0"
+    staticClass: "swiper-slide"
   }, [_c("div", {
-    staticClass: "card-top d-flex flex-column align-items-center justify-content-around pt-3 mb-3"
-  }, [_c("p", {
+    staticClass: "card-top d-flex flex-column align-items-center justify-content-around pt-3"
+  }, [_c("img", {
+    attrs: {
+      src: __webpack_require__(/*! ../../../public/images/test/IMG-20220922-WA0085.jpg */ "./public/images/test/IMG-20220922-WA0085.jpg"),
+      alt: ""
+    }
+  }), _vm._v(" "), _c("p", {
     staticClass: "bg-danger text-white p-2 d-inline"
   }, [_vm._v("SERVIZIO AGGIUNTIVO")]), _vm._v(" "), _c("h3", {
     staticClass: "text-white text-center"
-  }, [_vm._v("ORGANIC BAR")])]), _vm._v(" "), _c("div", {
+  }, [_vm._v("RUM BAR")])]), _vm._v(" "), _c("div", {
     staticClass: "card-body d-flex flex-column align-items-center justify-content-around py-4 px-5"
   }, [_c("p", {
     staticClass: "text-center border-bottom border-secondary py-3"
-  }, [_vm._v("Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam eligendi ipsum facilis a aliquid, odit corporis dicta dolorum repudiandae tempore accusamus maxime id? Iure nemo rem tenetur numquam soluta. Praesentium.")]), _vm._v(" "), _c("div", {
+  }, [_vm._v("Degustazione di Rum della Martinica, Santo Domingo, Portorico, Cuba abbinata a sigari e cioccolato fondente ed accompagnata da frutta secca e spezie, come arancia cannella e caffè.")]), _vm._v(" "), _c("div", {
     staticClass: "icon d-flex pt-2"
   }, [_c("i", {
     staticClass: "fa-solid fa-book fa-2x p-1 text-danger"
@@ -3290,7 +3513,123 @@ var staticRenderFns = [function () {
     staticClass: "fa-solid fa-martini-glass fa-2x p-1 text-danger pt-3"
   }), _vm._v(" "), _c("p", {
     staticClass: "text-center"
-  }, [_vm._v("Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, reprehenderit laborum quibusdam.")])])])])])])])])])]);
+  }, [_vm._v("Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, reprehenderit laborum quibusdam.")])])]), _vm._v(" "), _c("div", {
+    staticClass: "swiper-slide"
+  }, [_c("div", {
+    staticClass: "card-top d-flex flex-column align-items-center justify-content-around pt-3"
+  }, [_c("img", {
+    attrs: {
+      src: __webpack_require__(/*! ../../../public/images/test/IMG-20220922-WA0071.jpg */ "./public/images/test/IMG-20220922-WA0071.jpg"),
+      alt: ""
+    }
+  }), _vm._v(" "), _c("p", {
+    staticClass: "bg-danger text-white p-2 d-inline"
+  }, [_vm._v("SERVIZIO AGGIUNTIVO")]), _vm._v(" "), _c("h3", {
+    staticClass: "text-white text-center"
+  }, [_vm._v("WHISKY BAR")])]), _vm._v(" "), _c("div", {
+    staticClass: "card-body d-flex flex-column align-items-center justify-content-around py-4 px-5"
+  }, [_c("p", {
+    staticClass: "text-center border-bottom border-secondary py-3"
+  }, [_vm._v("Degustazione di Whisky della Scozia, Canada, Irlanda, Stati Uniti e Giappone abbinata a sigari e cioccolata fondente ed accompagnata da frutta secca e spezie, come arancia e cannella, zucchero di canna e caffè.")]), _vm._v(" "), _c("div", {
+    staticClass: "icon d-flex pt-2"
+  }, [_c("i", {
+    staticClass: "fa-solid fa-book fa-2x p-1 text-danger"
+  }), _vm._v(" "), _c("i", {
+    staticClass: "fa-solid fa-pencil fa-2x p-1 text-danger"
+  })]), _vm._v(" "), _c("h5", {
+    staticClass: "text-center border-bottom border-secondary pt-2 pb-4 w-100"
+  }, [_vm._v("+50 OSPITI")]), _vm._v(" "), _c("i", {
+    staticClass: "fa-solid fa-martini-glass fa-2x p-1 text-danger pt-3"
+  }), _vm._v(" "), _c("p", {
+    staticClass: "text-center"
+  }, [_vm._v("Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, reprehenderit laborum quibusdam.")])])]), _vm._v(" "), _c("div", {
+    staticClass: "swiper-slide"
+  }, [_c("div", {
+    staticClass: "card-top d-flex flex-column align-items-center justify-content-around pt-3"
+  }, [_c("img", {
+    attrs: {
+      src: __webpack_require__(/*! ../../../public/images/test/IMG-20220922-WA0097.jpg */ "./public/images/test/IMG-20220922-WA0097.jpg"),
+      alt: ""
+    }
+  }), _vm._v(" "), _c("p", {
+    staticClass: "bg-danger text-white p-2 d-inline"
+  }, [_vm._v("SERVIZIO AGGIUNTIVO")]), _vm._v(" "), _c("h3", {
+    staticClass: "text-white text-center"
+  }, [_vm._v("TROPIC BAR")])]), _vm._v(" "), _c("div", {
+    staticClass: "card-body d-flex flex-column align-items-center justify-content-around py-4 px-5"
+  }, [_c("p", {
+    staticClass: "text-center border-bottom border-secondary py-3"
+  }, [_vm._v("Alle proposte degli altri servizi è possibile aggiungere una fresca e tropicale drink list che prevede: Frozen drink, Coladas, Tiki cocktail")]), _vm._v(" "), _c("div", {
+    staticClass: "icon d-flex pt-2"
+  }, [_c("i", {
+    staticClass: "fa-solid fa-book fa-2x p-1 text-danger"
+  }), _vm._v(" "), _c("i", {
+    staticClass: "fa-solid fa-pencil fa-2x p-1 text-danger"
+  })]), _vm._v(" "), _c("h5", {
+    staticClass: "text-center border-bottom border-secondary pt-2 pb-4 w-100"
+  }, [_vm._v("+50 OSPITI")]), _vm._v(" "), _c("i", {
+    staticClass: "fa-solid fa-martini-glass fa-2x p-1 text-danger pt-3"
+  }), _vm._v(" "), _c("p", {
+    staticClass: "text-center"
+  }, [_vm._v("Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, reprehenderit laborum quibusdam.")])])]), _vm._v(" "), _c("div", {
+    staticClass: "swiper-slide"
+  }, [_c("div", {
+    staticClass: "card-top d-flex flex-column align-items-center justify-content-around pt-3"
+  }, [_c("img", {
+    attrs: {
+      src: __webpack_require__(/*! ../../../public/images/test/IMG-20220922-WA0061.jpg */ "./public/images/test/IMG-20220922-WA0061.jpg"),
+      alt: ""
+    }
+  }), _vm._v(" "), _c("p", {
+    staticClass: "bg-danger text-white p-2 d-inline"
+  }, [_vm._v("SERVIZIO AGGIUNTIVO")]), _vm._v(" "), _c("h3", {
+    staticClass: "text-white text-center"
+  }, [_vm._v("FLUO DRINK BAR")])]), _vm._v(" "), _c("div", {
+    staticClass: "card-body d-flex flex-column align-items-center justify-content-around py-4 px-5"
+  }, [_c("p", {
+    staticClass: "text-center border-bottom border-secondary py-3"
+  }, [_vm._v("Espressamente pensato per illuminare i tuoi drink durante l’after dinner. La formula prevede un servizio di cocktail e shot fluo illuminati dalle luci UV per rendere il tuo dopocena più appariscente!")]), _vm._v(" "), _c("div", {
+    staticClass: "icon d-flex pt-2"
+  }, [_c("i", {
+    staticClass: "fa-solid fa-book fa-2x p-1 text-danger"
+  }), _vm._v(" "), _c("i", {
+    staticClass: "fa-solid fa-pencil fa-2x p-1 text-danger"
+  })]), _vm._v(" "), _c("h5", {
+    staticClass: "text-center border-bottom border-secondary pt-2 pb-4 w-100"
+  }, [_vm._v("+50 OSPITI")]), _vm._v(" "), _c("i", {
+    staticClass: "fa-solid fa-martini-glass fa-2x p-1 text-danger pt-3"
+  }), _vm._v(" "), _c("p", {
+    staticClass: "text-center"
+  }, [_vm._v("Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, reprehenderit laborum quibusdam.")])])]), _vm._v(" "), _c("div", {
+    staticClass: "swiper-slide"
+  }, [_c("div", {
+    staticClass: "card-top d-flex flex-column align-items-center justify-content-around pt-3"
+  }, [_c("img", {
+    attrs: {
+      src: __webpack_require__(/*! ../../../public/images/test/IMG-20220922-WA0014.jpg */ "./public/images/test/IMG-20220922-WA0014.jpg"),
+      alt: ""
+    }
+  }), _vm._v(" "), _c("p", {
+    staticClass: "bg-danger text-white p-2 d-inline"
+  }, [_vm._v("SERVIZIO AGGIUNTIVO")]), _vm._v(" "), _c("h3", {
+    staticClass: "text-white text-center"
+  }, [_vm._v("ESPRESSO MARTINI")])]), _vm._v(" "), _c("div", {
+    staticClass: "card-body d-flex flex-column align-items-center justify-content-around py-4 px-5"
+  }, [_c("p", {
+    staticClass: "text-center border-bottom border-secondary py-3"
+  }, [_vm._v("Cosa c’è di meglio di un buon espresso martini dopocena?. Questo servizio offre al cliente una scenica presentazione e degustazione di un espresso martini eseguito nelle nostra moka con l’aggiunta di ghiaccio secco. Apparentemente caldo e fumante, ma realmente freddo e buono da degustare.")]), _vm._v(" "), _c("div", {
+    staticClass: "icon d-flex pt-2"
+  }, [_c("i", {
+    staticClass: "fa-solid fa-book fa-2x p-1 text-danger"
+  }), _vm._v(" "), _c("i", {
+    staticClass: "fa-solid fa-pencil fa-2x p-1 text-danger"
+  })]), _vm._v(" "), _c("h5", {
+    staticClass: "text-center border-bottom border-secondary pt-2 pb-4 w-100"
+  }, [_vm._v("+50 OSPITI")]), _vm._v(" "), _c("i", {
+    staticClass: "fa-solid fa-martini-glass fa-2x p-1 text-danger pt-3"
+  }), _vm._v(" "), _c("p", {
+    staticClass: "text-center"
+  }, [_vm._v("Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, reprehenderit laborum quibusdam.")])])])]);
 }];
 render._withStripped = true;
 
@@ -3341,36 +3680,29 @@ var render = function render() {
     attrs: {
       id: "jumbotron"
     }
-  }, [_c("JumboSlider")], 1), _vm._v(" "), _c("div", {
-    staticClass: "container pt-5 text-center",
+  }, [_c("JumboSlider"), _vm._v(" "), _c("div", {
+    staticClass: "mb-5",
     attrs: {
       id: "about"
     }
-  }, [_vm._m(0), _vm._v(" "), _c("h3", {
-    staticClass: "d-md-none"
-  }, [_vm._v("Non siamo solo Bartenders: siamo creatori di esperienze.")]), _vm._v(" "), _c("p", {
-    staticClass: "mt-4"
-  }, [_vm._v("Soul Events Bar Catering")]), _vm._v(" "), _c("router-link", {
-    staticClass: "btn btn-danger my-5",
-    attrs: {
-      to: {
-        name: "about"
-      }
-    }
-  }, [_vm._v("CHI SIAMO")]), _vm._v(" "), _c("AboutSlider"), _vm._v(" "), _vm._m(1)], 1), _vm._v(" "), _vm._m(2), _vm._v(" "), _c("div", {
+  })], 1), _vm._v(" "), _vm._m(0), _vm._v(" "), _vm._m(1), _vm._v(" "), _c("div", {
     attrs: {
       id: "services"
     }
   }, [_c("div", {
     staticClass: "container py-5"
-  }, [_c("ThreeSlider")], 1)]), _vm._v(" "), _c("div", {
+  }, [_c("TestSlider")], 1)]), _vm._v(" "), _c("div", {
+    attrs: {
+      id: "test"
+    }
+  }, [_c("ServiceSlider")], 1), _vm._v(" "), _c("div", {
     attrs: {
       id: "counters"
     }
   }, [_c("div", {
     staticClass: "container py-5 d-flex flex-column align-items-center"
   }, [_c("h5", {
-    staticClass: "bg-danger p-2 text-white text-center d-inline"
+    staticClass: "bg-soft p-2 text-white text-center d-inline"
   }, [_vm._v("I NOSTRI ALLESTIMENTI")]), _vm._v(" "), _c("h2", {
     staticClass: "text-center text-white my-3 d-none d-sm-block"
   }, [_vm._v("Adattabili a qualsiasi tipologia di Evento")]), _vm._v(" "), _c("h3", {
@@ -3378,7 +3710,7 @@ var render = function render() {
   }, [_vm._v("Adattabili a qualsiasi tipologia di Evento")]), _vm._v(" "), _c("p", {
     staticClass: "text-center text-white my-4"
   }, [_vm._v("FBS Bar Catering disponine di diverse tipologie di allestimento per riuscire ad accontentare tutti i gusti. Le nostre idee di allestimento originali potranno dare il tocco in più alla tua festa sia privata che aziendale.")]), _vm._v(" "), _c("CounterSlider"), _vm._v(" "), _c("a", {
-    staticClass: "btn btn-danger my-5 text-center",
+    staticClass: "btn btn-soft my-5 text-center",
     attrs: {
       href: ""
     }
@@ -3386,25 +3718,51 @@ var render = function render() {
     attrs: {
       id: "form"
     }
-  }, [_c("AppForm")], 1), _vm._v(" "), _c("footer", [_c("AppFooter"), _vm._v(" "), _vm._m(3)], 1)]);
+  }, [_c("AppForm")], 1), _vm._v(" "), _c("footer", [_c("AppFooter"), _vm._v(" "), _vm._m(2)], 1)]);
 };
 var staticRenderFns = [function () {
   var _vm = this,
     _c = _vm._self._c;
-  return _c("h2", {
-    staticClass: "d-none d-md-block"
-  }, [_vm._v("Non siamo solo Bartenders:"), _c("br"), _vm._v(" siamo creatori di esperienze.")]);
-}, function () {
-  var _vm = this,
-    _c = _vm._self._c;
   return _c("div", {
+    staticClass: "container pt-5 text-center"
+  }, [_c("h2", [_vm._v("Chi siamo")]), _vm._v(" "), _c("div", {
+    staticClass: "bottom-line mb-3 mx-auto"
+  }), _vm._v(" "), _c("p", {
+    staticClass: "mt-4"
+  }, [_vm._v("La Tenereza eventi nasce da l’esigenza, sempre più crescente, di rendere ogni evento unico, con lo scopo di soddisfare ogni esigenza del cliente.")]), _vm._v(" "), _c("p", [_vm._v("Tenereza eventi è un connubio di talento, professionalità e dinamismo, interpretato da tutti i nostri “attori” nelle proprie “parti”. Personale altamente qualificato e con grande esperienza, capace di adattarsi ai diversi contesti e stupire nello svolgimento del proprio lavoro, vissuto come uno “show” dove tutto deve essere semplicemente perfetto.")]), _vm._v(" "), _c("div", {
+    staticClass: "row"
+  }, [_c("div", {
+    staticClass: "col-12 col-md-4 p-3"
+  }, [_c("img", {
+    staticClass: "img-fluid img-circle",
+    attrs: {
+      src: __webpack_require__(/*! ../../../../public/images/test/PHOTO-2023-02-08-15-54-06.jpg */ "./public/images/test/PHOTO-2023-02-08-15-54-06.jpg"),
+      alt: ""
+    }
+  })]), _vm._v(" "), _c("div", {
+    staticClass: "col-12 col-md-4 p-3"
+  }, [_c("img", {
+    staticClass: "img-fluid img-circle",
+    attrs: {
+      src: __webpack_require__(/*! ../../../../public/images/test/PHOTO-2023-02-08-15-54-06.jpg */ "./public/images/test/PHOTO-2023-02-08-15-54-06.jpg"),
+      alt: ""
+    }
+  })]), _vm._v(" "), _c("div", {
+    staticClass: "col-12 col-md-4 p-3"
+  }, [_c("img", {
+    staticClass: "img-fluid img-circle",
+    attrs: {
+      src: __webpack_require__(/*! ../../../../public/images/test/PHOTO-2023-02-08-15-54-06.jpg */ "./public/images/test/PHOTO-2023-02-08-15-54-06.jpg"),
+      alt: ""
+    }
+  })])]), _vm._v(" "), _c("div", {
     staticClass: "row py-5"
   }, [_c("div", {
     staticClass: "col-12 col-md-4 d-flex align-items-center justify-content-center"
   }, [_c("div", {
     staticClass: "card border-0"
   }, [_c("h3", [_vm._v("Scopri la qualità"), _c("br"), _vm._v(" del servizio")]), _vm._v(" "), _c("a", {
-    staticClass: "text-danger",
+    staticClass: "text-soft",
     attrs: {
       href: ""
     }
@@ -3417,121 +3775,104 @@ var staticRenderFns = [function () {
       href: ""
     }
   }, [_c("i", {
-    staticClass: "fa-brands fa-facebook-f text-danger p-3 mr-2 border border-danger"
+    staticClass: "fa-brands fa-facebook-f text-soft p-3 mr-2 border border-soft"
   })]), _vm._v(" "), _c("a", {
     attrs: {
       href: ""
     }
   }, [_c("i", {
-    staticClass: "fa-brands fa-instagram text-danger p-3 ml-2 border border-danger"
+    staticClass: "fa-brands fa-instagram text-soft p-3 ml-2 border border-soft"
   })])])]), _vm._v(" "), _c("div", {
     staticClass: "col-12 col-md-4 d-flex align-items-center justify-content-center"
   }, [_c("div", {
     staticClass: "card border-0"
   }, [_c("h3", [_vm._v("Vuoi venire a"), _c("br"), _vm._v(" trovarci?")]), _vm._v(" "), _c("a", {
-    staticClass: "text-danger",
+    staticClass: "text-soft",
     attrs: {
       href: ""
     }
-  }, [_vm._v("VIA PAOLO ORSI, 47 00178 ROMA")])])])]);
+  }, [_vm._v("VIA PAOLO ORSI, 47 00178 ROMA")])])])]), _vm._v(" "), _c("div", {
+    staticClass: "mb-5",
+    attrs: {
+      id: "event-1"
+    }
+  })]);
 }, function () {
   var _vm = this,
     _c = _vm._self._c;
   return _c("div", {
-    staticClass: "py-5 d-flex flex-column align-items-center",
-    attrs: {
-      id: "event"
-    }
+    staticClass: "py-5 d-flex flex-column align-items-center"
+  }, [_c("h2", [_vm._v("BAR SERVICE")]), _vm._v(" "), _c("div", {
+    staticClass: "bottom-line mb-3 mx-auto"
+  }), _vm._v(" "), _c("div", {
+    staticClass: "container py-4 d-flex flex-wrap"
   }, [_c("div", {
-    staticClass: "container py-4 d-flex flex-column align-items-center"
-  }, [_c("h5", {
-    staticClass: "bg-danger p-2 text-white text-center d-inline"
-  }, [_vm._v("IL TUO EVENTO")]), _vm._v(" "), _c("h2", {
-    staticClass: "text-center text-white my-3 d-none d-sm-block"
-  }, [_vm._v("Scopri i servizi di FBS Bar Catering")]), _vm._v(" "), _c("h3", {
-    staticClass: "text-center text-white my-3 d-sm-none"
-  }, [_vm._v("Scopri i servizi di FBS Bar Catering")]), _vm._v(" "), _c("p", {
-    staticClass: "text-center text-white my-5"
-  }, [_vm._v("Ogni evento ha la sua ragione e le sue esigenze, ma con gli esclusivi servizi di Fbs Barcatering ogni evento sarà esattamente come immaginato e voluto. Scegliere un Open bar Fbs Barcatering significa scegliere un servizio di altissima qualità ed efficienza, svolto da soli Barman professionisti e soltanto con i migliori prodotti.")]), _vm._v(" "), _c("div", {
-    staticClass: "row pt-4 px-4"
+    staticClass: "row"
   }, [_c("div", {
-    staticClass: "col-12 col-md-4 p-0"
+    staticClass: "col-12 col-lg-6 my-3"
   }, [_c("img", {
     staticClass: "img-fluid",
     attrs: {
-      src: __webpack_require__(/*! ../../../../public/images/test/barman-1.jpg */ "./public/images/test/barman-1.jpg"),
-      alt: "..."
+      src: __webpack_require__(/*! ../../../../public/images/test/IMG-20220922-WA0015.jpg */ "./public/images/test/IMG-20220922-WA0015.jpg"),
+      alt: ""
     }
   })]), _vm._v(" "), _c("div", {
-    staticClass: "col-12 col-md-4 py-5 p-lg-5 bg-white d-flex flex-column align-items-center justify-content-around"
-  }, [_c("a", {
-    staticClass: "text-danger mb-3 mb-md-0",
-    attrs: {
-      href: ""
-    }
-  }, [_vm._v("SERVIZIO BAR")]), _vm._v(" "), _c("h4", {
+    staticClass: "col-12 col-lg-6 my-3 d-flex flex-column align-items-center justify-content-around"
+  }, [_c("div", {
+    staticClass: "d-flex flex-column align-items-center"
+  }, [_c("span", {
+    staticClass: "italic"
+  }, [_vm._v("Catering")]), _vm._v(" "), _c("h3", [_vm._v("EASY BAR")]), _vm._v(" "), _c("div", {
+    staticClass: "bottom-line mb-3"
+  })]), _vm._v(" "), _c("p", {
     staticClass: "text-center"
-  }, [_vm._v("Easy Bar Catering")]), _vm._v(" "), _c("p", {
-    staticClass: "text-center d-md-none d-lg-block"
-  }, [_vm._v("Una formula studiata per piccoli eventi, con grandi risultati.")]), _vm._v(" "), _c("a", {
-    staticClass: "btn btn-danger mt-3 mt-md-0",
-    attrs: {
-      href: ""
-    }
-  }, [_vm._v("VISUALIZZA DETTAGLI")])]), _vm._v(" "), _c("div", {
-    staticClass: "col-12 col-md-4 p-0"
+  }, [_vm._v("Easy bar, e la formula perfetta per i tuoi eventi di fine serata o un aperitivo prima della cena, il servizio verrà mpostato\n                    in formua open bar a tempo limitato. Prevede al suo interno:")]), _vm._v(" "), _c("ul", {
+    staticClass: "text-center list-unstyled"
+  }, [_c("li", [_vm._v("- 3 ore di open bar (Alcolici, Analcolici, Soft drink, ghiaccio)")]), _vm._v(" "), _c("li", [_vm._v("- Banco bar a vostra scelta")]), _vm._v(" "), _c("li", [_vm._v("- Personale")])])])]), _vm._v(" "), _c("div", {
+    staticClass: "row flex-wrap-reverse"
+  }, [_c("div", {
+    staticClass: "col-12 col-lg-6 my-3 d-flex flex-column align-items-center justify-content-around"
+  }, [_c("div", {
+    staticClass: "d-flex flex-column align-items-center"
+  }, [_c("span", {
+    staticClass: "italic"
+  }, [_vm._v("Catering")]), _vm._v(" "), _c("h3", [_vm._v("PREMIUM BAR")]), _vm._v(" "), _c("div", {
+    staticClass: "bottom-line mb-3"
+  })]), _vm._v(" "), _c("p", {
+    staticClass: "text-center"
+  }, [_vm._v("Drink illimitati per intrattenere gli ospiti durante tutto il tempo del tuo evento, che sia un matrimonio, compleanno,\n                    evento aziendale o festa privata. "), _c("br"), _c("br"), _vm._v("\n                    La nostra formula Premium bar è il servizio adatto ad ogni occasione. "), _c("br"), _vm._v(" Drink illimitati per intrattenere gli ospiti durante\n                    un evento, che sia un matrimonio, un compleanno cosi come un evento aziendale o festa privata, il tutto ovviamente\n                    curato nei minimi dettagli. Prevede al suo interno:")]), _vm._v(" "), _c("ul", {
+    staticClass: "text-center list-unstyled"
+  }, [_c("li", [_vm._v("- Drink illimitati per tutta la durata del’evento (Alcolici,Analcolici,Soft drink,Birra,Ghiaccio)")]), _vm._v(" "), _c("li", [_vm._v("- Banco bar a vostra scelta")]), _vm._v(" "), _c("li", [_vm._v("- Personale")])])]), _vm._v(" "), _c("div", {
+    staticClass: "col-12 col-lg-6 my-3"
   }, [_c("img", {
     staticClass: "img-fluid",
     attrs: {
-      src: __webpack_require__(/*! ../../../../public/images/test/barman-1.jpg */ "./public/images/test/barman-1.jpg"),
-      alt: "..."
+      src: __webpack_require__(/*! ../../../../public/images/test/IMG-20220922-WA0029.jpg */ "./public/images/test/IMG-20220922-WA0029.jpg"),
+      alt: ""
     }
-  })]), _vm._v(" "), _c("div", {
-    staticClass: "col-12 col-md-4 py-5 p-lg-5 bg-white d-flex flex-column align-items-center justify-content-around"
-  }, [_c("a", {
-    staticClass: "text-danger mb-3 mb-md-0",
-    attrs: {
-      href: ""
-    }
-  }, [_vm._v("SERVIZIO BAR")]), _vm._v(" "), _c("h4", {
-    staticClass: "text-center"
-  }, [_vm._v("Easy Bar Catering")]), _vm._v(" "), _c("p", {
-    staticClass: "text-center d-md-none d-lg-block"
-  }, [_vm._v("Una formula studiata per piccoli eventi, con grandi risultati.")]), _vm._v(" "), _c("a", {
-    staticClass: "btn btn-danger mt-3 mt-md-0",
-    attrs: {
-      href: ""
-    }
-  }, [_vm._v("VISUALIZZA DETTAGLI")])]), _vm._v(" "), _c("div", {
-    staticClass: "col-12 col-md-4 p-0"
+  })])]), _vm._v(" "), _c("div", {
+    staticClass: "row"
+  }, [_c("div", {
+    staticClass: "col-12 col-lg-6 my-3"
   }, [_c("img", {
     staticClass: "img-fluid",
     attrs: {
-      src: __webpack_require__(/*! ../../../../public/images/test/barman-1.jpg */ "./public/images/test/barman-1.jpg"),
-      alt: "..."
+      src: __webpack_require__(/*! ../../../../public/images/test/IMG-20220922-WA0023.jpg */ "./public/images/test/IMG-20220922-WA0023.jpg"),
+      alt: ""
     }
   })]), _vm._v(" "), _c("div", {
-    staticClass: "col-12 col-md-4 py-5 p-lg-5 bg-white d-flex flex-column align-items-center justify-content-around"
-  }, [_c("a", {
-    staticClass: "text-danger mb-3 mb-md-0",
-    attrs: {
-      href: ""
-    }
-  }, [_vm._v("SERVIZIO BAR")]), _vm._v(" "), _c("h4", {
+    staticClass: "col-12 col-lg-6 my-3 d-flex flex-column align-items-center justify-content-around"
+  }, [_c("div", {
+    staticClass: "d-flex flex-column align-items-center"
+  }, [_c("span", {
+    staticClass: "italic"
+  }, [_vm._v("Catering")]), _vm._v(" "), _c("h3", [_vm._v("SIGNATURE BAR")]), _vm._v(" "), _c("div", {
+    staticClass: "bottom-line mb-3"
+  })]), _vm._v(" "), _c("p", {
     staticClass: "text-center"
-  }, [_vm._v("Easy Bar Catering")]), _vm._v(" "), _c("p", {
-    staticClass: "text-center d-md-none d-lg-block"
-  }, [_vm._v("Una formula studiata per piccoli eventi, con grandi risultati.")]), _vm._v(" "), _c("a", {
-    staticClass: "btn btn-danger mt-3 mt-md-0",
-    attrs: {
-      href: ""
-    }
-  }, [_vm._v("VISUALIZZA DETTAGLI")])])])]), _vm._v(" "), _c("a", {
-    staticClass: "btn btn-danger my-5 text-center",
-    attrs: {
-      href: ""
-    }
-  }, [_vm._v("SCOPRI DI PIU'")])]);
+  }, [_vm._v("Un tocco personale al vostro evento. "), _c("br"), _c("br"), _vm._v("\n                    Questa formula è stata pensata dai nostri bartender per offrire un tocco personale al vostro evento. Sarà possibile\n                    infatti creare insieme una drink list apposita che possa più soddisfare le vostre esigenze e gusti personali, anche in\n                    base alla cena stabilita. Prevede al suo interno:")]), _vm._v(" "), _c("ul", {
+    staticClass: "text-center list-unstyled"
+  }, [_c("li", [_vm._v("- 5 cocktail Signature a vostra scelta per tutta la durata dell’evento (Drink list, Analcolici, Soft drink,Birra,ghiaccio)")]), _vm._v(" "), _c("li", [_vm._v("- Banco bar a vostra scelta")]), _vm._v(" "), _c("li", [_vm._v("- Personale")])])])])])]);
 }, function () {
   var _vm = this,
     _c = _vm._self._c;
@@ -3539,9 +3880,9 @@ var staticRenderFns = [function () {
     staticClass: "footer-bottom p-4 d-flex flex-column align-items-center"
   }, [_c("p", {
     staticClass: "m-0"
-  }, [_vm._v("FBS Bar Catering © 2022. Tutti i diritti riservati.")]), _vm._v(" "), _c("p", {
+  }, [_vm._v("Tenereza Eventi © 2023. Tutti i diritti riservati.")]), _vm._v(" "), _c("p", {
     staticClass: "m-0"
-  }, [_vm._v("Crafted with love by: "), _c("strong", [_vm._v("Francesco Melani")])])]);
+  }, [_vm._v("Created with love by: "), _c("strong", [_vm._v("Francesco Melani")])])]);
 }];
 render._withStripped = true;
 
@@ -7957,7 +8298,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, ".carousel-inner[data-v-e5f0629a] {\n  height: 60vh;\n  position: relative;\n}\n.carousel-inner img[data-v-e5f0629a] {\n  height: 60vh;\n  -o-object-fit: cover;\n     object-fit: cover;\n}\n.carousel-inner .carousel-caption[data-v-e5f0629a] {\n  position: absolute;\n  top: 50%;\n  left: 50%;\n  transform: translate(-50%, -40%);\n}\n.carousel-inner .carousel-caption h2[data-v-e5f0629a] {\n  font-size: 46px;\n}\n.carousel-inner .carousel-caption .btn-danger[data-v-e5f0629a] {\n  border-radius: 0;\n  padding: 12px 40px;\n  font-size: 18px;\n}\nbutton[data-v-e5f0629a] {\n  opacity: 1;\n  border: none;\n  background-color: transparent;\n}\nbutton.btn-prev[data-v-e5f0629a] {\n  position: absolute;\n  right: 102%;\n  top: 50%;\n}\nbutton.btn-next[data-v-e5f0629a] {\n  position: absolute;\n  left: 102%;\n  top: 50%;\n}\nbutton i[data-v-e5f0629a] {\n  color: black;\n  font-size: 28px;\n}\n.carousel-indicators[data-v-e5f0629a] {\n  z-index: 3;\n}", ""]);
+exports.push([module.i, ".carousel-inner[data-v-e5f0629a] {\n  height: 60vh;\n  position: relative;\n}\n.carousel-inner img[data-v-e5f0629a] {\n  height: 60vh;\n  -o-object-fit: cover;\n     object-fit: cover;\n}\n.carousel-inner .carousel-caption[data-v-e5f0629a] {\n  position: absolute;\n  top: 50%;\n  left: 50%;\n  transform: translate(-50%, -40%);\n}\n.carousel-inner .carousel-caption h2[data-v-e5f0629a] {\n  font-size: 46px;\n}\n.carousel-inner .carousel-caption .btn-soft[data-v-e5f0629a] {\n  background-color: #b48c80;\n  border-radius: 0;\n  padding: 12px 40px;\n  font-size: 18px;\n}\nbutton[data-v-e5f0629a] {\n  opacity: 1;\n  border: none;\n  background-color: transparent;\n}\nbutton.btn-prev[data-v-e5f0629a] {\n  position: absolute;\n  right: 102%;\n  top: 50%;\n}\nbutton.btn-next[data-v-e5f0629a] {\n  position: absolute;\n  left: 102%;\n  top: 50%;\n}\nbutton i[data-v-e5f0629a] {\n  color: black;\n  font-size: 28px;\n}\n.carousel-indicators[data-v-e5f0629a] {\n  z-index: 3;\n}", ""]);
 
 // exports
 
@@ -7976,7 +8317,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, "div[data-v-4ab6097e] {\n  color: white;\n}\ndiv ul[data-v-4ab6097e] {\n  text-decoration: none;\n  list-style-type: none;\n}", ""]);
+exports.push([module.i, "div[data-v-4ab6097e] {\n  color: white;\n}\ndiv ul[data-v-4ab6097e] {\n  text-decoration: none;\n  list-style-type: none;\n}\n.text-soft[data-v-4ab6097e] {\n  color: #b48c80;\n}", ""]);
 
 // exports
 
@@ -7995,7 +8336,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, "h2[data-v-204d616a] {\n  font-size: 56px;\n}\nform[data-v-204d616a] {\n  width: 100%;\n}\nform .btn-danger[data-v-204d616a] {\n  font-size: 18px;\n  padding: 10px 20px;\n}", ""]);
+exports.push([module.i, "h2[data-v-204d616a] {\n  font-size: 56px;\n}\nform[data-v-204d616a] {\n  width: 100%;\n}\nform .btn-soft[data-v-204d616a] {\n  font-size: 18px;\n  padding: 10px 20px;\n  background-color: #b48c80;\n  color: white;\n}", ""]);
 
 // exports
 
@@ -8014,7 +8355,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, "nav[data-v-0851419a] {\n  position: fixed;\n  top: 0;\n  left: 0;\n  right: 0;\n  z-index: 5;\n  background-color: transparent !important;\n  padding: 80px 60px;\n  transition: 1s;\n}\nnav .btn-menu[data-v-0851419a] {\n  width: 50px;\n  height: 50px;\n  background-color: transparent;\n  border-radius: 0;\n  border: 2px solid white;\n  font-size: 20px;\n  transition: 0.8s;\n}\nnav .btn-menu[data-v-0851419a]:hover {\n  background-color: red;\n  border: red;\n  color: white;\n}\nnav .btn-menu[data-v-0851419a]:focus {\n  box-shadow: none;\n}\nnav .nav-menu[data-v-0851419a] {\n  display: flex;\n  position: absolute;\n  top: 0;\n  right: -300px;\n  height: 100vh;\n  z-index: 20;\n  background-color: #252222;\n  width: 300px;\n  padding: 40px;\n  transition: 0.3s;\n}\nnav .nav-menu .btn-close[data-v-0851419a] {\n  position: absolute;\n  top: 15px;\n  right: 15px;\n}\nnav .nav-menu a[data-v-0851419a] {\n  transition: 0.8s;\n}\nnav .nav-menu a[data-v-0851419a]:hover {\n  color: red !important;\n}\nnav .nav-menu.open[data-v-0851419a] {\n  right: 0;\n}\nul[data-v-0851419a] {\n  width: 100%;\n}\nnav.sticky[data-v-0851419a] {\n  background-color: #252222 !important;\n  padding: 20px 60px;\n  transition: 1s;\n}", ""]);
+exports.push([module.i, "nav[data-v-0851419a] {\n  position: fixed;\n  top: 0;\n  left: 0;\n  right: 0;\n  z-index: 5;\n  background-color: transparent !important;\n  padding: 80px 60px;\n  transition: 1s;\n}\nnav .btn-square[data-v-0851419a] {\n  width: 50px;\n  height: 50px;\n  background-color: transparent;\n  border-radius: 0;\n  border: 2px solid white;\n  font-size: 20px;\n  transition: 0.8s;\n}\nnav .btn-square[data-v-0851419a]:hover {\n  background-color: #b48c80;\n  border: #b48c80;\n  color: white;\n}\nnav .btn-square[data-v-0851419a]:focus {\n  box-shadow: none;\n}\nnav .nav-menu[data-v-0851419a] {\n  display: flex;\n  position: absolute;\n  top: 0;\n  right: -300px;\n  height: 100vh;\n  z-index: 20;\n  background-color: #252222;\n  width: 300px;\n  padding: 40px;\n  transition: 0.3s;\n}\nnav .nav-menu .btn-close[data-v-0851419a] {\n  position: absolute;\n  top: 15px;\n  right: 15px;\n}\nnav .nav-menu a[data-v-0851419a] {\n  transition: 0.8s;\n}\nnav .nav-menu a[data-v-0851419a]:hover {\n  color: #b48c80 !important;\n}\nnav .nav-menu.open[data-v-0851419a] {\n  right: 0;\n}\nul[data-v-0851419a] {\n  width: 100%;\n}\nnav.sticky[data-v-0851419a] {\n  background-color: #252222 !important;\n  padding: 20px 60px;\n  transition: 1s;\n}\n@media (max-width: 767px) {\nnav[data-v-0851419a] {\n    padding: 40px;\n}\nnav.sticky[data-v-0851419a] {\n    padding: 20px;\n}\n}", ""]);
 
 // exports
 
@@ -8033,7 +8374,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, ".MultiCarousel[data-v-323c2322] {\n  float: left;\n  overflow: hidden;\n  width: 100%;\n  position: relative;\n}\n.MultiCarousel .MultiCarousel-inner[data-v-323c2322] {\n  transition: 1s ease all;\n  float: left;\n}\n.MultiCarousel .MultiCarousel-inner .item[data-v-323c2322] {\n  float: left;\n}\n.MultiCarousel .MultiCarousel-inner .item > div[data-v-323c2322] {\n  text-align: center;\n  margin: 10px;\n}\n.MultiCarousel .leftLst[data-v-323c2322], .MultiCarousel .rightLst[data-v-323c2322] {\n  position: absolute;\n  border-radius: 50%;\n  top: calc(50% - 20px);\n}\n.MultiCarousel .leftLst[data-v-323c2322] {\n  left: 0;\n}\n.MultiCarousel .rightLst[data-v-323c2322] {\n  right: 0;\n}\n.MultiCarousel .leftLst.over[data-v-323c2322], .MultiCarousel .rightLst.over[data-v-323c2322] {\n  pointer-events: none;\n  background: #ccc;\n}", ""]);
+exports.push([module.i, ".btn-soft[data-v-323c2322] {\n  background-color: #b48c80;\n}\n.row.carousel[data-v-323c2322] {\n  position: relative;\n  margin-bottom: 50px;\n}\n.MultiCarousel[data-v-323c2322] {\n  float: left;\n  overflow: hidden;\n  width: 100%;\n}\n.MultiCarousel .MultiCarousel-inner[data-v-323c2322] {\n  transition: 1s ease all;\n  float: left;\n}\n.MultiCarousel .MultiCarousel-inner .item[data-v-323c2322] {\n  float: left;\n}\n.MultiCarousel .MultiCarousel-inner .item > div[data-v-323c2322] {\n  text-align: center;\n  margin: 10px;\n}\n.MultiCarousel .leftLst[data-v-323c2322], .MultiCarousel .rightLst[data-v-323c2322] {\n  position: absolute;\n  border-radius: 50%;\n  top: calc(50% - 20px);\n}\n.MultiCarousel .leftLst[data-v-323c2322] {\n  left: -40px;\n}\n.MultiCarousel .rightLst[data-v-323c2322] {\n  right: -40px;\n}\n@media (max-width: 767px) {\n.MultiCarousel .leftLst[data-v-323c2322] {\n    top: 100%;\n    left: 36%;\n}\n.MultiCarousel .rightLst[data-v-323c2322] {\n    top: 100%;\n    right: 36%;\n}\n}\n.MultiCarousel .leftLst.over[data-v-323c2322], .MultiCarousel .rightLst.over[data-v-323c2322] {\n  pointer-events: none;\n  background: #b48c80;\n}", ""]);
 
 // exports
 
@@ -8052,27 +8393,26 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, ".carousel-inner[data-v-2187b0f5] {\n  height: 100vh;\n  position: relative;\n}\n.carousel-inner img[data-v-2187b0f5] {\n  height: 100vh;\n  -o-object-fit: cover;\n     object-fit: cover;\n}\n.carousel-inner .carousel-caption[data-v-2187b0f5] {\n  position: absolute;\n  top: 50%;\n  left: 50%;\n  transform: translate(-50%, -40%);\n  z-index: 1;\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n}\n.carousel-inner .carousel-caption h2[data-v-2187b0f5] {\n  font-size: 46px;\n}\n.carousel-inner .carousel-caption .btn-danger[data-v-2187b0f5] {\n  border-radius: 0;\n  padding: 12px 40px;\n  font-size: 18px;\n}\n.carousel-indicators[data-v-2187b0f5] {\n  z-index: 3;\n}", ""]);
+exports.push([module.i, ".carousel-inner[data-v-2187b0f5] {\n  height: 100vh;\n  position: relative;\n}\n.carousel-inner img[data-v-2187b0f5] {\n  height: 100vh;\n  -o-object-fit: cover;\n     object-fit: cover;\n}\n.carousel-inner .carousel-caption[data-v-2187b0f5] {\n  position: absolute;\n  top: 50%;\n  left: 50%;\n  transform: translate(-50%, -40%);\n  z-index: 1;\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n}\n.carousel-inner .carousel-caption h2[data-v-2187b0f5] {\n  font-size: 42px;\n  text-shadow: 0 0 4px rgb(65, 65, 65);\n}\n.carousel-inner .carousel-caption .btn-soft[data-v-2187b0f5] {\n  background-color: #b48c80;\n  border: 2px solid white;\n  border-radius: 0;\n  padding: 12px 40px;\n  font-size: 18px;\n  color: white;\n}\n.carousel-indicators[data-v-2187b0f5] {\n  z-index: 3;\n}", ""]);
 
 // exports
 
 
 /***/ }),
 
-/***/ "./node_modules/css-loader/index.js!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/ThreeSlider.vue?vue&type=style&index=0&id=1a8baf84&scoped=true&lang=scss&":
-/*!*********************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/css-loader!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src??ref--7-2!./node_modules/sass-loader/dist/cjs.js??ref--7-3!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/ThreeSlider.vue?vue&type=style&index=0&id=1a8baf84&scoped=true&lang=scss& ***!
-  \*********************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/***/ "./node_modules/css-loader/index.js!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/TestSlider.vue?vue&type=style&index=0&id=b9fc4184&scoped=true&lang=scss&":
+/*!********************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src??ref--7-2!./node_modules/sass-loader/dist/cjs.js??ref--7-3!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/TestSlider.vue?vue&type=style&index=0&id=b9fc4184&scoped=true&lang=scss& ***!
+  \********************************************************************************************************************************************************************************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-var escape = __webpack_require__(/*! ../../../node_modules/css-loader/lib/url/escape.js */ "./node_modules/css-loader/lib/url/escape.js");
 exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loader/lib/css-base.js */ "./node_modules/css-loader/lib/css-base.js")(false);
 // imports
 
 
 // module
-exports.push([module.i, "h2[data-v-1a8baf84] {\n  font-size: 42px;\n}\nh3[data-v-1a8baf84] {\n  font-size: 32px;\n}\n.card-top[data-v-1a8baf84] {\n  height: 150px;\n  background-image: url(" + escape(__webpack_require__(/*! ../../../public/images/test/event-1.jpg */ "./public/images/test/event-1.jpg")) + ");\n  background-position: center;\n  background-size: cover;\n  background-repeat: no-repeat;\n}\n.card-body[data-v-1a8baf84] {\n  background-color: #EDEAE6;\n}", ""]);
+exports.push([module.i, "body[data-v-b9fc4184] {\n  background-color: #000;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  height: 100vh;\n}\nh2[data-v-b9fc4184] {\n  font-size: 42px;\n  text-align: center;\n  margin-bottom: 30px;\n}\nh3[data-v-b9fc4184] {\n  font-size: 32px;\n  text-shadow: 0 0 5px black;\n}\n.card-top[data-v-b9fc4184] {\n  height: 160px;\n  position: relative;\n}\n.card-top img[data-v-b9fc4184] {\n  position: absolute;\n  top: 0;\n  -o-object-fit: cover;\n     object-fit: cover;\n  height: 100%;\n  width: 100%;\n}\n.card-top p[data-v-b9fc4184], .card-top h3[data-v-b9fc4184] {\n  z-index: 1;\n}\n.card-body[data-v-b9fc4184] {\n  background-color: #EDEAE6;\n}\n.swiper[data-v-b9fc4184] {\n  padding-bottom: 60px !important;\n  height: 250px;\n  --swiper-theme-color: #b48c80;\n}\n.swiper .swiper-wrapper[data-v-b9fc4184] {\n  align-items: center;\n}\n.swiper .swiper-slide[data-v-b9fc4184] {\n  border-radius: 5px;\n  min-height: 180px !important;\n  background-color: #000;\n  border: 1px solid #fff;\n  transition: 0.2s;\n  transform: scale(0.8);\n}\n.swiper .swiper-slide.active[data-v-b9fc4184] {\n  min-height: 230px !important;\n  transform: scale(1);\n}\n.swiper .prev[data-v-b9fc4184],\n.swiper .next[data-v-b9fc4184] {\n  cursor: pointer;\n  z-index: 100;\n  position: absolute;\n  top: 50%;\n  transform: translateY(-50%);\n  opacity: 0.65;\n  transition: 0.2s;\n}\n.swiper .prev[data-v-b9fc4184]:hover,\n.swiper .next[data-v-b9fc4184]:hover {\n  opacity: 1;\n}\n.swiper .prev svg[data-v-b9fc4184],\n.swiper .next svg[data-v-b9fc4184] {\n  width: 20px;\n  height: 20px;\n}\n.swiper .prev svg path[data-v-b9fc4184],\n.swiper .next svg path[data-v-b9fc4184] {\n  fill: #fff;\n}\n.swiper .prev[data-v-b9fc4184] {\n  left: 25px;\n}\n.swiper .next[data-v-b9fc4184] {\n  right: 25px;\n}\n.swiper .pagination[data-v-b9fc4184] {\n  margin-left: 8px !important;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  margin-top: 40px;\n  z-index: 100;\n}\n.swiper .pagination span[data-v-b9fc4184] {\n  font-size: 0;\n  opacity: 1;\n  margin: 0px 6px !important;\n  border: 1px solid #fff;\n}\n.swiper .pagination span.swiper-pagination-bullet-active[data-v-b9fc4184] {\n  background-color: transparent;\n  transform: scale(1.5);\n}\n.swiper-tablet[data-v-b9fc4184] {\n  margin-left: auto;\n  margin-right: auto;\n  position: relative;\n  overflow: hidden;\n  list-style: none;\n  padding: 0;\n  z-index: 1;\n  padding-bottom: 60px !important;\n  height: 250px;\n  --swiper-theme-color: #b48c80;\n}\n.swiper-tablet .swiper-wrapper[data-v-b9fc4184] {\n  align-items: center;\n}\n.swiper-tablet .swiper-slide[data-v-b9fc4184] {\n  border-radius: 5px;\n  min-height: 180px !important;\n  background-color: #000;\n  border: 1px solid #fff;\n  transition: 0.2s;\n  transform: scale(0.9);\n}\n.swiper-tablet .swiper-slide.active[data-v-b9fc4184] {\n  min-height: 230px !important;\n  transform: scale(1);\n}\n.swiper-tablet .prev[data-v-b9fc4184],\n.swiper-tablet .next[data-v-b9fc4184] {\n  cursor: pointer;\n  z-index: 100;\n  position: absolute;\n  top: 50%;\n  transform: translateY(-50%);\n  opacity: 0.65;\n  transition: 0.2s;\n}\n.swiper-tablet .prev[data-v-b9fc4184]:hover,\n.swiper-tablet .next[data-v-b9fc4184]:hover {\n  opacity: 1;\n}\n.swiper-tablet .prev svg[data-v-b9fc4184],\n.swiper-tablet .next svg[data-v-b9fc4184] {\n  width: 20px;\n  height: 20px;\n}\n.swiper-tablet .prev svg path[data-v-b9fc4184],\n.swiper-tablet .next svg path[data-v-b9fc4184] {\n  fill: #fff;\n}\n.swiper-tablet .prev[data-v-b9fc4184] {\n  left: 25px;\n}\n.swiper-tablet .next[data-v-b9fc4184] {\n  right: 25px;\n}\n.swiper-tablet .pagination[data-v-b9fc4184] {\n  margin-left: 8px !important;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  margin-top: 40px;\n  z-index: 100;\n}\n.swiper-tablet .pagination span[data-v-b9fc4184] {\n  font-size: 0;\n  opacity: 1;\n  margin: 0px 6px !important;\n  border: 1px solid #fff;\n}\n.swiper-tablet .pagination span.swiper-pagination-bullet-active[data-v-b9fc4184] {\n  background-color: transparent;\n  transform: scale(1.5);\n}\n.swiper-mobile[data-v-b9fc4184] {\n  margin-left: auto;\n  margin-right: auto;\n  position: relative;\n  overflow: hidden;\n  list-style: none;\n  padding: 0;\n  z-index: 1;\n  padding-bottom: 60px !important;\n  height: 250px;\n  --swiper-theme-color: #b48c80;\n}\n.swiper-mobile .swiper-wrapper[data-v-b9fc4184] {\n  align-items: center;\n}\n.swiper-mobile .swiper-slide[data-v-b9fc4184] {\n  border-radius: 5px;\n  min-height: 180px !important;\n  background-color: #000;\n  border: 1px solid #fff;\n  transition: 0.2s;\n  transform: scale(0.9);\n}\n.swiper-mobile .swiper-slide.active[data-v-b9fc4184] {\n  min-height: 230px !important;\n  transform: scale(1);\n}\n.swiper-mobile .prev[data-v-b9fc4184],\n.swiper-mobile .next[data-v-b9fc4184] {\n  cursor: pointer;\n  z-index: 100;\n  position: absolute;\n  top: 50%;\n  transform: translateY(-50%);\n  opacity: 0.65;\n  transition: 0.2s;\n}\n.swiper-mobile .prev[data-v-b9fc4184]:hover,\n.swiper-mobile .next[data-v-b9fc4184]:hover {\n  opacity: 1;\n}\n.swiper-mobile .prev svg[data-v-b9fc4184],\n.swiper-mobile .next svg[data-v-b9fc4184] {\n  width: 20px;\n  height: 20px;\n}\n.swiper-mobile .prev svg path[data-v-b9fc4184],\n.swiper-mobile .next svg path[data-v-b9fc4184] {\n  fill: #fff;\n}\n.swiper-mobile .prev[data-v-b9fc4184] {\n  left: 25px;\n}\n.swiper-mobile .next[data-v-b9fc4184] {\n  right: 25px;\n}\n.swiper-mobile .pagination[data-v-b9fc4184] {\n  margin-left: 8px !important;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  margin-top: 40px;\n  z-index: 100;\n}\n.swiper-mobile .pagination span[data-v-b9fc4184] {\n  font-size: 0;\n  opacity: 1;\n  margin: 0px 6px !important;\n  border: 1px solid #fff;\n}\n.swiper-mobile .pagination span.swiper-pagination-bullet-active[data-v-b9fc4184] {\n  background-color: transparent;\n  transform: scale(1.5);\n}", ""]);
 
 // exports
 
@@ -8086,13 +8426,12 @@ exports.push([module.i, "h2[data-v-1a8baf84] {\n  font-size: 42px;\n}\nh3[data-v
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-var escape = __webpack_require__(/*! ../../../../node_modules/css-loader/lib/url/escape.js */ "./node_modules/css-loader/lib/url/escape.js");
 exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-loader/lib/css-base.js */ "./node_modules/css-loader/lib/css-base.js")(false);
 // imports
 
 
 // module
-exports.push([module.i, "h2[data-v-317790a4] {\n  font-size: 56px;\n}\n.btn-danger[data-v-317790a4] {\n  border-radius: 0;\n  padding: 12px 40px;\n  font-size: 18px;\n}\n.row .btn-danger[data-v-317790a4] {\n  font-size: 12px;\n  padding: 10px 15px;\n}\n#event[data-v-317790a4] {\n  background-image: url(" + escape(__webpack_require__(/*! ../../../../public/images/test/event-1.jpg */ "./public/images/test/event-1.jpg")) + ");\n  background-position: top;\n  background-size: auto 100vh;\n  background-repeat: no-repeat;\n  min-height: 800px;\n  background-color: #EDEAE6;\n}\n#counters[data-v-317790a4] {\n  background-image: url(https://fbsbarcatering.it/wp-content/uploads/2019/11/background-lista-allestimenti.jpg?id=1197);\n  background-position: top;\n  background-size: cover;\n  background-repeat: no-repeat;\n  background-color: #EDEAE6;\n}\nfooter[data-v-317790a4] {\n  background-color: #252222;\n  color: white;\n}\nfooter .footer-bottom[data-v-317790a4] {\n  background-color: #1D1B1B;\n}", ""]);
+exports.push([module.i, "h2[data-v-317790a4] {\n  font-size: 52px;\n}\n.italic[data-v-317790a4] {\n  font-family: \"Dancing Script\", cursive;\n  color: #b48c80;\n  font-size: 24px;\n}\n.bottom-line[data-v-317790a4] {\n  height: 3px;\n  width: 25px;\n  background-color: #b48c80;\n}\n.btn-soft[data-v-317790a4] {\n  background-color: #b48c80;\n  color: white;\n  border-radius: 0;\n  padding: 12px 40px;\n  font-size: 18px;\n}\n.text-soft[data-v-317790a4] {\n  color: #b48c80;\n}\n.border-soft[data-v-317790a4] {\n  border: 1px solid #252222 !important;\n}\n.row .btn-soft[data-v-317790a4] {\n  font-size: 12px;\n  padding: 10px 15px;\n}\n.img-circle[data-v-317790a4] {\n  border-radius: 50%;\n  -o-object-fit: cover;\n     object-fit: cover;\n  width: 288px;\n  height: 288px;\n}\n#event[data-v-317790a4] {\n  background-position: top;\n  background-size: auto 100vh;\n  background-repeat: no-repeat;\n  min-height: 800px;\n  background-color: #EDEAE6;\n}\n#counters[data-v-317790a4] {\n  background-image: url(https://fbsbarcatering.it/wp-content/uploads/2019/11/background-lista-allestimenti.jpg?id=1197);\n  background-position: top;\n  background-size: cover;\n  background-repeat: no-repeat;\n  background-color: #EDEAE6;\n}\nfooter[data-v-317790a4] {\n  background-color: #252222;\n  color: white;\n}\nfooter .footer-bottom[data-v-317790a4] {\n  background-color: #1D1B1B;\n}\n@media (max-width: 991px) {\n.img-circle[data-v-317790a4] {\n    width: 208px;\n    height: 208px;\n}\n}", ""]);
 
 // exports
 
@@ -8200,33 +8539,6 @@ function toComment(sourceMap) {
 	var data = 'sourceMappingURL=data:application/json;charset=utf-8;base64,' + base64;
 
 	return '/*# ' + data + ' */';
-}
-
-
-/***/ }),
-
-/***/ "./node_modules/css-loader/lib/url/escape.js":
-/*!***************************************************!*\
-  !*** ./node_modules/css-loader/lib/url/escape.js ***!
-  \***************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = function escape(url) {
-    if (typeof url !== 'string') {
-        return url
-    }
-    // If url is already wrapped in quotes, remove them
-    if (/^['"].*['"]$/.test(url)) {
-        url = url.slice(1, -1);
-    }
-    // Should url be wrapped?
-    // See https://drafts.csswg.org/css-values-3/#urls
-    if (/["'() \t\n]/.test(url)) {
-        return '"' + url.replace(/"/g, '\\"').replace(/\n/g, '\\n') + '"'
-    }
-
-    return url
 }
 
 
@@ -39569,15 +39881,15 @@ if(false) {}
 
 /***/ }),
 
-/***/ "./node_modules/style-loader/index.js!./node_modules/css-loader/index.js!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/ThreeSlider.vue?vue&type=style&index=0&id=1a8baf84&scoped=true&lang=scss&":
-/*!*************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/style-loader!./node_modules/css-loader!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src??ref--7-2!./node_modules/sass-loader/dist/cjs.js??ref--7-3!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/ThreeSlider.vue?vue&type=style&index=0&id=1a8baf84&scoped=true&lang=scss& ***!
-  \*************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/***/ "./node_modules/style-loader/index.js!./node_modules/css-loader/index.js!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/TestSlider.vue?vue&type=style&index=0&id=b9fc4184&scoped=true&lang=scss&":
+/*!************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/style-loader!./node_modules/css-loader!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src??ref--7-2!./node_modules/sass-loader/dist/cjs.js??ref--7-3!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/TestSlider.vue?vue&type=style&index=0&id=b9fc4184&scoped=true&lang=scss& ***!
+  \************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 
-var content = __webpack_require__(/*! !../../../node_modules/css-loader!../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../node_modules/postcss-loader/src??ref--7-2!../../../node_modules/sass-loader/dist/cjs.js??ref--7-3!../../../node_modules/vue-loader/lib??vue-loader-options!./ThreeSlider.vue?vue&type=style&index=0&id=1a8baf84&scoped=true&lang=scss& */ "./node_modules/css-loader/index.js!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/ThreeSlider.vue?vue&type=style&index=0&id=1a8baf84&scoped=true&lang=scss&");
+var content = __webpack_require__(/*! !../../../node_modules/css-loader!../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../node_modules/postcss-loader/src??ref--7-2!../../../node_modules/sass-loader/dist/cjs.js??ref--7-3!../../../node_modules/vue-loader/lib??vue-loader-options!./TestSlider.vue?vue&type=style&index=0&id=b9fc4184&scoped=true&lang=scss& */ "./node_modules/css-loader/index.js!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/TestSlider.vue?vue&type=style&index=0&id=b9fc4184&scoped=true&lang=scss&");
 
 if(typeof content === 'string') content = [[module.i, content, '']];
 
@@ -55422,58 +55734,146 @@ module.exports = function(module) {
 
 /***/ }),
 
-/***/ "./public/images/test/barman-1.jpg":
-/*!*****************************************!*\
-  !*** ./public/images/test/barman-1.jpg ***!
-  \*****************************************/
+/***/ "./public/images/test/IMG-20220922-WA0014.jpg":
+/*!****************************************************!*\
+  !*** ./public/images/test/IMG-20220922-WA0014.jpg ***!
+  \****************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "/images/barman-1.jpg?a4bfa635a37d30677a33b680ae0ae568";
+module.exports = "/images/IMG-20220922-WA0014.jpg?0e258771577b2d7faeb7caf27ee0142d";
 
 /***/ }),
 
-/***/ "./public/images/test/event-1.jpg":
-/*!****************************************!*\
-  !*** ./public/images/test/event-1.jpg ***!
-  \****************************************/
+/***/ "./public/images/test/IMG-20220922-WA0015.jpg":
+/*!****************************************************!*\
+  !*** ./public/images/test/IMG-20220922-WA0015.jpg ***!
+  \****************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "/images/event-1.jpg?c4685dca9be9ec033dc1d9825ae79d22";
+module.exports = "/images/IMG-20220922-WA0015.jpg?2847b4f9d1ecc908d85c8fec2de5b29a";
 
 /***/ }),
 
-/***/ "./public/images/test/slider-1.jpg":
-/*!*****************************************!*\
-  !*** ./public/images/test/slider-1.jpg ***!
-  \*****************************************/
+/***/ "./public/images/test/IMG-20220922-WA0021.jpg":
+/*!****************************************************!*\
+  !*** ./public/images/test/IMG-20220922-WA0021.jpg ***!
+  \****************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "/images/slider-1.jpg?3d156c1db9447d22fd5ab0c6976a9e37";
+module.exports = "/images/IMG-20220922-WA0021.jpg?b9f818d9445a6f2ca60f8bd6d138b01a";
 
 /***/ }),
 
-/***/ "./public/images/test/slider-2.jpg":
-/*!*****************************************!*\
-  !*** ./public/images/test/slider-2.jpg ***!
-  \*****************************************/
+/***/ "./public/images/test/IMG-20220922-WA0023.jpg":
+/*!****************************************************!*\
+  !*** ./public/images/test/IMG-20220922-WA0023.jpg ***!
+  \****************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "/images/slider-2.jpg?3d1ce68c11b7a0b7ef4fc8cfd8383428";
+module.exports = "/images/IMG-20220922-WA0023.jpg?721cf474a2c851ee8a04de0baba7f1e0";
 
 /***/ }),
 
-/***/ "./public/images/test/slider-4.jpg":
-/*!*****************************************!*\
-  !*** ./public/images/test/slider-4.jpg ***!
-  \*****************************************/
+/***/ "./public/images/test/IMG-20220922-WA0029.jpg":
+/*!****************************************************!*\
+  !*** ./public/images/test/IMG-20220922-WA0029.jpg ***!
+  \****************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "/images/slider-4.jpg?25f9cf8224affc7c6fa8668544429d8d";
+module.exports = "/images/IMG-20220922-WA0029.jpg?5b00a5fcac669e054b87762ff8ee00ae";
+
+/***/ }),
+
+/***/ "./public/images/test/IMG-20220922-WA0042.jpg":
+/*!****************************************************!*\
+  !*** ./public/images/test/IMG-20220922-WA0042.jpg ***!
+  \****************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "/images/IMG-20220922-WA0042.jpg?34f535179789e84f6bec649348294e48";
+
+/***/ }),
+
+/***/ "./public/images/test/IMG-20220922-WA0046.jpg":
+/*!****************************************************!*\
+  !*** ./public/images/test/IMG-20220922-WA0046.jpg ***!
+  \****************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "/images/IMG-20220922-WA0046.jpg?18b6ba02184dcac0434f1cfbaffc1ed9";
+
+/***/ }),
+
+/***/ "./public/images/test/IMG-20220922-WA0061.jpg":
+/*!****************************************************!*\
+  !*** ./public/images/test/IMG-20220922-WA0061.jpg ***!
+  \****************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "/images/IMG-20220922-WA0061.jpg?dff48bce54bd8de874156b2639f080b9";
+
+/***/ }),
+
+/***/ "./public/images/test/IMG-20220922-WA0066.jpg":
+/*!****************************************************!*\
+  !*** ./public/images/test/IMG-20220922-WA0066.jpg ***!
+  \****************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "/images/IMG-20220922-WA0066.jpg?07e40409e3f2e8b90aa5b9a45c6fe240";
+
+/***/ }),
+
+/***/ "./public/images/test/IMG-20220922-WA0071.jpg":
+/*!****************************************************!*\
+  !*** ./public/images/test/IMG-20220922-WA0071.jpg ***!
+  \****************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "/images/IMG-20220922-WA0071.jpg?572c6af77d80292c0081be6b2ab8f29f";
+
+/***/ }),
+
+/***/ "./public/images/test/IMG-20220922-WA0085.jpg":
+/*!****************************************************!*\
+  !*** ./public/images/test/IMG-20220922-WA0085.jpg ***!
+  \****************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "/images/IMG-20220922-WA0085.jpg?bd27cf50e058f492fdeacbb213c4aa4f";
+
+/***/ }),
+
+/***/ "./public/images/test/IMG-20220922-WA0097.jpg":
+/*!****************************************************!*\
+  !*** ./public/images/test/IMG-20220922-WA0097.jpg ***!
+  \****************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "/images/IMG-20220922-WA0097.jpg?ed385bd1f543ceeec3006ec3fd7464d7";
+
+/***/ }),
+
+/***/ "./public/images/test/PHOTO-2023-02-08-15-54-06.jpg":
+/*!**********************************************************!*\
+  !*** ./public/images/test/PHOTO-2023-02-08-15-54-06.jpg ***!
+  \**********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "/images/PHOTO-2023-02-08-15-54-06.jpg?a809c03584e967e53815ef463c3d43ba";
 
 /***/ }),
 
@@ -56117,18 +56517,18 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./resources/js/components/ThreeSlider.vue":
-/*!*************************************************!*\
-  !*** ./resources/js/components/ThreeSlider.vue ***!
-  \*************************************************/
+/***/ "./resources/js/components/TestSlider.vue":
+/*!************************************************!*\
+  !*** ./resources/js/components/TestSlider.vue ***!
+  \************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _ThreeSlider_vue_vue_type_template_id_1a8baf84_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./ThreeSlider.vue?vue&type=template&id=1a8baf84&scoped=true& */ "./resources/js/components/ThreeSlider.vue?vue&type=template&id=1a8baf84&scoped=true&");
-/* harmony import */ var _ThreeSlider_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./ThreeSlider.vue?vue&type=script&lang=js& */ "./resources/js/components/ThreeSlider.vue?vue&type=script&lang=js&");
-/* empty/unused harmony star reexport *//* harmony import */ var _ThreeSlider_vue_vue_type_style_index_0_id_1a8baf84_scoped_true_lang_scss___WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./ThreeSlider.vue?vue&type=style&index=0&id=1a8baf84&scoped=true&lang=scss& */ "./resources/js/components/ThreeSlider.vue?vue&type=style&index=0&id=1a8baf84&scoped=true&lang=scss&");
+/* harmony import */ var _TestSlider_vue_vue_type_template_id_b9fc4184_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./TestSlider.vue?vue&type=template&id=b9fc4184&scoped=true& */ "./resources/js/components/TestSlider.vue?vue&type=template&id=b9fc4184&scoped=true&");
+/* harmony import */ var _TestSlider_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./TestSlider.vue?vue&type=script&lang=js& */ "./resources/js/components/TestSlider.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport *//* harmony import */ var _TestSlider_vue_vue_type_style_index_0_id_b9fc4184_scoped_true_lang_scss___WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./TestSlider.vue?vue&type=style&index=0&id=b9fc4184&scoped=true&lang=scss& */ "./resources/js/components/TestSlider.vue?vue&type=style&index=0&id=b9fc4184&scoped=true&lang=scss&");
 /* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
 
 
@@ -56139,66 +56539,66 @@ __webpack_require__.r(__webpack_exports__);
 /* normalize component */
 
 var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__["default"])(
-  _ThreeSlider_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
-  _ThreeSlider_vue_vue_type_template_id_1a8baf84_scoped_true___WEBPACK_IMPORTED_MODULE_0__["render"],
-  _ThreeSlider_vue_vue_type_template_id_1a8baf84_scoped_true___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  _TestSlider_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _TestSlider_vue_vue_type_template_id_b9fc4184_scoped_true___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _TestSlider_vue_vue_type_template_id_b9fc4184_scoped_true___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
   false,
   null,
-  "1a8baf84",
+  "b9fc4184",
   null
   
 )
 
 /* hot reload */
 if (false) { var api; }
-component.options.__file = "resources/js/components/ThreeSlider.vue"
+component.options.__file = "resources/js/components/TestSlider.vue"
 /* harmony default export */ __webpack_exports__["default"] = (component.exports);
 
 /***/ }),
 
-/***/ "./resources/js/components/ThreeSlider.vue?vue&type=script&lang=js&":
-/*!**************************************************************************!*\
-  !*** ./resources/js/components/ThreeSlider.vue?vue&type=script&lang=js& ***!
-  \**************************************************************************/
+/***/ "./resources/js/components/TestSlider.vue?vue&type=script&lang=js&":
+/*!*************************************************************************!*\
+  !*** ./resources/js/components/TestSlider.vue?vue&type=script&lang=js& ***!
+  \*************************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_ThreeSlider_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib??ref--4-0!../../../node_modules/vue-loader/lib??vue-loader-options!./ThreeSlider.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/ThreeSlider.vue?vue&type=script&lang=js&");
-/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_ThreeSlider_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_TestSlider_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib??ref--4-0!../../../node_modules/vue-loader/lib??vue-loader-options!./TestSlider.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/TestSlider.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_TestSlider_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
 
 /***/ }),
 
-/***/ "./resources/js/components/ThreeSlider.vue?vue&type=style&index=0&id=1a8baf84&scoped=true&lang=scss&":
-/*!***********************************************************************************************************!*\
-  !*** ./resources/js/components/ThreeSlider.vue?vue&type=style&index=0&id=1a8baf84&scoped=true&lang=scss& ***!
-  \***********************************************************************************************************/
+/***/ "./resources/js/components/TestSlider.vue?vue&type=style&index=0&id=b9fc4184&scoped=true&lang=scss&":
+/*!**********************************************************************************************************!*\
+  !*** ./resources/js/components/TestSlider.vue?vue&type=style&index=0&id=b9fc4184&scoped=true&lang=scss& ***!
+  \**********************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_style_loader_index_js_node_modules_css_loader_index_js_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_7_2_node_modules_sass_loader_dist_cjs_js_ref_7_3_node_modules_vue_loader_lib_index_js_vue_loader_options_ThreeSlider_vue_vue_type_style_index_0_id_1a8baf84_scoped_true_lang_scss___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/style-loader!../../../node_modules/css-loader!../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../node_modules/postcss-loader/src??ref--7-2!../../../node_modules/sass-loader/dist/cjs.js??ref--7-3!../../../node_modules/vue-loader/lib??vue-loader-options!./ThreeSlider.vue?vue&type=style&index=0&id=1a8baf84&scoped=true&lang=scss& */ "./node_modules/style-loader/index.js!./node_modules/css-loader/index.js!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/ThreeSlider.vue?vue&type=style&index=0&id=1a8baf84&scoped=true&lang=scss&");
-/* harmony import */ var _node_modules_style_loader_index_js_node_modules_css_loader_index_js_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_7_2_node_modules_sass_loader_dist_cjs_js_ref_7_3_node_modules_vue_loader_lib_index_js_vue_loader_options_ThreeSlider_vue_vue_type_style_index_0_id_1a8baf84_scoped_true_lang_scss___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_index_js_node_modules_css_loader_index_js_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_7_2_node_modules_sass_loader_dist_cjs_js_ref_7_3_node_modules_vue_loader_lib_index_js_vue_loader_options_ThreeSlider_vue_vue_type_style_index_0_id_1a8baf84_scoped_true_lang_scss___WEBPACK_IMPORTED_MODULE_0__);
-/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _node_modules_style_loader_index_js_node_modules_css_loader_index_js_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_7_2_node_modules_sass_loader_dist_cjs_js_ref_7_3_node_modules_vue_loader_lib_index_js_vue_loader_options_ThreeSlider_vue_vue_type_style_index_0_id_1a8baf84_scoped_true_lang_scss___WEBPACK_IMPORTED_MODULE_0__) if(["default"].indexOf(__WEBPACK_IMPORT_KEY__) < 0) (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _node_modules_style_loader_index_js_node_modules_css_loader_index_js_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_7_2_node_modules_sass_loader_dist_cjs_js_ref_7_3_node_modules_vue_loader_lib_index_js_vue_loader_options_ThreeSlider_vue_vue_type_style_index_0_id_1a8baf84_scoped_true_lang_scss___WEBPACK_IMPORTED_MODULE_0__[key]; }) }(__WEBPACK_IMPORT_KEY__));
+/* harmony import */ var _node_modules_style_loader_index_js_node_modules_css_loader_index_js_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_7_2_node_modules_sass_loader_dist_cjs_js_ref_7_3_node_modules_vue_loader_lib_index_js_vue_loader_options_TestSlider_vue_vue_type_style_index_0_id_b9fc4184_scoped_true_lang_scss___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/style-loader!../../../node_modules/css-loader!../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../node_modules/postcss-loader/src??ref--7-2!../../../node_modules/sass-loader/dist/cjs.js??ref--7-3!../../../node_modules/vue-loader/lib??vue-loader-options!./TestSlider.vue?vue&type=style&index=0&id=b9fc4184&scoped=true&lang=scss& */ "./node_modules/style-loader/index.js!./node_modules/css-loader/index.js!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/TestSlider.vue?vue&type=style&index=0&id=b9fc4184&scoped=true&lang=scss&");
+/* harmony import */ var _node_modules_style_loader_index_js_node_modules_css_loader_index_js_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_7_2_node_modules_sass_loader_dist_cjs_js_ref_7_3_node_modules_vue_loader_lib_index_js_vue_loader_options_TestSlider_vue_vue_type_style_index_0_id_b9fc4184_scoped_true_lang_scss___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_index_js_node_modules_css_loader_index_js_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_7_2_node_modules_sass_loader_dist_cjs_js_ref_7_3_node_modules_vue_loader_lib_index_js_vue_loader_options_TestSlider_vue_vue_type_style_index_0_id_b9fc4184_scoped_true_lang_scss___WEBPACK_IMPORTED_MODULE_0__);
+/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _node_modules_style_loader_index_js_node_modules_css_loader_index_js_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_7_2_node_modules_sass_loader_dist_cjs_js_ref_7_3_node_modules_vue_loader_lib_index_js_vue_loader_options_TestSlider_vue_vue_type_style_index_0_id_b9fc4184_scoped_true_lang_scss___WEBPACK_IMPORTED_MODULE_0__) if(["default"].indexOf(__WEBPACK_IMPORT_KEY__) < 0) (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _node_modules_style_loader_index_js_node_modules_css_loader_index_js_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_7_2_node_modules_sass_loader_dist_cjs_js_ref_7_3_node_modules_vue_loader_lib_index_js_vue_loader_options_TestSlider_vue_vue_type_style_index_0_id_b9fc4184_scoped_true_lang_scss___WEBPACK_IMPORTED_MODULE_0__[key]; }) }(__WEBPACK_IMPORT_KEY__));
 
 
 /***/ }),
 
-/***/ "./resources/js/components/ThreeSlider.vue?vue&type=template&id=1a8baf84&scoped=true&":
-/*!********************************************************************************************!*\
-  !*** ./resources/js/components/ThreeSlider.vue?vue&type=template&id=1a8baf84&scoped=true& ***!
-  \********************************************************************************************/
+/***/ "./resources/js/components/TestSlider.vue?vue&type=template&id=b9fc4184&scoped=true&":
+/*!*******************************************************************************************!*\
+  !*** ./resources/js/components/TestSlider.vue?vue&type=template&id=b9fc4184&scoped=true& ***!
+  \*******************************************************************************************/
 /*! exports provided: render, staticRenderFns */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_loaders_templateLoader_js_ref_6_node_modules_vue_loader_lib_index_js_vue_loader_options_ThreeSlider_vue_vue_type_template_id_1a8baf84_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib??ref--4-0!../../../node_modules/vue-loader/lib/loaders/templateLoader.js??ref--6!../../../node_modules/vue-loader/lib??vue-loader-options!./ThreeSlider.vue?vue&type=template&id=1a8baf84&scoped=true& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/ThreeSlider.vue?vue&type=template&id=1a8baf84&scoped=true&");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_loaders_templateLoader_js_ref_6_node_modules_vue_loader_lib_index_js_vue_loader_options_ThreeSlider_vue_vue_type_template_id_1a8baf84_scoped_true___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_loaders_templateLoader_js_ref_6_node_modules_vue_loader_lib_index_js_vue_loader_options_TestSlider_vue_vue_type_template_id_b9fc4184_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib??ref--4-0!../../../node_modules/vue-loader/lib/loaders/templateLoader.js??ref--6!../../../node_modules/vue-loader/lib??vue-loader-options!./TestSlider.vue?vue&type=template&id=b9fc4184&scoped=true& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/TestSlider.vue?vue&type=template&id=b9fc4184&scoped=true&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_loaders_templateLoader_js_ref_6_node_modules_vue_loader_lib_index_js_vue_loader_options_TestSlider_vue_vue_type_template_id_b9fc4184_scoped_true___WEBPACK_IMPORTED_MODULE_0__["render"]; });
 
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_loaders_templateLoader_js_ref_6_node_modules_vue_loader_lib_index_js_vue_loader_options_ThreeSlider_vue_vue_type_template_id_1a8baf84_scoped_true___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_loaders_templateLoader_js_ref_6_node_modules_vue_loader_lib_index_js_vue_loader_options_TestSlider_vue_vue_type_template_id_b9fc4184_scoped_true___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
 
 
 

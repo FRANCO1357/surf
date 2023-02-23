@@ -1,142 +1,142 @@
 <template>
     <div class="container">
-	<div class="row">
-		<div class="MultiCarousel" data-items="1,3,4,4" data-slide="1" id="MultiCarousel"  data-interval="1000">
-            <div class="MultiCarousel-inner">
-                <div class="item">
-                    <div class="pad15">
-                        <img class="img-fluid p-3 bg-white p-3 bg-white" src="https://fbsbarcatering.it/wp-content/uploads/2019/10/Etabli-760x474.jpg" alt="">
-                        <div class="card-body bg-white d-flex flex-column align-items-center py-5">
-                            <h3 class="border-bottom border-danger">ETABLI</h3>
-                        </div>  
+        <div class="row carousel">
+            <div class="MultiCarousel" data-items="1,3,4,4" data-slide="1" id="MultiCarousel"  data-interval="1000">
+                <div class="MultiCarousel-inner">
+                    <div class="item">
+                        <div class="pad15">
+                            <img class="img-fluid p-3 bg-white p-3 bg-white" src="https://fbsbarcatering.it/wp-content/uploads/2019/10/Etabli-760x474.jpg" alt="">
+                            <div class="card-body bg-white d-flex flex-column align-items-center py-5">
+                                <h3 class="border-bottom border-soft">ETABLI</h3>
+                            </div>  
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="pad15">
+                            <img class="img-fluid p-3 bg-white" src="https://fbsbarcatering.it/wp-content/uploads/2019/08/INDUSTRIAL-low-760x474.jpg" alt="">
+                            <div class="card-body bg-white d-flex flex-column align-items-center py-5">
+                                <h3 class="border-bottom border-soft">INDUSTRIAL</h3>
+                            </div>  
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="pad15">
+                            <img class="img-fluid p-3 bg-white" src="https://fbsbarcatering.it/wp-content/uploads/2019/08/WOOD-760x474.jpg" alt="">
+                            <div class="card-body bg-white d-flex flex-column align-items-center py-5">
+                                <h3 class="border-bottom border-soft">WOOD</h3>
+                            </div>  
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="pad15">
+                            <img class="img-fluid p-3 bg-white" src="https://fbsbarcatering.it/wp-content/uploads/2019/08/VINTAGE-1024x716-760x474.jpg" alt="">
+                            <div class="card-body bg-white d-flex flex-column align-items-center py-5">
+                                <h3 class="border-bottom border-soft">VINTAGE</h3>
+                            </div>  
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="pad15">
+                            <img class="img-fluid p-3 bg-white" src="https://fbsbarcatering.it/wp-content/uploads/2019/10/Etabli-760x474.jpg" alt="">
+                            <div class="card-body bg-white d-flex flex-column align-items-center py-5">
+                                <h3 class="border-bottom border-soft">ETABLI</h3>
+                            </div>  
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="pad15">
+                            <img class="img-fluid p-3 bg-white" src="https://fbsbarcatering.it/wp-content/uploads/2019/10/Etabli-760x474.jpg" alt="">
+                            <div class="card-body bg-white d-flex flex-column align-items-center py-5">
+                                <h3 class="border-bottom border-soft">ETABLI</h3>
+                            </div>  
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="pad15">
+                            <img class="img-fluid p-3 bg-white" src="https://fbsbarcatering.it/wp-content/uploads/2019/10/Etabli-760x474.jpg" alt="">
+                            <div class="card-body bg-white d-flex flex-column align-items-center py-5">
+                                <h3 class="border-bottom border-soft">ETABLI</h3>
+                            </div>  
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="pad15">
+                            <img class="img-fluid p-3 bg-white" src="https://fbsbarcatering.it/wp-content/uploads/2019/10/Etabli-760x474.jpg" alt="">
+                            <div class="card-body bg-white d-flex flex-column align-items-center py-5">
+                                <h3 class="border-bottom border-soft">ETABLI</h3>
+                            </div>  
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="pad15">
+                            <img class="img-fluid p-3 bg-white" src="https://fbsbarcatering.it/wp-content/uploads/2019/10/Etabli-760x474.jpg" alt="">
+                            <div class="card-body bg-white d-flex flex-column align-items-center py-5">
+                                <h3 class="border-bottom border-soft">ETABLI</h3>
+                            </div>  
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="pad15">
+                            <img class="img-fluid p-3 bg-white" src="https://fbsbarcatering.it/wp-content/uploads/2019/10/Etabli-760x474.jpg" alt="">
+                            <div class="card-body bg-white d-flex flex-column align-items-center py-5">
+                                <h3 class="border-bottom border-soft">ETABLI</h3>
+                            </div>  
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="pad15">
+                            <img class="img-fluid p-3 bg-white" src="https://fbsbarcatering.it/wp-content/uploads/2019/10/Etabli-760x474.jpg" alt="">
+                            <div class="card-body bg-white d-flex flex-column align-items-center py-5">
+                                <h3 class="border-bottom border-soft">ETABLI</h3>
+                            </div>  
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="pad15">
+                            <img class="img-fluid p-3 bg-white" src="https://fbsbarcatering.it/wp-content/uploads/2019/10/Etabli-760x474.jpg" alt="">
+                            <div class="card-body bg-white d-flex flex-column align-items-center py-5">
+                                <h3 class="border-bottom border-soft">ETABLI</h3>
+                            </div>  
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="pad15">
+                            <img class="img-fluid p-3 bg-white" src="https://fbsbarcatering.it/wp-content/uploads/2019/10/Etabli-760x474.jpg" alt="">
+                            <div class="card-body bg-white d-flex flex-column align-items-center py-5">
+                                <h3 class="border-bottom border-soft">ETABLI</h3>
+                            </div>  
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="pad15">
+                            <img class="img-fluid p-3 bg-white" src="https://fbsbarcatering.it/wp-content/uploads/2019/10/Etabli-760x474.jpg" alt="">
+                            <div class="card-body bg-white d-flex flex-column align-items-center py-5">
+                                <h3 class="border-bottom border-soft">ETABLI</h3>
+                            </div>  
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="pad15">
+                            <img class="img-fluid p-3 bg-white" src="https://fbsbarcatering.it/wp-content/uploads/2019/10/Etabli-760x474.jpg" alt="">
+                            <div class="card-body bg-white d-flex flex-column align-items-center py-5">
+                                <h3 class="border-bottom border-soft">ETABLI</h3>
+                            </div>  
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="pad15">
+                            <img class="img-fluid p-3 bg-white" src="https://fbsbarcatering.it/wp-content/uploads/2019/10/Etabli-760x474.jpg" alt="">
+                            <div class="card-body bg-white d-flex flex-column align-items-center py-5">
+                                <h3 class="border-bottom border-soft">ETABLI</h3>
+                            </div>  
+                        </div>
                     </div>
                 </div>
-                <div class="item">
-                    <div class="pad15">
-                        <img class="img-fluid p-3 bg-white" src="https://fbsbarcatering.it/wp-content/uploads/2019/08/INDUSTRIAL-low-760x474.jpg" alt="">
-                        <div class="card-body bg-white d-flex flex-column align-items-center py-5">
-                            <h3 class="border-bottom border-danger">INDUSTRIAL</h3>
-                        </div>  
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="pad15">
-                        <img class="img-fluid p-3 bg-white" src="https://fbsbarcatering.it/wp-content/uploads/2019/08/WOOD-760x474.jpg" alt="">
-                        <div class="card-body bg-white d-flex flex-column align-items-center py-5">
-                            <h3 class="border-bottom border-danger">WOOD</h3>
-                        </div>  
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="pad15">
-                        <img class="img-fluid p-3 bg-white" src="https://fbsbarcatering.it/wp-content/uploads/2019/08/VINTAGE-1024x716-760x474.jpg" alt="">
-                        <div class="card-body bg-white d-flex flex-column align-items-center py-5">
-                            <h3 class="border-bottom border-danger">VINTAGE</h3>
-                        </div>  
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="pad15">
-                        <img class="img-fluid p-3 bg-white" src="https://fbsbarcatering.it/wp-content/uploads/2019/10/Etabli-760x474.jpg" alt="">
-                        <div class="card-body bg-white d-flex flex-column align-items-center py-5">
-                            <h3 class="border-bottom border-danger">ETABLI</h3>
-                        </div>  
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="pad15">
-                        <img class="img-fluid p-3 bg-white" src="https://fbsbarcatering.it/wp-content/uploads/2019/10/Etabli-760x474.jpg" alt="">
-                        <div class="card-body bg-white d-flex flex-column align-items-center py-5">
-                            <h3 class="border-bottom border-danger">ETABLI</h3>
-                        </div>  
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="pad15">
-                        <img class="img-fluid p-3 bg-white" src="https://fbsbarcatering.it/wp-content/uploads/2019/10/Etabli-760x474.jpg" alt="">
-                        <div class="card-body bg-white d-flex flex-column align-items-center py-5">
-                            <h3 class="border-bottom border-danger">ETABLI</h3>
-                        </div>  
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="pad15">
-                        <img class="img-fluid p-3 bg-white" src="https://fbsbarcatering.it/wp-content/uploads/2019/10/Etabli-760x474.jpg" alt="">
-                        <div class="card-body bg-white d-flex flex-column align-items-center py-5">
-                            <h3 class="border-bottom border-danger">ETABLI</h3>
-                        </div>  
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="pad15">
-                        <img class="img-fluid p-3 bg-white" src="https://fbsbarcatering.it/wp-content/uploads/2019/10/Etabli-760x474.jpg" alt="">
-                        <div class="card-body bg-white d-flex flex-column align-items-center py-5">
-                            <h3 class="border-bottom border-danger">ETABLI</h3>
-                        </div>  
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="pad15">
-                        <img class="img-fluid p-3 bg-white" src="https://fbsbarcatering.it/wp-content/uploads/2019/10/Etabli-760x474.jpg" alt="">
-                        <div class="card-body bg-white d-flex flex-column align-items-center py-5">
-                            <h3 class="border-bottom border-danger">ETABLI</h3>
-                        </div>  
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="pad15">
-                        <img class="img-fluid p-3 bg-white" src="https://fbsbarcatering.it/wp-content/uploads/2019/10/Etabli-760x474.jpg" alt="">
-                        <div class="card-body bg-white d-flex flex-column align-items-center py-5">
-                            <h3 class="border-bottom border-danger">ETABLI</h3>
-                        </div>  
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="pad15">
-                        <img class="img-fluid p-3 bg-white" src="https://fbsbarcatering.it/wp-content/uploads/2019/10/Etabli-760x474.jpg" alt="">
-                        <div class="card-body bg-white d-flex flex-column align-items-center py-5">
-                            <h3 class="border-bottom border-danger">ETABLI</h3>
-                        </div>  
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="pad15">
-                        <img class="img-fluid p-3 bg-white" src="https://fbsbarcatering.it/wp-content/uploads/2019/10/Etabli-760x474.jpg" alt="">
-                        <div class="card-body bg-white d-flex flex-column align-items-center py-5">
-                            <h3 class="border-bottom border-danger">ETABLI</h3>
-                        </div>  
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="pad15">
-                        <img class="img-fluid p-3 bg-white" src="https://fbsbarcatering.it/wp-content/uploads/2019/10/Etabli-760x474.jpg" alt="">
-                        <div class="card-body bg-white d-flex flex-column align-items-center py-5">
-                            <h3 class="border-bottom border-danger">ETABLI</h3>
-                        </div>  
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="pad15">
-                        <img class="img-fluid p-3 bg-white" src="https://fbsbarcatering.it/wp-content/uploads/2019/10/Etabli-760x474.jpg" alt="">
-                        <div class="card-body bg-white d-flex flex-column align-items-center py-5">
-                            <h3 class="border-bottom border-danger">ETABLI</h3>
-                        </div>  
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="pad15">
-                        <img class="img-fluid p-3 bg-white" src="https://fbsbarcatering.it/wp-content/uploads/2019/10/Etabli-760x474.jpg" alt="">
-                        <div class="card-body bg-white d-flex flex-column align-items-center py-5">
-                            <h3 class="border-bottom border-danger">ETABLI</h3>
-                        </div>  
-                    </div>
-                </div>
+                <button class="btn btn-soft leftLst"><i class="fa-solid fa-chevron-left"></i></button>
+                <button class="btn btn-soft rightLst"><i class="fa-solid fa-chevron-right"></i></button>
             </div>
-            <button class="btn btn-danger leftLst"><i class="fa-solid fa-chevron-left"></i></button>
-            <button class="btn btn-danger rightLst"><i class="fa-solid fa-chevron-right"></i></button>
         </div>
-	</div>
-</div>
+    </div>
 </template>
 
 <script>
@@ -251,11 +251,19 @@ export default{
 </script>
 
 <style scoped lang="scss">
+
+.btn-soft{
+    background-color: #b48c80;
+}
+
+.row.carousel{
+    position: relative;
+    margin-bottom: 50px;
+}
 .MultiCarousel { 
     float: left; 
     overflow: hidden; 
     width: 100%; 
-    position:relative; 
 }
     .MultiCarousel .MultiCarousel-inner { 
         transition: 1s ease all; 
@@ -275,14 +283,25 @@ export default{
         top:calc(50% - 20px); 
     }
     .MultiCarousel .leftLst { 
-        left:0; 
+        left: -40px; 
     }
     .MultiCarousel .rightLst { 
-        right:0; 
+        right: -40px; 
     }
+
+    @media (max-width: 767px){
+    .MultiCarousel .leftLst { 
+        top: 100%;
+        left: 36%; 
+    }
+    .MultiCarousel .rightLst { 
+        top: 100%;
+        right: 36%; 
+    }
+}
     
     .MultiCarousel .leftLst.over, .MultiCarousel .rightLst.over { 
         pointer-events: none; 
-        background:#ccc; 
+        background:#b48c80; 
     }
 </style>
