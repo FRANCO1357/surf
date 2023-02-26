@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Soul Events</title>
+        <title>Tenereza</title>
 
         <!-- Style -->
         <link href="{{ asset('css/app.css') }}" rel="stylesheet">
@@ -34,7 +34,11 @@
         <style>
             body{
                 font-family: 'Josefin Sans', sans-serif;
-                background-color: transparent
+                background-color: transparent;
+            }
+
+            html {
+                scroll-behavior: smooth;
             }
         </style>
     </head>

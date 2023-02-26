@@ -4,48 +4,7 @@
         <!-- jumbotron -->
         <div id="jumbotron">
             <JumboSlider/>
-            <div id="about" class="mb-5"></div>
-        </div>
-
-        <!-- about -->
-        <div class="container pt-5 text-center">
-            <h2>Chi siamo</h2>
-            <div class="bottom-line mb-3 mx-auto"></div>
-            <p class="mt-4">La Tenereza eventi nasce da l’esigenza, sempre più crescente, di rendere ogni evento unico, con lo scopo di soddisfare ogni esigenza del cliente.</p>
-            <p>Tenereza eventi è un connubio di talento, professionalità e dinamismo, interpretato da tutti i nostri “attori” nelle proprie “parti”. Personale altamente qualificato e con grande esperienza, capace di adattarsi ai diversi contesti e stupire nello svolgimento del proprio lavoro, vissuto come uno “show” dove tutto deve essere semplicemente perfetto.</p>
-            <!-- <AboutSlider/> -->
-            <div class="row">
-                <div class="col-12 col-md-4 p-3">
-                    <img class="img-fluid img-circle" src="../../../../public/images/test/PHOTO-2023-02-08-15-54-06.jpg" alt="">
-                </div>
-                <div class="col-12 col-md-4 p-3">
-                    <img class="img-fluid img-circle" src="../../../../public/images/test/PHOTO-2023-02-08-15-54-06.jpg" alt="">
-                </div>
-                <div class="col-12 col-md-4 p-3">
-                    <img class="img-fluid img-circle" src="../../../../public/images/test/PHOTO-2023-02-08-15-54-06.jpg" alt="">
-                </div>
-            </div>
-            <div class="row py-5">
-                <div class="col-12 col-md-4 d-flex align-items-center justify-content-center">
-                    <div class="card border-0">
-                        <h3>Scopri la qualità<br> del servizio</h3>
-                        <a class="text-soft" href="">SCOPRI DI PIÙ</a>
-                    </div>
-                </div>
-                <div class="col-12 col-md-4 my-5 d-flex align-items-center justify-content-center">
-                    <div class="card border-0 flex-row">
-                        <a href=""><i class="fa-brands fa-facebook-f text-soft p-3 mr-2 border border-soft"></i></a>
-                        <a href=""><i class="fa-brands fa-instagram text-soft p-3 ml-2 border border-soft"></i></a>
-                    </div>
-                </div>
-                <div class="col-12 col-md-4 d-flex align-items-center justify-content-center">
-                    <div class="card border-0">
-                        <h3>Vuoi venire a<br> trovarci?</h3>
-                        <a class="text-soft" href="">VIA PAOLO ORSI, 47 00178 ROMA</a>
-                    </div>
-                </div>
-            </div>
-            <div id="event-1" class="mb-5"></div>
+            <div id="anchor-service" class="mb-5"></div>
         </div>
 
         <!-- event -->
@@ -95,7 +54,7 @@
             <div class="container py-4 d-flex flex-wrap">
                 <div class="row">
                     <div class="col-12 col-lg-6 my-3">
-                        <img class="img-fluid" src="../../../../public/images/test/IMG-20220922-WA0015.jpg" alt="">
+                        <img class="img-fluid" src="../../../../public/images/test/IMG-20220922-WA0052.jpg" alt="">
                     </div>
                     <div class="col-12 col-lg-6 my-3 d-flex flex-column align-items-center justify-content-around">
                         <div class="d-flex flex-column align-items-center">
@@ -131,12 +90,12 @@
                         </ul>
                     </div>
                     <div class="col-12 col-lg-6 my-3">
-                        <img class="img-fluid" src="../../../../public/images/test/IMG-20220922-WA0029.jpg" alt="">
+                        <img class="img-fluid" src="../../../../public/images/test/IMG-20220922-WA0044.jpg" alt="">
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-12 col-lg-6 my-3">
-                        <img class="img-fluid" src="../../../../public/images/test/IMG-20220922-WA0023.jpg" alt="">
+                        <img class="img-fluid" src="../../../../public/images/test/PHOTO-2023-02-24-15-28-22 3.jpg" alt="">
                     </div>
                     <div class="col-12 col-lg-6 my-3 d-flex flex-column align-items-center justify-content-around">
                         <div class="d-flex flex-column align-items-center">
@@ -155,22 +114,12 @@
                         </ul>
                     </div>
                 </div>
+                <div id="anchor-gallery" class="mb-5"></div>
             </div>
-        </div>
-
-        <!-- services -->
-        <div id="services">
-            <div class="container py-5">
-                <TestSlider/>
-            </div>
-        </div>
-
-        <div id="test">
-            <ServiceSlider/>
         </div>
 
         <!-- counters -->
-        <div id="counters">
+        <!-- <div id="counters">
             <div class="container py-5 d-flex flex-column align-items-center">
                 <h5 class="bg-soft p-2 text-white text-center d-inline">I NOSTRI ALLESTIMENTI</h5>
                 <h2 class="text-center text-white my-3 d-none d-sm-block">Adattabili a qualsiasi tipologia di Evento</h2>
@@ -179,9 +128,69 @@
                 <CounterSlider/>
                 <a href="" class="btn btn-soft my-5 text-center">TUTTI GLI ALLESTIMENTI</a>    
             </div>
+        </div> -->
+
+        <!-- gallery -->
+        <div id="gallery">
+            <div class="container py-5">
+                <GallerySlider/>
+                <div id="anchor-aggiuntivi" class="mb-5"></div>
+            </div>
         </div>
 
-        <section id="form">
+        <!-- services -->
+        <div id="services">
+            <div class="container py-5">
+                <TestSlider/>
+                <div id="anchor-about" class="mb-5"></div>
+            </div>
+        </div>
+
+        <!-- about -->
+        <div id="about">
+            <div class="bg-overlay"></div>
+            <div class="container pt-5 text-center">
+            <h2>Chi siamo</h2>
+            <div class="bottom-line mb-3 mx-auto"></div>
+            <p class="mt-4">La Tenereza eventi nasce da l’esigenza, sempre più crescente, di rendere ogni evento unico, con lo scopo di soddisfare ogni esigenza del cliente.</p>
+            <p>Tenereza eventi è un connubio di talento, professionalità e dinamismo, interpretato da tutti i nostri “attori” nelle proprie “parti”. Personale altamente qualificato e con grande esperienza, capace di adattarsi ai diversi contesti e stupire nello svolgimento del proprio lavoro, vissuto come uno “show” dove tutto deve essere semplicemente perfetto.</p>
+            <!-- <AboutSlider/> -->
+            <div class="row">
+                <div class="col-12 col-md-4 p-3">
+                    <img class="img-fluid img-circle" src="../../../../public/images/test/IMG-20220922-WA0015.jpg" alt="">
+                </div>
+                <div class="col-12 col-md-4 p-3">
+                    <img class="img-fluid img-circle" src="../../../../public/images/test/IMG-20220922-WA0029.jpg" alt="">
+                </div>
+                <div class="col-12 col-md-4 p-3">
+                    <img class="img-fluid img-circle" src="../../../../public/images/test/IMG-20221205-WA0015.jpg" alt="">
+                </div>
+            </div>
+            <div class="row py-5">
+                <div class="col-12 col-md-4 d-flex align-items-center justify-content-center">
+                    <div class="card border-0">
+                        <h3>Scopri la qualità<br> del servizio</h3>
+                        <a class="text-soft" href="">SCOPRI DI PIÙ</a>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 my-5 d-flex align-items-center justify-content-center">
+                    <div class="card border-0 flex-row">
+                        <a href=""><i class="fa-brands fa-facebook-f text-soft p-3 mr-2 border border-soft bg-white"></i></a>
+                        <a href="https://instagram.com/tenerezaeventi?igshid=YmMyMTA2M2Y="><i class="fa-brands fa-instagram text-soft p-3 ml-2 border border-soft bg-white"></i></a>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 d-flex align-items-center justify-content-center">
+                    <div class="card border-0">
+                        <h3>Vuoi venire a<br> trovarci?</h3>
+                        <a class="text-soft" href="">VIA PAOLO ORSI, 47 00178 ROMA</a>
+                    </div>
+                </div>
+            </div>
+            <div id="anchor-preventivo" class="mb-5"></div>
+        </div>
+        </div>
+
+        <section>
             <AppForm/>
         </section>
 
@@ -202,10 +211,11 @@ import CounterSlider from '../CounterSlider.vue';
 import AppForm from '../AppForm.vue';
 import AppFooter from '../AppFooter.vue';
 import AboutSlider from '../AboutSlider.vue';
+import GallerySlider from '../GallerySlider.vue';
 
 export default{
     name: "HomePage",
-    components: { JumboSlider, CounterSlider, AppForm, AppFooter, AboutSlider, TestSlider }
+    components: { JumboSlider, CounterSlider, AppForm, AppFooter, AboutSlider, TestSlider, GallerySlider }
 }
 </script>
 
@@ -269,6 +279,43 @@ h2{
     background-size: cover;
     background-repeat: no-repeat;
     background-color: #EDEAE6; 
+}
+
+#gallery{
+    background-image: url(https://fbsbarcatering.it/wp-content/uploads/2019/11/background-lista-allestimenti.jpg?id=1197);
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #EDEAE6; 
+}
+
+#about{
+    background-image: url('../../../../public/images/test/PHOTO-2023-02-08-15-54-06.jpg');
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white; 
+    position: relative;
+
+    .bg-overlay{
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        background-color: black;
+        filter: opacity(0.70);
+        z-index: 1;
+    }
+
+    .container{
+        position: relative;
+        z-index: 2;
+    }
+
+    .card{
+        background-color: transparent;
+    }
 }
 
 footer{

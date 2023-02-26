@@ -1,22 +1,25 @@
 <template>
     <header>
         <nav class="navbar navbar-light bg-light">
-            <a class="btn-square d-flex align-items-center justify-content-center text-white text-decoration-none" href="tel:555-555-5555">
+            <a class="btn-square d-flex align-items-center justify-content-center text-white text-decoration-none" href="tel:+393347540892">
                 <i class="fa-solid fa-phone"></i>
             </a>
-            <a class="navbar-brand text-white" href="#"><h2 class="m-0">Tenereza</h2></a>
+            <a class="navbar-brand text-white ml-2" href="#"><img class="img-fluid" src="../../../public/images/test/logo-tenereza.png" alt=""></a>
             <button @click="toggleMenu()" class="btn-square d-flex align-items-center justify-content-center" id="btn-menu" type="button">
                 <i class="fa-solid fa-bars text-white"></i>
             </button>
             <div class="nav-menu flex-column align-items-center" id="navbarMenu">
-                <button @click="toggleMenu()" class="btn-menu btn-close text-white d-flex align-items-center justify-content-center" id="btn-menu" type="button">
+                <button @click="toggleMenu()" class="btn-menu btn-square btn-close text-white d-flex align-items-center justify-content-center" id="btn-menu" type="button">
                     <i class="fa-solid fa-xmark"></i>
                 </button>
                 <h2 class="my-5 text-white">Menu</h2>
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a @click="closeMenu()" class="nav-link py-3 text-white text-center border-bottom border-dark" href="#about">Chi siamo</a>
-                        <a @click="closeMenu()" class="nav-link py-3 text-white text-center border-bottom border-dark" href="#event-1">Bar Service</a>
+                        <a @click="closeMenu()" class="nav-link py-3 text-white text-center border-bottom border-dark" href="#anchor-service">Bar Service</a>
+                        <a @click="closeMenu()" class="nav-link py-3 text-white text-center border-bottom border-dark" href="#anchor-gallery">Gallery</a>
+                        <a @click="closeMenu()" class="nav-link py-3 text-white text-center border-bottom border-dark" href="#anchor-aggiuntivi">Servizi Aggiuntivi</a>
+                        <a @click="closeMenu()" class="nav-link py-3 text-white text-center border-bottom border-dark" href="#anchor-about">Chi Siamo</a>
+                        <a @click="closeMenu()" class="nav-link py-3 text-white text-center border-bottom border-dark" href="#anchor-preventivo">Preventivo</a>
                     </li>
                 </ul>
             </div>
@@ -61,8 +64,12 @@ left: 0;
 right: 0;
 z-index: 5;
 background-color: transparent !important;
-padding: 80px 60px;
+padding: 60px 60px;
 transition: 1s;
+
+img{
+    height: 100px;
+}
 
     .btn-square{
         width: 50px;
@@ -123,17 +130,26 @@ ul{
 
 nav.sticky{
     background-color: #252222 !important;
-    padding: 20px 60px;
+    padding: 10px 60px;
     transition: 1s;
+
+    img{
+        filter: invert(1);
+        height: 70px;
+    }
 }
 
 @media (max-width: 767px){
         nav{
             padding: 40px;
+
+            img{
+                height: 80px;
+            }
         }
 
         nav.sticky{
-            padding: 20px;
+            padding: 5px 20px;
         }
     }
 
