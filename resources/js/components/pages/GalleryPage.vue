@@ -1,17 +1,21 @@
 <template>
-    <main>
+    <main class="px-3">
         <GalleryDrinksSlider/>
         <GalleryCountersSlider/>
+        <GalleryLocationsSlider/>
+        <GalleryStaffSlider/>
     </main>
 </template>
 
 <script>
 import GalleryDrinksSlider from '../GalleryDrinksSlider.vue';
 import GalleryCountersSlider from '../GalleryCountersSlider.vue';
+import GalleryLocationsSlider from '../GalleryLocationsSlider.vue';
+import GalleryStaffSlider from '../GalleryStaffSlider.vue';
 
 export default{
     name: "GalleryPage",
-    components: { GalleryDrinksSlider, GalleryCountersSlider }
+    components: { GalleryDrinksSlider, GalleryCountersSlider, GalleryLocationsSlider, GalleryStaffSlider }
 }
 </script>
 

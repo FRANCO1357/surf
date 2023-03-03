@@ -17,11 +17,11 @@
                 <h2 class="my-5 text-white">Menu</h2>
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a @click="closeMenu()" class="nav-link py-3 text-white text-center border-bottom border-dark" href="#anchor-service">Bar Service</a>
-                        <a @click="closeMenu()" class="nav-link py-3 text-white text-center border-bottom border-dark" href="#anchor-gallery">Gallery</a>
-                        <a @click="closeMenu()" class="nav-link py-3 text-white text-center border-bottom border-dark" href="#anchor-aggiuntivi">Servizi Aggiuntivi</a>
-                        <a @click="closeMenu()" class="nav-link py-3 text-white text-center border-bottom border-dark" href="#anchor-about">Chi Siamo</a>
-                        <a @click="closeMenu()" class="nav-link py-3 text-white text-center border-bottom border-dark" href="#anchor-preventivo">Preventivo</a>
+                        <a @click="closeMenu()" class="nav-link py-3 text-white text-center border-bottom border-white" href="#anchor-service">Bar Service</a>
+                        <a @click="closeMenu()" class="nav-link py-3 text-white text-center border-bottom border-white" href="#anchor-gallery">Gallery</a>
+                        <a @click="closeMenu()" class="nav-link py-3 text-white text-center border-bottom border-white" href="#anchor-aggiuntivi">Servizi Aggiuntivi</a>
+                        <a @click="closeMenu()" class="nav-link py-3 text-white text-center border-bottom border-white" href="#anchor-about">Chi Siamo</a>
+                        <a @click="closeMenu()" class="nav-link py-3 text-white text-center border-bottom border-white" href="#anchor-preventivo">Preventivo</a>
                     </li>
                 </ul>
             </div>
@@ -101,8 +101,9 @@ img{
     right: -300px;
     height: 100vh;
     z-index: 20;
-    background-color: #252222;
-    background-image: url('../../../public/images/test/PHOTO-2023-02-08-15-54-06.jpg');
+    background-image: url('../../../public/images/test/black-marble.jpg');
+    background-size: 100vw;
+    background-position: top right;
     width: 300px;
     padding: 40px;
     transition: 0.3s;

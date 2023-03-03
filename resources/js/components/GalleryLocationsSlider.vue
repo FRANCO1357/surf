@@ -1,6 +1,6 @@
 <template>
     <section>
-        <h2>Staff</h2>
+        <h2>Locations</h2>
         <div class="gallery d-none d-lg-block h-100">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
@@ -283,7 +283,7 @@
 
 <script>
 export default{
-    name: 'GalleryStaffSlider',
+    name: 'GalleryLocationsSlider',
     mounted (){
 
         const swiper = new Swiper(".gallery", {

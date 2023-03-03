@@ -132,7 +132,7 @@
 
         <!-- gallery -->
         <div id="gallery">
-            <div class="container py-5">
+            <div class="container pt-5">
                 <GallerySlider/>
                 <div id="anchor-aggiuntivi" class="mb-5"></div>
             </div>
@@ -194,13 +194,6 @@
             <AppForm/>
         </section>
 
-        <footer>
-            <AppFooter/>
-            <div class="footer-bottom p-4 d-flex flex-column align-items-center">
-                <p class="m-0">Tenereza Eventi © 2023. Tutti i diritti riservati.</p>
-                <p class="m-0">Created with love by: <strong>Francesco Melani</strong></p>
-            </div>
-        </footer>
     </main>
 </template>
 
@@ -315,17 +308,6 @@ h2{
 
     .card{
         background-color: transparent;
-    }
-}
-
-footer{
-    background-image: url('../../../../public/images/test/black-marble.jpg');
-    background-size: cover;
-    color: white;
-
-    .footer-bottom{
-        background-image: url('../../../../public/images/test/black-marble-2.jpg');
-        background-size: cover;
     }
 }
 
