@@ -85,6 +85,21 @@ export default{
 }
 
 .carousel-indicators{
-        z-index: 3;
+    z-index: 3;
+}
+
+@media (max-width: 600px){
+
+    .carousel-inner{
+        .carousel-caption{
+            width: 80%;
+        h2{
+            font-size: 32px;
+        }
     }
+    }
+    
+}
+
+
 </style>

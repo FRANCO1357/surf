@@ -319,11 +319,13 @@ h2{
 }
 
 footer{
-    background-color: #252222;
+    background-image: url('../../../../public/images/test/black-marble.jpg');
+    background-size: cover;
     color: white;
 
     .footer-bottom{
-        background-color: #1D1B1B;
+        background-image: url('../../../../public/images/test/black-marble-2.jpg');
+        background-size: cover;
     }
 }
 

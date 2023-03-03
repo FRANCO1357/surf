@@ -4,7 +4,9 @@
             <a class="btn-square d-flex align-items-center justify-content-center text-white text-decoration-none" href="tel:+393347540892">
                 <i class="fa-solid fa-phone"></i>
             </a>
-            <a class="navbar-brand text-white ml-2" href="#"><img class="img-fluid" src="../../../public/images/test/logo-tenereza.png" alt=""></a>
+            <router-link :to="{name:'home'}">
+                <a class="navbar-brand text-white ml-2" href="#"><img class="img-fluid" src="../../../public/images/test/logo-tenereza.png" alt=""></a>
+            </router-link>
             <button @click="toggleMenu()" class="btn-square d-flex align-items-center justify-content-center" id="btn-menu" type="button">
                 <i class="fa-solid fa-bars text-white"></i>
             </button>
@@ -100,6 +102,7 @@ img{
     height: 100vh;
     z-index: 20;
     background-color: #252222;
+    background-image: url('../../../public/images/test/PHOTO-2023-02-08-15-54-06.jpg');
     width: 300px;
     padding: 40px;
     transition: 0.3s;
@@ -129,7 +132,9 @@ ul{
 }
 
 nav.sticky{
-    background-color: #252222 !important;
+    background-color: transparent !important;
+    background-image: url('../../../public/images/test/black-marble.jpg');
+    background-size: cover;
     padding: 10px 60px;
     transition: 1s;
 
