@@ -2917,7 +2917,11 @@ var staticRenderFns = [function () {
     staticClass: "m-0"
   }, [_vm._v("Tenereza Eventi © 2023. Tutti i diritti riservati.")]), _vm._v(" "), _c("p", {
     staticClass: "m-0"
-  }, [_vm._v("Created with love by: "), _c("strong", [_vm._v("Francesco Melani")])])])]);
+  }, [_vm._v("Created with love by: "), _c("strong", [_c("a", {
+    attrs: {
+      href: "https://instagram.com/franco_mela?igshid=YmMyMTA2M2Y="
+    }
+  }, [_vm._v("Francesco Melani")])])])])]);
 }];
 render._withStripped = true;
 
@@ -2944,7 +2948,7 @@ var staticRenderFns = [function () {
   var _vm = this,
     _c = _vm._self._c;
   return _c("div", {
-    staticClass: "container py-5 d-flex flex-column align-items-center"
+    staticClass: "container pb-5 d-flex flex-column align-items-center"
   }, [_c("h5", {
     staticClass: "bg-soft p-2 text-white text-center d-inline"
   }, [_vm._v("PREVENTIVO")]), _vm._v(" "), _c("h2", {
@@ -5228,7 +5232,39 @@ var render = function render() {
     attrs: {
       href: ""
     }
-  }, [_vm._v("Visualizza l'intera Gallery")])])], 1), _vm._v(" "), _vm._m(1), _vm._v(" "), _vm._m(2)]);
+  }, [_vm._v("Visualizza l'intera Gallery")])])], 1), _vm._v(" "), _c("div", {
+    staticClass: "gallery-tablet d-none d-md-block d-lg-none h-100"
+  }, [_vm._m(1), _vm._v(" "), _c("div", {
+    staticClass: "pagination"
+  }), _vm._v(" "), _c("router-link", {
+    staticClass: "nav-link text-center mt-5",
+    attrs: {
+      to: {
+        name: "gallery"
+      }
+    }
+  }, [_c("a", {
+    staticClass: "btn btn-soft",
+    attrs: {
+      href: ""
+    }
+  }, [_vm._v("Visualizza l'intera Gallery")])])], 1), _vm._v(" "), _c("div", {
+    staticClass: "gallery-mobile d-md-none h-100"
+  }, [_vm._m(2), _vm._v(" "), _c("div", {
+    staticClass: "pagination"
+  }), _vm._v(" "), _c("router-link", {
+    staticClass: "nav-link text-center mt-5",
+    attrs: {
+      to: {
+        name: "gallery"
+      }
+    }
+  }, [_c("a", {
+    staticClass: "btn btn-soft",
+    attrs: {
+      href: ""
+    }
+  }, [_vm._v("Visualizza l'intera Gallery")])])], 1)]);
 };
 var staticRenderFns = [function () {
   var _vm = this,
@@ -5331,52 +5367,18 @@ var staticRenderFns = [function () {
       src: __webpack_require__(/*! ../../../public/images/test/IMG-20220922-WA0058.jpg */ "./public/images/test/IMG-20220922-WA0058.jpg"),
       alt: ""
     }
-  })]), _vm._v(" "), _c("div", {
+  })])]);
+}, function () {
+  var _vm = this,
+    _c = _vm._self._c;
+  return _c("div", {
+    staticClass: "swiper-wrapper"
+  }, [_c("div", {
     staticClass: "swiper-slide"
   }, [_c("img", {
     staticClass: "img-fluid",
     attrs: {
-      src: __webpack_require__(/*! ../../../public/images/test/IMG-20220922-WA0060.jpg */ "./public/images/test/IMG-20220922-WA0060.jpg"),
-      alt: ""
-    }
-  })]), _vm._v(" "), _c("div", {
-    staticClass: "swiper-slide"
-  }, [_c("img", {
-    staticClass: "img-fluid",
-    attrs: {
-      src: __webpack_require__(/*! ../../../public/images/test/IMG-20220922-WA0061.jpg */ "./public/images/test/IMG-20220922-WA0061.jpg"),
-      alt: ""
-    }
-  })]), _vm._v(" "), _c("div", {
-    staticClass: "swiper-slide"
-  }, [_c("img", {
-    staticClass: "img-fluid",
-    attrs: {
-      src: __webpack_require__(/*! ../../../public/images/test/IMG-20220922-WA0063.jpg */ "./public/images/test/IMG-20220922-WA0063.jpg"),
-      alt: ""
-    }
-  })]), _vm._v(" "), _c("div", {
-    staticClass: "swiper-slide"
-  }, [_c("img", {
-    staticClass: "img-fluid",
-    attrs: {
-      src: __webpack_require__(/*! ../../../public/images/test/IMG-20220922-WA0066.jpg */ "./public/images/test/IMG-20220922-WA0066.jpg"),
-      alt: ""
-    }
-  })]), _vm._v(" "), _c("div", {
-    staticClass: "swiper-slide"
-  }, [_c("img", {
-    staticClass: "img-fluid",
-    attrs: {
-      src: __webpack_require__(/*! ../../../public/images/test/IMG-20220922-WA0067.jpg */ "./public/images/test/IMG-20220922-WA0067.jpg"),
-      alt: ""
-    }
-  })]), _vm._v(" "), _c("div", {
-    staticClass: "swiper-slide"
-  }, [_c("img", {
-    staticClass: "img-fluid",
-    attrs: {
-      src: __webpack_require__(/*! ../../../public/images/test/IMG-20220922-WA0070.jpg */ "./public/images/test/IMG-20220922-WA0070.jpg"),
+      src: __webpack_require__(/*! ../../../public/images/test/IMG-20220922-WA0085.jpg */ "./public/images/test/IMG-20220922-WA0085.jpg"),
       alt: ""
     }
   })]), _vm._v(" "), _c("div", {
@@ -5392,7 +5394,7 @@ var staticRenderFns = [function () {
   }, [_c("img", {
     staticClass: "img-fluid",
     attrs: {
-      src: __webpack_require__(/*! ../../../public/images/test/IMG-20220922-WA0073.jpg */ "./public/images/test/IMG-20220922-WA0073.jpg"),
+      src: __webpack_require__(/*! ../../../public/images/test/IMG-20220922-WA0097.jpg */ "./public/images/test/IMG-20220922-WA0097.jpg"),
       alt: ""
     }
   })]), _vm._v(" "), _c("div", {
@@ -5400,7 +5402,7 @@ var staticRenderFns = [function () {
   }, [_c("img", {
     staticClass: "img-fluid",
     attrs: {
-      src: __webpack_require__(/*! ../../../public/images/test/IMG-20220922-WA0074.jpg */ "./public/images/test/IMG-20220922-WA0074.jpg"),
+      src: __webpack_require__(/*! ../../../public/images/test/IMG-20220922-WA0051.jpg */ "./public/images/test/IMG-20220922-WA0051.jpg"),
       alt: ""
     }
   })]), _vm._v(" "), _c("div", {
@@ -5408,7 +5410,7 @@ var staticRenderFns = [function () {
   }, [_c("img", {
     staticClass: "img-fluid",
     attrs: {
-      src: __webpack_require__(/*! ../../../public/images/test/IMG-20220922-WA0075.jpg */ "./public/images/test/IMG-20220922-WA0075.jpg"),
+      src: __webpack_require__(/*! ../../../public/images/test/IMG-20220922-WA0048.jpg */ "./public/images/test/IMG-20220922-WA0048.jpg"),
       alt: ""
     }
   })]), _vm._v(" "), _c("div", {
@@ -5416,7 +5418,7 @@ var staticRenderFns = [function () {
   }, [_c("img", {
     staticClass: "img-fluid",
     attrs: {
-      src: __webpack_require__(/*! ../../../public/images/test/IMG-20220922-WA0076.jpg */ "./public/images/test/IMG-20220922-WA0076.jpg"),
+      src: __webpack_require__(/*! ../../../public/images/test/IMG-20220922-WA0052.jpg */ "./public/images/test/IMG-20220922-WA0052.jpg"),
       alt: ""
     }
   })]), _vm._v(" "), _c("div", {
@@ -5424,7 +5426,7 @@ var staticRenderFns = [function () {
   }, [_c("img", {
     staticClass: "img-fluid",
     attrs: {
-      src: __webpack_require__(/*! ../../../public/images/test/IMG-20220922-WA0079.jpg */ "./public/images/test/IMG-20220922-WA0079.jpg"),
+      src: __webpack_require__(/*! ../../../public/images/test/IMG-20220922-WA0053.jpg */ "./public/images/test/IMG-20220922-WA0053.jpg"),
       alt: ""
     }
   })]), _vm._v(" "), _c("div", {
@@ -5432,7 +5434,7 @@ var staticRenderFns = [function () {
   }, [_c("img", {
     staticClass: "img-fluid",
     attrs: {
-      src: __webpack_require__(/*! ../../../public/images/test/IMG-20220922-WA0081.jpg */ "./public/images/test/IMG-20220922-WA0081.jpg"),
+      src: __webpack_require__(/*! ../../../public/images/test/IMG-20220922-WA0054.jpg */ "./public/images/test/IMG-20220922-WA0054.jpg"),
       alt: ""
     }
   })]), _vm._v(" "), _c("div", {
@@ -5440,7 +5442,7 @@ var staticRenderFns = [function () {
   }, [_c("img", {
     staticClass: "img-fluid",
     attrs: {
-      src: __webpack_require__(/*! ../../../public/images/test/IMG-20220922-WA0082.jpg */ "./public/images/test/IMG-20220922-WA0082.jpg"),
+      src: __webpack_require__(/*! ../../../public/images/test/IMG-20220922-WA0055.jpg */ "./public/images/test/IMG-20220922-WA0055.jpg"),
       alt: ""
     }
   })]), _vm._v(" "), _c("div", {
@@ -5448,7 +5450,7 @@ var staticRenderFns = [function () {
   }, [_c("img", {
     staticClass: "img-fluid",
     attrs: {
-      src: __webpack_require__(/*! ../../../public/images/test/IMG-20220922-WA0083.jpg */ "./public/images/test/IMG-20220922-WA0083.jpg"),
+      src: __webpack_require__(/*! ../../../public/images/test/IMG-20220922-WA0056.jpg */ "./public/images/test/IMG-20220922-WA0056.jpg"),
       alt: ""
     }
   })]), _vm._v(" "), _c("div", {
@@ -5456,7 +5458,15 @@ var staticRenderFns = [function () {
   }, [_c("img", {
     staticClass: "img-fluid",
     attrs: {
-      src: __webpack_require__(/*! ../../../public/images/test/IMG-20220922-WA0090.jpg */ "./public/images/test/IMG-20220922-WA0090.jpg"),
+      src: __webpack_require__(/*! ../../../public/images/test/IMG-20220922-WA0057.jpg */ "./public/images/test/IMG-20220922-WA0057.jpg"),
+      alt: ""
+    }
+  })]), _vm._v(" "), _c("div", {
+    staticClass: "swiper-slide"
+  }, [_c("img", {
+    staticClass: "img-fluid",
+    attrs: {
+      src: __webpack_require__(/*! ../../../public/images/test/IMG-20220922-WA0058.jpg */ "./public/images/test/IMG-20220922-WA0058.jpg"),
       alt: ""
     }
   })])]);
@@ -5464,8 +5474,6 @@ var staticRenderFns = [function () {
   var _vm = this,
     _c = _vm._self._c;
   return _c("div", {
-    staticClass: "gallery-tablet d-none d-md-block d-lg-none h-100"
-  }, [_c("div", {
     staticClass: "swiper-wrapper"
   }, [_c("div", {
     staticClass: "swiper-slide"
@@ -5563,369 +5571,7 @@ var staticRenderFns = [function () {
       src: __webpack_require__(/*! ../../../public/images/test/IMG-20220922-WA0058.jpg */ "./public/images/test/IMG-20220922-WA0058.jpg"),
       alt: ""
     }
-  })]), _vm._v(" "), _c("div", {
-    staticClass: "swiper-slide"
-  }, [_c("img", {
-    staticClass: "img-fluid",
-    attrs: {
-      src: __webpack_require__(/*! ../../../public/images/test/IMG-20220922-WA0060.jpg */ "./public/images/test/IMG-20220922-WA0060.jpg"),
-      alt: ""
-    }
-  })]), _vm._v(" "), _c("div", {
-    staticClass: "swiper-slide"
-  }, [_c("img", {
-    staticClass: "img-fluid",
-    attrs: {
-      src: __webpack_require__(/*! ../../../public/images/test/IMG-20220922-WA0061.jpg */ "./public/images/test/IMG-20220922-WA0061.jpg"),
-      alt: ""
-    }
-  })]), _vm._v(" "), _c("div", {
-    staticClass: "swiper-slide"
-  }, [_c("img", {
-    staticClass: "img-fluid",
-    attrs: {
-      src: __webpack_require__(/*! ../../../public/images/test/IMG-20220922-WA0063.jpg */ "./public/images/test/IMG-20220922-WA0063.jpg"),
-      alt: ""
-    }
-  })]), _vm._v(" "), _c("div", {
-    staticClass: "swiper-slide"
-  }, [_c("img", {
-    staticClass: "img-fluid",
-    attrs: {
-      src: __webpack_require__(/*! ../../../public/images/test/IMG-20220922-WA0066.jpg */ "./public/images/test/IMG-20220922-WA0066.jpg"),
-      alt: ""
-    }
-  })]), _vm._v(" "), _c("div", {
-    staticClass: "swiper-slide"
-  }, [_c("img", {
-    staticClass: "img-fluid",
-    attrs: {
-      src: __webpack_require__(/*! ../../../public/images/test/IMG-20220922-WA0067.jpg */ "./public/images/test/IMG-20220922-WA0067.jpg"),
-      alt: ""
-    }
-  })]), _vm._v(" "), _c("div", {
-    staticClass: "swiper-slide"
-  }, [_c("img", {
-    staticClass: "img-fluid",
-    attrs: {
-      src: __webpack_require__(/*! ../../../public/images/test/IMG-20220922-WA0070.jpg */ "./public/images/test/IMG-20220922-WA0070.jpg"),
-      alt: ""
-    }
-  })]), _vm._v(" "), _c("div", {
-    staticClass: "swiper-slide"
-  }, [_c("img", {
-    staticClass: "img-fluid",
-    attrs: {
-      src: __webpack_require__(/*! ../../../public/images/test/IMG-20220922-WA0071.jpg */ "./public/images/test/IMG-20220922-WA0071.jpg"),
-      alt: ""
-    }
-  })]), _vm._v(" "), _c("div", {
-    staticClass: "swiper-slide"
-  }, [_c("img", {
-    staticClass: "img-fluid",
-    attrs: {
-      src: __webpack_require__(/*! ../../../public/images/test/IMG-20220922-WA0073.jpg */ "./public/images/test/IMG-20220922-WA0073.jpg"),
-      alt: ""
-    }
-  })]), _vm._v(" "), _c("div", {
-    staticClass: "swiper-slide"
-  }, [_c("img", {
-    staticClass: "img-fluid",
-    attrs: {
-      src: __webpack_require__(/*! ../../../public/images/test/IMG-20220922-WA0074.jpg */ "./public/images/test/IMG-20220922-WA0074.jpg"),
-      alt: ""
-    }
-  })]), _vm._v(" "), _c("div", {
-    staticClass: "swiper-slide"
-  }, [_c("img", {
-    staticClass: "img-fluid",
-    attrs: {
-      src: __webpack_require__(/*! ../../../public/images/test/IMG-20220922-WA0075.jpg */ "./public/images/test/IMG-20220922-WA0075.jpg"),
-      alt: ""
-    }
-  })]), _vm._v(" "), _c("div", {
-    staticClass: "swiper-slide"
-  }, [_c("img", {
-    staticClass: "img-fluid",
-    attrs: {
-      src: __webpack_require__(/*! ../../../public/images/test/IMG-20220922-WA0076.jpg */ "./public/images/test/IMG-20220922-WA0076.jpg"),
-      alt: ""
-    }
-  })]), _vm._v(" "), _c("div", {
-    staticClass: "swiper-slide"
-  }, [_c("img", {
-    staticClass: "img-fluid",
-    attrs: {
-      src: __webpack_require__(/*! ../../../public/images/test/IMG-20220922-WA0079.jpg */ "./public/images/test/IMG-20220922-WA0079.jpg"),
-      alt: ""
-    }
-  })]), _vm._v(" "), _c("div", {
-    staticClass: "swiper-slide"
-  }, [_c("img", {
-    staticClass: "img-fluid",
-    attrs: {
-      src: __webpack_require__(/*! ../../../public/images/test/IMG-20220922-WA0081.jpg */ "./public/images/test/IMG-20220922-WA0081.jpg"),
-      alt: ""
-    }
-  })]), _vm._v(" "), _c("div", {
-    staticClass: "swiper-slide"
-  }, [_c("img", {
-    staticClass: "img-fluid",
-    attrs: {
-      src: __webpack_require__(/*! ../../../public/images/test/IMG-20220922-WA0082.jpg */ "./public/images/test/IMG-20220922-WA0082.jpg"),
-      alt: ""
-    }
-  })]), _vm._v(" "), _c("div", {
-    staticClass: "swiper-slide"
-  }, [_c("img", {
-    staticClass: "img-fluid",
-    attrs: {
-      src: __webpack_require__(/*! ../../../public/images/test/IMG-20220922-WA0083.jpg */ "./public/images/test/IMG-20220922-WA0083.jpg"),
-      alt: ""
-    }
-  })]), _vm._v(" "), _c("div", {
-    staticClass: "swiper-slide"
-  }, [_c("img", {
-    staticClass: "img-fluid",
-    attrs: {
-      src: __webpack_require__(/*! ../../../public/images/test/IMG-20220922-WA0090.jpg */ "./public/images/test/IMG-20220922-WA0090.jpg"),
-      alt: ""
-    }
-  })])]), _vm._v(" "), _c("div", {
-    staticClass: "pagination"
-  })]);
-}, function () {
-  var _vm = this,
-    _c = _vm._self._c;
-  return _c("div", {
-    staticClass: "gallery-mobile d-md-none h-100"
-  }, [_c("div", {
-    staticClass: "swiper-wrapper"
-  }, [_c("div", {
-    staticClass: "swiper-slide"
-  }, [_c("img", {
-    staticClass: "img-fluid",
-    attrs: {
-      src: __webpack_require__(/*! ../../../public/images/test/IMG-20220922-WA0085.jpg */ "./public/images/test/IMG-20220922-WA0085.jpg"),
-      alt: ""
-    }
-  })]), _vm._v(" "), _c("div", {
-    staticClass: "swiper-slide"
-  }, [_c("img", {
-    staticClass: "img-fluid",
-    attrs: {
-      src: __webpack_require__(/*! ../../../public/images/test/IMG-20220922-WA0071.jpg */ "./public/images/test/IMG-20220922-WA0071.jpg"),
-      alt: ""
-    }
-  })]), _vm._v(" "), _c("div", {
-    staticClass: "swiper-slide"
-  }, [_c("img", {
-    staticClass: "img-fluid",
-    attrs: {
-      src: __webpack_require__(/*! ../../../public/images/test/IMG-20220922-WA0097.jpg */ "./public/images/test/IMG-20220922-WA0097.jpg"),
-      alt: ""
-    }
-  })]), _vm._v(" "), _c("div", {
-    staticClass: "swiper-slide"
-  }, [_c("img", {
-    staticClass: "img-fluid",
-    attrs: {
-      src: __webpack_require__(/*! ../../../public/images/test/IMG-20220922-WA0051.jpg */ "./public/images/test/IMG-20220922-WA0051.jpg"),
-      alt: ""
-    }
-  })]), _vm._v(" "), _c("div", {
-    staticClass: "swiper-slide"
-  }, [_c("img", {
-    staticClass: "img-fluid",
-    attrs: {
-      src: __webpack_require__(/*! ../../../public/images/test/IMG-20220922-WA0048.jpg */ "./public/images/test/IMG-20220922-WA0048.jpg"),
-      alt: ""
-    }
-  })]), _vm._v(" "), _c("div", {
-    staticClass: "swiper-slide"
-  }, [_c("img", {
-    staticClass: "img-fluid",
-    attrs: {
-      src: __webpack_require__(/*! ../../../public/images/test/IMG-20220922-WA0052.jpg */ "./public/images/test/IMG-20220922-WA0052.jpg"),
-      alt: ""
-    }
-  })]), _vm._v(" "), _c("div", {
-    staticClass: "swiper-slide"
-  }, [_c("img", {
-    staticClass: "img-fluid",
-    attrs: {
-      src: __webpack_require__(/*! ../../../public/images/test/IMG-20220922-WA0053.jpg */ "./public/images/test/IMG-20220922-WA0053.jpg"),
-      alt: ""
-    }
-  })]), _vm._v(" "), _c("div", {
-    staticClass: "swiper-slide"
-  }, [_c("img", {
-    staticClass: "img-fluid",
-    attrs: {
-      src: __webpack_require__(/*! ../../../public/images/test/IMG-20220922-WA0054.jpg */ "./public/images/test/IMG-20220922-WA0054.jpg"),
-      alt: ""
-    }
-  })]), _vm._v(" "), _c("div", {
-    staticClass: "swiper-slide"
-  }, [_c("img", {
-    staticClass: "img-fluid",
-    attrs: {
-      src: __webpack_require__(/*! ../../../public/images/test/IMG-20220922-WA0055.jpg */ "./public/images/test/IMG-20220922-WA0055.jpg"),
-      alt: ""
-    }
-  })]), _vm._v(" "), _c("div", {
-    staticClass: "swiper-slide"
-  }, [_c("img", {
-    staticClass: "img-fluid",
-    attrs: {
-      src: __webpack_require__(/*! ../../../public/images/test/IMG-20220922-WA0056.jpg */ "./public/images/test/IMG-20220922-WA0056.jpg"),
-      alt: ""
-    }
-  })]), _vm._v(" "), _c("div", {
-    staticClass: "swiper-slide"
-  }, [_c("img", {
-    staticClass: "img-fluid",
-    attrs: {
-      src: __webpack_require__(/*! ../../../public/images/test/IMG-20220922-WA0057.jpg */ "./public/images/test/IMG-20220922-WA0057.jpg"),
-      alt: ""
-    }
-  })]), _vm._v(" "), _c("div", {
-    staticClass: "swiper-slide"
-  }, [_c("img", {
-    staticClass: "img-fluid",
-    attrs: {
-      src: __webpack_require__(/*! ../../../public/images/test/IMG-20220922-WA0058.jpg */ "./public/images/test/IMG-20220922-WA0058.jpg"),
-      alt: ""
-    }
-  })]), _vm._v(" "), _c("div", {
-    staticClass: "swiper-slide"
-  }, [_c("img", {
-    staticClass: "img-fluid",
-    attrs: {
-      src: __webpack_require__(/*! ../../../public/images/test/IMG-20220922-WA0060.jpg */ "./public/images/test/IMG-20220922-WA0060.jpg"),
-      alt: ""
-    }
-  })]), _vm._v(" "), _c("div", {
-    staticClass: "swiper-slide"
-  }, [_c("img", {
-    staticClass: "img-fluid",
-    attrs: {
-      src: __webpack_require__(/*! ../../../public/images/test/IMG-20220922-WA0061.jpg */ "./public/images/test/IMG-20220922-WA0061.jpg"),
-      alt: ""
-    }
-  })]), _vm._v(" "), _c("div", {
-    staticClass: "swiper-slide"
-  }, [_c("img", {
-    staticClass: "img-fluid",
-    attrs: {
-      src: __webpack_require__(/*! ../../../public/images/test/IMG-20220922-WA0063.jpg */ "./public/images/test/IMG-20220922-WA0063.jpg"),
-      alt: ""
-    }
-  })]), _vm._v(" "), _c("div", {
-    staticClass: "swiper-slide"
-  }, [_c("img", {
-    staticClass: "img-fluid",
-    attrs: {
-      src: __webpack_require__(/*! ../../../public/images/test/IMG-20220922-WA0066.jpg */ "./public/images/test/IMG-20220922-WA0066.jpg"),
-      alt: ""
-    }
-  })]), _vm._v(" "), _c("div", {
-    staticClass: "swiper-slide"
-  }, [_c("img", {
-    staticClass: "img-fluid",
-    attrs: {
-      src: __webpack_require__(/*! ../../../public/images/test/IMG-20220922-WA0067.jpg */ "./public/images/test/IMG-20220922-WA0067.jpg"),
-      alt: ""
-    }
-  })]), _vm._v(" "), _c("div", {
-    staticClass: "swiper-slide"
-  }, [_c("img", {
-    staticClass: "img-fluid",
-    attrs: {
-      src: __webpack_require__(/*! ../../../public/images/test/IMG-20220922-WA0070.jpg */ "./public/images/test/IMG-20220922-WA0070.jpg"),
-      alt: ""
-    }
-  })]), _vm._v(" "), _c("div", {
-    staticClass: "swiper-slide"
-  }, [_c("img", {
-    staticClass: "img-fluid",
-    attrs: {
-      src: __webpack_require__(/*! ../../../public/images/test/IMG-20220922-WA0071.jpg */ "./public/images/test/IMG-20220922-WA0071.jpg"),
-      alt: ""
-    }
-  })]), _vm._v(" "), _c("div", {
-    staticClass: "swiper-slide"
-  }, [_c("img", {
-    staticClass: "img-fluid",
-    attrs: {
-      src: __webpack_require__(/*! ../../../public/images/test/IMG-20220922-WA0073.jpg */ "./public/images/test/IMG-20220922-WA0073.jpg"),
-      alt: ""
-    }
-  })]), _vm._v(" "), _c("div", {
-    staticClass: "swiper-slide"
-  }, [_c("img", {
-    staticClass: "img-fluid",
-    attrs: {
-      src: __webpack_require__(/*! ../../../public/images/test/IMG-20220922-WA0074.jpg */ "./public/images/test/IMG-20220922-WA0074.jpg"),
-      alt: ""
-    }
-  })]), _vm._v(" "), _c("div", {
-    staticClass: "swiper-slide"
-  }, [_c("img", {
-    staticClass: "img-fluid",
-    attrs: {
-      src: __webpack_require__(/*! ../../../public/images/test/IMG-20220922-WA0075.jpg */ "./public/images/test/IMG-20220922-WA0075.jpg"),
-      alt: ""
-    }
-  })]), _vm._v(" "), _c("div", {
-    staticClass: "swiper-slide"
-  }, [_c("img", {
-    staticClass: "img-fluid",
-    attrs: {
-      src: __webpack_require__(/*! ../../../public/images/test/IMG-20220922-WA0076.jpg */ "./public/images/test/IMG-20220922-WA0076.jpg"),
-      alt: ""
-    }
-  })]), _vm._v(" "), _c("div", {
-    staticClass: "swiper-slide"
-  }, [_c("img", {
-    staticClass: "img-fluid",
-    attrs: {
-      src: __webpack_require__(/*! ../../../public/images/test/IMG-20220922-WA0079.jpg */ "./public/images/test/IMG-20220922-WA0079.jpg"),
-      alt: ""
-    }
-  })]), _vm._v(" "), _c("div", {
-    staticClass: "swiper-slide"
-  }, [_c("img", {
-    staticClass: "img-fluid",
-    attrs: {
-      src: __webpack_require__(/*! ../../../public/images/test/IMG-20220922-WA0081.jpg */ "./public/images/test/IMG-20220922-WA0081.jpg"),
-      alt: ""
-    }
-  })]), _vm._v(" "), _c("div", {
-    staticClass: "swiper-slide"
-  }, [_c("img", {
-    staticClass: "img-fluid",
-    attrs: {
-      src: __webpack_require__(/*! ../../../public/images/test/IMG-20220922-WA0082.jpg */ "./public/images/test/IMG-20220922-WA0082.jpg"),
-      alt: ""
-    }
-  })]), _vm._v(" "), _c("div", {
-    staticClass: "swiper-slide"
-  }, [_c("img", {
-    staticClass: "img-fluid",
-    attrs: {
-      src: __webpack_require__(/*! ../../../public/images/test/IMG-20220922-WA0083.jpg */ "./public/images/test/IMG-20220922-WA0083.jpg"),
-      alt: ""
-    }
-  })]), _vm._v(" "), _c("div", {
-    staticClass: "swiper-slide"
-  }, [_c("img", {
-    staticClass: "img-fluid",
-    attrs: {
-      src: __webpack_require__(/*! ../../../public/images/test/IMG-20220922-WA0090.jpg */ "./public/images/test/IMG-20220922-WA0090.jpg"),
-      alt: ""
-    }
-  })])])]);
+  })])]);
 }];
 render._withStripped = true;
 
@@ -6898,15 +6544,15 @@ var staticRenderFns = [function () {
       alt: ""
     }
   }), _vm._v(" "), _c("p", {
-    staticClass: "bg-danger text-white p-2 d-inline"
-  }, [_vm._v("SERVIZIO AGGIUNTIVO")]), _vm._v(" "), _c("h3", {
+    staticClass: "label-soft text-white p-2 d-inline"
+  }, [_vm._v("Servizio Aggiuntivo")]), _vm._v(" "), _c("h3", {
     staticClass: "text-white text-center"
   }, [_vm._v("RUM BAR")])]), _vm._v(" "), _c("div", {
     staticClass: "card-body d-flex flex-column align-items-center justify-content-around py-4 px-5"
   }, [_c("p", {
     staticClass: "text-center border-bottom border-secondary py-3"
   }, [_vm._v("Degustazione di Rum della Martinica, Santo Domingo, Portorico, Cuba abbinata a sigari e cioccolato fondente ed accompagnata da frutta secca e spezie, come arancia cannella e caffè.")]), _vm._v(" "), _c("div", {
-    staticClass: "icon d-flex pt-2"
+    staticClass: "icon mb-2 d-flex pt-2"
   }, [_c("img", {
     staticClass: "img-fluid",
     attrs: {
@@ -6915,7 +6561,7 @@ var staticRenderFns = [function () {
     }
   })]), _vm._v(" "), _c("p", {
     staticClass: "text-center"
-  }, [_vm._v("Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, reprehenderit laborum quibusdam.")])])]), _vm._v(" "), _c("div", {
+  }, [_vm._v("Saint jaimes, Matusalem, Flor de Cana, Hampdem Estate, El Dorado, Havana club, Sailor Jerry")])])]), _vm._v(" "), _c("div", {
     staticClass: "swiper-slide"
   }, [_c("div", {
     staticClass: "card-top d-flex flex-column align-items-center justify-content-around pt-3"
@@ -6925,15 +6571,15 @@ var staticRenderFns = [function () {
       alt: ""
     }
   }), _vm._v(" "), _c("p", {
-    staticClass: "bg-danger text-white p-2 d-inline"
-  }, [_vm._v("SERVIZIO AGGIUNTIVO")]), _vm._v(" "), _c("h3", {
+    staticClass: "label-soft text-white p-2 d-inline"
+  }, [_vm._v("Servizio Aggiuntivo")]), _vm._v(" "), _c("h3", {
     staticClass: "text-white text-center"
   }, [_vm._v("WHISKY BAR")])]), _vm._v(" "), _c("div", {
     staticClass: "card-body d-flex flex-column align-items-center justify-content-around py-4 px-5"
   }, [_c("p", {
     staticClass: "text-center border-bottom border-secondary py-3"
   }, [_vm._v("Degustazione di Whisky della Scozia, Canada, Irlanda, Stati Uniti e Giappone abbinata a sigari e cioccolata fondente ed accompagnata da frutta secca e spezie, come arancia e cannella, zucchero di canna e caffè.")]), _vm._v(" "), _c("div", {
-    staticClass: "icon d-flex pt-2"
+    staticClass: "icon mb-2 d-flex pt-2"
   }, [_c("img", {
     staticClass: "img-fluid",
     attrs: {
@@ -6942,7 +6588,7 @@ var staticRenderFns = [function () {
     }
   })]), _vm._v(" "), _c("p", {
     staticClass: "text-center"
-  }, [_vm._v("Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, reprehenderit laborum quibusdam.")])])]), _vm._v(" "), _c("div", {
+  }, [_vm._v("Talisker, Jhonny walker. Jamenson, Nikka, Bulleit, Tamnavulin")])])]), _vm._v(" "), _c("div", {
     staticClass: "swiper-slide"
   }, [_c("div", {
     staticClass: "card-top d-flex flex-column align-items-center justify-content-around pt-3"
@@ -6952,26 +6598,24 @@ var staticRenderFns = [function () {
       alt: ""
     }
   }), _vm._v(" "), _c("p", {
-    staticClass: "bg-danger text-white p-2 d-inline"
-  }, [_vm._v("SERVIZIO AGGIUNTIVO")]), _vm._v(" "), _c("h3", {
+    staticClass: "label-soft text-white p-2 d-inline"
+  }, [_vm._v("Servizio Aggiuntivo")]), _vm._v(" "), _c("h3", {
     staticClass: "text-white text-center"
   }, [_vm._v("TROPIC BAR")])]), _vm._v(" "), _c("div", {
     staticClass: "card-body d-flex flex-column align-items-center justify-content-around py-4 px-5"
   }, [_c("p", {
     staticClass: "text-center border-bottom border-secondary py-3"
-  }, [_vm._v("Alle proposte degli altri servizi è possibile aggiungere una fresca e tropicale drink list che prevede")]), _vm._v(" "), _c("ul", {
-    staticClass: "list-unstyled"
-  }, [_c("li", [_vm._v("- Frozen Drink")]), _vm._v(" "), _c("li", [_vm._v("- Coladas")]), _vm._v(" "), _c("li", [_vm._v("- Tiki cocktail")])]), _vm._v(" "), _c("div", {
-    staticClass: "icon d-flex pt-2"
+  }, [_vm._v("Alle proposte degli altri servizi è possibile aggiungere una fresca e tropicale drink list che prevede")]), _vm._v(" "), _c("div", {
+    staticClass: "icon mb-2 d-flex pt-2"
   }, [_c("img", {
     staticClass: "img-fluid",
     attrs: {
-      src: __webpack_require__(/*! ../../../public/images/icons/76325.png */ "./public/images/icons/76325.png"),
+      src: __webpack_require__(/*! ../../../public/images/icons/martini.png */ "./public/images/icons/martini.png"),
       alt: ""
     }
   })]), _vm._v(" "), _c("p", {
     staticClass: "text-center"
-  }, [_vm._v("Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, reprehenderit laborum quibusdam.")])])]), _vm._v(" "), _c("div", {
+  }, [_vm._v("Strawberry and Banana frozen daiquiri, Mai Tai, Pina coladas, Tiki Mug")])])]), _vm._v(" "), _c("div", {
     staticClass: "swiper-slide"
   }, [_c("div", {
     staticClass: "card-top d-flex flex-column align-items-center justify-content-around pt-3"
@@ -6981,15 +6625,15 @@ var staticRenderFns = [function () {
       alt: ""
     }
   }), _vm._v(" "), _c("p", {
-    staticClass: "bg-danger text-white p-2 d-inline"
-  }, [_vm._v("SERVIZIO AGGIUNTIVO")]), _vm._v(" "), _c("h3", {
+    staticClass: "label-soft text-white p-2 d-inline"
+  }, [_vm._v("Servizio Aggiuntivo")]), _vm._v(" "), _c("h3", {
     staticClass: "text-white text-center"
   }, [_vm._v("FLUO DRINK BAR")])]), _vm._v(" "), _c("div", {
     staticClass: "card-body d-flex flex-column align-items-center justify-content-around py-4 px-5"
   }, [_c("p", {
     staticClass: "text-center border-bottom border-secondary py-3"
   }, [_vm._v("Espressamente pensato per illuminare i tuoi drink durante l’after dinner. La formula prevede un servizio di cocktail e shot fluo illuminati dalle luci UV per rendere il tuo dopocena più appariscente!.")]), _vm._v(" "), _c("div", {
-    staticClass: "icon d-flex pt-2"
+    staticClass: "icon mb-2 d-flex pt-2"
   }, [_c("img", {
     staticClass: "img-fluid",
     attrs: {
@@ -6998,7 +6642,7 @@ var staticRenderFns = [function () {
     }
   })]), _vm._v(" "), _c("p", {
     staticClass: "text-center"
-  }, [_vm._v("Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, reprehenderit laborum quibusdam.")])])]), _vm._v(" "), _c("div", {
+  }, [_vm._v("Illuminati di...FLUO!")])])]), _vm._v(" "), _c("div", {
     staticClass: "swiper-slide"
   }, [_c("div", {
     staticClass: "card-top d-flex flex-column align-items-center justify-content-around pt-3"
@@ -7008,15 +6652,15 @@ var staticRenderFns = [function () {
       alt: ""
     }
   }), _vm._v(" "), _c("p", {
-    staticClass: "bg-danger text-white p-2 d-inline"
-  }, [_vm._v("SERVIZIO AGGIUNTIVO")]), _vm._v(" "), _c("h3", {
+    staticClass: "label-soft text-white p-2 d-inline"
+  }, [_vm._v("Servizio Aggiuntivo")]), _vm._v(" "), _c("h3", {
     staticClass: "text-white text-center"
   }, [_vm._v("ESPRESSO MARTINI NEGATIVO")])]), _vm._v(" "), _c("div", {
     staticClass: "card-body d-flex flex-column align-items-center justify-content-around py-4 px-5"
   }, [_c("p", {
     staticClass: "text-center border-bottom border-secondary py-3"
-  }, [_vm._v("Cosa c’è di meglio di un buon espresso martini dopocena?. Questo servizio offre al cliente una scenica presentazione e degustazione di un espresso martini eseguito nelle nostra moka con l’aggiunta di ghiaccio secco. Apparentemente caldo e fumante, ma realmente freddo e buono da degustare.")]), _vm._v(" "), _c("div", {
-    staticClass: "icon d-flex pt-2"
+  }, [_vm._v("Cosa c’è di meglio di un buon espresso martini dopocena?. Questo servizio offre al cliente una scenica presentazione e degustazione di un espresso martini eseguito nelle nostra moka con l’aggiunta di ghiaccio secco.")]), _vm._v(" "), _c("div", {
+    staticClass: "icon mb-2 d-flex pt-2"
   }, [_c("img", {
     staticClass: "img-fluid",
     attrs: {
@@ -7025,7 +6669,7 @@ var staticRenderFns = [function () {
     }
   })]), _vm._v(" "), _c("p", {
     staticClass: "text-center"
-  }, [_vm._v("Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, reprehenderit laborum quibusdam.")])])])]);
+  }, [_vm._v("Apparentemente caldo e fumante, ma realmente freddo e buono da degustare.")])])])]);
 }, function () {
   var _vm = this,
     _c = _vm._self._c;
@@ -7041,55 +6685,105 @@ var staticRenderFns = [function () {
       alt: ""
     }
   }), _vm._v(" "), _c("p", {
-    staticClass: "bg-danger text-white p-2 d-inline"
-  }, [_vm._v("SERVIZIO AGGIUNTIVO")]), _vm._v(" "), _c("h3", {
+    staticClass: "label-soft text-white p-2 d-inline"
+  }, [_vm._v("Servizio Aggiuntivo")]), _vm._v(" "), _c("h3", {
     staticClass: "text-white text-center"
   }, [_vm._v("RUM BAR")])]), _vm._v(" "), _c("div", {
     staticClass: "card-body d-flex flex-column align-items-center justify-content-around py-4 px-5"
   }, [_c("p", {
     staticClass: "text-center border-bottom border-secondary py-3"
   }, [_vm._v("Degustazione di Rum della Martinica, Santo Domingo, Portorico, Cuba abbinata a sigari e cioccolato fondente ed accompagnata da frutta secca e spezie, come arancia cannella e caffè.")]), _vm._v(" "), _c("div", {
-    staticClass: "icon d-flex pt-2"
-  }, [_c("i", {
-    staticClass: "fa-solid fa-book fa-2x p-1 text-danger"
-  }), _vm._v(" "), _c("i", {
-    staticClass: "fa-solid fa-pencil fa-2x p-1 text-danger"
-  })]), _vm._v(" "), _c("h5", {
-    staticClass: "text-center border-bottom border-secondary pt-2 pb-4 w-100"
-  }, [_vm._v("+50 OSPITI")]), _vm._v(" "), _c("i", {
-    staticClass: "fa-solid fa-martini-glass fa-2x p-1 text-danger pt-3"
-  }), _vm._v(" "), _c("p", {
+    staticClass: "icon mb-2 d-flex pt-2"
+  }, [_c("img", {
+    staticClass: "img-fluid",
+    attrs: {
+      src: __webpack_require__(/*! ../../../public/images/icons/2230932-200.png */ "./public/images/icons/2230932-200.png"),
+      alt: ""
+    }
+  })]), _vm._v(" "), _c("p", {
     staticClass: "text-center"
-  }, [_vm._v("Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, reprehenderit laborum quibusdam.")])])]), _vm._v(" "), _c("div", {
+  }, [_vm._v("Saint jaimes, Matusalem, Flor de Cana, Hampdem Estate, El Dorado, Havana club, Sailor Jerry")])])]), _vm._v(" "), _c("div", {
     staticClass: "swiper-slide"
   }, [_c("div", {
     staticClass: "card-top d-flex flex-column align-items-center justify-content-around pt-3"
   }, [_c("img", {
     attrs: {
-      src: __webpack_require__(/*! ../../../public/images/test/IMG-20220922-WA0071.jpg */ "./public/images/test/IMG-20220922-WA0071.jpg"),
+      src: __webpack_require__(/*! ../../../public/images/test/shooting 18.2.23-8.jpg */ "./public/images/test/shooting 18.2.23-8.jpg"),
       alt: ""
     }
   }), _vm._v(" "), _c("p", {
-    staticClass: "bg-danger text-white p-2 d-inline"
-  }, [_vm._v("SERVIZIO AGGIUNTIVO")]), _vm._v(" "), _c("h3", {
+    staticClass: "label-soft text-white p-2 d-inline"
+  }, [_vm._v("Servizio Aggiuntivo")]), _vm._v(" "), _c("h3", {
     staticClass: "text-white text-center"
   }, [_vm._v("WHISKY BAR")])]), _vm._v(" "), _c("div", {
     staticClass: "card-body d-flex flex-column align-items-center justify-content-around py-4 px-5"
   }, [_c("p", {
     staticClass: "text-center border-bottom border-secondary py-3"
   }, [_vm._v("Degustazione di Whisky della Scozia, Canada, Irlanda, Stati Uniti e Giappone abbinata a sigari e cioccolata fondente ed accompagnata da frutta secca e spezie, come arancia e cannella, zucchero di canna e caffè.")]), _vm._v(" "), _c("div", {
-    staticClass: "icon d-flex pt-2"
-  }, [_c("i", {
-    staticClass: "fa-solid fa-book fa-2x p-1 text-danger"
-  }), _vm._v(" "), _c("i", {
-    staticClass: "fa-solid fa-pencil fa-2x p-1 text-danger"
-  })]), _vm._v(" "), _c("h5", {
-    staticClass: "text-center border-bottom border-secondary pt-2 pb-4 w-100"
-  }, [_vm._v("+50 OSPITI")]), _vm._v(" "), _c("i", {
-    staticClass: "fa-solid fa-martini-glass fa-2x p-1 text-danger pt-3"
-  }), _vm._v(" "), _c("p", {
+    staticClass: "icon mb-2 d-flex pt-2"
+  }, [_c("img", {
+    staticClass: "img-fluid",
+    attrs: {
+      src: __webpack_require__(/*! ../../../public/images/icons/117866-200.png */ "./public/images/icons/117866-200.png"),
+      alt: ""
+    }
+  })]), _vm._v(" "), _c("p", {
     staticClass: "text-center"
-  }, [_vm._v("Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, reprehenderit laborum quibusdam.")])])]), _vm._v(" "), _c("div", {
+  }, [_vm._v("Talisker, Jhonny walker. Jamenson, Nikka, Bulleit, Tamnavulin")])])]), _vm._v(" "), _c("div", {
+    staticClass: "swiper-slide"
+  }, [_c("div", {
+    staticClass: "card-top d-flex flex-column align-items-center justify-content-around pt-3"
+  }, [_c("img", {
+    attrs: {
+      src: __webpack_require__(/*! ../../../public/images/test/PHOTO-2023-02-20-18-31-43.jpg */ "./public/images/test/PHOTO-2023-02-20-18-31-43.jpg"),
+      alt: ""
+    }
+  }), _vm._v(" "), _c("p", {
+    staticClass: "label-soft text-white p-2 d-inline"
+  }, [_vm._v("Servizio Aggiuntivo")]), _vm._v(" "), _c("h3", {
+    staticClass: "text-white text-center"
+  }, [_vm._v("TROPIC BAR")])]), _vm._v(" "), _c("div", {
+    staticClass: "card-body d-flex flex-column align-items-center justify-content-around py-4 px-5"
+  }, [_c("p", {
+    staticClass: "text-center border-bottom border-secondary py-3"
+  }, [_vm._v("Alle proposte degli altri servizi è possibile aggiungere una fresca e tropicale drink list che prevede")]), _vm._v(" "), _c("div", {
+    staticClass: "icon mb-2 d-flex pt-2"
+  }, [_c("img", {
+    staticClass: "img-fluid",
+    attrs: {
+      src: __webpack_require__(/*! ../../../public/images/icons/martini.png */ "./public/images/icons/martini.png"),
+      alt: ""
+    }
+  })]), _vm._v(" "), _c("p", {
+    staticClass: "text-center"
+  }, [_vm._v("Strawberry and Banana frozen daiquiri, Mai Tai, Pina coladas, Tiki Mug")])])]), _vm._v(" "), _c("div", {
+    staticClass: "swiper-slide"
+  }, [_c("div", {
+    staticClass: "card-top d-flex flex-column align-items-center justify-content-around pt-3"
+  }, [_c("img", {
+    attrs: {
+      src: __webpack_require__(/*! ../../../public/images/test/PHOTO-2023-02-24-15-28-53.jpg */ "./public/images/test/PHOTO-2023-02-24-15-28-53.jpg"),
+      alt: ""
+    }
+  }), _vm._v(" "), _c("p", {
+    staticClass: "label-soft text-white p-2 d-inline"
+  }, [_vm._v("Servizio Aggiuntivo")]), _vm._v(" "), _c("h3", {
+    staticClass: "text-white text-center"
+  }, [_vm._v("FLUO DRINK BAR")])]), _vm._v(" "), _c("div", {
+    staticClass: "card-body d-flex flex-column align-items-center justify-content-around py-4 px-5"
+  }, [_c("p", {
+    staticClass: "text-center border-bottom border-secondary py-3"
+  }, [_vm._v("Espressamente pensato per illuminare i tuoi drink durante l’after dinner. La formula prevede un servizio di cocktail e shot fluo illuminati dalle luci UV per rendere il tuo dopocena più appariscente!.")]), _vm._v(" "), _c("div", {
+    staticClass: "icon mb-2 d-flex pt-2"
+  }, [_c("img", {
+    staticClass: "img-fluid",
+    attrs: {
+      src: __webpack_require__(/*! ../../../public/images/icons/2230932-200.png */ "./public/images/icons/2230932-200.png"),
+      alt: ""
+    }
+  })]), _vm._v(" "), _c("p", {
+    staticClass: "text-center"
+  }, [_vm._v("Illuminati di...FLUO!")])])]), _vm._v(" "), _c("div", {
     staticClass: "swiper-slide"
   }, [_c("div", {
     staticClass: "card-top d-flex flex-column align-items-center justify-content-around pt-3"
@@ -7099,84 +6793,24 @@ var staticRenderFns = [function () {
       alt: ""
     }
   }), _vm._v(" "), _c("p", {
-    staticClass: "bg-danger text-white p-2 d-inline"
-  }, [_vm._v("SERVIZIO AGGIUNTIVO")]), _vm._v(" "), _c("h3", {
+    staticClass: "label-soft text-white p-2 d-inline"
+  }, [_vm._v("Servizio Aggiuntivo")]), _vm._v(" "), _c("h3", {
     staticClass: "text-white text-center"
-  }, [_vm._v("TROPIC BAR")])]), _vm._v(" "), _c("div", {
+  }, [_vm._v("ESPRESSO MARTINI NEGATIVO")])]), _vm._v(" "), _c("div", {
     staticClass: "card-body d-flex flex-column align-items-center justify-content-around py-4 px-5"
   }, [_c("p", {
     staticClass: "text-center border-bottom border-secondary py-3"
-  }, [_vm._v("Alle proposte degli altri servizi è possibile aggiungere una fresca e tropicale drink list che prevede: Frozen drink, Coladas, Tiki cocktail")]), _vm._v(" "), _c("div", {
-    staticClass: "icon d-flex pt-2"
-  }, [_c("i", {
-    staticClass: "fa-solid fa-book fa-2x p-1 text-danger"
-  }), _vm._v(" "), _c("i", {
-    staticClass: "fa-solid fa-pencil fa-2x p-1 text-danger"
-  })]), _vm._v(" "), _c("h5", {
-    staticClass: "text-center border-bottom border-secondary pt-2 pb-4 w-100"
-  }, [_vm._v("+50 OSPITI")]), _vm._v(" "), _c("i", {
-    staticClass: "fa-solid fa-martini-glass fa-2x p-1 text-danger pt-3"
-  }), _vm._v(" "), _c("p", {
-    staticClass: "text-center"
-  }, [_vm._v("Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, reprehenderit laborum quibusdam.")])])]), _vm._v(" "), _c("div", {
-    staticClass: "swiper-slide"
-  }, [_c("div", {
-    staticClass: "card-top d-flex flex-column align-items-center justify-content-around pt-3"
+  }, [_vm._v("Cosa c’è di meglio di un buon espresso martini dopocena?. Questo servizio offre al cliente una scenica presentazione e degustazione di un espresso martini eseguito nelle nostra moka con l’aggiunta di ghiaccio secco.")]), _vm._v(" "), _c("div", {
+    staticClass: "icon mb-2 d-flex pt-2"
   }, [_c("img", {
+    staticClass: "img-fluid",
     attrs: {
-      src: __webpack_require__(/*! ../../../public/images/test/IMG-20220922-WA0061.jpg */ "./public/images/test/IMG-20220922-WA0061.jpg"),
+      src: __webpack_require__(/*! ../../../public/images/icons/2230932-200.png */ "./public/images/icons/2230932-200.png"),
       alt: ""
     }
-  }), _vm._v(" "), _c("p", {
-    staticClass: "bg-danger text-white p-2 d-inline"
-  }, [_vm._v("SERVIZIO AGGIUNTIVO")]), _vm._v(" "), _c("h3", {
-    staticClass: "text-white text-center"
-  }, [_vm._v("FLUO DRINK BAR")])]), _vm._v(" "), _c("div", {
-    staticClass: "card-body d-flex flex-column align-items-center justify-content-around py-4 px-5"
-  }, [_c("p", {
-    staticClass: "text-center border-bottom border-secondary py-3"
-  }, [_vm._v("Espressamente pensato per illuminare i tuoi drink durante l’after dinner. La formula prevede un servizio di cocktail e shot fluo illuminati dalle luci UV per rendere il tuo dopocena più appariscente!")]), _vm._v(" "), _c("div", {
-    staticClass: "icon d-flex pt-2"
-  }, [_c("i", {
-    staticClass: "fa-solid fa-book fa-2x p-1 text-danger"
-  }), _vm._v(" "), _c("i", {
-    staticClass: "fa-solid fa-pencil fa-2x p-1 text-danger"
-  })]), _vm._v(" "), _c("h5", {
-    staticClass: "text-center border-bottom border-secondary pt-2 pb-4 w-100"
-  }, [_vm._v("+50 OSPITI")]), _vm._v(" "), _c("i", {
-    staticClass: "fa-solid fa-martini-glass fa-2x p-1 text-danger pt-3"
-  }), _vm._v(" "), _c("p", {
+  })]), _vm._v(" "), _c("p", {
     staticClass: "text-center"
-  }, [_vm._v("Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, reprehenderit laborum quibusdam.")])])]), _vm._v(" "), _c("div", {
-    staticClass: "swiper-slide"
-  }, [_c("div", {
-    staticClass: "card-top d-flex flex-column align-items-center justify-content-around pt-3"
-  }, [_c("img", {
-    attrs: {
-      src: __webpack_require__(/*! ../../../public/images/test/IMG-20220922-WA0014.jpg */ "./public/images/test/IMG-20220922-WA0014.jpg"),
-      alt: ""
-    }
-  }), _vm._v(" "), _c("p", {
-    staticClass: "bg-danger text-white p-2 d-inline"
-  }, [_vm._v("SERVIZIO AGGIUNTIVO")]), _vm._v(" "), _c("h3", {
-    staticClass: "text-white text-center"
-  }, [_vm._v("ESPRESSO MARTINI")])]), _vm._v(" "), _c("div", {
-    staticClass: "card-body d-flex flex-column align-items-center justify-content-around py-4 px-5"
-  }, [_c("p", {
-    staticClass: "text-center border-bottom border-secondary py-3"
-  }, [_vm._v("Cosa c’è di meglio di un buon espresso martini dopocena?. Questo servizio offre al cliente una scenica presentazione e degustazione di un espresso martini eseguito nelle nostra moka con l’aggiunta di ghiaccio secco. Apparentemente caldo e fumante, ma realmente freddo e buono da degustare.")]), _vm._v(" "), _c("div", {
-    staticClass: "icon d-flex pt-2"
-  }, [_c("i", {
-    staticClass: "fa-solid fa-book fa-2x p-1 text-danger"
-  }), _vm._v(" "), _c("i", {
-    staticClass: "fa-solid fa-pencil fa-2x p-1 text-danger"
-  })]), _vm._v(" "), _c("h5", {
-    staticClass: "text-center border-bottom border-secondary pt-2 pb-4 w-100"
-  }, [_vm._v("+50 OSPITI")]), _vm._v(" "), _c("i", {
-    staticClass: "fa-solid fa-martini-glass fa-2x p-1 text-danger pt-3"
-  }), _vm._v(" "), _c("p", {
-    staticClass: "text-center"
-  }, [_vm._v("Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, reprehenderit laborum quibusdam.")])])])]);
+  }, [_vm._v("Apparentemente caldo e fumante, ma realmente freddo e buono da degustare.")])])])]);
 }, function () {
   var _vm = this,
     _c = _vm._self._c;
@@ -7192,55 +6826,105 @@ var staticRenderFns = [function () {
       alt: ""
     }
   }), _vm._v(" "), _c("p", {
-    staticClass: "bg-danger text-white p-2 d-inline"
-  }, [_vm._v("SERVIZIO AGGIUNTIVO")]), _vm._v(" "), _c("h3", {
+    staticClass: "label-soft text-white p-2 d-inline"
+  }, [_vm._v("Servizio Aggiuntivo")]), _vm._v(" "), _c("h3", {
     staticClass: "text-white text-center"
   }, [_vm._v("RUM BAR")])]), _vm._v(" "), _c("div", {
     staticClass: "card-body d-flex flex-column align-items-center justify-content-around py-4 px-5"
   }, [_c("p", {
     staticClass: "text-center border-bottom border-secondary py-3"
   }, [_vm._v("Degustazione di Rum della Martinica, Santo Domingo, Portorico, Cuba abbinata a sigari e cioccolato fondente ed accompagnata da frutta secca e spezie, come arancia cannella e caffè.")]), _vm._v(" "), _c("div", {
-    staticClass: "icon d-flex pt-2"
-  }, [_c("i", {
-    staticClass: "fa-solid fa-book fa-2x p-1 text-danger"
-  }), _vm._v(" "), _c("i", {
-    staticClass: "fa-solid fa-pencil fa-2x p-1 text-danger"
-  })]), _vm._v(" "), _c("h5", {
-    staticClass: "text-center border-bottom border-secondary pt-2 pb-4 w-100"
-  }, [_vm._v("+50 OSPITI")]), _vm._v(" "), _c("i", {
-    staticClass: "fa-solid fa-martini-glass fa-2x p-1 text-danger pt-3"
-  }), _vm._v(" "), _c("p", {
+    staticClass: "icon mb-2 d-flex pt-2"
+  }, [_c("img", {
+    staticClass: "img-fluid",
+    attrs: {
+      src: __webpack_require__(/*! ../../../public/images/icons/2230932-200.png */ "./public/images/icons/2230932-200.png"),
+      alt: ""
+    }
+  })]), _vm._v(" "), _c("p", {
     staticClass: "text-center"
-  }, [_vm._v("Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, reprehenderit laborum quibusdam.")])])]), _vm._v(" "), _c("div", {
+  }, [_vm._v("Saint jaimes, Matusalem, Flor de Cana, Hampdem Estate, El Dorado, Havana club, Sailor Jerry")])])]), _vm._v(" "), _c("div", {
     staticClass: "swiper-slide"
   }, [_c("div", {
     staticClass: "card-top d-flex flex-column align-items-center justify-content-around pt-3"
   }, [_c("img", {
     attrs: {
-      src: __webpack_require__(/*! ../../../public/images/test/IMG-20220922-WA0071.jpg */ "./public/images/test/IMG-20220922-WA0071.jpg"),
+      src: __webpack_require__(/*! ../../../public/images/test/shooting 18.2.23-8.jpg */ "./public/images/test/shooting 18.2.23-8.jpg"),
       alt: ""
     }
   }), _vm._v(" "), _c("p", {
-    staticClass: "bg-danger text-white p-2 d-inline"
-  }, [_vm._v("SERVIZIO AGGIUNTIVO")]), _vm._v(" "), _c("h3", {
+    staticClass: "label-soft text-white p-2 d-inline"
+  }, [_vm._v("Servizio Aggiuntivo")]), _vm._v(" "), _c("h3", {
     staticClass: "text-white text-center"
   }, [_vm._v("WHISKY BAR")])]), _vm._v(" "), _c("div", {
     staticClass: "card-body d-flex flex-column align-items-center justify-content-around py-4 px-5"
   }, [_c("p", {
     staticClass: "text-center border-bottom border-secondary py-3"
   }, [_vm._v("Degustazione di Whisky della Scozia, Canada, Irlanda, Stati Uniti e Giappone abbinata a sigari e cioccolata fondente ed accompagnata da frutta secca e spezie, come arancia e cannella, zucchero di canna e caffè.")]), _vm._v(" "), _c("div", {
-    staticClass: "icon d-flex pt-2"
-  }, [_c("i", {
-    staticClass: "fa-solid fa-book fa-2x p-1 text-danger"
-  }), _vm._v(" "), _c("i", {
-    staticClass: "fa-solid fa-pencil fa-2x p-1 text-danger"
-  })]), _vm._v(" "), _c("h5", {
-    staticClass: "text-center border-bottom border-secondary pt-2 pb-4 w-100"
-  }, [_vm._v("+50 OSPITI")]), _vm._v(" "), _c("i", {
-    staticClass: "fa-solid fa-martini-glass fa-2x p-1 text-danger pt-3"
-  }), _vm._v(" "), _c("p", {
+    staticClass: "icon mb-2 d-flex pt-2"
+  }, [_c("img", {
+    staticClass: "img-fluid",
+    attrs: {
+      src: __webpack_require__(/*! ../../../public/images/icons/117866-200.png */ "./public/images/icons/117866-200.png"),
+      alt: ""
+    }
+  })]), _vm._v(" "), _c("p", {
     staticClass: "text-center"
-  }, [_vm._v("Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, reprehenderit laborum quibusdam.")])])]), _vm._v(" "), _c("div", {
+  }, [_vm._v("Talisker, Jhonny walker. Jamenson, Nikka, Bulleit, Tamnavulin")])])]), _vm._v(" "), _c("div", {
+    staticClass: "swiper-slide"
+  }, [_c("div", {
+    staticClass: "card-top d-flex flex-column align-items-center justify-content-around pt-3"
+  }, [_c("img", {
+    attrs: {
+      src: __webpack_require__(/*! ../../../public/images/test/PHOTO-2023-02-20-18-31-43.jpg */ "./public/images/test/PHOTO-2023-02-20-18-31-43.jpg"),
+      alt: ""
+    }
+  }), _vm._v(" "), _c("p", {
+    staticClass: "label-soft text-white p-2 d-inline"
+  }, [_vm._v("Servizio Aggiuntivo")]), _vm._v(" "), _c("h3", {
+    staticClass: "text-white text-center"
+  }, [_vm._v("TROPIC BAR")])]), _vm._v(" "), _c("div", {
+    staticClass: "card-body d-flex flex-column align-items-center justify-content-around py-4 px-5"
+  }, [_c("p", {
+    staticClass: "text-center border-bottom border-secondary py-3"
+  }, [_vm._v("Alle proposte degli altri servizi è possibile aggiungere una fresca e tropicale drink list che prevede")]), _vm._v(" "), _c("div", {
+    staticClass: "icon mb-2 d-flex pt-2"
+  }, [_c("img", {
+    staticClass: "img-fluid",
+    attrs: {
+      src: __webpack_require__(/*! ../../../public/images/icons/martini.png */ "./public/images/icons/martini.png"),
+      alt: ""
+    }
+  })]), _vm._v(" "), _c("p", {
+    staticClass: "text-center"
+  }, [_vm._v("Strawberry and Banana frozen daiquiri, Mai Tai, Pina coladas, Tiki Mug")])])]), _vm._v(" "), _c("div", {
+    staticClass: "swiper-slide"
+  }, [_c("div", {
+    staticClass: "card-top d-flex flex-column align-items-center justify-content-around pt-3"
+  }, [_c("img", {
+    attrs: {
+      src: __webpack_require__(/*! ../../../public/images/test/PHOTO-2023-02-24-15-28-53.jpg */ "./public/images/test/PHOTO-2023-02-24-15-28-53.jpg"),
+      alt: ""
+    }
+  }), _vm._v(" "), _c("p", {
+    staticClass: "label-soft text-white p-2 d-inline"
+  }, [_vm._v("Servizio Aggiuntivo")]), _vm._v(" "), _c("h3", {
+    staticClass: "text-white text-center"
+  }, [_vm._v("FLUO DRINK BAR")])]), _vm._v(" "), _c("div", {
+    staticClass: "card-body d-flex flex-column align-items-center justify-content-around py-4 px-5"
+  }, [_c("p", {
+    staticClass: "text-center border-bottom border-secondary py-3"
+  }, [_vm._v("Espressamente pensato per illuminare i tuoi drink durante l’after dinner. La formula prevede un servizio di cocktail e shot fluo illuminati dalle luci UV per rendere il tuo dopocena più appariscente!.")]), _vm._v(" "), _c("div", {
+    staticClass: "icon mb-2 d-flex pt-2"
+  }, [_c("img", {
+    staticClass: "img-fluid",
+    attrs: {
+      src: __webpack_require__(/*! ../../../public/images/icons/2230932-200.png */ "./public/images/icons/2230932-200.png"),
+      alt: ""
+    }
+  })]), _vm._v(" "), _c("p", {
+    staticClass: "text-center"
+  }, [_vm._v("Illuminati di...FLUO!")])])]), _vm._v(" "), _c("div", {
     staticClass: "swiper-slide"
   }, [_c("div", {
     staticClass: "card-top d-flex flex-column align-items-center justify-content-around pt-3"
@@ -7250,84 +6934,24 @@ var staticRenderFns = [function () {
       alt: ""
     }
   }), _vm._v(" "), _c("p", {
-    staticClass: "bg-danger text-white p-2 d-inline"
-  }, [_vm._v("SERVIZIO AGGIUNTIVO")]), _vm._v(" "), _c("h3", {
+    staticClass: "label-soft text-white p-2 d-inline"
+  }, [_vm._v("Servizio Aggiuntivo")]), _vm._v(" "), _c("h3", {
     staticClass: "text-white text-center"
-  }, [_vm._v("TROPIC BAR")])]), _vm._v(" "), _c("div", {
+  }, [_vm._v("ESPRESSO MARTINI NEGATIVO")])]), _vm._v(" "), _c("div", {
     staticClass: "card-body d-flex flex-column align-items-center justify-content-around py-4 px-5"
   }, [_c("p", {
     staticClass: "text-center border-bottom border-secondary py-3"
-  }, [_vm._v("Alle proposte degli altri servizi è possibile aggiungere una fresca e tropicale drink list che prevede: Frozen drink, Coladas, Tiki cocktail")]), _vm._v(" "), _c("div", {
-    staticClass: "icon d-flex pt-2"
-  }, [_c("i", {
-    staticClass: "fa-solid fa-book fa-2x p-1 text-danger"
-  }), _vm._v(" "), _c("i", {
-    staticClass: "fa-solid fa-pencil fa-2x p-1 text-danger"
-  })]), _vm._v(" "), _c("h5", {
-    staticClass: "text-center border-bottom border-secondary pt-2 pb-4 w-100"
-  }, [_vm._v("+50 OSPITI")]), _vm._v(" "), _c("i", {
-    staticClass: "fa-solid fa-martini-glass fa-2x p-1 text-danger pt-3"
-  }), _vm._v(" "), _c("p", {
-    staticClass: "text-center"
-  }, [_vm._v("Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, reprehenderit laborum quibusdam.")])])]), _vm._v(" "), _c("div", {
-    staticClass: "swiper-slide"
-  }, [_c("div", {
-    staticClass: "card-top d-flex flex-column align-items-center justify-content-around pt-3"
+  }, [_vm._v("Cosa c’è di meglio di un buon espresso martini dopocena?. Questo servizio offre al cliente una scenica presentazione e degustazione di un espresso martini eseguito nelle nostra moka con l’aggiunta di ghiaccio secco.")]), _vm._v(" "), _c("div", {
+    staticClass: "icon mb-2 d-flex pt-2"
   }, [_c("img", {
+    staticClass: "img-fluid",
     attrs: {
-      src: __webpack_require__(/*! ../../../public/images/test/IMG-20220922-WA0061.jpg */ "./public/images/test/IMG-20220922-WA0061.jpg"),
+      src: __webpack_require__(/*! ../../../public/images/icons/2230932-200.png */ "./public/images/icons/2230932-200.png"),
       alt: ""
     }
-  }), _vm._v(" "), _c("p", {
-    staticClass: "bg-danger text-white p-2 d-inline"
-  }, [_vm._v("SERVIZIO AGGIUNTIVO")]), _vm._v(" "), _c("h3", {
-    staticClass: "text-white text-center"
-  }, [_vm._v("FLUO DRINK BAR")])]), _vm._v(" "), _c("div", {
-    staticClass: "card-body d-flex flex-column align-items-center justify-content-around py-4 px-5"
-  }, [_c("p", {
-    staticClass: "text-center border-bottom border-secondary py-3"
-  }, [_vm._v("Espressamente pensato per illuminare i tuoi drink durante l’after dinner. La formula prevede un servizio di cocktail e shot fluo illuminati dalle luci UV per rendere il tuo dopocena più appariscente!")]), _vm._v(" "), _c("div", {
-    staticClass: "icon d-flex pt-2"
-  }, [_c("i", {
-    staticClass: "fa-solid fa-book fa-2x p-1 text-danger"
-  }), _vm._v(" "), _c("i", {
-    staticClass: "fa-solid fa-pencil fa-2x p-1 text-danger"
-  })]), _vm._v(" "), _c("h5", {
-    staticClass: "text-center border-bottom border-secondary pt-2 pb-4 w-100"
-  }, [_vm._v("+50 OSPITI")]), _vm._v(" "), _c("i", {
-    staticClass: "fa-solid fa-martini-glass fa-2x p-1 text-danger pt-3"
-  }), _vm._v(" "), _c("p", {
+  })]), _vm._v(" "), _c("p", {
     staticClass: "text-center"
-  }, [_vm._v("Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, reprehenderit laborum quibusdam.")])])]), _vm._v(" "), _c("div", {
-    staticClass: "swiper-slide"
-  }, [_c("div", {
-    staticClass: "card-top d-flex flex-column align-items-center justify-content-around pt-3"
-  }, [_c("img", {
-    attrs: {
-      src: __webpack_require__(/*! ../../../public/images/test/IMG-20220922-WA0014.jpg */ "./public/images/test/IMG-20220922-WA0014.jpg"),
-      alt: ""
-    }
-  }), _vm._v(" "), _c("p", {
-    staticClass: "bg-danger text-white p-2 d-inline"
-  }, [_vm._v("SERVIZIO AGGIUNTIVO")]), _vm._v(" "), _c("h3", {
-    staticClass: "text-white text-center"
-  }, [_vm._v("ESPRESSO MARTINI")])]), _vm._v(" "), _c("div", {
-    staticClass: "card-body d-flex flex-column align-items-center justify-content-around py-4 px-5"
-  }, [_c("p", {
-    staticClass: "text-center border-bottom border-secondary py-3"
-  }, [_vm._v("Cosa c’è di meglio di un buon espresso martini dopocena?. Questo servizio offre al cliente una scenica presentazione e degustazione di un espresso martini eseguito nelle nostra moka con l’aggiunta di ghiaccio secco. Apparentemente caldo e fumante, ma realmente freddo e buono da degustare.")]), _vm._v(" "), _c("div", {
-    staticClass: "icon d-flex pt-2"
-  }, [_c("i", {
-    staticClass: "fa-solid fa-book fa-2x p-1 text-danger"
-  }), _vm._v(" "), _c("i", {
-    staticClass: "fa-solid fa-pencil fa-2x p-1 text-danger"
-  })]), _vm._v(" "), _c("h5", {
-    staticClass: "text-center border-bottom border-secondary pt-2 pb-4 w-100"
-  }, [_vm._v("+50 OSPITI")]), _vm._v(" "), _c("i", {
-    staticClass: "fa-solid fa-martini-glass fa-2x p-1 text-danger pt-3"
-  }), _vm._v(" "), _c("p", {
-    staticClass: "text-center"
-  }, [_vm._v("Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, reprehenderit laborum quibusdam.")])])])]);
+  }, [_vm._v("Apparentemente caldo e fumante, ma realmente freddo e buono da degustare.")])])])]);
 }];
 render._withStripped = true;
 
@@ -7397,7 +7021,7 @@ var render = function render() {
       id: "services"
     }
   }, [_c("div", {
-    staticClass: "container py-5"
+    staticClass: "container pt-5"
   }, [_c("TestSlider"), _vm._v(" "), _c("div", {
     staticClass: "mb-5",
     attrs: {
@@ -7409,7 +7033,7 @@ var staticRenderFns = [function () {
   var _vm = this,
     _c = _vm._self._c;
   return _c("div", {
-    staticClass: "py-5 d-flex flex-column align-items-center"
+    staticClass: "pt-5 d-flex flex-column align-items-center"
   }, [_c("h2", [_vm._v("BAR SERVICE")]), _vm._v(" "), _c("div", {
     staticClass: "bottom-line mb-3 mx-auto"
   }), _vm._v(" "), _c("div", {
@@ -7448,7 +7072,7 @@ var staticRenderFns = [function () {
     staticClass: "bottom-line mb-3"
   })]), _vm._v(" "), _c("p", {
     staticClass: "text-center"
-  }, [_vm._v("Drink illimitati per intrattenere gli ospiti durante tutto il tempo del tuo evento, che sia un matrimonio, compleanno,\n                    evento aziendale o festa privata. "), _c("br"), _c("br"), _vm._v("\n                    La nostra formula Premium bar è il servizio adatto ad ogni occasione. "), _c("br"), _vm._v(" Drink illimitati per intrattenere gli ospiti durante\n                    un evento, che sia un matrimonio, un compleanno cosi come un evento aziendale o festa privata, il tutto ovviamente\n                    curato nei minimi dettagli. Prevede al suo interno:")]), _vm._v(" "), _c("ul", {
+  }, [_vm._v("Drink illimitati per intrattenere gli ospiti durante tutto il tempo del tuo evento, che sia un matrimonio, compleanno,\n                    evento aziendale o festa privata. "), _c("br"), _c("br"), _vm._v("\n                    La nostra formula Premium bar è il servizio adatto ad ogni occasione. "), _c("br"), _vm._v(" Tutti gli ospiti, avranno la possibilità di chiedere qualsiasi drink essi preferiscono, molteplici liquori e\n                    distillati saranno a loro disposizione per un esperienza esclusiva. Il bar personale ed esclusivo a completa\n                    disposizione di ogni ospite. Prevede al suo interno:")]), _vm._v(" "), _c("ul", {
     staticClass: "text-center list-unstyled"
   }, [_c("li", [_vm._v("- Drink illimitati per tutta la durata del’evento (Alcolici,Analcolici,Soft drink,Birra,Ghiaccio)")]), _vm._v(" "), _c("li", [_vm._v("- Banco bar a vostra scelta")]), _vm._v(" "), _c("li", [_vm._v("- Personale")])])]), _vm._v(" "), _c("div", {
     staticClass: "col-12 col-lg-6 my-3"
@@ -7529,41 +7153,7 @@ var staticRenderFns = [function () {
     }
   })])]), _vm._v(" "), _c("div", {
     staticClass: "row py-5"
-  }, [_c("div", {
-    staticClass: "col-12 col-md-4 d-flex align-items-center justify-content-center"
-  }, [_c("div", {
-    staticClass: "card border-0"
-  }, [_c("h3", [_vm._v("Scopri la qualità"), _c("br"), _vm._v(" del servizio")]), _vm._v(" "), _c("a", {
-    staticClass: "text-soft",
-    attrs: {
-      href: ""
-    }
-  }, [_vm._v("SCOPRI DI PIÙ")])])]), _vm._v(" "), _c("div", {
-    staticClass: "col-12 col-md-4 my-5 d-flex align-items-center justify-content-center"
-  }, [_c("div", {
-    staticClass: "card border-0 flex-row"
-  }, [_c("a", {
-    attrs: {
-      href: ""
-    }
-  }, [_c("i", {
-    staticClass: "fa-brands fa-facebook-f text-soft p-3 mr-2 border border-soft bg-white"
-  })]), _vm._v(" "), _c("a", {
-    attrs: {
-      href: "https://instagram.com/tenerezaeventi?igshid=YmMyMTA2M2Y="
-    }
-  }, [_c("i", {
-    staticClass: "fa-brands fa-instagram text-soft p-3 ml-2 border border-soft bg-white"
-  })])])]), _vm._v(" "), _c("div", {
-    staticClass: "col-12 col-md-4 d-flex align-items-center justify-content-center"
-  }, [_c("div", {
-    staticClass: "card border-0"
-  }, [_c("h3", [_vm._v("Vuoi venire a"), _c("br"), _vm._v(" trovarci?")]), _vm._v(" "), _c("a", {
-    staticClass: "text-soft",
-    attrs: {
-      href: ""
-    }
-  }, [_vm._v("VIA PAOLO ORSI, 47 00178 ROMA")])])])]), _vm._v(" "), _c("div", {
+  }, [_c("p", [_vm._v("Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat doloribus repellat, molestias reiciendis pariatur aut aliquam dolorum unde beatae, esse natus aspernatur, impedit officiis saepe incidunt nostrum fugit eligendi ab.")]), _vm._v(" "), _c("p", [_vm._v("Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, fugit maiores fuga culpa ipsa magnam error at laboriosam! Officiis beatae neque consectetur maiores temporibus laboriosam aspernatur velit porro distinctio repellendus?")])]), _vm._v(" "), _c("div", {
     staticClass: "mb-5",
     attrs: {
       id: "anchor-preventivo"
@@ -12004,7 +11594,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, "footer[data-v-4ab6097e] {\n  background-image: url(" + escape(__webpack_require__(/*! ../../../public/images/test/black-marble.jpg */ "./public/images/test/black-marble.jpg")) + ");\n  background-size: cover;\n  color: white;\n}\nfooter .footer-bottom[data-v-4ab6097e] {\n  background-color: rgba(0, 0, 0, 0.5);\n}\nfooter div[data-v-4ab6097e] {\n  color: white;\n}\nfooter div ul[data-v-4ab6097e] {\n  text-decoration: none;\n  list-style-type: none;\n}\nfooter .text-soft[data-v-4ab6097e] {\n  color: #b48c80;\n}\nfooter #social i[data-v-4ab6097e] {\n  background-color: #b48c80;\n  display: inline-block;\n  padding: 10px;\n  width: 50px;\n  height: 50px;\n  border-radius: 50%;\n}\nfooter #social i[data-v-4ab6097e]:hover {\n  background-color: white;\n  color: #b48c80;\n}", ""]);
+exports.push([module.i, "footer[data-v-4ab6097e] {\n  background-image: url(" + escape(__webpack_require__(/*! ../../../public/images/test/black-marble.jpg */ "./public/images/test/black-marble.jpg")) + ");\n  background-size: cover;\n  background-position: bottom;\n  color: white;\n}\nfooter .footer-bottom[data-v-4ab6097e] {\n  background-color: rgba(0, 0, 0, 0.5);\n}\nfooter .footer-bottom a[data-v-4ab6097e] {\n  color: white;\n}\nfooter div[data-v-4ab6097e] {\n  color: white;\n}\nfooter div ul[data-v-4ab6097e] {\n  text-decoration: none;\n  list-style-type: none;\n}\nfooter .text-soft[data-v-4ab6097e] {\n  color: #b48c80;\n}\nfooter #social i[data-v-4ab6097e] {\n  background-color: #b48c80;\n  display: inline-block;\n  padding: 10px;\n  width: 50px;\n  height: 50px;\n  border-radius: 50%;\n}\nfooter #social i[data-v-4ab6097e]:hover {\n  background-color: white;\n  color: #b48c80;\n  transform: scale(1.1);\n  transition: 1s;\n}", ""]);
 
 // exports
 
@@ -12195,7 +11785,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, "body[data-v-b9fc4184] {\n  background-color: #000;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  height: 100vh;\n}\nh2[data-v-b9fc4184] {\n  font-size: 42px;\n  text-align: center;\n  margin-bottom: 30px;\n}\nh3[data-v-b9fc4184] {\n  font-size: 32px;\n  text-shadow: 0 0 5px black;\n}\n.card-top[data-v-b9fc4184] {\n  height: 160px;\n  position: relative;\n}\n.card-top img[data-v-b9fc4184] {\n  position: absolute;\n  top: 0;\n  -o-object-fit: cover;\n     object-fit: cover;\n  height: 100%;\n  width: 100%;\n}\n.card-top p[data-v-b9fc4184], .card-top h3[data-v-b9fc4184] {\n  z-index: 1;\n}\n.card-body[data-v-b9fc4184] {\n  background-color: #EDEAE6;\n}\n.card-body .icon[data-v-b9fc4184] {\n  width: 70px;\n}\n.swiper[data-v-b9fc4184] {\n  padding-bottom: 60px !important;\n  height: 250px;\n  --swiper-theme-color: #b48c80;\n}\n.swiper .swiper-wrapper[data-v-b9fc4184] {\n  align-items: center;\n}\n.swiper .swiper-slide[data-v-b9fc4184] {\n  border-radius: 5px;\n  min-height: 180px !important;\n  background-color: #000;\n  border: 1px solid #fff;\n  transition: 0.2s;\n  transform: scale(0.8);\n}\n.swiper .swiper-slide.active[data-v-b9fc4184] {\n  min-height: 230px !important;\n  transform: scale(1);\n}\n.swiper .prev[data-v-b9fc4184],\n.swiper .next[data-v-b9fc4184] {\n  cursor: pointer;\n  z-index: 100;\n  position: absolute;\n  top: 50%;\n  transform: translateY(-50%);\n  opacity: 0.65;\n  transition: 0.2s;\n}\n.swiper .prev[data-v-b9fc4184]:hover,\n.swiper .next[data-v-b9fc4184]:hover {\n  opacity: 1;\n}\n.swiper .prev svg[data-v-b9fc4184],\n.swiper .next svg[data-v-b9fc4184] {\n  width: 20px;\n  height: 20px;\n}\n.swiper .prev svg path[data-v-b9fc4184],\n.swiper .next svg path[data-v-b9fc4184] {\n  fill: #fff;\n}\n.swiper .prev[data-v-b9fc4184] {\n  left: 25px;\n}\n.swiper .next[data-v-b9fc4184] {\n  right: 25px;\n}\n.swiper .pagination[data-v-b9fc4184] {\n  margin-left: 8px !important;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  margin-top: 40px;\n  z-index: 100;\n}\n.swiper .pagination span[data-v-b9fc4184] {\n  font-size: 0;\n  opacity: 1;\n  margin: 0px 6px !important;\n  border: 1px solid #fff;\n}\n.swiper .pagination span.swiper-pagination-bullet-active[data-v-b9fc4184] {\n  background-color: transparent;\n  transform: scale(1.5);\n}\n.swiper-tablet[data-v-b9fc4184] {\n  margin-left: auto;\n  margin-right: auto;\n  position: relative;\n  overflow: hidden;\n  list-style: none;\n  padding: 0;\n  z-index: 1;\n  padding-bottom: 60px !important;\n  height: 250px;\n  --swiper-theme-color: #b48c80;\n}\n.swiper-tablet .swiper-wrapper[data-v-b9fc4184] {\n  align-items: center;\n}\n.swiper-tablet .swiper-slide[data-v-b9fc4184] {\n  border-radius: 5px;\n  min-height: 180px !important;\n  background-color: #000;\n  border: 1px solid #fff;\n  transition: 0.2s;\n  transform: scale(0.9);\n}\n.swiper-tablet .swiper-slide.active[data-v-b9fc4184] {\n  min-height: 230px !important;\n  transform: scale(1);\n}\n.swiper-tablet .prev[data-v-b9fc4184],\n.swiper-tablet .next[data-v-b9fc4184] {\n  cursor: pointer;\n  z-index: 100;\n  position: absolute;\n  top: 50%;\n  transform: translateY(-50%);\n  opacity: 0.65;\n  transition: 0.2s;\n}\n.swiper-tablet .prev[data-v-b9fc4184]:hover,\n.swiper-tablet .next[data-v-b9fc4184]:hover {\n  opacity: 1;\n}\n.swiper-tablet .prev svg[data-v-b9fc4184],\n.swiper-tablet .next svg[data-v-b9fc4184] {\n  width: 20px;\n  height: 20px;\n}\n.swiper-tablet .prev svg path[data-v-b9fc4184],\n.swiper-tablet .next svg path[data-v-b9fc4184] {\n  fill: #fff;\n}\n.swiper-tablet .prev[data-v-b9fc4184] {\n  left: 25px;\n}\n.swiper-tablet .next[data-v-b9fc4184] {\n  right: 25px;\n}\n.swiper-tablet .pagination[data-v-b9fc4184] {\n  margin-left: 8px !important;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  margin-top: 40px;\n  z-index: 100;\n}\n.swiper-tablet .pagination span[data-v-b9fc4184] {\n  font-size: 0;\n  opacity: 1;\n  margin: 0px 6px !important;\n  border: 1px solid #fff;\n}\n.swiper-tablet .pagination span.swiper-pagination-bullet-active[data-v-b9fc4184] {\n  background-color: transparent;\n  transform: scale(1.5);\n}\n.swiper-mobile[data-v-b9fc4184] {\n  margin-left: auto;\n  margin-right: auto;\n  position: relative;\n  overflow: hidden;\n  list-style: none;\n  padding: 0;\n  z-index: 1;\n  padding-bottom: 60px !important;\n  height: 250px;\n  --swiper-theme-color: #b48c80;\n}\n.swiper-mobile .swiper-wrapper[data-v-b9fc4184] {\n  align-items: center;\n}\n.swiper-mobile .swiper-slide[data-v-b9fc4184] {\n  border-radius: 5px;\n  min-height: 180px !important;\n  background-color: #000;\n  border: 1px solid #fff;\n  transition: 0.2s;\n  transform: scale(0.9);\n}\n.swiper-mobile .swiper-slide.active[data-v-b9fc4184] {\n  min-height: 230px !important;\n  transform: scale(1);\n}\n.swiper-mobile .prev[data-v-b9fc4184],\n.swiper-mobile .next[data-v-b9fc4184] {\n  cursor: pointer;\n  z-index: 100;\n  position: absolute;\n  top: 50%;\n  transform: translateY(-50%);\n  opacity: 0.65;\n  transition: 0.2s;\n}\n.swiper-mobile .prev[data-v-b9fc4184]:hover,\n.swiper-mobile .next[data-v-b9fc4184]:hover {\n  opacity: 1;\n}\n.swiper-mobile .prev svg[data-v-b9fc4184],\n.swiper-mobile .next svg[data-v-b9fc4184] {\n  width: 20px;\n  height: 20px;\n}\n.swiper-mobile .prev svg path[data-v-b9fc4184],\n.swiper-mobile .next svg path[data-v-b9fc4184] {\n  fill: #fff;\n}\n.swiper-mobile .prev[data-v-b9fc4184] {\n  left: 25px;\n}\n.swiper-mobile .next[data-v-b9fc4184] {\n  right: 25px;\n}\n.swiper-mobile .pagination[data-v-b9fc4184] {\n  margin-left: 8px !important;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  margin-top: 40px;\n  z-index: 100;\n}\n.swiper-mobile .pagination span[data-v-b9fc4184] {\n  font-size: 0;\n  opacity: 1;\n  margin: 0px 6px !important;\n  border: 1px solid #fff;\n}\n.swiper-mobile .pagination span.swiper-pagination-bullet-active[data-v-b9fc4184] {\n  background-color: transparent;\n  transform: scale(1.5);\n}", ""]);
+exports.push([module.i, "body[data-v-b9fc4184] {\n  background-color: #000;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  height: 100vh;\n}\nh2[data-v-b9fc4184] {\n  font-size: 42px;\n  text-align: center;\n  margin-bottom: 30px;\n}\nh3[data-v-b9fc4184] {\n  font-size: 32px;\n  text-shadow: 0 0 5px black;\n}\n.card-top[data-v-b9fc4184] {\n  height: 160px;\n  position: relative;\n}\n.card-top img[data-v-b9fc4184] {\n  position: absolute;\n  top: 0;\n  -o-object-fit: cover;\n     object-fit: cover;\n  height: 100%;\n  width: 100%;\n}\n.card-top p[data-v-b9fc4184], .card-top h3[data-v-b9fc4184] {\n  z-index: 1;\n}\n.card-top .label-soft[data-v-b9fc4184] {\n  background-color: #b48c80;\n  font-family: \"Dancing Script\", cursive;\n  font-size: 1.5rem;\n  position: absolute;\n  top: -20px;\n}\n.card-body[data-v-b9fc4184] {\n  background-color: #efefef;\n}\n.card-body .icon[data-v-b9fc4184] {\n  width: 50px;\n}\n.swiper[data-v-b9fc4184] {\n  padding-bottom: 60px !important;\n  padding-top: 20px;\n  height: 250px;\n  --swiper-theme-color: #b48c80;\n}\n.swiper .swiper-wrapper[data-v-b9fc4184] {\n  align-items: center;\n}\n.swiper .swiper-slide[data-v-b9fc4184] {\n  border-radius: 5px;\n  min-height: 180px !important;\n  background-color: #000;\n  border: 1px solid #fff;\n  transition: 0.2s;\n  transform: scale(0.8);\n}\n.swiper .swiper-slide.active[data-v-b9fc4184] {\n  min-height: 230px !important;\n  transform: scale(1);\n}\n.swiper .prev[data-v-b9fc4184],\n.swiper .next[data-v-b9fc4184] {\n  cursor: pointer;\n  z-index: 100;\n  position: absolute;\n  top: 50%;\n  transform: translateY(-50%);\n  opacity: 0.65;\n  transition: 0.2s;\n}\n.swiper .prev[data-v-b9fc4184]:hover,\n.swiper .next[data-v-b9fc4184]:hover {\n  opacity: 1;\n}\n.swiper .prev svg[data-v-b9fc4184],\n.swiper .next svg[data-v-b9fc4184] {\n  width: 20px;\n  height: 20px;\n}\n.swiper .prev svg path[data-v-b9fc4184],\n.swiper .next svg path[data-v-b9fc4184] {\n  fill: #fff;\n}\n.swiper .prev[data-v-b9fc4184] {\n  left: 25px;\n}\n.swiper .next[data-v-b9fc4184] {\n  right: 25px;\n}\n.swiper .pagination[data-v-b9fc4184] {\n  margin-left: 8px !important;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  margin-top: 40px;\n  z-index: 100;\n}\n.swiper .pagination span[data-v-b9fc4184] {\n  font-size: 0;\n  opacity: 1;\n  margin: 0px 6px !important;\n  border: 1px solid #fff;\n}\n.swiper .pagination span.swiper-pagination-bullet-active[data-v-b9fc4184] {\n  background-color: transparent;\n  transform: scale(1.5);\n}\n.swiper-tablet[data-v-b9fc4184] {\n  margin-left: auto;\n  margin-right: auto;\n  position: relative;\n  overflow: hidden;\n  list-style: none;\n  padding: 0;\n  z-index: 1;\n  padding-bottom: 60px !important;\n  padding-top: 20px;\n  height: 250px;\n  --swiper-theme-color: #b48c80;\n}\n.swiper-tablet .swiper-wrapper[data-v-b9fc4184] {\n  align-items: center;\n}\n.swiper-tablet .swiper-slide[data-v-b9fc4184] {\n  border-radius: 5px;\n  min-height: 180px !important;\n  background-color: #000;\n  border: 1px solid #fff;\n  transition: 0.2s;\n  transform: scale(0.9);\n}\n.swiper-tablet .swiper-slide.active[data-v-b9fc4184] {\n  min-height: 230px !important;\n  transform: scale(1);\n}\n.swiper-tablet .prev[data-v-b9fc4184],\n.swiper-tablet .next[data-v-b9fc4184] {\n  cursor: pointer;\n  z-index: 100;\n  position: absolute;\n  top: 50%;\n  transform: translateY(-50%);\n  opacity: 0.65;\n  transition: 0.2s;\n}\n.swiper-tablet .prev[data-v-b9fc4184]:hover,\n.swiper-tablet .next[data-v-b9fc4184]:hover {\n  opacity: 1;\n}\n.swiper-tablet .prev svg[data-v-b9fc4184],\n.swiper-tablet .next svg[data-v-b9fc4184] {\n  width: 20px;\n  height: 20px;\n}\n.swiper-tablet .prev svg path[data-v-b9fc4184],\n.swiper-tablet .next svg path[data-v-b9fc4184] {\n  fill: #fff;\n}\n.swiper-tablet .prev[data-v-b9fc4184] {\n  left: 25px;\n}\n.swiper-tablet .next[data-v-b9fc4184] {\n  right: 25px;\n}\n.swiper-tablet .pagination[data-v-b9fc4184] {\n  margin-left: 8px !important;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  margin-top: 40px;\n  z-index: 100;\n}\n.swiper-tablet .pagination span[data-v-b9fc4184] {\n  font-size: 0;\n  opacity: 1;\n  margin: 0px 6px !important;\n  border: 1px solid #fff;\n}\n.swiper-tablet .pagination span.swiper-pagination-bullet-active[data-v-b9fc4184] {\n  background-color: transparent;\n  transform: scale(1.5);\n}\n.swiper-mobile[data-v-b9fc4184] {\n  margin-left: auto;\n  margin-right: auto;\n  position: relative;\n  overflow: hidden;\n  list-style: none;\n  padding: 0;\n  z-index: 1;\n  padding-bottom: 60px !important;\n  padding-top: 20px;\n  height: 250px;\n  --swiper-theme-color: #b48c80;\n}\n.swiper-mobile .swiper-wrapper[data-v-b9fc4184] {\n  align-items: center;\n}\n.swiper-mobile .swiper-slide[data-v-b9fc4184] {\n  border-radius: 5px;\n  min-height: 180px !important;\n  background-color: #000;\n  border: 1px solid #fff;\n  transition: 0.2s;\n  transform: scale(0.9);\n}\n.swiper-mobile .swiper-slide.active[data-v-b9fc4184] {\n  min-height: 230px !important;\n  transform: scale(1);\n}\n.swiper-mobile .prev[data-v-b9fc4184],\n.swiper-mobile .next[data-v-b9fc4184] {\n  cursor: pointer;\n  z-index: 100;\n  position: absolute;\n  top: 50%;\n  transform: translateY(-50%);\n  opacity: 0.65;\n  transition: 0.2s;\n}\n.swiper-mobile .prev[data-v-b9fc4184]:hover,\n.swiper-mobile .next[data-v-b9fc4184]:hover {\n  opacity: 1;\n}\n.swiper-mobile .prev svg[data-v-b9fc4184],\n.swiper-mobile .next svg[data-v-b9fc4184] {\n  width: 20px;\n  height: 20px;\n}\n.swiper-mobile .prev svg path[data-v-b9fc4184],\n.swiper-mobile .next svg path[data-v-b9fc4184] {\n  fill: #fff;\n}\n.swiper-mobile .prev[data-v-b9fc4184] {\n  left: 25px;\n}\n.swiper-mobile .next[data-v-b9fc4184] {\n  right: 25px;\n}\n.swiper-mobile .pagination[data-v-b9fc4184] {\n  margin-left: 8px !important;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  margin-top: 40px;\n  z-index: 100;\n}\n.swiper-mobile .pagination span[data-v-b9fc4184] {\n  font-size: 0;\n  opacity: 1;\n  margin: 0px 6px !important;\n  border: 1px solid #fff;\n}\n.swiper-mobile .pagination span.swiper-pagination-bullet-active[data-v-b9fc4184] {\n  background-color: transparent;\n  transform: scale(1.5);\n}", ""]);
 
 // exports
 
@@ -12235,7 +11825,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, "h2[data-v-317790a4] {\n  font-size: 52px;\n}\n.italic[data-v-317790a4] {\n  font-family: \"Dancing Script\", cursive;\n  color: #b48c80;\n  font-size: 24px;\n}\n.bottom-line[data-v-317790a4] {\n  height: 3px;\n  width: 25px;\n  background-color: #b48c80;\n}\n.btn-soft[data-v-317790a4] {\n  background-color: #b48c80;\n  color: white;\n  border-radius: 0;\n  padding: 12px 40px;\n  font-size: 18px;\n}\n.text-soft[data-v-317790a4] {\n  color: #b48c80;\n}\n.border-soft[data-v-317790a4] {\n  border: 1px solid #252222 !important;\n}\n.row .btn-soft[data-v-317790a4] {\n  font-size: 12px;\n  padding: 10px 15px;\n}\n.img-circle[data-v-317790a4] {\n  border-radius: 50%;\n  -o-object-fit: cover;\n     object-fit: cover;\n  width: 288px;\n  height: 288px;\n}\n#event[data-v-317790a4] {\n  background-position: top;\n  background-size: auto 100vh;\n  background-repeat: no-repeat;\n  min-height: 800px;\n  background-color: #EDEAE6;\n}\n#counters[data-v-317790a4] {\n  background-image: url(https://fbsbarcatering.it/wp-content/uploads/2019/11/background-lista-allestimenti.jpg?id=1197);\n  background-position: top;\n  background-size: cover;\n  background-repeat: no-repeat;\n  background-color: #EDEAE6;\n}\n#gallery[data-v-317790a4] {\n  background-image: url(https://fbsbarcatering.it/wp-content/uploads/2019/11/background-lista-allestimenti.jpg?id=1197);\n  background-position: top;\n  background-size: cover;\n  background-repeat: no-repeat;\n  background-color: #EDEAE6;\n}\n#about[data-v-317790a4] {\n  background-image: url(" + escape(__webpack_require__(/*! ../../../../public/images/test/PHOTO-2023-02-08-15-54-06.jpg */ "./public/images/test/PHOTO-2023-02-08-15-54-06.jpg")) + ");\n  background-position: top;\n  background-size: cover;\n  background-repeat: no-repeat;\n  color: white;\n  position: relative;\n}\n#about .bg-overlay[data-v-317790a4] {\n  position: absolute;\n  top: 0;\n  right: 0;\n  left: 0;\n  bottom: 0;\n  background-color: black;\n  filter: opacity(0.7);\n  z-index: 1;\n}\n#about .container[data-v-317790a4] {\n  position: relative;\n  z-index: 2;\n}\n#about .card[data-v-317790a4] {\n  background-color: transparent;\n}\n@media (max-width: 991px) {\n.img-circle[data-v-317790a4] {\n    width: 208px;\n    height: 208px;\n}\n}", ""]);
+exports.push([module.i, "h2[data-v-317790a4] {\n  font-size: 52px;\n}\n.italic[data-v-317790a4] {\n  font-family: \"Dancing Script\", cursive;\n  color: #b48c80;\n  font-size: 24px;\n}\n.bottom-line[data-v-317790a4] {\n  height: 3px;\n  width: 25px;\n  background-color: #b48c80;\n}\n.btn-soft[data-v-317790a4] {\n  background-color: #b48c80;\n  color: white;\n  border-radius: 0;\n  padding: 12px 40px;\n  font-size: 18px;\n}\n.text-soft[data-v-317790a4] {\n  color: #b48c80;\n}\n.border-soft[data-v-317790a4] {\n  border: 1px solid #252222 !important;\n}\n.row .btn-soft[data-v-317790a4] {\n  font-size: 12px;\n  padding: 10px 15px;\n}\n.img-circle[data-v-317790a4] {\n  border-radius: 50%;\n  -o-object-fit: cover;\n     object-fit: cover;\n  width: 288px;\n  height: 288px;\n  box-shadow: 0 0 18px black;\n}\n#event[data-v-317790a4] {\n  background-position: top;\n  background-size: auto 100vh;\n  background-repeat: no-repeat;\n  min-height: 800px;\n  background-color: #EDEAE6;\n}\n#counters[data-v-317790a4] {\n  background-image: url(https://fbsbarcatering.it/wp-content/uploads/2019/11/background-lista-allestimenti.jpg?id=1197);\n  background-position: top;\n  background-size: cover;\n  background-repeat: no-repeat;\n  background-color: #EDEAE6;\n}\n#gallery[data-v-317790a4] {\n  background-image: url(https://fbsbarcatering.it/wp-content/uploads/2019/11/background-lista-allestimenti.jpg?id=1197);\n  background-position: top;\n  background-size: cover;\n  background-repeat: no-repeat;\n  background-color: #EDEAE6;\n}\n#about[data-v-317790a4] {\n  background-image: url(" + escape(__webpack_require__(/*! ../../../../public/images/test/IMG-20220922-WA0042.jpg */ "./public/images/test/IMG-20220922-WA0042.jpg")) + ");\n  background-size: cover;\n  color: white;\n  position: relative;\n}\n#about .bg-overlay[data-v-317790a4] {\n  position: absolute;\n  top: 0;\n  right: 0;\n  left: 0;\n  bottom: 0;\n  background-color: black;\n  filter: opacity(0.8);\n  z-index: 1;\n}\n#about .container[data-v-317790a4] {\n  position: relative;\n  z-index: 2;\n}\n#about .card[data-v-317790a4] {\n  background-color: transparent;\n}\n@media (max-width: 991px) {\n.img-circle[data-v-317790a4] {\n    width: 208px;\n    height: 208px;\n}\n}", ""]);
 
 // exports
 
@@ -59752,7 +59342,7 @@ module.exports = function(module) {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "/images/117866-200.png?a1825e9195d1508a88bf9f52fe6bb8a2";
+module.exports = "/images/117866-200.png?05ab6d564f5359ff41d7fe9f7fd49b6f";
 
 /***/ }),
 
@@ -59763,18 +59353,18 @@ module.exports = "/images/117866-200.png?a1825e9195d1508a88bf9f52fe6bb8a2";
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "/images/2230932-200.png?4a8a58f7ce4c3049a2469f6cf9468140";
+module.exports = "/images/2230932-200.png?e8a19be0fa8353e12b42f6bd690a3dbb";
 
 /***/ }),
 
-/***/ "./public/images/icons/76325.png":
-/*!***************************************!*\
-  !*** ./public/images/icons/76325.png ***!
-  \***************************************/
+/***/ "./public/images/icons/martini.png":
+/*!*****************************************!*\
+  !*** ./public/images/icons/martini.png ***!
+  \*****************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "/images/76325.png?3f215191448108f72bf8c08c82055457";
+module.exports = "/images/martini.png?ec7a8070e1b2061a5fd8decd20e7d690";
 
 /***/ }),
 
@@ -59786,17 +59376,6 @@ module.exports = "/images/76325.png?3f215191448108f72bf8c08c82055457";
 /***/ (function(module, exports) {
 
 module.exports = "/images/1677413522394.jpg?6bf69ad594a22ee247767cc0a768f40c";
-
-/***/ }),
-
-/***/ "./public/images/test/IMG-20220922-WA0014.jpg":
-/*!****************************************************!*\
-  !*** ./public/images/test/IMG-20220922-WA0014.jpg ***!
-  \****************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = "/images/IMG-20220922-WA0014.jpg?0e258771577b2d7faeb7caf27ee0142d";
 
 /***/ }),
 
@@ -60204,17 +59783,6 @@ module.exports = "/images/IMG-20220922-WA0097.jpg?ed385bd1f543ceeec3006ec3fd7464
 /***/ (function(module, exports) {
 
 module.exports = "/images/IMG-20221205-WA0015.jpg?aed25c7e4bba0a89dae5a6edd7c59038";
-
-/***/ }),
-
-/***/ "./public/images/test/PHOTO-2023-02-08-15-54-06.jpg":
-/*!**********************************************************!*\
-  !*** ./public/images/test/PHOTO-2023-02-08-15-54-06.jpg ***!
-  \**********************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = "/images/PHOTO-2023-02-08-15-54-06.jpg?a809c03584e967e53815ef463c3d43ba";
 
 /***/ }),
 

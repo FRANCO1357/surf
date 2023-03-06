@@ -39,54 +39,6 @@
                 <div class="swiper-slide">
                     <img class="img-fluid" src="../../../public/images/test/IMG-20220922-WA0058.jpg" alt="">    
                 </div>
-                <div class="swiper-slide">
-                    <img class="img-fluid" src="../../../public/images/test/IMG-20220922-WA0060.jpg" alt="">    
-                </div>
-                <div class="swiper-slide">
-                    <img class="img-fluid" src="../../../public/images/test/IMG-20220922-WA0061.jpg" alt="">    
-                </div>
-                <div class="swiper-slide">
-                    <img class="img-fluid" src="../../../public/images/test/IMG-20220922-WA0063.jpg" alt="">    
-                </div>
-                <div class="swiper-slide">
-                    <img class="img-fluid" src="../../../public/images/test/IMG-20220922-WA0066.jpg" alt="">    
-                </div>
-                <div class="swiper-slide">
-                    <img class="img-fluid" src="../../../public/images/test/IMG-20220922-WA0067.jpg" alt="">    
-                </div>
-                <div class="swiper-slide">
-                    <img class="img-fluid" src="../../../public/images/test/IMG-20220922-WA0070.jpg" alt="">    
-                </div>
-                <div class="swiper-slide">
-                    <img class="img-fluid" src="../../../public/images/test/IMG-20220922-WA0071.jpg" alt="">    
-                </div>
-                <div class="swiper-slide">
-                    <img class="img-fluid" src="../../../public/images/test/IMG-20220922-WA0073.jpg" alt="">    
-                </div>
-                <div class="swiper-slide">
-                    <img class="img-fluid" src="../../../public/images/test/IMG-20220922-WA0074.jpg" alt="">    
-                </div>
-                <div class="swiper-slide">
-                    <img class="img-fluid" src="../../../public/images/test/IMG-20220922-WA0075.jpg" alt="">    
-                </div>
-                <div class="swiper-slide">
-                    <img class="img-fluid" src="../../../public/images/test/IMG-20220922-WA0076.jpg" alt="">    
-                </div>
-                <div class="swiper-slide">
-                    <img class="img-fluid" src="../../../public/images/test/IMG-20220922-WA0079.jpg" alt="">    
-                </div>
-                <div class="swiper-slide">
-                    <img class="img-fluid" src="../../../public/images/test/IMG-20220922-WA0081.jpg" alt="">    
-                </div>
-                <div class="swiper-slide">
-                    <img class="img-fluid" src="../../../public/images/test/IMG-20220922-WA0082.jpg" alt="">    
-                </div>
-                <div class="swiper-slide">
-                    <img class="img-fluid" src="../../../public/images/test/IMG-20220922-WA0083.jpg" alt="">    
-                </div>
-                <div class="swiper-slide">
-                    <img class="img-fluid" src="../../../public/images/test/IMG-20220922-WA0090.jpg" alt="">    
-                </div>
             </div>
             <div class="pagination"></div>
             <router-link :to="{name:'gallery'}" class="nav-link text-center mt-5">
@@ -133,56 +85,11 @@
                 <div class="swiper-slide">
                     <img class="img-fluid" src="../../../public/images/test/IMG-20220922-WA0058.jpg" alt="">    
                 </div>
-                <div class="swiper-slide">
-                    <img class="img-fluid" src="../../../public/images/test/IMG-20220922-WA0060.jpg" alt="">    
-                </div>
-                <div class="swiper-slide">
-                    <img class="img-fluid" src="../../../public/images/test/IMG-20220922-WA0061.jpg" alt="">    
-                </div>
-                <div class="swiper-slide">
-                    <img class="img-fluid" src="../../../public/images/test/IMG-20220922-WA0063.jpg" alt="">    
-                </div>
-                <div class="swiper-slide">
-                    <img class="img-fluid" src="../../../public/images/test/IMG-20220922-WA0066.jpg" alt="">    
-                </div>
-                <div class="swiper-slide">
-                    <img class="img-fluid" src="../../../public/images/test/IMG-20220922-WA0067.jpg" alt="">    
-                </div>
-                <div class="swiper-slide">
-                    <img class="img-fluid" src="../../../public/images/test/IMG-20220922-WA0070.jpg" alt="">    
-                </div>
-                <div class="swiper-slide">
-                    <img class="img-fluid" src="../../../public/images/test/IMG-20220922-WA0071.jpg" alt="">    
-                </div>
-                <div class="swiper-slide">
-                    <img class="img-fluid" src="../../../public/images/test/IMG-20220922-WA0073.jpg" alt="">    
-                </div>
-                <div class="swiper-slide">
-                    <img class="img-fluid" src="../../../public/images/test/IMG-20220922-WA0074.jpg" alt="">    
-                </div>
-                <div class="swiper-slide">
-                    <img class="img-fluid" src="../../../public/images/test/IMG-20220922-WA0075.jpg" alt="">    
-                </div>
-                <div class="swiper-slide">
-                    <img class="img-fluid" src="../../../public/images/test/IMG-20220922-WA0076.jpg" alt="">    
-                </div>
-                <div class="swiper-slide">
-                    <img class="img-fluid" src="../../../public/images/test/IMG-20220922-WA0079.jpg" alt="">    
-                </div>
-                <div class="swiper-slide">
-                    <img class="img-fluid" src="../../../public/images/test/IMG-20220922-WA0081.jpg" alt="">    
-                </div>
-                <div class="swiper-slide">
-                    <img class="img-fluid" src="../../../public/images/test/IMG-20220922-WA0082.jpg" alt="">    
-                </div>
-                <div class="swiper-slide">
-                    <img class="img-fluid" src="../../../public/images/test/IMG-20220922-WA0083.jpg" alt="">    
-                </div>
-                <div class="swiper-slide">
-                    <img class="img-fluid" src="../../../public/images/test/IMG-20220922-WA0090.jpg" alt="">    
-                </div>
             </div>
             <div class="pagination"></div>
+            <router-link :to="{name:'gallery'}" class="nav-link text-center mt-5">
+                <a href="" class="btn btn-soft">Visualizza l'intera Gallery</a>
+            </router-link>
         </div>
 
 
@@ -225,55 +132,11 @@
                 <div class="swiper-slide">
                     <img class="img-fluid" src="../../../public/images/test/IMG-20220922-WA0058.jpg" alt="">    
                 </div>
-                <div class="swiper-slide">
-                    <img class="img-fluid" src="../../../public/images/test/IMG-20220922-WA0060.jpg" alt="">    
-                </div>
-                <div class="swiper-slide">
-                    <img class="img-fluid" src="../../../public/images/test/IMG-20220922-WA0061.jpg" alt="">    
-                </div>
-                <div class="swiper-slide">
-                    <img class="img-fluid" src="../../../public/images/test/IMG-20220922-WA0063.jpg" alt="">    
-                </div>
-                <div class="swiper-slide">
-                    <img class="img-fluid" src="../../../public/images/test/IMG-20220922-WA0066.jpg" alt="">    
-                </div>
-                <div class="swiper-slide">
-                    <img class="img-fluid" src="../../../public/images/test/IMG-20220922-WA0067.jpg" alt="">    
-                </div>
-                <div class="swiper-slide">
-                    <img class="img-fluid" src="../../../public/images/test/IMG-20220922-WA0070.jpg" alt="">    
-                </div>
-                <div class="swiper-slide">
-                    <img class="img-fluid" src="../../../public/images/test/IMG-20220922-WA0071.jpg" alt="">    
-                </div>
-                <div class="swiper-slide">
-                    <img class="img-fluid" src="../../../public/images/test/IMG-20220922-WA0073.jpg" alt="">    
-                </div>
-                <div class="swiper-slide">
-                    <img class="img-fluid" src="../../../public/images/test/IMG-20220922-WA0074.jpg" alt="">    
-                </div>
-                <div class="swiper-slide">
-                    <img class="img-fluid" src="../../../public/images/test/IMG-20220922-WA0075.jpg" alt="">    
-                </div>
-                <div class="swiper-slide">
-                    <img class="img-fluid" src="../../../public/images/test/IMG-20220922-WA0076.jpg" alt="">    
-                </div>
-                <div class="swiper-slide">
-                    <img class="img-fluid" src="../../../public/images/test/IMG-20220922-WA0079.jpg" alt="">    
-                </div>
-                <div class="swiper-slide">
-                    <img class="img-fluid" src="../../../public/images/test/IMG-20220922-WA0081.jpg" alt="">    
-                </div>
-                <div class="swiper-slide">
-                    <img class="img-fluid" src="../../../public/images/test/IMG-20220922-WA0082.jpg" alt="">    
-                </div>
-                <div class="swiper-slide">
-                    <img class="img-fluid" src="../../../public/images/test/IMG-20220922-WA0083.jpg" alt="">    
-                </div>
-                <div class="swiper-slide">
-                    <img class="img-fluid" src="../../../public/images/test/IMG-20220922-WA0090.jpg" alt="">    
-                </div>
             </div>
+            <div class="pagination"></div>
+            <router-link :to="{name:'gallery'}" class="nav-link text-center mt-5">
+                <a href="" class="btn btn-soft">Visualizza l'intera Gallery</a>
+            </router-link>
         </div>
 
     

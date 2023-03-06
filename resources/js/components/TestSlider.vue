@@ -6,76 +6,71 @@
             <div class="swiper-slide">
                 <div class="card-top d-flex flex-column align-items-center justify-content-around pt-3">
                     <img src="../../../public/images/test/IMG-20220922-WA0085.jpg" alt="">
-                    <p class="bg-danger text-white p-2 d-inline">SERVIZIO AGGIUNTIVO</p>
+                    <p class="label-soft text-white p-2 d-inline">Servizio Aggiuntivo</p>
                     <h3 class="text-white text-center">RUM BAR</h3>
                 </div>
                 <div class="card-body d-flex flex-column align-items-center justify-content-around py-4 px-5">
                     <p class="text-center border-bottom border-secondary py-3">Degustazione di Rum della Martinica, Santo Domingo, Portorico, Cuba abbinata a sigari e cioccolato fondente ed accompagnata da frutta secca e spezie, come arancia cannella e caffè.</p>
-                    <div class="icon d-flex pt-2">
+                    <div class="icon mb-2 d-flex pt-2">
                         <img class="img-fluid" src="../../../public/images/icons/2230932-200.png" alt="">
                     </div>
-                    <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, reprehenderit laborum quibusdam.</p>
+                    <p class="text-center">Saint jaimes, Matusalem, Flor de Cana, Hampdem Estate, El Dorado, Havana club, Sailor Jerry</p>
                 </div>
             </div>
             <div class="swiper-slide">
                 <div class="card-top d-flex flex-column align-items-center justify-content-around pt-3">
                     <img src="../../../public/images/test/shooting 18.2.23-8.jpg" alt="">
-                    <p class="bg-danger text-white p-2 d-inline">SERVIZIO AGGIUNTIVO</p>
+                    <p class="label-soft text-white p-2 d-inline">Servizio Aggiuntivo</p>
                     <h3 class="text-white text-center">WHISKY BAR</h3>
                 </div>
                 <div class="card-body d-flex flex-column align-items-center justify-content-around py-4 px-5">
                     <p class="text-center border-bottom border-secondary py-3">Degustazione di Whisky della Scozia, Canada, Irlanda, Stati Uniti e Giappone abbinata a sigari e cioccolata fondente ed accompagnata da frutta secca e spezie, come arancia e cannella, zucchero di canna e caffè.</p>
-                    <div class="icon d-flex pt-2">
+                    <div class="icon mb-2 d-flex pt-2">
                         <img class="img-fluid" src="../../../public/images/icons/117866-200.png" alt="">
                     </div>
-                    <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, reprehenderit laborum quibusdam.</p>
+                    <p class="text-center">Talisker, Jhonny walker. Jamenson, Nikka, Bulleit, Tamnavulin</p>
                 </div>
             </div>
             <div class="swiper-slide">
                 <div class="card-top d-flex flex-column align-items-center justify-content-around pt-3">
                     <img src="../../../public/images/test/PHOTO-2023-02-20-18-31-43.jpg" alt="">
-                    <p class="bg-danger text-white p-2 d-inline">SERVIZIO AGGIUNTIVO</p>
+                    <p class="label-soft text-white p-2 d-inline">Servizio Aggiuntivo</p>
                     <h3 class="text-white text-center">TROPIC BAR</h3>
                 </div>
                 <div class="card-body d-flex flex-column align-items-center justify-content-around py-4 px-5">
                     <p class="text-center border-bottom border-secondary py-3">Alle proposte degli altri servizi è possibile aggiungere una fresca e tropicale drink list che prevede</p>
-                    <ul class="list-unstyled">
-                        <li>- Frozen Drink</li>
-                        <li>- Coladas</li>
-                        <li>- Tiki cocktail</li>
-                    </ul>
-                    <div class="icon d-flex pt-2">
-                        <img class="img-fluid" src="../../../public/images/icons/76325.png" alt="">
+                    <div class="icon mb-2 d-flex pt-2">
+                        <img class="img-fluid" src="../../../public/images/icons/martini.png" alt="">
                     </div>
-                    <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, reprehenderit laborum quibusdam.</p>
+                    <p class="text-center">Strawberry and Banana frozen daiquiri, Mai Tai, Pina coladas, Tiki Mug</p>
                 </div>
             </div>
             <div class="swiper-slide">
                 <div class="card-top d-flex flex-column align-items-center justify-content-around pt-3">
                     <img src="../../../public/images/test/PHOTO-2023-02-24-15-28-53.jpg" alt="">
-                    <p class="bg-danger text-white p-2 d-inline">SERVIZIO AGGIUNTIVO</p>
+                    <p class="label-soft text-white p-2 d-inline">Servizio Aggiuntivo</p>
                     <h3 class="text-white text-center">FLUO DRINK BAR</h3>
                 </div>
                 <div class="card-body d-flex flex-column align-items-center justify-content-around py-4 px-5">
                     <p class="text-center border-bottom border-secondary py-3">Espressamente pensato per illuminare i tuoi drink durante l’after dinner. La formula prevede un servizio di cocktail e shot fluo illuminati dalle luci UV per rendere il tuo dopocena più appariscente!.</p>
-                    <div class="icon d-flex pt-2">
+                    <div class="icon mb-2 d-flex pt-2">
                         <img class="img-fluid" src="../../../public/images/icons/2230932-200.png" alt="">
                     </div>
-                    <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, reprehenderit laborum quibusdam.</p>
+                    <p class="text-center">Illuminati di...FLUO!</p>
                 </div>
             </div>
             <div class="swiper-slide">
                 <div class="card-top d-flex flex-column align-items-center justify-content-around pt-3">
                     <img src="../../../public/images/test/IMG-20220922-WA0097.jpg" alt="">
-                    <p class="bg-danger text-white p-2 d-inline">SERVIZIO AGGIUNTIVO</p>
+                    <p class="label-soft text-white p-2 d-inline">Servizio Aggiuntivo</p>
                     <h3 class="text-white text-center">ESPRESSO MARTINI NEGATIVO</h3>
                 </div>
                 <div class="card-body d-flex flex-column align-items-center justify-content-around py-4 px-5">
-                    <p class="text-center border-bottom border-secondary py-3">Cosa c’è di meglio di un buon espresso martini dopocena?. Questo servizio offre al cliente una scenica presentazione e degustazione di un espresso martini eseguito nelle nostra moka con l’aggiunta di ghiaccio secco. Apparentemente caldo e fumante, ma realmente freddo e buono da degustare.</p>
-                    <div class="icon d-flex pt-2">
+                    <p class="text-center border-bottom border-secondary py-3">Cosa c’è di meglio di un buon espresso martini dopocena?. Questo servizio offre al cliente una scenica presentazione e degustazione di un espresso martini eseguito nelle nostra moka con l’aggiunta di ghiaccio secco.</p>
+                    <div class="icon mb-2 d-flex pt-2">
                         <img class="img-fluid" src="../../../public/images/icons/2230932-200.png" alt="">
                     </div>
-                    <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, reprehenderit laborum quibusdam.</p>
+                    <p class="text-center">Apparentemente caldo e fumante, ma realmente freddo e buono da degustare.</p>
                 </div>
             </div>
         </div>
@@ -99,101 +94,86 @@
             <div class="swiper-slide">
                 <div class="card-top d-flex flex-column align-items-center justify-content-around pt-3">
                     <img src="../../../public/images/test/IMG-20220922-WA0085.jpg" alt="">
-                    <p class="bg-danger text-white p-2 d-inline">SERVIZIO AGGIUNTIVO</p>
+                    <p class="label-soft text-white p-2 d-inline">Servizio Aggiuntivo</p>
                     <h3 class="text-white text-center">RUM BAR</h3>
                 </div>
                 <div class="card-body d-flex flex-column align-items-center justify-content-around py-4 px-5">
                     <p class="text-center border-bottom border-secondary py-3">Degustazione di Rum della Martinica, Santo Domingo, Portorico, Cuba abbinata a sigari e cioccolato fondente ed accompagnata da frutta secca e spezie, come arancia cannella e caffè.</p>
-                    <div class="icon d-flex pt-2">
-                        <i class="fa-solid fa-book fa-2x p-1 text-danger"></i>
-                        <i class="fa-solid fa-pencil fa-2x p-1 text-danger"></i>
+                    <div class="icon mb-2 d-flex pt-2">
+                        <img class="img-fluid" src="../../../public/images/icons/2230932-200.png" alt="">
                     </div>
-                    <h5 class="text-center border-bottom border-secondary pt-2 pb-4 w-100">+50 OSPITI</h5>
-                    <i class="fa-solid fa-martini-glass fa-2x p-1 text-danger pt-3"></i>
-                    <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, reprehenderit laborum quibusdam.</p>
+                    <p class="text-center">Saint jaimes, Matusalem, Flor de Cana, Hampdem Estate, El Dorado, Havana club, Sailor Jerry</p>
                 </div>
             </div>
             <div class="swiper-slide">
                 <div class="card-top d-flex flex-column align-items-center justify-content-around pt-3">
-                    <img src="../../../public/images/test/IMG-20220922-WA0071.jpg" alt="">
-                    <p class="bg-danger text-white p-2 d-inline">SERVIZIO AGGIUNTIVO</p>
+                    <img src="../../../public/images/test/shooting 18.2.23-8.jpg" alt="">
+                    <p class="label-soft text-white p-2 d-inline">Servizio Aggiuntivo</p>
                     <h3 class="text-white text-center">WHISKY BAR</h3>
                 </div>
                 <div class="card-body d-flex flex-column align-items-center justify-content-around py-4 px-5">
                     <p class="text-center border-bottom border-secondary py-3">Degustazione di Whisky della Scozia, Canada, Irlanda, Stati Uniti e Giappone abbinata a sigari e cioccolata fondente ed accompagnata da frutta secca e spezie, come arancia e cannella, zucchero di canna e caffè.</p>
-                    <div class="icon d-flex pt-2">
-                        <i class="fa-solid fa-book fa-2x p-1 text-danger"></i>
-                        <i class="fa-solid fa-pencil fa-2x p-1 text-danger"></i>
+                    <div class="icon mb-2 d-flex pt-2">
+                        <img class="img-fluid" src="../../../public/images/icons/117866-200.png" alt="">
                     </div>
-                    <h5 class="text-center border-bottom border-secondary pt-2 pb-4 w-100">+50 OSPITI</h5>
-                    <i class="fa-solid fa-martini-glass fa-2x p-1 text-danger pt-3"></i>
-                    <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, reprehenderit laborum quibusdam.</p>
+                    <p class="text-center">Talisker, Jhonny walker. Jamenson, Nikka, Bulleit, Tamnavulin</p>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="card-top d-flex flex-column align-items-center justify-content-around pt-3">
+                    <img src="../../../public/images/test/PHOTO-2023-02-20-18-31-43.jpg" alt="">
+                    <p class="label-soft text-white p-2 d-inline">Servizio Aggiuntivo</p>
+                    <h3 class="text-white text-center">TROPIC BAR</h3>
+                </div>
+                <div class="card-body d-flex flex-column align-items-center justify-content-around py-4 px-5">
+                    <p class="text-center border-bottom border-secondary py-3">Alle proposte degli altri servizi è possibile aggiungere una fresca e tropicale drink list che prevede</p>
+                    <div class="icon mb-2 d-flex pt-2">
+                        <img class="img-fluid" src="../../../public/images/icons/martini.png" alt="">
+                    </div>
+                    <p class="text-center">Strawberry and Banana frozen daiquiri, Mai Tai, Pina coladas, Tiki Mug</p>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="card-top d-flex flex-column align-items-center justify-content-around pt-3">
+                    <img src="../../../public/images/test/PHOTO-2023-02-24-15-28-53.jpg" alt="">
+                    <p class="label-soft text-white p-2 d-inline">Servizio Aggiuntivo</p>
+                    <h3 class="text-white text-center">FLUO DRINK BAR</h3>
+                </div>
+                <div class="card-body d-flex flex-column align-items-center justify-content-around py-4 px-5">
+                    <p class="text-center border-bottom border-secondary py-3">Espressamente pensato per illuminare i tuoi drink durante l’after dinner. La formula prevede un servizio di cocktail e shot fluo illuminati dalle luci UV per rendere il tuo dopocena più appariscente!.</p>
+                    <div class="icon mb-2 d-flex pt-2">
+                        <img class="img-fluid" src="../../../public/images/icons/2230932-200.png" alt="">
+                    </div>
+                    <p class="text-center">Illuminati di...FLUO!</p>
                 </div>
             </div>
             <div class="swiper-slide">
                 <div class="card-top d-flex flex-column align-items-center justify-content-around pt-3">
                     <img src="../../../public/images/test/IMG-20220922-WA0097.jpg" alt="">
-                    <p class="bg-danger text-white p-2 d-inline">SERVIZIO AGGIUNTIVO</p>
-                    <h3 class="text-white text-center">TROPIC BAR</h3>
+                    <p class="label-soft text-white p-2 d-inline">Servizio Aggiuntivo</p>
+                    <h3 class="text-white text-center">ESPRESSO MARTINI NEGATIVO</h3>
                 </div>
                 <div class="card-body d-flex flex-column align-items-center justify-content-around py-4 px-5">
-                    <p class="text-center border-bottom border-secondary py-3">Alle proposte degli altri servizi è possibile aggiungere una fresca e tropicale drink list che prevede: Frozen drink, Coladas, Tiki cocktail</p>
-                    <div class="icon d-flex pt-2">
-                        <i class="fa-solid fa-book fa-2x p-1 text-danger"></i>
-                        <i class="fa-solid fa-pencil fa-2x p-1 text-danger"></i>
+                    <p class="text-center border-bottom border-secondary py-3">Cosa c’è di meglio di un buon espresso martini dopocena?. Questo servizio offre al cliente una scenica presentazione e degustazione di un espresso martini eseguito nelle nostra moka con l’aggiunta di ghiaccio secco.</p>
+                    <div class="icon mb-2 d-flex pt-2">
+                        <img class="img-fluid" src="../../../public/images/icons/2230932-200.png" alt="">
                     </div>
-                    <h5 class="text-center border-bottom border-secondary pt-2 pb-4 w-100">+50 OSPITI</h5>
-                    <i class="fa-solid fa-martini-glass fa-2x p-1 text-danger pt-3"></i>
-                    <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, reprehenderit laborum quibusdam.</p>
-                </div>
-            </div>
-            <div class="swiper-slide">
-                <div class="card-top d-flex flex-column align-items-center justify-content-around pt-3">
-                    <img src="../../../public/images/test/IMG-20220922-WA0061.jpg" alt="">
-                    <p class="bg-danger text-white p-2 d-inline">SERVIZIO AGGIUNTIVO</p>
-                    <h3 class="text-white text-center">FLUO DRINK BAR</h3>
-                </div>
-                <div class="card-body d-flex flex-column align-items-center justify-content-around py-4 px-5">
-                    <p class="text-center border-bottom border-secondary py-3">Espressamente pensato per illuminare i tuoi drink durante l’after dinner. La formula prevede un servizio di cocktail e shot fluo illuminati dalle luci UV per rendere il tuo dopocena più appariscente!</p>
-                    <div class="icon d-flex pt-2">
-                        <i class="fa-solid fa-book fa-2x p-1 text-danger"></i>
-                        <i class="fa-solid fa-pencil fa-2x p-1 text-danger"></i>
-                    </div>
-                    <h5 class="text-center border-bottom border-secondary pt-2 pb-4 w-100">+50 OSPITI</h5>
-                    <i class="fa-solid fa-martini-glass fa-2x p-1 text-danger pt-3"></i>
-                    <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, reprehenderit laborum quibusdam.</p>
-                </div>
-            </div>
-            <div class="swiper-slide">
-                <div class="card-top d-flex flex-column align-items-center justify-content-around pt-3">
-                    <img src="../../../public/images/test/IMG-20220922-WA0014.jpg" alt="">
-                    <p class="bg-danger text-white p-2 d-inline">SERVIZIO AGGIUNTIVO</p>
-                    <h3 class="text-white text-center">ESPRESSO MARTINI</h3>
-                </div>
-                <div class="card-body d-flex flex-column align-items-center justify-content-around py-4 px-5">
-                    <p class="text-center border-bottom border-secondary py-3">Cosa c’è di meglio di un buon espresso martini dopocena?. Questo servizio offre al cliente una scenica presentazione e degustazione di un espresso martini eseguito nelle nostra moka con l’aggiunta di ghiaccio secco. Apparentemente caldo e fumante, ma realmente freddo e buono da degustare.</p>
-                    <div class="icon d-flex pt-2">
-                        <i class="fa-solid fa-book fa-2x p-1 text-danger"></i>
-                        <i class="fa-solid fa-pencil fa-2x p-1 text-danger"></i>
-                    </div>
-                    <h5 class="text-center border-bottom border-secondary pt-2 pb-4 w-100">+50 OSPITI</h5>
-                    <i class="fa-solid fa-martini-glass fa-2x p-1 text-danger pt-3"></i>
-                    <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, reprehenderit laborum quibusdam.</p>
+                    <p class="text-center">Apparentemente caldo e fumante, ma realmente freddo e buono da degustare.</p>
                 </div>
             </div>
         </div>
-            <div class="pagination"></div>
-            <div class="prev">
-                <svg width="10" height="15" viewBox="0 0 10 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M9.2625 13.2375L3.5375 7.5L9.2625 1.7625L7.5 0L0 7.5L7.5 15L9.2625 13.2375Z"  />
-                </svg>
-            </div>
-            <div class="next">
-                <svg width="10" height="15" viewBox="0 0 10 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M0.737305 13.2375L6.4623 7.5L0.737305 1.7625L2.4998 0L9.9998 7.5L2.4998 15L0.737305 13.2375Z" />
-                </svg>
+        <div class="pagination"></div>
+        <div class="prev">
+            <svg width="10" height="15" viewBox="0 0 10 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M9.2625 13.2375L3.5375 7.5L9.2625 1.7625L7.5 0L0 7.5L7.5 15L9.2625 13.2375Z"  />
+            </svg>
+        </div>
+        <div class="next">
+            <svg width="10" height="15" viewBox="0 0 10 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0.737305 13.2375L6.4623 7.5L0.737305 1.7625L2.4998 0L9.9998 7.5L2.4998 15L0.737305 13.2375Z" />
+            </svg>
 
-            </div>
+        </div>
         </div>
 
 
@@ -203,101 +183,86 @@
             <div class="swiper-slide">
                 <div class="card-top d-flex flex-column align-items-center justify-content-around pt-3">
                     <img src="../../../public/images/test/IMG-20220922-WA0085.jpg" alt="">
-                    <p class="bg-danger text-white p-2 d-inline">SERVIZIO AGGIUNTIVO</p>
+                    <p class="label-soft text-white p-2 d-inline">Servizio Aggiuntivo</p>
                     <h3 class="text-white text-center">RUM BAR</h3>
                 </div>
                 <div class="card-body d-flex flex-column align-items-center justify-content-around py-4 px-5">
                     <p class="text-center border-bottom border-secondary py-3">Degustazione di Rum della Martinica, Santo Domingo, Portorico, Cuba abbinata a sigari e cioccolato fondente ed accompagnata da frutta secca e spezie, come arancia cannella e caffè.</p>
-                    <div class="icon d-flex pt-2">
-                        <i class="fa-solid fa-book fa-2x p-1 text-danger"></i>
-                        <i class="fa-solid fa-pencil fa-2x p-1 text-danger"></i>
+                    <div class="icon mb-2 d-flex pt-2">
+                        <img class="img-fluid" src="../../../public/images/icons/2230932-200.png" alt="">
                     </div>
-                    <h5 class="text-center border-bottom border-secondary pt-2 pb-4 w-100">+50 OSPITI</h5>
-                    <i class="fa-solid fa-martini-glass fa-2x p-1 text-danger pt-3"></i>
-                    <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, reprehenderit laborum quibusdam.</p>
+                    <p class="text-center">Saint jaimes, Matusalem, Flor de Cana, Hampdem Estate, El Dorado, Havana club, Sailor Jerry</p>
                 </div>
             </div>
             <div class="swiper-slide">
                 <div class="card-top d-flex flex-column align-items-center justify-content-around pt-3">
-                    <img src="../../../public/images/test/IMG-20220922-WA0071.jpg" alt="">
-                    <p class="bg-danger text-white p-2 d-inline">SERVIZIO AGGIUNTIVO</p>
+                    <img src="../../../public/images/test/shooting 18.2.23-8.jpg" alt="">
+                    <p class="label-soft text-white p-2 d-inline">Servizio Aggiuntivo</p>
                     <h3 class="text-white text-center">WHISKY BAR</h3>
                 </div>
                 <div class="card-body d-flex flex-column align-items-center justify-content-around py-4 px-5">
                     <p class="text-center border-bottom border-secondary py-3">Degustazione di Whisky della Scozia, Canada, Irlanda, Stati Uniti e Giappone abbinata a sigari e cioccolata fondente ed accompagnata da frutta secca e spezie, come arancia e cannella, zucchero di canna e caffè.</p>
-                    <div class="icon d-flex pt-2">
-                        <i class="fa-solid fa-book fa-2x p-1 text-danger"></i>
-                        <i class="fa-solid fa-pencil fa-2x p-1 text-danger"></i>
+                    <div class="icon mb-2 d-flex pt-2">
+                        <img class="img-fluid" src="../../../public/images/icons/117866-200.png" alt="">
                     </div>
-                    <h5 class="text-center border-bottom border-secondary pt-2 pb-4 w-100">+50 OSPITI</h5>
-                    <i class="fa-solid fa-martini-glass fa-2x p-1 text-danger pt-3"></i>
-                    <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, reprehenderit laborum quibusdam.</p>
+                    <p class="text-center">Talisker, Jhonny walker. Jamenson, Nikka, Bulleit, Tamnavulin</p>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="card-top d-flex flex-column align-items-center justify-content-around pt-3">
+                    <img src="../../../public/images/test/PHOTO-2023-02-20-18-31-43.jpg" alt="">
+                    <p class="label-soft text-white p-2 d-inline">Servizio Aggiuntivo</p>
+                    <h3 class="text-white text-center">TROPIC BAR</h3>
+                </div>
+                <div class="card-body d-flex flex-column align-items-center justify-content-around py-4 px-5">
+                    <p class="text-center border-bottom border-secondary py-3">Alle proposte degli altri servizi è possibile aggiungere una fresca e tropicale drink list che prevede</p>
+                    <div class="icon mb-2 d-flex pt-2">
+                        <img class="img-fluid" src="../../../public/images/icons/martini.png" alt="">
+                    </div>
+                    <p class="text-center">Strawberry and Banana frozen daiquiri, Mai Tai, Pina coladas, Tiki Mug</p>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="card-top d-flex flex-column align-items-center justify-content-around pt-3">
+                    <img src="../../../public/images/test/PHOTO-2023-02-24-15-28-53.jpg" alt="">
+                    <p class="label-soft text-white p-2 d-inline">Servizio Aggiuntivo</p>
+                    <h3 class="text-white text-center">FLUO DRINK BAR</h3>
+                </div>
+                <div class="card-body d-flex flex-column align-items-center justify-content-around py-4 px-5">
+                    <p class="text-center border-bottom border-secondary py-3">Espressamente pensato per illuminare i tuoi drink durante l’after dinner. La formula prevede un servizio di cocktail e shot fluo illuminati dalle luci UV per rendere il tuo dopocena più appariscente!.</p>
+                    <div class="icon mb-2 d-flex pt-2">
+                        <img class="img-fluid" src="../../../public/images/icons/2230932-200.png" alt="">
+                    </div>
+                    <p class="text-center">Illuminati di...FLUO!</p>
                 </div>
             </div>
             <div class="swiper-slide">
                 <div class="card-top d-flex flex-column align-items-center justify-content-around pt-3">
                     <img src="../../../public/images/test/IMG-20220922-WA0097.jpg" alt="">
-                    <p class="bg-danger text-white p-2 d-inline">SERVIZIO AGGIUNTIVO</p>
-                    <h3 class="text-white text-center">TROPIC BAR</h3>
+                    <p class="label-soft text-white p-2 d-inline">Servizio Aggiuntivo</p>
+                    <h3 class="text-white text-center">ESPRESSO MARTINI NEGATIVO</h3>
                 </div>
                 <div class="card-body d-flex flex-column align-items-center justify-content-around py-4 px-5">
-                    <p class="text-center border-bottom border-secondary py-3">Alle proposte degli altri servizi è possibile aggiungere una fresca e tropicale drink list che prevede: Frozen drink, Coladas, Tiki cocktail</p>
-                    <div class="icon d-flex pt-2">
-                        <i class="fa-solid fa-book fa-2x p-1 text-danger"></i>
-                        <i class="fa-solid fa-pencil fa-2x p-1 text-danger"></i>
+                    <p class="text-center border-bottom border-secondary py-3">Cosa c’è di meglio di un buon espresso martini dopocena?. Questo servizio offre al cliente una scenica presentazione e degustazione di un espresso martini eseguito nelle nostra moka con l’aggiunta di ghiaccio secco.</p>
+                    <div class="icon mb-2 d-flex pt-2">
+                        <img class="img-fluid" src="../../../public/images/icons/2230932-200.png" alt="">
                     </div>
-                    <h5 class="text-center border-bottom border-secondary pt-2 pb-4 w-100">+50 OSPITI</h5>
-                    <i class="fa-solid fa-martini-glass fa-2x p-1 text-danger pt-3"></i>
-                    <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, reprehenderit laborum quibusdam.</p>
-                </div>
-            </div>
-            <div class="swiper-slide">
-                <div class="card-top d-flex flex-column align-items-center justify-content-around pt-3">
-                    <img src="../../../public/images/test/IMG-20220922-WA0061.jpg" alt="">
-                    <p class="bg-danger text-white p-2 d-inline">SERVIZIO AGGIUNTIVO</p>
-                    <h3 class="text-white text-center">FLUO DRINK BAR</h3>
-                </div>
-                <div class="card-body d-flex flex-column align-items-center justify-content-around py-4 px-5">
-                    <p class="text-center border-bottom border-secondary py-3">Espressamente pensato per illuminare i tuoi drink durante l’after dinner. La formula prevede un servizio di cocktail e shot fluo illuminati dalle luci UV per rendere il tuo dopocena più appariscente!</p>
-                    <div class="icon d-flex pt-2">
-                        <i class="fa-solid fa-book fa-2x p-1 text-danger"></i>
-                        <i class="fa-solid fa-pencil fa-2x p-1 text-danger"></i>
-                    </div>
-                    <h5 class="text-center border-bottom border-secondary pt-2 pb-4 w-100">+50 OSPITI</h5>
-                    <i class="fa-solid fa-martini-glass fa-2x p-1 text-danger pt-3"></i>
-                    <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, reprehenderit laborum quibusdam.</p>
-                </div>
-            </div>
-            <div class="swiper-slide">
-                <div class="card-top d-flex flex-column align-items-center justify-content-around pt-3">
-                    <img src="../../../public/images/test/IMG-20220922-WA0014.jpg" alt="">
-                    <p class="bg-danger text-white p-2 d-inline">SERVIZIO AGGIUNTIVO</p>
-                    <h3 class="text-white text-center">ESPRESSO MARTINI</h3>
-                </div>
-                <div class="card-body d-flex flex-column align-items-center justify-content-around py-4 px-5">
-                    <p class="text-center border-bottom border-secondary py-3">Cosa c’è di meglio di un buon espresso martini dopocena?. Questo servizio offre al cliente una scenica presentazione e degustazione di un espresso martini eseguito nelle nostra moka con l’aggiunta di ghiaccio secco. Apparentemente caldo e fumante, ma realmente freddo e buono da degustare.</p>
-                    <div class="icon d-flex pt-2">
-                        <i class="fa-solid fa-book fa-2x p-1 text-danger"></i>
-                        <i class="fa-solid fa-pencil fa-2x p-1 text-danger"></i>
-                    </div>
-                    <h5 class="text-center border-bottom border-secondary pt-2 pb-4 w-100">+50 OSPITI</h5>
-                    <i class="fa-solid fa-martini-glass fa-2x p-1 text-danger pt-3"></i>
-                    <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, reprehenderit laborum quibusdam.</p>
+                    <p class="text-center">Apparentemente caldo e fumante, ma realmente freddo e buono da degustare.</p>
                 </div>
             </div>
         </div>
-            <div class="pagination"></div>
-            <div class="prev">
-                <svg width="10" height="15" viewBox="0 0 10 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M9.2625 13.2375L3.5375 7.5L9.2625 1.7625L7.5 0L0 7.5L7.5 15L9.2625 13.2375Z"  />
-                </svg>
-            </div>
-            <div class="next">
-                <svg width="10" height="15" viewBox="0 0 10 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M0.737305 13.2375L6.4623 7.5L0.737305 1.7625L2.4998 0L9.9998 7.5L2.4998 15L0.737305 13.2375Z" />
-                </svg>
+        <div class="pagination"></div>
+        <div class="prev">
+            <svg width="10" height="15" viewBox="0 0 10 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M9.2625 13.2375L3.5375 7.5L9.2625 1.7625L7.5 0L0 7.5L7.5 15L9.2625 13.2375Z"  />
+            </svg>
+        </div>
+        <div class="next">
+            <svg width="10" height="15" viewBox="0 0 10 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0.737305 13.2375L6.4623 7.5L0.737305 1.7625L2.4998 0L9.9998 7.5L2.4998 15L0.737305 13.2375Z" />
+            </svg>
 
-            </div>
+        </div>
         </div>
 
     
@@ -416,18 +381,27 @@ h3{
     p, h3{
         z-index: 1;
     }
+
+    .label-soft{
+        background-color: #b48c80;
+        font-family: 'Dancing Script', cursive;
+        font-size: 1.5rem;
+        position: absolute;
+        top: -20px;
+    }
 }
 
 .card-body{
-    background-color: #EDEAE6;
+    background-color: #efefef;
 
     .icon{
-        width: 70px;
+        width: 50px;
     }
 }
 
 .swiper {
   padding-bottom: 60px !important;
+  padding-top: 20px;
   height: 250px;
   --swiper-theme-color: #b48c80;
   .swiper-wrapper {
@@ -500,6 +474,7 @@ h3{
     padding: 0;
     z-index: 1;
   padding-bottom: 60px !important;
+  padding-top: 20px;
   height: 250px;
   --swiper-theme-color: #b48c80;
   .swiper-wrapper {
@@ -573,6 +548,7 @@ h3{
     padding: 0;
     z-index: 1;
     padding-bottom: 60px !important;
+    padding-top: 20px;
     height: 250px;
     --swiper-theme-color: #b48c80;
     .swiper-wrapper {

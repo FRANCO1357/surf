@@ -1,5 +1,5 @@
 <template>
-    <div class="container py-5 d-flex flex-column align-items-center">
+    <div class="container pb-5 d-flex flex-column align-items-center">
         <h5 class="bg-soft p-2 text-white text-center d-inline">PREVENTIVO</h5>
         <h2 class="text-center d-none d-md-block">Vuoi un preventivo?</h2>
         <h3 class="text-center d-md-none py-2">Vuoi un preventivo?</h3>

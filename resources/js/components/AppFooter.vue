@@ -35,7 +35,7 @@
 
         <div class="footer-bottom p-4 d-flex flex-column align-items-center">
             <p class="m-0">Tenereza Eventi © 2023. Tutti i diritti riservati.</p>
-            <p class="m-0">Created with love by: <strong>Francesco Melani</strong></p>
+            <p class="m-0">Created with love by: <strong><a href="https://instagram.com/franco_mela?igshid=YmMyMTA2M2Y=">Francesco Melani</a></strong></p>
         </div>
         
     </footer>
@@ -53,10 +53,15 @@ export default{
 footer{
     background-image: url('../../../public/images/test/black-marble.jpg');
     background-size: cover;
+    background-position: bottom;
     color: white;
 
     .footer-bottom{
         background-color: rgba(0, 0, 0, 0.5);
+        
+        a{
+            color: white;
+        }
     }
 
     div{
@@ -83,6 +88,8 @@ footer{
     &:hover{
         background-color: white;
         color: #b48c80;
+        transform: scale(1.1);
+        transition: 1s;
     }
 }
 }

@@ -48,7 +48,7 @@
         </div> -->
 
         <!-- event 1 -->
-        <div class="py-5 d-flex flex-column align-items-center">
+        <div class="pt-5 d-flex flex-column align-items-center">
             <h2>BAR SERVICE</h2>
             <div class="bottom-line mb-3 mx-auto"></div>
             <div class="container py-4 d-flex flex-wrap">
@@ -80,9 +80,9 @@
                         </div>
                         <p class="text-center">Drink illimitati per intrattenere gli ospiti durante tutto il tempo del tuo evento, che sia un matrimonio, compleanno,
                         evento aziendale o festa privata. <br><br>
-                        La nostra formula Premium bar è il servizio adatto ad ogni occasione. <br> Drink illimitati per intrattenere gli ospiti durante
-                        un evento, che sia un matrimonio, un compleanno cosi come un evento aziendale o festa privata, il tutto ovviamente
-                        curato nei minimi dettagli. Prevede al suo interno:</p>
+                        La nostra formula Premium bar è il servizio adatto ad ogni occasione. <br> Tutti gli ospiti, avranno la possibilità di chiedere qualsiasi drink essi preferiscono, molteplici liquori e
+                        distillati saranno a loro disposizione per un esperienza esclusiva. Il bar personale ed esclusivo a completa
+                        disposizione di ogni ospite. Prevede al suo interno:</p>
                         <ul class="text-center list-unstyled">
                             <li>- Drink illimitati per tutta la durata del’evento (Alcolici,Analcolici,Soft drink,Birra,Ghiaccio)</li>
                             <li>- Banco bar a vostra scelta</li>
@@ -140,7 +140,7 @@
 
         <!-- services -->
         <div id="services">
-            <div class="container py-5">
+            <div class="container pt-5">
                 <TestSlider/>
                 <div id="anchor-about" class="mb-5"></div>
             </div>
@@ -167,24 +167,8 @@
                 </div>
             </div>
             <div class="row py-5">
-                <div class="col-12 col-md-4 d-flex align-items-center justify-content-center">
-                    <div class="card border-0">
-                        <h3>Scopri la qualità<br> del servizio</h3>
-                        <a class="text-soft" href="">SCOPRI DI PIÙ</a>
-                    </div>
-                </div>
-                <div class="col-12 col-md-4 my-5 d-flex align-items-center justify-content-center">
-                    <div class="card border-0 flex-row">
-                        <a href=""><i class="fa-brands fa-facebook-f text-soft p-3 mr-2 border border-soft bg-white"></i></a>
-                        <a href="https://instagram.com/tenerezaeventi?igshid=YmMyMTA2M2Y="><i class="fa-brands fa-instagram text-soft p-3 ml-2 border border-soft bg-white"></i></a>
-                    </div>
-                </div>
-                <div class="col-12 col-md-4 d-flex align-items-center justify-content-center">
-                    <div class="card border-0">
-                        <h3>Vuoi venire a<br> trovarci?</h3>
-                        <a class="text-soft" href="">VIA PAOLO ORSI, 47 00178 ROMA</a>
-                    </div>
-                </div>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat doloribus repellat, molestias reiciendis pariatur aut aliquam dolorum unde beatae, esse natus aspernatur, impedit officiis saepe incidunt nostrum fugit eligendi ab.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, fugit maiores fuga culpa ipsa magnam error at laboriosam! Officiis beatae neque consectetur maiores temporibus laboriosam aspernatur velit porro distinctio repellendus?</p>
             </div>
             <div id="anchor-preventivo" class="mb-5"></div>
         </div>
@@ -208,7 +192,7 @@ import GallerySlider from '../GallerySlider.vue';
 
 export default{
     name: "HomePage",
-    components: { JumboSlider, CounterSlider, AppForm, AppFooter, AboutSlider, TestSlider, GallerySlider }
+    components: { JumboSlider, CounterSlider, AppForm, AppFooter, AboutSlider, TestSlider, GallerySlider, }
 }
 </script>
 
@@ -256,6 +240,7 @@ h2{
     object-fit: cover;
     width: 288px;
     height: 288px;
+    box-shadow: 0 0 18px black;
 }
 
 #event{
@@ -283,10 +268,8 @@ h2{
 }
 
 #about{
-    background-image: url('../../../../public/images/test/PHOTO-2023-02-08-15-54-06.jpg');
-    background-position: top;
+    background-image: url('../../../../public/images/test/IMG-20220922-WA0042.jpg');
     background-size: cover;
-    background-repeat: no-repeat;
     color: white; 
     position: relative;
 
@@ -297,7 +280,7 @@ h2{
         left: 0;
         bottom: 0;
         background-color: black;
-        filter: opacity(0.70);
+        filter: opacity(0.80);
         z-index: 1;
     }
 
