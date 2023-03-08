@@ -1,6 +1,5 @@
 <template>
     <section>
-        <h2>Drinks</h2>
         <div class="gallery d-none d-lg-block h-100">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">

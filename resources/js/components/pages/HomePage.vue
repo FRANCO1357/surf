@@ -152,8 +152,8 @@
             <div class="container pt-5 text-center">
             <h2>Chi siamo</h2>
             <div class="bottom-line mb-3 mx-auto"></div>
-            <p class="mt-4">La Tenereza eventi nasce da l’esigenza, sempre più crescente, di rendere ogni evento unico, con lo scopo di soddisfare ogni esigenza del cliente.</p>
-            <p>Tenereza eventi è un connubio di talento, professionalità e dinamismo, interpretato da tutti i nostri “attori” nelle proprie “parti”. Personale altamente qualificato e con grande esperienza, capace di adattarsi ai diversi contesti e stupire nello svolgimento del proprio lavoro, vissuto come uno “show” dove tutto deve essere semplicemente perfetto.</p>
+            <p class="mt-4">La Tenereza eventi nasce da l’esigenza, sempre più crescente, di rendere ogni evento unico, con lo scopo di soddisfare ogni richiesta del cliente.</p>
+            <p>Attraverso la collaborazione con i migliori catering di italia la tenereza eventi vanta 10 anni di esperienza nel settore ristorativo, in grado di interpretare ogni richiesta anche la più fantasiosa e specifica con gadget e allestimenti di vario genere per tutti i gusti. La partecipazione a molteplici corsi di formazione e l'evoluzione progressiva della miscelazione porta la tenereza eventi a rimanere sempre aggiornata con le nuove tendenze di mercato.</p>
             <!-- <AboutSlider/> -->
             <div class="row">
                 <div class="col-12 col-md-4 p-3">
@@ -163,12 +163,11 @@
                     <img class="img-fluid img-circle" src="../../../../public/images/test/IMG-20220922-WA0029.jpg" alt="">
                 </div>
                 <div class="col-12 col-md-4 p-3">
-                    <img class="img-fluid img-circle" src="../../../../public/images/test/IMG-20221205-WA0015.jpg" alt="">
+                    <img class="img-fluid img-circle" src="../../../../public/images/test/PHOTO-2023-03-06-11-14-40.jpg" alt="">
                 </div>
             </div>
             <div class="row py-5">
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat doloribus repellat, molestias reiciendis pariatur aut aliquam dolorum unde beatae, esse natus aspernatur, impedit officiis saepe incidunt nostrum fugit eligendi ab.</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, fugit maiores fuga culpa ipsa magnam error at laboriosam! Officiis beatae neque consectetur maiores temporibus laboriosam aspernatur velit porro distinctio repellendus?</p>
+                <p class="px-4">Tenereza eventi è un connubio di talento, professionalità e dinamismo, interpretato da tutti i nostri “attori” nelle proprie “parti”. <br> <br> Personale altamente qualificato e con grande esperienza, capace di adattarsi ai diversi contesti e stupire nello svolgimento del proprio lavoro, vissuto come uno “show” dove tutto deve essere semplicemente perfetto.</p>
             </div>
             <div id="anchor-preventivo" class="mb-5"></div>
         </div>

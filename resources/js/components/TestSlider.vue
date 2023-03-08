@@ -40,7 +40,7 @@
                 <div class="card-body d-flex flex-column align-items-center justify-content-around py-4 px-5">
                     <p class="text-center border-bottom border-secondary py-3">Alle proposte degli altri servizi è possibile aggiungere una fresca e tropicale drink list che prevede</p>
                     <div class="icon mb-2 d-flex pt-2">
-                        <img class="img-fluid" src="../../../public/images/icons/martini.png" alt="">
+                        <img class="img-fluid" src="../../../public/images/icons/2230932-200.png" alt="">
                     </div>
                     <p class="text-center">Strawberry and Banana frozen daiquiri, Mai Tai, Pina coladas, Tiki Mug</p>
                 </div>
@@ -68,7 +68,7 @@
                 <div class="card-body d-flex flex-column align-items-center justify-content-around py-4 px-5">
                     <p class="text-center border-bottom border-secondary py-3">Cosa c’è di meglio di un buon espresso martini dopocena?. Questo servizio offre al cliente una scenica presentazione e degustazione di un espresso martini eseguito nelle nostra moka con l’aggiunta di ghiaccio secco.</p>
                     <div class="icon mb-2 d-flex pt-2">
-                        <img class="img-fluid" src="../../../public/images/icons/2230932-200.png" alt="">
+                        <img class="img-fluid" src="../../../public/images/icons/martini.png" alt="">
                     </div>
                     <p class="text-center">Apparentemente caldo e fumante, ma realmente freddo e buono da degustare.</p>
                 </div>

@@ -1,30 +1,30 @@
 <template>
     <main class="px-3">
-        <GalleryDrinksSlider/>
-        <GalleryCountersSlider/>
-        <GalleryLocationsSlider/>
-        <GalleryStaffSlider/>
+        <GalleryPageSlider/>
     </main>
 </template>
 
 <script>
-import GalleryDrinksSlider from '../GalleryDrinksSlider.vue';
-import GalleryCountersSlider from '../GalleryCountersSlider.vue';
-import GalleryLocationsSlider from '../GalleryLocationsSlider.vue';
-import GalleryStaffSlider from '../GalleryStaffSlider.vue';
+import GalleryPageSlider from '../GalleryPageSlider.vue';
 
 export default{
     name: "GalleryPage",
-    components: { GalleryDrinksSlider, GalleryCountersSlider, GalleryLocationsSlider, GalleryStaffSlider }
+    components: { GalleryPageSlider }
 }
 </script>
 
 <style lang="scss" scoped>
     main{
-        min-height: 200vh;
+        min-height: 100vh;
         padding-top: 250px;
         background-image: url('../../../../public/images/test/grey-marble.jpg');
         background-size: cover;
+    }
+
+    @media(max-width: 767px){
+        main{
+            padding-top: 150px;
+        }
     }
 
 </style>

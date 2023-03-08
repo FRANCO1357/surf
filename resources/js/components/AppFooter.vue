@@ -14,10 +14,9 @@
                 </div>
                 <div id="social" class="col-12 col-md-4 d-flex flex-column align-items-center">
                     <h3 class="text-center mt-4">Social</h3>
-                    <div class="row my-3">
+                    <div class="row align-items-center my-3">
                         <a class="btn text-white" href="https://instagram.com/tenerezaeventi?igshid=YmMyMTA2M2Y="><i class="fa-brands fa-instagram fa-2x"></i></a>
-                        <a class="btn text-white" href="https://instagram.com/tenerezaeventi?igshid=YmMyMTA2M2Y="><i class="fa-brands fa-facebook fa-2x"></i></a>
-                        <a class="btn text-white" href="https://instagram.com/tenerezaeventi?igshid=YmMyMTA2M2Y="><i class="fa-brands fa-tiktok fa-2x"></i></a>
+                        <a class="text-soft" href="https://instagram.com/tenerezaeventi?igshid=YmMyMTA2M2Y=">@tenerezaeventi</a>
                     </div>
                     <a class="px-5" href="https://instagram.com/tenerezaeventi?igshid=YmMyMTA2M2Y=">
                         <img class="img-fluid" src="../../../public/images/test/IMG-20220922-WA0066.jpg" alt="">
@@ -75,6 +74,16 @@ footer{
 
 .text-soft{
     color: #b48c80;
+    text-decoration: none;
+    font-size: 1.5rem;
+    text-shadow: 0 0 5px black;
+    margin-left: 10px;
+
+    &:hover{
+        color: white;
+        transform: scale(1.1);
+        transition: 1s;
+    }
 }
 
 #social i{
@@ -84,6 +93,7 @@ footer{
     width: 50px;
     height: 50px;
     border-radius: 50%;
+    box-shadow: 0 0 5px black;
 
     &:hover{
         background-color: white;
