@@ -20,3 +20,13 @@ Route::get('/admin', 'HomeController@index')->middleware('auth')->name('admin.ho
 Route::get('/{any?}', function () {
     return view('guest.home');
 });
+
+
+Route::middleware('auth')->prefix('admin')->name('admin.')->group(function(){
+
+    Route::resource('contacts', 'ContactController');
+
+    Route::get('/{any}', function(){ 
+        abort('404');
+    })->where('any', '.*');
+});

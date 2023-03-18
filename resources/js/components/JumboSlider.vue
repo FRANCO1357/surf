@@ -73,14 +73,38 @@ export default{
             text-shadow: 0 0 4px rgb(65, 65, 65);
         }
 
-        .btn-soft{
-            background-color: #b48c80;
+        .btn-soft {
+            --clr-font-main: hsla(0 0% 20% / 100);
+            --btn-bg-1: rgb(142, 142, 142);
+            --btn-bg-2: rgb(49, 49, 55);
+            --btn-bg-color: hsla(360 100% 100% / 1);
+            --radii: 0.5em;
+            cursor: pointer;
+            padding: 10px 40px;
+            font-size: 20px;
+            transition: 0.8s;
+            background-size: 280% auto;
+            background-image: linear-gradient(325deg, var(--btn-bg-2) 0%, var(--btn-bg-1) 55%, var(--btn-bg-2) 90%);
             border: 2px solid white;
-            border-radius: 0;
-            padding: 12px 40px;
-            font-size: 18px;
-            color: white;
+            border-radius: 0px;
+            color: var(--btn-bg-color);
+            box-shadow: 0px 0px 20px rgba(56, 56, 56, 0.5), 0px 5px 5px -1px rgba(84, 84, 84, 0.25), inset 4px 4px 8px rgba(62, 62, 62, 0.5), inset -4px -4px 8px rgba(44, 44, 44, 0.35);
+
+            &:hover{
+                background-position: right top;
+            }
         }
+
+.btn-soft:is(:focus, :focus-within,:active) {
+  outline: none;
+  box-shadow: 0 0 0 3px var(--btn-bg-color), 0 0 0 6px var(--btn-bg-2);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .btn-soft {
+    transition: linear;
+  }
+}
     }
 }
 

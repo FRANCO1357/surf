@@ -3,14 +3,203 @@
         <div class="gallery d-none d-lg-block h-100">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
+                    <img class="img-fluid" src="../../../public/images/test/IMG-20220922-WA0014.jpg" alt="">    
+                </div>
+                <div class="swiper-slide">
+                    <img class="img-fluid" src="../../../public/images/test/IMG-20220922-WA0015.jpg" alt="">    
+                </div>
+                <div class="swiper-slide">
+                    <img class="img-fluid" src="../../../public/images/test/IMG-20220922-WA0018.jpg" alt="">    
+                </div>
+                <div class="swiper-slide">
+                    <img class="img-fluid" src="../../../public/images/test/IMG-20220922-WA0020.jpg" alt="">    
+                </div>
+                <div class="swiper-slide">
+                    <img class="img-fluid" src="../../../public/images/test/IMG-20220922-WA0021.jpg" alt="">    
+                </div>
+                <div class="swiper-slide">
+                    <img class="img-fluid" src="../../../public/images/test/IMG-20220922-WA0022.jpg" alt="">    
+                </div>
+                <div class="swiper-slide">
+                    <img class="img-fluid" src="../../../public/images/test/IMG-20220922-WA0023.jpg" alt="">    
+                </div>
+                <div class="swiper-slide">
+                    <img class="img-fluid" src="../../../public/images/test/IMG-20220922-WA0029.jpg" alt="">    
+                </div>
+                <div class="swiper-slide">
+                    <img class="img-fluid" src="../../../public/images/test/IMG-20220922-WA0035.jpg" alt="">    
+                </div>  
+                <div class="swiper-slide">
+                    <img class="img-fluid" src="../../../public/images/test/IMG-20220922-WA0040.jpg" alt="">    
+                </div>
+                <div class="swiper-slide">
                     <img class="img-fluid" src="../../../public/images/test/IMG-20220922-WA0041.jpg" alt="">    
+                </div>
+                <div class="swiper-slide">
+                    <img class="img-fluid" src="../../../public/images/test/IMG-20220922-WA0042.jpg" alt="">    
+                </div>
+                <div class="swiper-slide">
+                    <img class="img-fluid" src="../../../public/images/test/IMG-20220922-WA0044.jpg" alt="">    
+                </div>
+                <div class="swiper-slide">
+                    <img class="img-fluid" src="../../../public/images/test/IMG-20220922-WA0046.jpg" alt="">    
+                </div>
+                <div class="swiper-slide">
+                    <img class="img-fluid" src="../../../public/images/test/IMG-20220922-WA0047.jpg" alt="">    
                 </div>
                 <div class="swiper-slide">
                     <img class="img-fluid" src="../../../public/images/test/IMG-20220922-WA0048.jpg" alt="">    
                 </div>
                 <div class="swiper-slide">
-                    <img class="img-fluid" src="../../../public/images/test/PHOTO-2023-02-24-15-28-22 3.jpg" alt="">    
+                    <img class="img-fluid" src="../../../public/images/test/IMG-20220922-WA0051.jpg" alt="">    
                 </div>
+                <div class="swiper-slide">
+                    <img class="img-fluid" src="../../../public/images/test/IMG-20220922-WA0052.jpg" alt="">    
+                </div>
+                <div class="swiper-slide">
+                    <img class="img-fluid" src="../../../public/images/test/IMG-20220922-WA0053.jpg" alt="">    
+                </div>
+                <div class="swiper-slide">
+                    <img class="img-fluid" src="../../../public/images/test/IMG-20220922-WA0054.jpg" alt="">    
+                </div>
+                <div class="swiper-slide">
+                    <img class="img-fluid" src="../../../public/images/test/IMG-20220922-WA0055.jpg" alt="">    
+                </div>
+                <div class="swiper-slide">
+                    <img class="img-fluid" src="../../../public/images/test/IMG-20220922-WA0056.jpg" alt="">    
+                </div>  
+                <div class="swiper-slide">
+                    <img class="img-fluid" src="../../../public/images/test/IMG-20220922-WA0057.jpg" alt="">    
+                </div>
+                <div class="swiper-slide">
+                    <img class="img-fluid" src="../../../public/images/test/IMG-20220922-WA0058.jpg" alt="">    
+                </div>
+                <div class="swiper-slide">
+                    <img class="img-fluid" src="../../../public/images/test/IMG-20220922-WA0060.jpg" alt="">    
+                </div>
+                <div class="swiper-slide">
+                    <img class="img-fluid" src="../../../public/images/test/IMG-20220922-WA0061.jpg" alt="">    
+                </div>
+                <div class="swiper-slide">
+                    <img class="img-fluid" src="../../../public/images/test/IMG-20220922-WA0063.jpg" alt="">    
+                </div>
+                <div class="swiper-slide">
+                    <img class="img-fluid" src="../../../public/images/test/IMG-20220922-WA0066.jpg" alt="">    
+                </div>
+                <div class="swiper-slide">
+                    <img class="img-fluid" src="../../../public/images/test/IMG-20220922-WA0067.jpg" alt="">    
+                </div>
+                <div class="swiper-slide">
+                    <img class="img-fluid" src="../../../public/images/test/IMG-20220922-WA0070.jpg" alt="">    
+                </div>
+                <div class="swiper-slide">
+                    <img class="img-fluid" src="../../../public/images/test/IMG-20220922-WA0071.jpg" alt="">    
+                </div>
+                <div class="swiper-slide">
+                    <img class="img-fluid" src="../../../public/images/test/IMG-20220922-WA0072.jpg" alt="">    
+                </div>
+                <div class="swiper-slide">
+                    <img class="img-fluid" src="../../../public/images/test/IMG-20220922-WA0073.jpg" alt="">    
+                </div>
+                <div class="swiper-slide">
+                    <img class="img-fluid" src="../../../public/images/test/IMG-20220922-WA0074.jpg" alt="">    
+                </div>
+                <div class="swiper-slide">
+                    <img class="img-fluid" src="../../../public/images/test/IMG-20220922-WA0075.jpg" alt="">    
+                </div>  
+                <div class="swiper-slide">
+                    <img class="img-fluid" src="../../../public/images/test/IMG-20220922-WA0076.jpg" alt="">    
+                </div>
+                <div class="swiper-slide">
+                    <img class="img-fluid" src="../../../public/images/test/IMG-20220922-WA0079.jpg" alt="">    
+                </div>
+                <div class="swiper-slide">
+                    <img class="img-fluid" src="../../../public/images/test/IMG-20220922-WA0081.jpg" alt="">    
+                </div>
+                <div class="swiper-slide">
+                    <img class="img-fluid" src="../../../public/images/test/IMG-20220922-WA0082.jpg" alt="">    
+                </div>
+                <div class="swiper-slide">
+                    <img class="img-fluid" src="../../../public/images/test/IMG-20220922-WA0083.jpg" alt="">    
+                </div>
+                <div class="swiper-slide">
+                    <img class="img-fluid" src="../../../public/images/test/IMG-20220922-WA0085.jpg" alt="">    
+                </div>
+                <div class="swiper-slide">
+                    <img class="img-fluid" src="../../../public/images/test/IMG-20220922-WA0090.jpg" alt="">    
+                </div>
+                <div class="swiper-slide">
+                    <img class="img-fluid" src="../../../public/images/test/IMG-20220922-WA0094.jpg" alt="">    
+                </div>
+                <div class="swiper-slide">
+                    <img class="img-fluid" src="../../../public/images/test/IMG-20220922-WA0097.jpg" alt="">    
+                </div>
+                <div class="swiper-slide">
+                    <img class="img-fluid" src="../../../public/images/test/IMG-20220922-WA0098.jpg" alt="">    
+                </div>
+                <div class="swiper-slide">
+                    <img class="img-fluid" src="../../../public/images/test/IMG-20220922-WA0015.jpg" alt="">    
+                </div>
+                <div class="swiper-slide">
+                    <img class="img-fluid" src="../../../public/images/test/PHOTO-2023-02-08-15-54-06.jpg" alt="">    
+                </div>
+                <div class="swiper-slide">
+                    <img class="img-fluid" src="../../../public/images/test/IMG_20230221_212725_516.jpg" alt="">    
+                </div>  
+                <div class="swiper-slide">
+                    <img class="img-fluid" src="../../../public/images/test/IMG-20230221-WA0052.jpg" alt="">    
+                </div>
+                <div class="swiper-slide">
+                    <img class="img-fluid" src="../../../public/images/test/IMG-20230221-WA0053.jpg" alt="">    
+                </div>
+                <div class="swiper-slide">
+                    <img class="img-fluid" src="../../../public/images/test/PHOTO-2023-02-20-18-31-43.jpg" alt="">    
+                </div>
+                <div class="swiper-slide">
+                    <img class="img-fluid" src="../../../public/images/test/PHOTO-2023-02-22-16-15-44 2.jpg" alt="">    
+                </div>
+                <div class="swiper-slide">
+                    <img class="img-fluid" src="../../../public/images/test/PHOTO-2023-02-22-16-15-44 3.jpg" alt="">    
+                </div>  
+                <div class="swiper-slide">
+                    <img class="img-fluid" src="../../../public/images/test/PHOTO-2023-02-22-16-15-44 4.jpg" alt="">    
+                </div>
+                <div class="swiper-slide">
+                    <img class="img-fluid" src="../../../public/images/test/PHOTO-2023-02-22-16-15-44.jpg" alt="">    
+                </div>
+                <div class="swiper-slide">
+                    <img class="img-fluid" src="../../../public/images/test/shooting 18.2.23-8.jpg" alt="">    
+                </div>
+                <div class="swiper-slide">
+                    <img class="img-fluid" src="../../../public/images/test/shooting 18.2.23-9.jpg" alt="">    
+                </div>
+                <div class="swiper-slide">
+                    <img class="img-fluid" src="../../../public/images/test/shooting 18.2.23-10.jpg" alt="">    
+                </div>
+                <div class="swiper-slide">
+                    <img class="img-fluid" src="../../../public/images/test/shooting 18.2.23-11.jpg" alt="">    
+                </div>
+                <div class="swiper-slide">
+                    <img class="img-fluid" src="../../../public/images/test/shooting 18.2.23-13.jpg" alt="">    
+                </div>
+                <div class="swiper-slide">
+                    <img class="img-fluid" src="../../../public/images/test/shooting 18.2.23-15.jpg" alt="">    
+                </div>
+                <div class="swiper-slide">
+                    <img class="img-fluid" src="../../../public/images/test/shooting 18.2.23-41.jpg" alt="">    
+                </div>
+                <div class="swiper-slide">
+                    <img class="img-fluid" src="../../../public/images/test/shooting 18.2.23-42.jpg" alt="">    
+                </div>
+                <div class="swiper-slide">
+                    <img class="img-fluid" src="../../../public/images/test/PHOTO-2023-02-24-15-05-47.jpg" alt="">    
+                </div>
+                <div class="swiper-slide">
+                    <img class="img-fluid" src="../../../public/images/test/PHOTO-2023-02-24-15-28-22 2.jpg" alt="">    
+                </div>
+                <div class="swiper-slide">
+                    <img class="img-fluid" src="../../../public/images/test/PHOTO-2023-02-24-15-28-22 3.jpg" alt="">    
+                </div>  
                 <div class="swiper-slide">
                     <img class="img-fluid" src="../../../public/images/test/PHOTO-2023-02-24-15-28-22.jpg" alt="">    
                 </div>
@@ -21,28 +210,18 @@
                     <img class="img-fluid" src="../../../public/images/test/1677413522394.jpg" alt="">    
                 </div>
                 <div class="swiper-slide">
-                    <img class="img-fluid" src="../../../public/images/test/IMG-20220922-WA0053.jpg" alt="">    
+                    <img class="img-fluid" src="../../../public/images/test/1677413522441.jpg" alt="">    
                 </div>
                 <div class="swiper-slide">
-                    <img class="img-fluid" src="../../../public/images/test/IMG-20220922-WA0058.jpg" alt="">    
+                    <img class="img-fluid" src="../../../public/images/test/1 (3).jpg" alt="">    
                 </div>
                 <div class="swiper-slide">
-                    <img class="img-fluid" src="../../../public/images/test/IMG-20220922-WA0071.jpg" alt="">    
+                    <img class="img-fluid" src="../../../public/images/test/1 (6).jpg" alt="">    
                 </div>
                 <div class="swiper-slide">
-                    <img class="img-fluid" src="../../../public/images/test/IMG-20220922-WA0072.jpg" alt="">    
-                </div>
-                <div class="swiper-slide">
-                    <img class="img-fluid" src="../../../public/images/test/PHOTO-2023-02-20-18-31-43.jpg" alt="">    
-                </div>
-                <div class="swiper-slide">
-                    <img class="img-fluid" src="../../../public/images/test/PHOTO-2023-02-24-15-28-22 2.jpg" alt="">    
-                </div>
-                <div class="swiper-slide">
-                    <img class="img-fluid" src="../../../public/images/test/IMG-20220922-WA0022.jpg" alt="">    
+                    <img class="img-fluid" src="../../../public/images/test/PHOTO-2023-03-06-11-14-40.jpg" alt="">    
                 </div>
             </div>
-            <div class="pagination"></div>
         </div>
 
 
