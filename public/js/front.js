@@ -1975,7 +1975,7 @@ __webpack_require__.r(__webpack_exports__);
   },
   methods: {
     saveData: function saveData() {
-      axios__WEBPACK_IMPORTED_MODULE_0___default.a.post('http://127.0.0.1:8000/api/contact', {
+      axios__WEBPACK_IMPORTED_MODULE_0___default.a.post('https://tnzbarcatering.com/api/contact', {
         name: this.name,
         email: this.email,
         phone: this.phone

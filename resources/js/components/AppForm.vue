@@ -38,7 +38,7 @@ export default{
     },
     methods: {
     saveData() {
-      axios.post('http://127.0.0.1:8000/api/contact', {
+      axios.post('https://tnzbarcatering.com/api/contact', {
         name: this.name,
         email: this.email,
         phone: this.phone,
