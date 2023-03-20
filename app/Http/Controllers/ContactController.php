@@ -36,7 +36,13 @@ class ContactController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $data = $request->all();
+        $contact = new Contact();
+        $contact->name = $data['name'];
+        $contact->email = $data['email'];
+        $contact->phone = $data['phone'];
+        $contact->save();
+        return response()->json(['message' => 'Contatto salvato con successo']);
     }
 
     /**

@@ -18,4 +18,6 @@ use Illuminate\Support\Facades\Route;
 //     return $request->user();
 // });
 
-Route::post('/contact' , 'Api\ContactController@store');
+// Route::post('/contact' , 'Api\ContactController@store');
+
+Route::post("/contact", [ContactController::class, 'store']);
