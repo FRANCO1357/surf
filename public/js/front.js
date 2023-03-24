@@ -1970,20 +1970,52 @@ __webpack_require__.r(__webpack_exports__);
     return {
       name: '',
       email: '',
-      phone: ''
+      phone: '',
+      errors: {},
+      sent: false
     };
   },
   methods: {
+    validateForm: function validateForm() {
+      var isValid = true;
+      this.errors = {};
+
+      // Validazione del campo Nome
+      if (!this.name) {
+        this.errors.name = 'Inserisci il tuo nome.';
+        isValid = false;
+      }
+
+      // Validazione del campo Email
+      if (!this.email) {
+        this.errors.email = 'Inserisci la tua email.';
+        isValid = false;
+      } else if (!/\S+@\S+\.\S+/.test(this.email)) {
+        this.errors.email = 'Inserisci una email valida.';
+        isValid = false;
+      }
+
+      // Validazione del campo Telefono
+      if (!this.phone) {
+        this.errors.phone = 'Inserisci il tuo numero di telefono.';
+        isValid = false;
+      }
+      return isValid;
+    },
     saveData: function saveData() {
-      axios__WEBPACK_IMPORTED_MODULE_0___default.a.post('https://tnzbarcatering.com/api/contact', {
-        name: this.name,
-        email: this.email,
-        phone: this.phone
-      }).then(function (response) {
-        console.log(response.data);
-      })["catch"](function (error) {
-        console.log(error);
-      });
+      var _this = this;
+      if (this.validateForm()) {
+        axios__WEBPACK_IMPORTED_MODULE_0___default.a.post('https://tnzbarcatering.com/api/contact', {
+          name: this.name,
+          email: this.email,
+          phone: this.phone
+        }).then(function (response) {
+          console.log(response.data);
+          _this.sent = true;
+        })["catch"](function (error) {
+          console.log(error);
+        });
+      }
     }
   }
 });
@@ -2011,6 +2043,12 @@ __webpack_require__.r(__webpack_exports__);
         label: 'Chi siamo'
       }]
     };
+  },
+  computed: {
+    currentPage: function currentPage() {
+      console.log(this.$route.name);
+      return this.$route.name;
+    }
   },
   methods: {
     toggleMenu: function toggleMenu() {
@@ -2726,8 +2764,11 @@ var render = function render() {
     staticClass: "text-center d-md-none py-2"
   }, [_vm._v("Vuoi un preventivo?")]), _vm._v(" "), _c("p", {
     staticClass: "text-center px-3"
-  }, [_vm._v("Se desideri ricevere un preventivo lascia qua sotto i tuoi dati e ti ricontatteremo il prima possibile!")]), _vm._v(" "), _c("form", {
+  }, [_vm._v("Se desideri ricevere un preventivo lascia qua sotto i tuoi dati e ti ricontatteremo il prima possibile!")]), _vm._v(" "), !_vm.sent ? _c("form", {
     staticClass: "mt-5",
+    attrs: {
+      id: "form"
+    },
     on: {
       submit: function submit($event) {
         $event.preventDefault();
@@ -2763,7 +2804,9 @@ var render = function render() {
         _vm.name = $event.target.value;
       }
     }
-  })]), _vm._v(" "), _c("div", {
+  }), _vm._v(" "), _vm.errors.name ? _c("p", {
+    staticClass: "text-danger"
+  }, [_vm._v(_vm._s(_vm.errors.name))]) : _vm._e()]), _vm._v(" "), _c("div", {
     staticClass: "form-group col-md-4"
   }, [_c("label", {
     attrs: {
@@ -2790,7 +2833,9 @@ var render = function render() {
         _vm.email = $event.target.value;
       }
     }
-  })]), _vm._v(" "), _c("div", {
+  }), _vm._v(" "), _vm.errors.email ? _c("p", {
+    staticClass: "text-danger"
+  }, [_vm._v(_vm._s(_vm.errors.email))]) : _vm._e()]), _vm._v(" "), _c("div", {
     staticClass: "form-group col-md-4"
   }, [_c("label", {
     attrs: {
@@ -2817,12 +2862,24 @@ var render = function render() {
         _vm.phone = $event.target.value;
       }
     }
-  })])]), _vm._v(" "), _c("button", {
+  }), _vm._v(" "), _vm.errors.phone ? _c("p", {
+    staticClass: "text-danger"
+  }, [_vm._v(_vm._s(_vm.errors.phone))]) : _vm._e()])]), _vm._v(" "), _c("button", {
     staticClass: "btn btn-soft rounded-0",
     attrs: {
+      id: "submit",
       type: "submit"
     }
-  }, [_vm._v("Invia")])])]);
+  }, [_vm._v("Invia")])]) : _vm._e(), _vm._v(" "), _vm.sent ? _c("div", {
+    staticClass: "d-flex flex-column align-items-center justify-content-center py-4 px-5 mt-4",
+    attrs: {
+      id: "sent-data"
+    }
+  }, [_c("i", {
+    staticClass: "fa-solid fa-circle-check fa-3x mb-3"
+  }), _vm._v(" "), _c("p", {
+    staticClass: "text-center"
+  }, [_vm._v("Grazie per averci lasciato i tuoi dati, ti ricontatteremo al più presto!")])]) : _vm._e()]);
 };
 var staticRenderFns = [];
 render._withStripped = true;
@@ -2900,37 +2957,20 @@ var render = function render() {
     staticClass: "navbar-nav"
   }, [_c("li", {
     staticClass: "nav-item"
+  }, [_c("router-link", {
+    attrs: {
+      to: {
+        name: "home"
+      }
+    }
   }, [_c("a", {
     staticClass: "nav-link py-3 text-white text-center border-bottom border-white",
-    attrs: {
-      href: "#anchor-service"
-    },
     on: {
       click: function click($event) {
         return _vm.closeMenu();
       }
     }
-  }, [_vm._v("Bar Service")]), _vm._v(" "), _c("a", {
-    staticClass: "nav-link py-3 text-white text-center border-bottom border-white",
-    attrs: {
-      href: "#anchor-gallery"
-    },
-    on: {
-      click: function click($event) {
-        return _vm.closeMenu();
-      }
-    }
-  }, [_vm._v("Gallery")]), _vm._v(" "), _c("a", {
-    staticClass: "nav-link py-3 text-white text-center border-bottom border-white",
-    attrs: {
-      href: "#anchor-aggiuntivi"
-    },
-    on: {
-      click: function click($event) {
-        return _vm.closeMenu();
-      }
-    }
-  }, [_vm._v("Servizi Aggiuntivi")]), _vm._v(" "), _c("a", {
+  }, [_vm._v("Home")])]), _vm._v(" "), _vm.currentPage === "home" ? _c("a", {
     staticClass: "nav-link py-3 text-white text-center border-bottom border-white",
     attrs: {
       href: "#anchor-about"
@@ -2940,7 +2980,67 @@ var render = function render() {
         return _vm.closeMenu();
       }
     }
-  }, [_vm._v("Chi Siamo")]), _vm._v(" "), _c("a", {
+  }, [_vm._v("Chi Siamo")]) : _vm._e(), _vm._v(" "), _vm.currentPage !== "home" ? _c("a", {
+    staticClass: "nav-link py-3 text-white text-center border-bottom border-white",
+    attrs: {
+      href: "https://tnzbarcatering.com/#anchor-about"
+    },
+    on: {
+      click: function click($event) {
+        return _vm.closeMenu();
+      }
+    }
+  }, [_vm._v("Chi Siamo")]) : _vm._e(), _vm._v(" "), _vm.currentPage === "home" ? _c("a", {
+    staticClass: "nav-link py-3 text-white text-center border-bottom border-white",
+    attrs: {
+      href: "#anchor-service"
+    },
+    on: {
+      click: function click($event) {
+        return _vm.closeMenu();
+      }
+    }
+  }, [_vm._v("Bar Service")]) : _vm._e(), _vm._v(" "), _vm.currentPage !== "home" ? _c("a", {
+    staticClass: "nav-link py-3 text-white text-center border-bottom border-white",
+    attrs: {
+      href: "https://tnzbarcatering.com/#anchor-service"
+    },
+    on: {
+      click: function click($event) {
+        return _vm.closeMenu();
+      }
+    }
+  }, [_vm._v("Bar Service")]) : _vm._e(), _vm._v(" "), _vm.currentPage === "home" ? _c("a", {
+    staticClass: "nav-link py-3 text-white text-center border-bottom border-white",
+    attrs: {
+      href: "#anchor-aggiuntivi"
+    },
+    on: {
+      click: function click($event) {
+        return _vm.closeMenu();
+      }
+    }
+  }, [_vm._v("Servizi Aggiuntivi")]) : _vm._e(), _vm._v(" "), _vm.currentPage !== "home" ? _c("a", {
+    staticClass: "nav-link py-3 text-white text-center border-bottom border-white",
+    attrs: {
+      href: "https://tnzbarcatering.com/#anchor-aggiuntivi"
+    },
+    on: {
+      click: function click($event) {
+        return _vm.closeMenu();
+      }
+    }
+  }, [_vm._v("Servizi Aggiuntivi")]) : _vm._e(), _vm._v(" "), _vm.currentPage === "home" ? _c("a", {
+    staticClass: "nav-link py-3 text-white text-center border-bottom border-white",
+    attrs: {
+      href: "#anchor-gallery"
+    },
+    on: {
+      click: function click($event) {
+        return _vm.closeMenu();
+      }
+    }
+  }, [_vm._v("Gallery")]) : _vm._e(), _vm._v(" "), _vm.currentPage === "home" ? _c("a", {
     staticClass: "nav-link py-3 text-white text-center border-bottom border-white",
     attrs: {
       href: "#anchor-preventivo"
@@ -2950,7 +3050,17 @@ var render = function render() {
         return _vm.closeMenu();
       }
     }
-  }, [_vm._v("Preventivo")])])])])], 1)]);
+  }, [_vm._v("Contattaci")]) : _vm._e(), _vm._v(" "), _vm.currentPage !== "home" ? _c("a", {
+    staticClass: "nav-link py-3 text-white text-center border-bottom border-white",
+    attrs: {
+      href: "https://tnzbarcatering.com/#anchor-preventivo"
+    },
+    on: {
+      click: function click($event) {
+        return _vm.closeMenu();
+      }
+    }
+  }, [_vm._v("Contattaci")]) : _vm._e()], 1)])])], 1)]);
 };
 var staticRenderFns = [function () {
   var _vm = this,
@@ -5259,7 +5369,7 @@ var staticRenderFns = [function () {
     staticClass: "bottom-line mb-3"
   })]), _vm._v(" "), _c("p", {
     staticClass: "text-center"
-  }, [_vm._v("Un tocco personale al vostro evento. "), _c("br"), _c("br"), _vm._v("\n                    Questa formula è stata pensata dai nostri bartender per offrire un tocco personale al vostro evento. Sarà possibile\n                    infatti creare insieme una drink list apposita che possa più soddisfare le vostre esigenze e gusti personali, anche in\n                    base alla cena stabilita. Prevede al suo interno:")]), _vm._v(" "), _c("ul", {
+  }, [_vm._v("Un tocco personale al vostro evento. "), _c("br"), _c("br"), _vm._v("\n                    Questa formula è stata pensata dai nostri bartender per offrire un tocco personale al vostro evento. Sarà possibile\n                    infatti creare insieme una drink list apposita che possa soddisfare le vostre esigenze e gusti personali, anche in\n                    base alla cena stabilita. Prevede al suo interno:")]), _vm._v(" "), _c("ul", {
     staticClass: "text-center list-unstyled"
   }, [_c("li", [_vm._v("- 5 cocktail Signature a vostra scelta per tutta la durata dell’evento (Drink list, Analcolici, Soft drink,Birra,ghiaccio)")]), _vm._v(" "), _c("li", [_vm._v("- Banco bar a vostra scelta")]), _vm._v(" "), _c("li", [_vm._v("- Personale")])])])]), _vm._v(" "), _c("div", {
     staticClass: "mb-5",
@@ -9753,7 +9863,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, "footer[data-v-4ab6097e] {\n  background-image: url(" + escape(__webpack_require__(/*! ../../../public/images/test/black-marble.jpg */ "./public/images/test/black-marble.jpg")) + ");\n  background-size: cover;\n  background-position: bottom;\n  color: white;\n}\nfooter .footer-bottom[data-v-4ab6097e] {\n  background-color: rgba(0, 0, 0, 0.5);\n}\nfooter .footer-bottom a[data-v-4ab6097e] {\n  color: white;\n}\nfooter div[data-v-4ab6097e] {\n  color: white;\n}\nfooter div ul[data-v-4ab6097e] {\n  text-decoration: none;\n  list-style-type: none;\n}\nfooter .text-soft[data-v-4ab6097e] {\n  color: #b48c80;\n  text-decoration: none;\n  font-size: 1.5rem;\n  text-shadow: 0 0 5px black;\n  margin-left: 10px;\n}\nfooter .text-soft[data-v-4ab6097e]:hover {\n  color: white;\n  transform: scale(1.1);\n  transition: 1s;\n}\nfooter #social i[data-v-4ab6097e] {\n  background-color: #b48c80;\n  display: inline-block;\n  padding: 10px;\n  width: 50px;\n  height: 50px;\n  border-radius: 50%;\n  box-shadow: 0 0 5px black;\n}\nfooter #social i[data-v-4ab6097e]:hover {\n  background-color: white;\n  color: #b48c80;\n  transform: scale(1.1);\n  transition: 1s;\n}", ""]);
+exports.push([module.i, "footer[data-v-4ab6097e] {\n  background-image: url(" + escape(__webpack_require__(/*! ../../../public/images/test/tenereza-background.jpg */ "./public/images/test/tenereza-background.jpg")) + ");\n  background-size: cover;\n  background-position: bottom;\n  color: white;\n}\nfooter .footer-bottom[data-v-4ab6097e] {\n  background-color: rgba(0, 0, 0, 0.5);\n}\nfooter .footer-bottom a[data-v-4ab6097e] {\n  color: white;\n}\nfooter div[data-v-4ab6097e] {\n  color: white;\n}\nfooter div ul[data-v-4ab6097e] {\n  text-decoration: none;\n  list-style-type: none;\n}\nfooter .text-soft[data-v-4ab6097e] {\n  color: #b48c80;\n  text-decoration: none;\n  font-size: 1.5rem;\n  text-shadow: 0 0 5px black;\n  margin-left: 10px;\n}\nfooter .text-soft[data-v-4ab6097e]:hover {\n  color: white;\n  transform: scale(1.1);\n  transition: 1s;\n}\nfooter #social i[data-v-4ab6097e] {\n  background-color: #b48c80;\n  display: inline-block;\n  padding: 10px;\n  width: 50px;\n  height: 50px;\n  border-radius: 50%;\n  box-shadow: 0 0 5px black;\n}\nfooter #social i[data-v-4ab6097e]:hover {\n  background-color: white;\n  color: #b48c80;\n  transform: scale(1.1);\n  transition: 1s;\n}", ""]);
 
 // exports
 
@@ -9772,7 +9882,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, "h2[data-v-204d616a] {\n  font-size: 56px;\n}\nform[data-v-204d616a] {\n  width: 100%;\n}\nform .btn-soft[data-v-204d616a] {\n  font-size: 18px;\n  padding: 10px 20px;\n  background-color: #b48c80;\n  color: white;\n}", ""]);
+exports.push([module.i, "h2[data-v-204d616a] {\n  font-size: 56px;\n}\nform[data-v-204d616a] {\n  width: 100%;\n}\nform .btn-soft[data-v-204d616a] {\n  --clr-font-main: hsla(0 0% 20% / 100);\n  --btn-bg-1: rgb(142, 142, 142);\n  --btn-bg-2: rgb(49, 49, 55);\n  --btn-bg-color: hsla(360 100% 100% / 1);\n  --radii: 0.5em;\n  cursor: pointer;\n  padding: 10px 40px;\n  font-size: 20px;\n  transition: 0.8s;\n  background-size: 280% auto;\n  background-image: linear-gradient(325deg, var(--btn-bg-2) 0%, var(--btn-bg-1) 55%, var(--btn-bg-2) 90%);\n  border: 2px solid white;\n  border-radius: 0px;\n  color: var(--btn-bg-color);\n  box-shadow: 0px 0px 10px rgba(56, 56, 56, 0.5), 0px 5px 5px -1px rgba(84, 84, 84, 0.25), inset 4px 4px 8px rgba(62, 62, 62, 0.5), inset -4px -4px 8px rgba(44, 44, 44, 0.35);\n}\nform .btn-soft[data-v-204d616a]:hover {\n  background-position: right top;\n}\nform .btn-soft[data-v-204d616a]:is(:focus, :focus-within, :active) {\n  outline: none;\n  box-shadow: 0 0 0 3px var(--btn-bg-color), 0 0 0 6px var(--btn-bg-2);\n}\n@media (prefers-reduced-motion: reduce) {\nform .btn-soft[data-v-204d616a] {\n    transition: linear;\n}\n}\n#sent-data[data-v-204d616a] {\n  background-color: rgb(204, 255, 219);\n  border-radius: 10px;\n  border: 1px solid rgb(182, 238, 199);\n}", ""]);
 
 // exports
 
@@ -9792,7 +9902,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, "nav[data-v-0851419a] {\n  position: fixed;\n  top: 0;\n  left: 0;\n  right: 0;\n  z-index: 5;\n  background-color: transparent !important;\n  padding: 60px 60px;\n  transition: 1s;\n}\nnav img[data-v-0851419a] {\n  height: 100px;\n}\nnav .btn-square[data-v-0851419a] {\n  width: 50px;\n  height: 50px;\n  background-color: transparent;\n  border-radius: 0;\n  border: 2px solid white;\n  font-size: 20px;\n  transition: 0.8s;\n}\nnav .btn-square[data-v-0851419a]:hover {\n  background-color: #b48c80;\n  border: #b48c80;\n  color: white;\n}\nnav .btn-square[data-v-0851419a]:focus {\n  box-shadow: none;\n}\nnav .nav-menu[data-v-0851419a] {\n  display: flex;\n  position: absolute;\n  top: 0;\n  right: -300px;\n  height: 100vh;\n  z-index: 20;\n  background-image: url(" + escape(__webpack_require__(/*! ../../../public/images/test/black-marble.jpg */ "./public/images/test/black-marble.jpg")) + ");\n  background-size: 100vw;\n  background-position: top right;\n  width: 300px;\n  padding: 40px;\n  transition: 0.3s;\n}\nnav .nav-menu .btn-close[data-v-0851419a] {\n  position: absolute;\n  top: 15px;\n  right: 15px;\n}\nnav .nav-menu a[data-v-0851419a] {\n  transition: 0.8s;\n}\nnav .nav-menu a[data-v-0851419a]:hover {\n  color: #b48c80 !important;\n}\nnav .nav-menu.open[data-v-0851419a] {\n  right: 0;\n}\nul[data-v-0851419a] {\n  width: 100%;\n}\nnav.sticky[data-v-0851419a] {\n  background-color: transparent !important;\n  background-image: url(" + escape(__webpack_require__(/*! ../../../public/images/test/black-marble.jpg */ "./public/images/test/black-marble.jpg")) + ");\n  background-size: cover;\n  padding: 10px 60px;\n  transition: 1s;\n}\nnav.sticky img[data-v-0851419a] {\n  filter: invert(1);\n  height: 70px;\n}\n@media (max-width: 767px) {\nnav[data-v-0851419a] {\n    padding: 40px;\n}\nnav img[data-v-0851419a] {\n    height: 80px;\n}\nnav.sticky[data-v-0851419a] {\n    padding: 5px 20px;\n}\n}", ""]);
+exports.push([module.i, "nav[data-v-0851419a] {\n  position: fixed;\n  top: 0;\n  left: 0;\n  right: 0;\n  z-index: 5;\n  background-color: transparent !important;\n  padding: 60px 60px;\n  transition: 1s;\n}\nnav img[data-v-0851419a] {\n  height: 100px;\n}\nnav .btn-square[data-v-0851419a] {\n  width: 50px;\n  height: 50px;\n  background-color: transparent;\n  border-radius: 0;\n  border: 2px solid white;\n  font-size: 20px;\n  transition: 0.8s;\n}\nnav .btn-square[data-v-0851419a]:hover {\n  background-color: #b48c80;\n  border: #b48c80;\n  color: white;\n}\nnav .btn-square[data-v-0851419a]:focus {\n  box-shadow: none;\n}\nnav .nav-menu[data-v-0851419a] {\n  display: flex;\n  position: absolute;\n  top: 0;\n  right: -300px;\n  height: 100vh;\n  z-index: 20;\n  background-image: url(" + escape(__webpack_require__(/*! ../../../public/images/test/tenereza-background.jpg */ "./public/images/test/tenereza-background.jpg")) + ");\n  background-size: 100vw;\n  background-position: top right;\n  width: 300px;\n  padding: 40px;\n  transition: 0.3s;\n}\nnav .nav-menu .btn-close[data-v-0851419a] {\n  position: absolute;\n  top: 15px;\n  right: 15px;\n}\nnav .nav-menu a[data-v-0851419a] {\n  transition: 0.8s;\n}\nnav .nav-menu a[data-v-0851419a]:hover {\n  color: #b48c80 !important;\n}\nnav .nav-menu.open[data-v-0851419a] {\n  right: 0;\n}\nul[data-v-0851419a] {\n  width: 100%;\n}\nnav.sticky[data-v-0851419a] {\n  background-color: transparent !important;\n  background-image: url(" + escape(__webpack_require__(/*! ../../../public/images/test/tenereza-background.jpg */ "./public/images/test/tenereza-background.jpg")) + ");\n  background-size: cover;\n  padding: 10px 60px;\n  transition: 1s;\n}\nnav.sticky img[data-v-0851419a] {\n  filter: invert(1);\n  height: 70px;\n}\n@media (max-width: 767px) {\nnav[data-v-0851419a] {\n    padding: 40px;\n}\nnav img[data-v-0851419a] {\n    height: 80px;\n}\nnav.sticky[data-v-0851419a] {\n    padding: 5px 20px;\n}\n}", ""]);
 
 // exports
 
@@ -58084,17 +58194,6 @@ module.exports = "/images/PHOTO-2023-03-06-11-14-40.jpg?052292bf275f40ba89f41ae3
 
 /***/ }),
 
-/***/ "./public/images/test/black-marble.jpg":
-/*!*********************************************!*\
-  !*** ./public/images/test/black-marble.jpg ***!
-  \*********************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = "/images/black-marble.jpg?962443af6b33531b69f04fcba19e51b0";
-
-/***/ }),
-
 /***/ "./public/images/test/grey-marble.jpg":
 /*!********************************************!*\
   !*** ./public/images/test/grey-marble.jpg ***!
@@ -58202,6 +58301,17 @@ module.exports = "/images/shooting 18.2.23-8.jpg?64c2ff59567692f93cb5aee63617800
 /***/ (function(module, exports) {
 
 module.exports = "/images/shooting 18.2.23-9.jpg?85641f80f97cbdf9fc8ba8facd61f82b";
+
+/***/ }),
+
+/***/ "./public/images/test/tenereza-background.jpg":
+/*!****************************************************!*\
+  !*** ./public/images/test/tenereza-background.jpg ***!
+  \****************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "/images/tenereza-background.jpg?8066c5626b73a3cdf7f51edec769e2d1";
 
 /***/ }),
 

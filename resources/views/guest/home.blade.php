@@ -3,6 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Nuova descrizione della pagina. Questa descrizione verrà visualizzata come snippet di Google nei risultati di ricerca.">
 
         <title>Tenereza</title>
 

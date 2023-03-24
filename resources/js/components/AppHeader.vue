@@ -17,11 +17,18 @@
                 <h2 class="my-5 text-white">Menu</h2>
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a @click="closeMenu()" class="nav-link py-3 text-white text-center border-bottom border-white" href="#anchor-service">Bar Service</a>
-                        <a @click="closeMenu()" class="nav-link py-3 text-white text-center border-bottom border-white" href="#anchor-gallery">Gallery</a>
-                        <a @click="closeMenu()" class="nav-link py-3 text-white text-center border-bottom border-white" href="#anchor-aggiuntivi">Servizi Aggiuntivi</a>
-                        <a @click="closeMenu()" class="nav-link py-3 text-white text-center border-bottom border-white" href="#anchor-about">Chi Siamo</a>
-                        <a @click="closeMenu()" class="nav-link py-3 text-white text-center border-bottom border-white" href="#anchor-preventivo">Preventivo</a>
+                        <router-link :to="{name:'home'}">
+                            <a @click="closeMenu()" class="nav-link py-3 text-white text-center border-bottom border-white">Home</a>
+                        </router-link>
+                        <a v-if="currentPage === 'home'" @click="closeMenu()" class="nav-link py-3 text-white text-center border-bottom border-white" href="#anchor-about">Chi Siamo</a>
+                        <a v-if="currentPage !== 'home'" @click="closeMenu()" class="nav-link py-3 text-white text-center border-bottom border-white" href="https://tnzbarcatering.com/#anchor-about">Chi Siamo</a>
+                        <a v-if="currentPage === 'home'" @click="closeMenu()" class="nav-link py-3 text-white text-center border-bottom border-white" href="#anchor-service">Bar Service</a>
+                        <a v-if="currentPage !== 'home'" @click="closeMenu()" class="nav-link py-3 text-white text-center border-bottom border-white" href="https://tnzbarcatering.com/#anchor-service">Bar Service</a>
+                        <a v-if="currentPage === 'home'" @click="closeMenu()" class="nav-link py-3 text-white text-center border-bottom border-white" href="#anchor-aggiuntivi">Servizi Aggiuntivi</a>
+                        <a v-if="currentPage !== 'home'" @click="closeMenu()" class="nav-link py-3 text-white text-center border-bottom border-white" href="https://tnzbarcatering.com/#anchor-aggiuntivi">Servizi Aggiuntivi</a>
+                        <a v-if="currentPage === 'home'" @click="closeMenu()" class="nav-link py-3 text-white text-center border-bottom border-white" href="#anchor-gallery">Gallery</a>
+                        <a v-if="currentPage === 'home'" @click="closeMenu()" class="nav-link py-3 text-white text-center border-bottom border-white" href="#anchor-preventivo">Contattaci</a>
+                        <a v-if="currentPage !== 'home'" @click="closeMenu()" class="nav-link py-3 text-white text-center border-bottom border-white" href="https://tnzbarcatering.com/#anchor-preventivo">Contattaci</a>
                     </li>
                 </ul>
             </div>
@@ -38,6 +45,12 @@ export default{
             {name: 'about', label: 'Chi siamo'},
         ]
     }),
+    computed: {
+        currentPage() {
+            console.log(this.$route.name);
+            return this.$route.name
+        }
+    },
     methods:{
       toggleMenu(){
         const navbarMenu = document.getElementById('navbarMenu');
@@ -101,7 +114,7 @@ img{
     right: -300px;
     height: 100vh;
     z-index: 20;
-    background-image: url('../../../public/images/test/black-marble.jpg');
+    background-image: url('../../../public/images/test/tenereza-background.jpg');
     background-size: 100vw;
     background-position: top right;
     width: 300px;
@@ -134,7 +147,7 @@ ul{
 
 nav.sticky{
     background-color: transparent !important;
-    background-image: url('../../../public/images/test/black-marble.jpg');
+    background-image: url('../../../public/images/test/tenereza-background.jpg');
     background-size: cover;
     padding: 10px 60px;
     transition: 1s;

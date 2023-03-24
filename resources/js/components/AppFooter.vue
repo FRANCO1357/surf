@@ -50,7 +50,7 @@ export default{
 <style scoped lang="scss">
 
 footer{
-    background-image: url('../../../public/images/test/black-marble.jpg');
+    background-image: url('../../../public/images/test/tenereza-background.jpg');
     background-size: cover;
     background-position: bottom;
     color: white;

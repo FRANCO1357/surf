@@ -105,7 +105,7 @@
                         </div>
                         <p class="text-center">Un tocco personale al vostro evento. <br><br>
                         Questa formula è stata pensata dai nostri bartender per offrire un tocco personale al vostro evento. Sarà possibile
-                        infatti creare insieme una drink list apposita che possa più soddisfare le vostre esigenze e gusti personali, anche in
+                        infatti creare insieme una drink list apposita che possa soddisfare le vostre esigenze e gusti personali, anche in
                         base alla cena stabilita. Prevede al suo interno:</p>
                         <ul class="text-center list-unstyled">
                             <li>- 5 cocktail Signature a vostra scelta per tutta la durata dell’evento (Drink list, Analcolici, Soft drink,Birra,ghiaccio)</li>
