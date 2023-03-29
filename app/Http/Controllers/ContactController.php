@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use App\Models\Contact;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Mail;
+use App\Mail\NewContactMail;
 
 class ContactController extends Controller
 {
@@ -42,6 +44,13 @@ class ContactController extends Controller
         $contact->email = $data['email'];
         $contact->phone = $data['phone'];
         $contact->save();
+
+        // Invio la mail
+        $mail = new NewContactMail();
+        $receiver = "fmelani13@gmail.com";
+        Mail::to($receiver)->send($mail);
+
+
         return response()->json(['message' => 'Contatto salvato con successo']);
     }
 

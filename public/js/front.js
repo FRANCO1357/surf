@@ -3365,14 +3365,44 @@ __webpack_require__.r(__webpack_exports__);
 var render = function render() {
   var _vm = this,
     _c = _vm._self._c;
-  return _vm._m(0);
+  return _c("section", [_c("div", {
+    staticClass: "gallery d-none d-lg-block h-100"
+  }, [_vm._m(0), _vm._v(" "), _c("div", {
+    staticClass: "prev"
+  }, [_c("svg", {
+    attrs: {
+      width: "10",
+      height: "15",
+      viewBox: "0 0 10 15",
+      fill: "none",
+      xmlns: "http://www.w3.org/2000/svg"
+    }
+  }, [_c("path", {
+    attrs: {
+      d: "M9.2625 13.2375L3.5375 7.5L9.2625 1.7625L7.5 0L0 7.5L7.5 15L9.2625 13.2375Z",
+      fill: "#A99260"
+    }
+  })])]), _vm._v(" "), _c("div", {
+    staticClass: "next"
+  }, [_c("svg", {
+    attrs: {
+      width: "10",
+      height: "15",
+      viewBox: "0 0 10 15",
+      fill: "none",
+      xmlns: "http://www.w3.org/2000/svg"
+    }
+  }, [_c("path", {
+    attrs: {
+      d: "M0.737305 13.2375L6.4623 7.5L0.737305 1.7625L2.4998 0L9.9998 7.5L2.4998 15L0.737305 13.2375Z",
+      fill: "#A99260"
+    }
+  })])])]), _vm._v(" "), _vm._m(1), _vm._v(" "), _vm._m(2)]);
 };
 var staticRenderFns = [function () {
   var _vm = this,
     _c = _vm._self._c;
-  return _c("section", [_c("div", {
-    staticClass: "gallery d-none d-lg-block h-100"
-  }, [_c("div", {
+  return _c("div", {
     staticClass: "swiper-wrapper"
   }, [_c("div", {
     staticClass: "swiper-slide"
@@ -3958,7 +3988,11 @@ var staticRenderFns = [function () {
       src: __webpack_require__(/*! ../../../public/images/test/PHOTO-2023-03-06-11-14-40.jpg */ "./public/images/test/PHOTO-2023-03-06-11-14-40.jpg"),
       alt: ""
     }
-  })])])]), _vm._v(" "), _c("div", {
+  })])]);
+}, function () {
+  var _vm = this,
+    _c = _vm._self._c;
+  return _c("div", {
     staticClass: "gallery-tablet d-none d-md-block d-lg-none h-100"
   }, [_c("div", {
     staticClass: "swiper-wrapper"
@@ -4068,7 +4102,11 @@ var staticRenderFns = [function () {
     }
   })])]), _vm._v(" "), _c("div", {
     staticClass: "pagination"
-  })]), _vm._v(" "), _c("div", {
+  })]);
+}, function () {
+  var _vm = this,
+    _c = _vm._self._c;
+  return _c("div", {
     staticClass: "gallery-mobile d-md-none h-100"
   }, [_c("div", {
     staticClass: "swiper-wrapper"
@@ -4176,7 +4214,7 @@ var staticRenderFns = [function () {
       src: __webpack_require__(/*! ../../../public/images/test/PHOTO-2023-02-20-18-31-43.jpg */ "./public/images/test/PHOTO-2023-02-20-18-31-43.jpg"),
       alt: ""
     }
-  })])])])]);
+  })])])]);
 }];
 render._withStripped = true;
 
@@ -4811,7 +4849,7 @@ var staticRenderFns = [function () {
       alt: ""
     }
   }), _vm._v(" "), _c("p", {
-    staticClass: "label-soft text-white p-2 d-inline"
+    staticClass: "label-soft text-white py-2 px-4 d-inline"
   }, [_vm._v("Servizio Aggiuntivo")]), _vm._v(" "), _c("h3", {
     staticClass: "text-white text-center"
   }, [_vm._v("RUM BAR")])]), _vm._v(" "), _c("div", {
@@ -4838,7 +4876,7 @@ var staticRenderFns = [function () {
       alt: ""
     }
   }), _vm._v(" "), _c("p", {
-    staticClass: "label-soft text-white p-2 d-inline"
+    staticClass: "label-soft text-white py-2 px-4 d-inline"
   }, [_vm._v("Servizio Aggiuntivo")]), _vm._v(" "), _c("h3", {
     staticClass: "text-white text-center"
   }, [_vm._v("WHISKY BAR")])]), _vm._v(" "), _c("div", {
@@ -4865,7 +4903,7 @@ var staticRenderFns = [function () {
       alt: ""
     }
   }), _vm._v(" "), _c("p", {
-    staticClass: "label-soft text-white p-2 d-inline"
+    staticClass: "label-soft text-white py-2 px-4 d-inline"
   }, [_vm._v("Servizio Aggiuntivo")]), _vm._v(" "), _c("h3", {
     staticClass: "text-white text-center"
   }, [_vm._v("TROPIC BAR")])]), _vm._v(" "), _c("div", {
@@ -4892,7 +4930,7 @@ var staticRenderFns = [function () {
       alt: ""
     }
   }), _vm._v(" "), _c("p", {
-    staticClass: "label-soft text-white p-2 d-inline"
+    staticClass: "label-soft text-white py-2 px-4 d-inline"
   }, [_vm._v("Servizio Aggiuntivo")]), _vm._v(" "), _c("h3", {
     staticClass: "text-white text-center"
   }, [_vm._v("FLUO DRINK BAR")])]), _vm._v(" "), _c("div", {
@@ -4919,7 +4957,7 @@ var staticRenderFns = [function () {
       alt: ""
     }
   }), _vm._v(" "), _c("p", {
-    staticClass: "label-soft text-white p-2 d-inline"
+    staticClass: "label-soft text-white py-2 px-4 d-inline"
   }, [_vm._v("Servizio Aggiuntivo")]), _vm._v(" "), _c("h3", {
     staticClass: "text-white text-center"
   }, [_vm._v("ESPRESSO MARTINI NEGATIVO")])]), _vm._v(" "), _c("div", {
@@ -4952,7 +4990,7 @@ var staticRenderFns = [function () {
       alt: ""
     }
   }), _vm._v(" "), _c("p", {
-    staticClass: "label-soft text-white p-2 d-inline"
+    staticClass: "label-soft text-white py-2 px-4 d-inline"
   }, [_vm._v("Servizio Aggiuntivo")]), _vm._v(" "), _c("h3", {
     staticClass: "text-white text-center"
   }, [_vm._v("RUM BAR")])]), _vm._v(" "), _c("div", {
@@ -4979,7 +5017,7 @@ var staticRenderFns = [function () {
       alt: ""
     }
   }), _vm._v(" "), _c("p", {
-    staticClass: "label-soft text-white p-2 d-inline"
+    staticClass: "label-soft text-white py-2 px-4 d-inline"
   }, [_vm._v("Servizio Aggiuntivo")]), _vm._v(" "), _c("h3", {
     staticClass: "text-white text-center"
   }, [_vm._v("WHISKY BAR")])]), _vm._v(" "), _c("div", {
@@ -5006,7 +5044,7 @@ var staticRenderFns = [function () {
       alt: ""
     }
   }), _vm._v(" "), _c("p", {
-    staticClass: "label-soft text-white p-2 d-inline"
+    staticClass: "label-soft text-white py-2 px-4 d-inline"
   }, [_vm._v("Servizio Aggiuntivo")]), _vm._v(" "), _c("h3", {
     staticClass: "text-white text-center"
   }, [_vm._v("TROPIC BAR")])]), _vm._v(" "), _c("div", {
@@ -5033,7 +5071,7 @@ var staticRenderFns = [function () {
       alt: ""
     }
   }), _vm._v(" "), _c("p", {
-    staticClass: "label-soft text-white p-2 d-inline"
+    staticClass: "label-soft text-white py-2 px-4 d-inline"
   }, [_vm._v("Servizio Aggiuntivo")]), _vm._v(" "), _c("h3", {
     staticClass: "text-white text-center"
   }, [_vm._v("FLUO DRINK BAR")])]), _vm._v(" "), _c("div", {
@@ -5060,7 +5098,7 @@ var staticRenderFns = [function () {
       alt: ""
     }
   }), _vm._v(" "), _c("p", {
-    staticClass: "label-soft text-white p-2 d-inline"
+    staticClass: "label-soft text-white py-2 px-4 d-inline"
   }, [_vm._v("Servizio Aggiuntivo")]), _vm._v(" "), _c("h3", {
     staticClass: "text-white text-center"
   }, [_vm._v("ESPRESSO MARTINI NEGATIVO")])]), _vm._v(" "), _c("div", {
@@ -5093,7 +5131,7 @@ var staticRenderFns = [function () {
       alt: ""
     }
   }), _vm._v(" "), _c("p", {
-    staticClass: "label-soft text-white p-2 d-inline"
+    staticClass: "label-soft text-white py-2 px-4 d-inline"
   }, [_vm._v("Servizio Aggiuntivo")]), _vm._v(" "), _c("h3", {
     staticClass: "text-white text-center"
   }, [_vm._v("RUM BAR")])]), _vm._v(" "), _c("div", {
@@ -5120,7 +5158,7 @@ var staticRenderFns = [function () {
       alt: ""
     }
   }), _vm._v(" "), _c("p", {
-    staticClass: "label-soft text-white p-2 d-inline"
+    staticClass: "label-soft text-white py-2 px-4 d-inline"
   }, [_vm._v("Servizio Aggiuntivo")]), _vm._v(" "), _c("h3", {
     staticClass: "text-white text-center"
   }, [_vm._v("WHISKY BAR")])]), _vm._v(" "), _c("div", {
@@ -5147,7 +5185,7 @@ var staticRenderFns = [function () {
       alt: ""
     }
   }), _vm._v(" "), _c("p", {
-    staticClass: "label-soft text-white p-2 d-inline"
+    staticClass: "label-soft text-white py-2 px-4 d-inline"
   }, [_vm._v("Servizio Aggiuntivo")]), _vm._v(" "), _c("h3", {
     staticClass: "text-white text-center"
   }, [_vm._v("TROPIC BAR")])]), _vm._v(" "), _c("div", {
@@ -5174,7 +5212,7 @@ var staticRenderFns = [function () {
       alt: ""
     }
   }), _vm._v(" "), _c("p", {
-    staticClass: "label-soft text-white p-2 d-inline"
+    staticClass: "label-soft text-white py-2 px-4 d-inline"
   }, [_vm._v("Servizio Aggiuntivo")]), _vm._v(" "), _c("h3", {
     staticClass: "text-white text-center"
   }, [_vm._v("FLUO DRINK BAR")])]), _vm._v(" "), _c("div", {
@@ -5201,7 +5239,7 @@ var staticRenderFns = [function () {
       alt: ""
     }
   }), _vm._v(" "), _c("p", {
-    staticClass: "label-soft text-white p-2 d-inline"
+    staticClass: "label-soft text-white py-2 px-4 d-inline"
   }, [_vm._v("Servizio Aggiuntivo")]), _vm._v(" "), _c("h3", {
     staticClass: "text-white text-center"
   }, [_vm._v("ESPRESSO MARTINI NEGATIVO")])]), _vm._v(" "), _c("div", {
@@ -5422,12 +5460,12 @@ var staticRenderFns = [function () {
     staticClass: "row py-5"
   }, [_c("p", {
     staticClass: "px-4"
-  }, [_vm._v("Tenereza eventi è un connubio di talento, professionalità e dinamismo, interpretato da tutti i nostri “attori” nelle proprie “parti”. "), _c("br"), _vm._v(" "), _c("br"), _vm._v(" Personale altamente qualificato e con grande esperienza, capace di adattarsi ai diversi contesti e stupire nello svolgimento del proprio lavoro, vissuto come uno “show” dove tutto deve essere semplicemente perfetto.")])]), _vm._v(" "), _c("div", {
+  }, [_vm._v("Tenereza eventi è un connubio di talento, professionalità e dinamismo, interpretato da tutti i nostri “attori” nelle proprie “parti”. "), _c("br"), _vm._v(" "), _c("br"), _vm._v(" Personale altamente qualificato e con grande esperienza, capace di adattarsi ai diversi contesti e stupire nello svolgimento del proprio lavoro, vissuto come uno “show” dove tutto deve essere semplicemente perfetto.")]), _vm._v(" "), _c("div", {
     staticClass: "mb-5",
     attrs: {
       id: "anchor-preventivo"
     }
-  })])]);
+  })])])]);
 }];
 render._withStripped = true;
 
@@ -5454,11 +5492,11 @@ var staticRenderFns = [function () {
   var _vm = this,
     _c = _vm._self._c;
   return _c("div", {
-    staticClass: "d-flex align-items-center justify-content-center",
+    staticClass: "flex-column d-flex align-items-center justify-content-center",
     attrs: {
       id: "not-found-page"
     }
-  }, [_c("p", [_vm._v("Not found page | Error 404")])]);
+  }, [_c("h2", [_vm._v("404")]), _vm._v(" "), _c("p", [_vm._v("Not found page")])]);
 }];
 render._withStripped = true;
 
@@ -9902,7 +9940,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, "nav[data-v-0851419a] {\n  position: fixed;\n  top: 0;\n  left: 0;\n  right: 0;\n  z-index: 5;\n  background-color: transparent !important;\n  padding: 60px 60px;\n  transition: 1s;\n}\nnav img[data-v-0851419a] {\n  height: 100px;\n}\nnav .btn-square[data-v-0851419a] {\n  width: 50px;\n  height: 50px;\n  background-color: transparent;\n  border-radius: 0;\n  border: 2px solid white;\n  font-size: 20px;\n  transition: 0.8s;\n}\nnav .btn-square[data-v-0851419a]:hover {\n  background-color: #b48c80;\n  border: #b48c80;\n  color: white;\n}\nnav .btn-square[data-v-0851419a]:focus {\n  box-shadow: none;\n}\nnav .nav-menu[data-v-0851419a] {\n  display: flex;\n  position: absolute;\n  top: 0;\n  right: -300px;\n  height: 100vh;\n  z-index: 20;\n  background-image: url(" + escape(__webpack_require__(/*! ../../../public/images/test/tenereza-background.jpg */ "./public/images/test/tenereza-background.jpg")) + ");\n  background-size: 100vw;\n  background-position: top right;\n  width: 300px;\n  padding: 40px;\n  transition: 0.3s;\n}\nnav .nav-menu .btn-close[data-v-0851419a] {\n  position: absolute;\n  top: 15px;\n  right: 15px;\n}\nnav .nav-menu a[data-v-0851419a] {\n  transition: 0.8s;\n}\nnav .nav-menu a[data-v-0851419a]:hover {\n  color: #b48c80 !important;\n}\nnav .nav-menu.open[data-v-0851419a] {\n  right: 0;\n}\nul[data-v-0851419a] {\n  width: 100%;\n}\nnav.sticky[data-v-0851419a] {\n  background-color: transparent !important;\n  background-image: url(" + escape(__webpack_require__(/*! ../../../public/images/test/tenereza-background.jpg */ "./public/images/test/tenereza-background.jpg")) + ");\n  background-size: cover;\n  padding: 10px 60px;\n  transition: 1s;\n}\nnav.sticky img[data-v-0851419a] {\n  filter: invert(1);\n  height: 70px;\n}\n@media (max-width: 767px) {\nnav[data-v-0851419a] {\n    padding: 40px;\n}\nnav img[data-v-0851419a] {\n    height: 80px;\n}\nnav.sticky[data-v-0851419a] {\n    padding: 5px 20px;\n}\n}", ""]);
+exports.push([module.i, "nav[data-v-0851419a] {\n  position: fixed;\n  top: 0;\n  left: 0;\n  right: 0;\n  z-index: 5;\n  background-color: transparent !important;\n  padding: 60px 60px;\n  transition: 1s;\n}\nnav img[data-v-0851419a] {\n  height: 100px;\n}\nnav .btn-square[data-v-0851419a] {\n  width: 50px;\n  height: 50px;\n  background-color: transparent;\n  border-radius: 0;\n  border: 2px solid white;\n  font-size: 20px;\n  transition: 0.8s;\n}\nnav .btn-square[data-v-0851419a]:hover {\n  --clr-font-main: hsla(0 0% 20% / 100);\n  --btn-bg-1: rgb(142, 142, 142);\n  --btn-bg-2: rgb(49, 49, 55);\n  --btn-bg-color: hsla(360 100% 100% / 1);\n  --radii: 0.5em;\n  cursor: pointer;\n  font-size: 20px;\n  transition: 0.8s;\n  background-size: 280% auto;\n  background-image: linear-gradient(325deg, var(--btn-bg-2) 0%, var(--btn-bg-1) 55%, var(--btn-bg-2) 90%);\n  border: 2px solid white;\n  border-radius: 0px;\n  color: var(--btn-bg-color);\n  box-shadow: 0px 0px 20px rgba(56, 56, 56, 0.5), 0px 5px 5px -1px rgba(84, 84, 84, 0.25), inset 4px 4px 8px rgba(62, 62, 62, 0.5), inset -4px -4px 8px rgba(44, 44, 44, 0.35);\n  background-position: right top;\n}\nnav .btn-square[data-v-0851419a]:focus {\n  box-shadow: none;\n}\nnav .nav-menu[data-v-0851419a] {\n  display: flex;\n  position: absolute;\n  top: 0;\n  right: -300px;\n  height: 100vh;\n  z-index: 20;\n  background-image: url(" + escape(__webpack_require__(/*! ../../../public/images/test/tenereza-background.jpg */ "./public/images/test/tenereza-background.jpg")) + ");\n  background-size: 100vw;\n  background-position: top right;\n  width: 300px;\n  padding: 40px;\n  transition: 0.3s;\n}\nnav .nav-menu .nav-link[data-v-0851419a]:hover {\n  text-decoration: none;\n}\nnav .nav-menu .btn-close[data-v-0851419a] {\n  position: absolute;\n  top: 15px;\n  right: 15px;\n}\nnav .nav-menu a[data-v-0851419a] {\n  transition: 0.8s;\n}\nnav .nav-menu a[data-v-0851419a]:hover {\n  color: #b48c80 !important;\n}\nnav .nav-menu.open[data-v-0851419a] {\n  right: 0;\n}\nul[data-v-0851419a] {\n  width: 100%;\n}\nnav.sticky[data-v-0851419a] {\n  background-color: transparent !important;\n  background-image: url(" + escape(__webpack_require__(/*! ../../../public/images/test/tenereza-background.jpg */ "./public/images/test/tenereza-background.jpg")) + ");\n  background-size: cover;\n  padding: 10px 60px;\n  transition: 1s;\n}\nnav.sticky img[data-v-0851419a] {\n  filter: invert(1);\n  height: 70px;\n}\n@media (max-width: 767px) {\nnav[data-v-0851419a] {\n    padding: 40px;\n}\nnav img[data-v-0851419a] {\n    height: 80px;\n}\nnav.sticky[data-v-0851419a] {\n    padding: 5px 20px;\n}\n}", ""]);
 
 // exports
 
@@ -9940,7 +9978,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, "body[data-v-a432dd32] {\n  background-color: #000;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  height: 100vh;\n}\nh2[data-v-a432dd32] {\n  color: white;\n  text-shadow: 0 0 3px grey;\n  font-size: 46px;\n  text-align: center;\n  margin-bottom: 30px;\n}\nh3[data-v-a432dd32] {\n  font-size: 32px;\n  text-shadow: 0 0 5px black;\n}\n.btn-soft[data-v-a432dd32] {\n  background-color: #b48c80;\n  color: white;\n  border-radius: 0;\n  padding: 12px 40px;\n  font-size: 18px;\n}\n.card-top[data-v-a432dd32] {\n  height: 160px;\n  position: relative;\n}\n.card-top img[data-v-a432dd32] {\n  position: absolute;\n  top: 0;\n  -o-object-fit: cover;\n     object-fit: cover;\n  height: 100%;\n  width: 100%;\n}\n.card-top p[data-v-a432dd32], .card-top h3[data-v-a432dd32] {\n  z-index: 1;\n}\n.card-body[data-v-a432dd32] {\n  background-color: #EDEAE6;\n}\n.gallery[data-v-a432dd32] {\n  padding-bottom: 60px !important;\n  height: 250px;\n  --swiper-theme-color: #b48c80;\n  overflow: hidden;\n}\n.gallery .swiper-wrapper[data-v-a432dd32] {\n  align-items: center;\n}\n.gallery .swiper-wrapper img[data-v-a432dd32] {\n  width: 100%;\n  height: 400px;\n  -o-object-fit: cover;\n     object-fit: cover;\n}\n.gallery .swiper-slide[data-v-a432dd32] {\n  min-height: 180px !important;\n  border: 1px solid white;\n  transition: 0.2s;\n  transform: scale(0.8);\n}\n.gallery .swiper-slide.active[data-v-a432dd32] {\n  transform: scale(1);\n}\n.gallery .prev[data-v-a432dd32],\n.gallery .next[data-v-a432dd32] {\n  cursor: pointer;\n  z-index: 100;\n  position: absolute;\n  top: 50%;\n  transform: translateY(-50%);\n  opacity: 0.65;\n  transition: 0.2s;\n}\n.gallery .prev[data-v-a432dd32]:hover,\n.gallery .next[data-v-a432dd32]:hover {\n  opacity: 1;\n}\n.gallery .prev svg[data-v-a432dd32],\n.gallery .next svg[data-v-a432dd32] {\n  width: 20px;\n  height: 20px;\n}\n.gallery .prev svg path[data-v-a432dd32],\n.gallery .next svg path[data-v-a432dd32] {\n  fill: #fff;\n}\n.gallery .prev[data-v-a432dd32] {\n  left: 25px;\n}\n.gallery .next[data-v-a432dd32] {\n  right: 25px;\n}\n.gallery .pagination[data-v-a432dd32] {\n  margin-left: 8px !important;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  margin-top: 40px;\n  z-index: 100;\n}\n.gallery .pagination span[data-v-a432dd32] {\n  font-size: 0;\n  opacity: 1;\n  margin: 0px 6px !important;\n  border: 1px solid #fff;\n}\n.gallery .pagination span.swiper-pagination-bullet-active[data-v-a432dd32] {\n  background-color: transparent;\n  transform: scale(1.5);\n}\n.gallery-tablet[data-v-a432dd32] {\n  margin-left: auto;\n  margin-right: auto;\n  position: relative;\n  overflow: hidden;\n  list-style: none;\n  padding: 0;\n  z-index: 1;\n  padding-bottom: 60px !important;\n  height: 250px;\n  --swiper-theme-color: #b48c80;\n}\n.gallery-tablet .swiper-wrapper[data-v-a432dd32] {\n  align-items: center;\n}\n.gallery-tablet .swiper-wrapper img[data-v-a432dd32] {\n  width: 100%;\n  height: 300px;\n  -o-object-fit: cover;\n     object-fit: cover;\n}\n.gallery-tablet .swiper-slide[data-v-a432dd32] {\n  border: 1px solid white;\n  min-height: 180px !important;\n  transition: 0.2s;\n  transform: scale(0.9);\n}\n.gallery-tablet .swiper-slide.active[data-v-a432dd32] {\n  transform: scale(1);\n}\n.gallery-tablet .prev[data-v-a432dd32],\n.gallery-tablet .next[data-v-a432dd32] {\n  cursor: pointer;\n  z-index: 100;\n  position: absolute;\n  top: 50%;\n  transform: translateY(-50%);\n  opacity: 0.65;\n  transition: 0.2s;\n}\n.gallery-tablet .prev[data-v-a432dd32]:hover,\n.gallery-tablet .next[data-v-a432dd32]:hover {\n  opacity: 1;\n}\n.gallery-tablet .prev svg[data-v-a432dd32],\n.gallery-tablet .next svg[data-v-a432dd32] {\n  width: 20px;\n  height: 20px;\n}\n.gallery-tablet .prev svg path[data-v-a432dd32],\n.gallery-tablet .next svg path[data-v-a432dd32] {\n  fill: #fff;\n}\n.gallery-tablet .prev[data-v-a432dd32] {\n  left: 25px;\n}\n.gallery-tablet .next[data-v-a432dd32] {\n  right: 25px;\n}\n.gallery-tablet .pagination[data-v-a432dd32] {\n  margin-left: 8px !important;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  margin-top: 40px;\n  z-index: 100;\n}\n.gallery-tablet .pagination span[data-v-a432dd32] {\n  font-size: 0;\n  opacity: 1;\n  margin: 0px 6px !important;\n  border: 1px solid #fff;\n}\n.gallery-tablet .pagination span.swiper-pagination-bullet-active[data-v-a432dd32] {\n  background-color: transparent;\n  transform: scale(1.5);\n}\n.gallery-mobile[data-v-a432dd32] {\n  margin-left: auto;\n  margin-right: auto;\n  position: relative;\n  overflow: hidden;\n  list-style: none;\n  padding: 0;\n  z-index: 1;\n  padding-bottom: 60px !important;\n  height: 250px;\n  --swiper-theme-color: #b48c80;\n}\n.gallery-mobile .swiper-wrapper[data-v-a432dd32] {\n  align-items: center;\n}\n.gallery-mobile .swiper-wrapper img[data-v-a432dd32] {\n  width: 100%;\n  height: 500px;\n  -o-object-fit: cover;\n     object-fit: cover;\n}\n.gallery-mobile .swiper-slide[data-v-a432dd32] {\n  border: 1px solid white;\n  min-height: 180px !important;\n  transition: 0.2s;\n  transform: scale(0.9);\n}\n.gallery-mobile .swiper-slide.active[data-v-a432dd32] {\n  transform: scale(1);\n}\n.gallery-mobile .prev[data-v-a432dd32],\n.gallery-mobile .next[data-v-a432dd32] {\n  cursor: pointer;\n  z-index: 100;\n  position: absolute;\n  top: 50%;\n  transform: translateY(-50%);\n  opacity: 0.65;\n  transition: 0.2s;\n}\n.gallery-mobile .prev[data-v-a432dd32]:hover,\n.gallery-mobile .next[data-v-a432dd32]:hover {\n  opacity: 1;\n}\n.gallery-mobile .prev svg[data-v-a432dd32],\n.gallery-mobile .next svg[data-v-a432dd32] {\n  width: 20px;\n  height: 20px;\n}\n.gallery-mobile .prev svg path[data-v-a432dd32],\n.gallery-mobile .next svg path[data-v-a432dd32] {\n  fill: #fff;\n}\n.gallery-mobile .prev[data-v-a432dd32] {\n  left: 25px;\n}\n.gallery-mobile .next[data-v-a432dd32] {\n  right: 25px;\n}\n.gallery-mobile .pagination[data-v-a432dd32] {\n  margin-left: 8px !important;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  margin-top: 40px;\n  z-index: 100;\n}\n.gallery-mobile .pagination span[data-v-a432dd32] {\n  font-size: 0;\n  opacity: 1;\n  margin: 0px 6px !important;\n  border: 1px solid #fff;\n}\n.gallery-mobile .pagination span.swiper-pagination-bullet-active[data-v-a432dd32] {\n  background-color: transparent;\n  transform: scale(1.5);\n}", ""]);
+exports.push([module.i, "body[data-v-a432dd32] {\n  background-color: #000;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  height: 100vh;\n}\nh2[data-v-a432dd32] {\n  color: white;\n  text-shadow: 0 0 3px grey;\n  font-size: 46px;\n  text-align: center;\n  margin-bottom: 30px;\n}\nh3[data-v-a432dd32] {\n  font-size: 32px;\n  text-shadow: 0 0 5px black;\n}\n.btn-soft[data-v-a432dd32] {\n  background-color: #b48c80;\n  color: white;\n  border-radius: 0;\n  padding: 12px 40px;\n  font-size: 18px;\n}\n.card-top[data-v-a432dd32] {\n  height: 160px;\n  position: relative;\n}\n.card-top img[data-v-a432dd32] {\n  position: absolute;\n  top: 0;\n  -o-object-fit: cover;\n     object-fit: cover;\n  height: 100%;\n  width: 100%;\n}\n.card-top p[data-v-a432dd32], .card-top h3[data-v-a432dd32] {\n  z-index: 1;\n}\n.card-body[data-v-a432dd32] {\n  background-color: #EDEAE6;\n}\n.gallery[data-v-a432dd32] {\n  padding-bottom: 60px !important;\n  height: 250px;\n  --swiper-theme-color: #b48c80;\n  overflow: hidden;\n}\n.gallery .swiper-wrapper[data-v-a432dd32] {\n  align-items: center;\n}\n.gallery .swiper-wrapper img[data-v-a432dd32] {\n  width: 100%;\n  height: 400px;\n  -o-object-fit: cover;\n     object-fit: cover;\n}\n.gallery .swiper-slide[data-v-a432dd32] {\n  min-height: 180px !important;\n  border: 1px solid white;\n  transition: 0.2s;\n  transform: scale(0.8);\n}\n.gallery .swiper-slide.active[data-v-a432dd32] {\n  transform: scale(1);\n}\n.gallery .prev[data-v-a432dd32],\n.gallery .next[data-v-a432dd32] {\n  cursor: pointer;\n  z-index: 4;\n  position: absolute;\n  top: 55%;\n  transform: translateY(-50%);\n}\n.gallery .prev svg[data-v-a432dd32],\n.gallery .next svg[data-v-a432dd32] {\n  width: 30px;\n  height: 30px;\n}\n.gallery .prev svg path[data-v-a432dd32],\n.gallery .next svg path[data-v-a432dd32] {\n  fill: #fff;\n}\n.gallery .prev[data-v-a432dd32] {\n  left: 20px;\n}\n.gallery .next[data-v-a432dd32] {\n  right: 20px;\n}\n.gallery .pagination[data-v-a432dd32] {\n  margin-left: 8px !important;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  margin-top: 40px;\n  z-index: 100;\n}\n.gallery .pagination span[data-v-a432dd32] {\n  font-size: 0;\n  opacity: 1;\n  margin: 0px 6px !important;\n  border: 1px solid #fff;\n}\n.gallery .pagination span.swiper-pagination-bullet-active[data-v-a432dd32] {\n  background-color: transparent;\n  transform: scale(1.5);\n}\n.gallery-tablet[data-v-a432dd32] {\n  margin-left: auto;\n  margin-right: auto;\n  position: relative;\n  overflow: hidden;\n  list-style: none;\n  padding: 0;\n  z-index: 1;\n  padding-bottom: 60px !important;\n  height: 250px;\n  --swiper-theme-color: #b48c80;\n}\n.gallery-tablet .swiper-wrapper[data-v-a432dd32] {\n  align-items: center;\n}\n.gallery-tablet .swiper-wrapper img[data-v-a432dd32] {\n  width: 100%;\n  height: 300px;\n  -o-object-fit: cover;\n     object-fit: cover;\n}\n.gallery-tablet .swiper-slide[data-v-a432dd32] {\n  border: 1px solid white;\n  min-height: 180px !important;\n  transition: 0.2s;\n  transform: scale(0.9);\n}\n.gallery-tablet .swiper-slide.active[data-v-a432dd32] {\n  transform: scale(1);\n}\n.gallery-tablet .prev[data-v-a432dd32],\n.gallery-tablet .next[data-v-a432dd32] {\n  cursor: pointer;\n  z-index: 100;\n  position: absolute;\n  top: 50%;\n  transform: translateY(-50%);\n  opacity: 0.65;\n  transition: 0.2s;\n}\n.gallery-tablet .prev[data-v-a432dd32]:hover,\n.gallery-tablet .next[data-v-a432dd32]:hover {\n  opacity: 1;\n}\n.gallery-tablet .prev svg[data-v-a432dd32],\n.gallery-tablet .next svg[data-v-a432dd32] {\n  width: 20px;\n  height: 20px;\n}\n.gallery-tablet .prev svg path[data-v-a432dd32],\n.gallery-tablet .next svg path[data-v-a432dd32] {\n  fill: #fff;\n}\n.gallery-tablet .prev[data-v-a432dd32] {\n  left: 25px;\n}\n.gallery-tablet .next[data-v-a432dd32] {\n  right: 25px;\n}\n.gallery-tablet .pagination[data-v-a432dd32] {\n  margin-left: 8px !important;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  margin-top: 40px;\n  z-index: 100;\n}\n.gallery-tablet .pagination span[data-v-a432dd32] {\n  font-size: 0;\n  opacity: 1;\n  margin: 0px 6px !important;\n  border: 1px solid #fff;\n}\n.gallery-tablet .pagination span.swiper-pagination-bullet-active[data-v-a432dd32] {\n  background-color: transparent;\n  transform: scale(1.5);\n}\n.gallery-mobile[data-v-a432dd32] {\n  margin-left: auto;\n  margin-right: auto;\n  position: relative;\n  overflow: hidden;\n  list-style: none;\n  padding: 0;\n  z-index: 1;\n  padding-bottom: 60px !important;\n  height: 250px;\n  --swiper-theme-color: #b48c80;\n}\n.gallery-mobile .swiper-wrapper[data-v-a432dd32] {\n  align-items: center;\n}\n.gallery-mobile .swiper-wrapper img[data-v-a432dd32] {\n  width: 100%;\n  height: 500px;\n  -o-object-fit: cover;\n     object-fit: cover;\n}\n.gallery-mobile .swiper-slide[data-v-a432dd32] {\n  border: 1px solid white;\n  min-height: 180px !important;\n  transition: 0.2s;\n  transform: scale(0.9);\n}\n.gallery-mobile .swiper-slide.active[data-v-a432dd32] {\n  transform: scale(1);\n}\n.gallery-mobile .prev[data-v-a432dd32],\n.gallery-mobile .next[data-v-a432dd32] {\n  cursor: pointer;\n  z-index: 100;\n  position: absolute;\n  top: 50%;\n  transform: translateY(-50%);\n  opacity: 0.65;\n  transition: 0.2s;\n}\n.gallery-mobile .prev[data-v-a432dd32]:hover,\n.gallery-mobile .next[data-v-a432dd32]:hover {\n  opacity: 1;\n}\n.gallery-mobile .prev svg[data-v-a432dd32],\n.gallery-mobile .next svg[data-v-a432dd32] {\n  width: 20px;\n  height: 20px;\n}\n.gallery-mobile .prev svg path[data-v-a432dd32],\n.gallery-mobile .next svg path[data-v-a432dd32] {\n  fill: #fff;\n}\n.gallery-mobile .prev[data-v-a432dd32] {\n  left: 25px;\n}\n.gallery-mobile .next[data-v-a432dd32] {\n  right: 25px;\n}\n.gallery-mobile .pagination[data-v-a432dd32] {\n  margin-left: 8px !important;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  margin-top: 40px;\n  z-index: 100;\n}\n.gallery-mobile .pagination span[data-v-a432dd32] {\n  font-size: 0;\n  opacity: 1;\n  margin: 0px 6px !important;\n  border: 1px solid #fff;\n}\n.gallery-mobile .pagination span.swiper-pagination-bullet-active[data-v-a432dd32] {\n  background-color: transparent;\n  transform: scale(1.5);\n}", ""]);
 
 // exports
 
@@ -9997,7 +10035,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, "body[data-v-b9fc4184] {\n  background-color: #000;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  height: 100vh;\n}\nh2[data-v-b9fc4184] {\n  font-size: 42px;\n  text-align: center;\n  margin-bottom: 30px;\n}\nh3[data-v-b9fc4184] {\n  font-size: 32px;\n  text-shadow: 0 0 5px black;\n}\n.card-top[data-v-b9fc4184] {\n  height: 160px;\n  position: relative;\n}\n.card-top img[data-v-b9fc4184] {\n  position: absolute;\n  top: 0;\n  -o-object-fit: cover;\n     object-fit: cover;\n  height: 100%;\n  width: 100%;\n}\n.card-top p[data-v-b9fc4184], .card-top h3[data-v-b9fc4184] {\n  z-index: 1;\n}\n.card-top .label-soft[data-v-b9fc4184] {\n  background-color: #b48c80;\n  font-family: \"Dancing Script\", cursive;\n  font-size: 1.5rem;\n  position: absolute;\n  top: -20px;\n}\n.card-body[data-v-b9fc4184] {\n  background-color: #efefef;\n}\n.card-body .icon[data-v-b9fc4184] {\n  width: 50px;\n}\n.swiper[data-v-b9fc4184] {\n  padding-bottom: 60px !important;\n  padding-top: 20px;\n  height: 250px;\n  --swiper-theme-color: #b48c80;\n}\n.swiper .swiper-wrapper[data-v-b9fc4184] {\n  align-items: center;\n}\n.swiper .swiper-slide[data-v-b9fc4184] {\n  border-radius: 5px;\n  min-height: 180px !important;\n  background-color: #000;\n  border: 1px solid #fff;\n  transition: 0.2s;\n  transform: scale(0.8);\n}\n.swiper .swiper-slide.active[data-v-b9fc4184] {\n  min-height: 230px !important;\n  transform: scale(1);\n}\n.swiper .prev[data-v-b9fc4184],\n.swiper .next[data-v-b9fc4184] {\n  cursor: pointer;\n  z-index: 100;\n  position: absolute;\n  top: 50%;\n  transform: translateY(-50%);\n  opacity: 0.65;\n  transition: 0.2s;\n}\n.swiper .prev[data-v-b9fc4184]:hover,\n.swiper .next[data-v-b9fc4184]:hover {\n  opacity: 1;\n}\n.swiper .prev svg[data-v-b9fc4184],\n.swiper .next svg[data-v-b9fc4184] {\n  width: 20px;\n  height: 20px;\n}\n.swiper .prev svg path[data-v-b9fc4184],\n.swiper .next svg path[data-v-b9fc4184] {\n  fill: #fff;\n}\n.swiper .prev[data-v-b9fc4184] {\n  left: 25px;\n}\n.swiper .next[data-v-b9fc4184] {\n  right: 25px;\n}\n.swiper .pagination[data-v-b9fc4184] {\n  margin-left: 8px !important;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  margin-top: 40px;\n  z-index: 100;\n}\n.swiper .pagination span[data-v-b9fc4184] {\n  font-size: 0;\n  opacity: 1;\n  margin: 0px 6px !important;\n  border: 1px solid #fff;\n}\n.swiper .pagination span.swiper-pagination-bullet-active[data-v-b9fc4184] {\n  background-color: transparent;\n  transform: scale(1.5);\n}\n.swiper-tablet[data-v-b9fc4184] {\n  margin-left: auto;\n  margin-right: auto;\n  position: relative;\n  overflow: hidden;\n  list-style: none;\n  padding: 0;\n  z-index: 1;\n  padding-bottom: 60px !important;\n  padding-top: 20px;\n  height: 250px;\n  --swiper-theme-color: #b48c80;\n}\n.swiper-tablet .swiper-wrapper[data-v-b9fc4184] {\n  align-items: center;\n}\n.swiper-tablet .swiper-slide[data-v-b9fc4184] {\n  border-radius: 5px;\n  min-height: 180px !important;\n  background-color: #000;\n  border: 1px solid #fff;\n  transition: 0.2s;\n  transform: scale(0.9);\n}\n.swiper-tablet .swiper-slide.active[data-v-b9fc4184] {\n  min-height: 230px !important;\n  transform: scale(1);\n}\n.swiper-tablet .prev[data-v-b9fc4184],\n.swiper-tablet .next[data-v-b9fc4184] {\n  cursor: pointer;\n  z-index: 100;\n  position: absolute;\n  top: 50%;\n  transform: translateY(-50%);\n  opacity: 0.65;\n  transition: 0.2s;\n}\n.swiper-tablet .prev[data-v-b9fc4184]:hover,\n.swiper-tablet .next[data-v-b9fc4184]:hover {\n  opacity: 1;\n}\n.swiper-tablet .prev svg[data-v-b9fc4184],\n.swiper-tablet .next svg[data-v-b9fc4184] {\n  width: 20px;\n  height: 20px;\n}\n.swiper-tablet .prev svg path[data-v-b9fc4184],\n.swiper-tablet .next svg path[data-v-b9fc4184] {\n  fill: #fff;\n}\n.swiper-tablet .prev[data-v-b9fc4184] {\n  left: 25px;\n}\n.swiper-tablet .next[data-v-b9fc4184] {\n  right: 25px;\n}\n.swiper-tablet .pagination[data-v-b9fc4184] {\n  margin-left: 8px !important;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  margin-top: 40px;\n  z-index: 100;\n}\n.swiper-tablet .pagination span[data-v-b9fc4184] {\n  font-size: 0;\n  opacity: 1;\n  margin: 0px 6px !important;\n  border: 1px solid #fff;\n}\n.swiper-tablet .pagination span.swiper-pagination-bullet-active[data-v-b9fc4184] {\n  background-color: transparent;\n  transform: scale(1.5);\n}\n.swiper-mobile[data-v-b9fc4184] {\n  margin-left: auto;\n  margin-right: auto;\n  position: relative;\n  overflow: hidden;\n  list-style: none;\n  padding: 0;\n  z-index: 1;\n  padding-bottom: 60px !important;\n  padding-top: 20px;\n  height: 250px;\n  --swiper-theme-color: #b48c80;\n}\n.swiper-mobile .swiper-wrapper[data-v-b9fc4184] {\n  align-items: center;\n}\n.swiper-mobile .swiper-slide[data-v-b9fc4184] {\n  border-radius: 5px;\n  min-height: 180px !important;\n  background-color: #000;\n  border: 1px solid #fff;\n  transition: 0.2s;\n  transform: scale(0.9);\n}\n.swiper-mobile .swiper-slide.active[data-v-b9fc4184] {\n  min-height: 230px !important;\n  transform: scale(1);\n}\n.swiper-mobile .prev[data-v-b9fc4184],\n.swiper-mobile .next[data-v-b9fc4184] {\n  cursor: pointer;\n  z-index: 100;\n  position: absolute;\n  top: 50%;\n  transform: translateY(-50%);\n  opacity: 0.65;\n  transition: 0.2s;\n}\n.swiper-mobile .prev[data-v-b9fc4184]:hover,\n.swiper-mobile .next[data-v-b9fc4184]:hover {\n  opacity: 1;\n}\n.swiper-mobile .prev svg[data-v-b9fc4184],\n.swiper-mobile .next svg[data-v-b9fc4184] {\n  width: 20px;\n  height: 20px;\n}\n.swiper-mobile .prev svg path[data-v-b9fc4184],\n.swiper-mobile .next svg path[data-v-b9fc4184] {\n  fill: #fff;\n}\n.swiper-mobile .prev[data-v-b9fc4184] {\n  left: 25px;\n}\n.swiper-mobile .next[data-v-b9fc4184] {\n  right: 25px;\n}\n.swiper-mobile .pagination[data-v-b9fc4184] {\n  margin-left: 8px !important;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  margin-top: 40px;\n  z-index: 100;\n}\n.swiper-mobile .pagination span[data-v-b9fc4184] {\n  font-size: 0;\n  opacity: 1;\n  margin: 0px 6px !important;\n  border: 1px solid #fff;\n}\n.swiper-mobile .pagination span.swiper-pagination-bullet-active[data-v-b9fc4184] {\n  background-color: transparent;\n  transform: scale(1.5);\n}", ""]);
+exports.push([module.i, "body[data-v-b9fc4184] {\n  background-color: #000;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  height: 100vh;\n}\nh2[data-v-b9fc4184] {\n  font-size: 42px;\n  text-align: center;\n  margin-bottom: 30px;\n}\nh3[data-v-b9fc4184] {\n  font-size: 32px;\n  text-shadow: 0 0 5px black;\n}\n.card-top[data-v-b9fc4184] {\n  height: 160px;\n  position: relative;\n}\n.card-top img[data-v-b9fc4184] {\n  position: absolute;\n  top: 0;\n  -o-object-fit: cover;\n     object-fit: cover;\n  height: 100%;\n  width: 100%;\n}\n.card-top p[data-v-b9fc4184], .card-top h3[data-v-b9fc4184] {\n  z-index: 1;\n}\n.card-top .label-soft[data-v-b9fc4184] {\n  font-family: \"Dancing Script\", cursive;\n  font-size: 1.5rem;\n  position: absolute;\n  top: -20px;\n  --clr-font-main: hsla(0 0% 20% / 100);\n  --btn-bg-1: rgb(142, 142, 142);\n  --btn-bg-2: rgb(49, 49, 55);\n  --btn-bg-color: hsla(360 100% 100% / 1);\n  --radii: 0.5em;\n  cursor: pointer;\n  font-size: 20px;\n  transition: 0.8s;\n  background-size: 280% auto;\n  background-image: linear-gradient(325deg, var(--btn-bg-2) 0%, var(--btn-bg-1) 55%, var(--btn-bg-2) 90%);\n  border-radius: 0px;\n  color: var(--btn-bg-color);\n}\n.card-top .label-soft[data-v-b9fc4184]:hover {\n  background-position: right top;\n}\n.card-body[data-v-b9fc4184] {\n  background-color: #efefef;\n}\n.card-body .icon[data-v-b9fc4184] {\n  width: 50px;\n}\n.swiper[data-v-b9fc4184] {\n  padding-bottom: 60px !important;\n  padding-top: 20px;\n  height: 250px;\n  --swiper-theme-color: #b48c80;\n}\n.swiper .swiper-wrapper[data-v-b9fc4184] {\n  align-items: center;\n}\n.swiper .swiper-slide[data-v-b9fc4184] {\n  border-radius: 5px;\n  min-height: 180px !important;\n  background-color: #000;\n  border: 1px solid #fff;\n  transition: 0.2s;\n  transform: scale(0.8);\n}\n.swiper .swiper-slide.active[data-v-b9fc4184] {\n  min-height: 230px !important;\n  transform: scale(1);\n}\n.swiper .prev[data-v-b9fc4184],\n.swiper .next[data-v-b9fc4184] {\n  cursor: pointer;\n  z-index: 100;\n  position: absolute;\n  top: 50%;\n  transform: translateY(-50%);\n  opacity: 0.65;\n  transition: 0.2s;\n}\n.swiper .prev[data-v-b9fc4184]:hover,\n.swiper .next[data-v-b9fc4184]:hover {\n  opacity: 1;\n}\n.swiper .prev svg[data-v-b9fc4184],\n.swiper .next svg[data-v-b9fc4184] {\n  width: 20px;\n  height: 20px;\n}\n.swiper .prev svg path[data-v-b9fc4184],\n.swiper .next svg path[data-v-b9fc4184] {\n  fill: #fff;\n}\n.swiper .prev[data-v-b9fc4184] {\n  left: 25px;\n}\n.swiper .next[data-v-b9fc4184] {\n  right: 25px;\n}\n.swiper .pagination[data-v-b9fc4184] {\n  margin-left: 8px !important;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  margin-top: 40px;\n  z-index: 100;\n}\n.swiper .pagination span[data-v-b9fc4184] {\n  font-size: 0;\n  opacity: 1;\n  margin: 0px 6px !important;\n  border: 1px solid #fff;\n}\n.swiper .pagination span.swiper-pagination-bullet-active[data-v-b9fc4184] {\n  background-color: transparent;\n  transform: scale(1.5);\n}\n.swiper-tablet[data-v-b9fc4184] {\n  margin-left: auto;\n  margin-right: auto;\n  position: relative;\n  overflow: hidden;\n  list-style: none;\n  padding: 0;\n  z-index: 1;\n  padding-bottom: 60px !important;\n  padding-top: 20px;\n  height: 250px;\n  --swiper-theme-color: #b48c80;\n}\n.swiper-tablet .swiper-wrapper[data-v-b9fc4184] {\n  align-items: center;\n}\n.swiper-tablet .swiper-slide[data-v-b9fc4184] {\n  border-radius: 5px;\n  min-height: 180px !important;\n  background-color: #000;\n  border: 1px solid #fff;\n  transition: 0.2s;\n  transform: scale(0.9);\n}\n.swiper-tablet .swiper-slide.active[data-v-b9fc4184] {\n  min-height: 230px !important;\n  transform: scale(1);\n}\n.swiper-tablet .prev[data-v-b9fc4184],\n.swiper-tablet .next[data-v-b9fc4184] {\n  cursor: pointer;\n  z-index: 100;\n  position: absolute;\n  top: 50%;\n  transform: translateY(-50%);\n  opacity: 0.65;\n  transition: 0.2s;\n}\n.swiper-tablet .prev[data-v-b9fc4184]:hover,\n.swiper-tablet .next[data-v-b9fc4184]:hover {\n  opacity: 1;\n}\n.swiper-tablet .prev svg[data-v-b9fc4184],\n.swiper-tablet .next svg[data-v-b9fc4184] {\n  width: 20px;\n  height: 20px;\n}\n.swiper-tablet .prev svg path[data-v-b9fc4184],\n.swiper-tablet .next svg path[data-v-b9fc4184] {\n  fill: #fff;\n}\n.swiper-tablet .prev[data-v-b9fc4184] {\n  left: 25px;\n}\n.swiper-tablet .next[data-v-b9fc4184] {\n  right: 25px;\n}\n.swiper-tablet .pagination[data-v-b9fc4184] {\n  margin-left: 8px !important;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  margin-top: 40px;\n  z-index: 100;\n}\n.swiper-tablet .pagination span[data-v-b9fc4184] {\n  font-size: 0;\n  opacity: 1;\n  margin: 0px 6px !important;\n  border: 1px solid #fff;\n}\n.swiper-tablet .pagination span.swiper-pagination-bullet-active[data-v-b9fc4184] {\n  background-color: transparent;\n  transform: scale(1.5);\n}\n.swiper-mobile[data-v-b9fc4184] {\n  margin-left: auto;\n  margin-right: auto;\n  position: relative;\n  overflow: hidden;\n  list-style: none;\n  padding: 0;\n  z-index: 1;\n  padding-bottom: 60px !important;\n  padding-top: 20px;\n  height: 250px;\n  --swiper-theme-color: #b48c80;\n}\n.swiper-mobile .swiper-wrapper[data-v-b9fc4184] {\n  align-items: center;\n}\n.swiper-mobile .swiper-slide[data-v-b9fc4184] {\n  border-radius: 5px;\n  min-height: 180px !important;\n  background-color: #000;\n  border: 1px solid #fff;\n  transition: 0.2s;\n  transform: scale(0.9);\n}\n.swiper-mobile .swiper-slide.active[data-v-b9fc4184] {\n  min-height: 230px !important;\n  transform: scale(1);\n}\n.swiper-mobile .prev[data-v-b9fc4184],\n.swiper-mobile .next[data-v-b9fc4184] {\n  cursor: pointer;\n  z-index: 100;\n  position: absolute;\n  top: 50%;\n  transform: translateY(-50%);\n  opacity: 0.65;\n  transition: 0.2s;\n}\n.swiper-mobile .prev[data-v-b9fc4184]:hover,\n.swiper-mobile .next[data-v-b9fc4184]:hover {\n  opacity: 1;\n}\n.swiper-mobile .prev svg[data-v-b9fc4184],\n.swiper-mobile .next svg[data-v-b9fc4184] {\n  width: 20px;\n  height: 20px;\n}\n.swiper-mobile .prev svg path[data-v-b9fc4184],\n.swiper-mobile .next svg path[data-v-b9fc4184] {\n  fill: #fff;\n}\n.swiper-mobile .prev[data-v-b9fc4184] {\n  left: 25px;\n}\n.swiper-mobile .next[data-v-b9fc4184] {\n  right: 25px;\n}\n.swiper-mobile .pagination[data-v-b9fc4184] {\n  margin-left: 8px !important;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  margin-top: 40px;\n  z-index: 100;\n}\n.swiper-mobile .pagination span[data-v-b9fc4184] {\n  font-size: 0;\n  opacity: 1;\n  margin: 0px 6px !important;\n  border: 1px solid #fff;\n}\n.swiper-mobile .pagination span.swiper-pagination-bullet-active[data-v-b9fc4184] {\n  background-color: transparent;\n  transform: scale(1.5);\n}", ""]);
 
 // exports
 
@@ -10051,12 +10089,13 @@ exports.push([module.i, "h2[data-v-317790a4] {\n  font-size: 52px;\n}\n.italic[d
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
+var escape = __webpack_require__(/*! ../../../../node_modules/css-loader/lib/url/escape.js */ "./node_modules/css-loader/lib/url/escape.js");
 exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-loader/lib/css-base.js */ "./node_modules/css-loader/lib/css-base.js")(false);
 // imports
 
 
 // module
-exports.push([module.i, "#not-found-page[data-v-302b2534] {\n  height: 100vh;\n}", ""]);
+exports.push([module.i, "#not-found-page[data-v-302b2534] {\n  color: white;\n  height: 100vh;\n  background-image: url(" + escape(__webpack_require__(/*! ../../../../public/images/test/grey-marble.jpg */ "./public/images/test/grey-marble.jpg")) + ");\n  background-size: cover;\n  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);\n}\n#not-found-page h2[data-v-302b2534] {\n  font-size: 150px;\n}\n#not-found-page p[data-v-302b2534] {\n  font-size: 38px;\n}", ""]);
 
 // exports
 
@@ -58311,7 +58350,7 @@ module.exports = "/images/shooting 18.2.23-9.jpg?85641f80f97cbdf9fc8ba8facd61f82
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "/images/tenereza-background.jpg?8066c5626b73a3cdf7f51edec769e2d1";
+module.exports = "/images/tenereza-background.jpg?3dd60451053e5bdfe683e27492bb6a41";
 
 /***/ }),
 

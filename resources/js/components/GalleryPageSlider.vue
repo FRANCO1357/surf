@@ -222,6 +222,16 @@
                     <img class="img-fluid" src="../../../public/images/test/PHOTO-2023-03-06-11-14-40.jpg" alt="">    
                 </div>
             </div>
+            <div class="prev">
+                <svg width="10" height="15" viewBox="0 0 10 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M9.2625 13.2375L3.5375 7.5L9.2625 1.7625L7.5 0L0 7.5L7.5 15L9.2625 13.2375Z" fill="#A99260" />
+                </svg>
+            </div>
+            <div class="next">
+                <svg width="10" height="15" viewBox="0 0 10 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0.737305 13.2375L6.4623 7.5L0.737305 1.7625L2.4998 0L9.9998 7.5L2.4998 15L0.737305 13.2375Z" fill="#A99260" />
+                </svg>
+            </div>
         </div>
 
 
@@ -474,28 +484,23 @@ h3{
   .prev,
   .next {
     cursor: pointer;
-    z-index: 100;
+    z-index: 4;
     position: absolute;
-    top: 50%;
+    top: 55%;
     transform: translateY(-50%);
-    opacity: 0.65;
-    transition: 0.2s;
-    &:hover {
-      opacity: 1;
-    }
     svg {
-      width: 20px;
-      height: 20px;
+      width: 30px;
+      height: 30px;
     }
     svg path {
       fill: #fff;
     }
   }
   .prev {
-    left: 25px;
+    left: 20px;
   }
   .next {
-    right: 25px;
+    right: 20px;
   }
   .pagination {
     margin-left: 8px !important;

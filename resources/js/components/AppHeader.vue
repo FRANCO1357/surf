@@ -96,9 +96,21 @@ img{
         transition: 0.8s;
 
         &:hover{
-            background-color: #b48c80;
-            border: #b48c80;
-            color: white;
+            --clr-font-main: hsla(0 0% 20% / 100);
+            --btn-bg-1: rgb(142, 142, 142);
+            --btn-bg-2: rgb(49, 49, 55);
+            --btn-bg-color: hsla(360 100% 100% / 1);
+            --radii: 0.5em;
+            cursor: pointer;
+            font-size: 20px;
+            transition: 0.8s;
+            background-size: 280% auto;
+            background-image: linear-gradient(325deg, var(--btn-bg-2) 0%, var(--btn-bg-1) 55%, var(--btn-bg-2) 90%);
+            border: 2px solid white;
+            border-radius: 0px;
+            color: var(--btn-bg-color);
+            box-shadow: 0px 0px 20px rgba(56, 56, 56, 0.5), 0px 5px 5px -1px rgba(84, 84, 84, 0.25), inset 4px 4px 8px rgba(62, 62, 62, 0.5), inset -4px -4px 8px rgba(44, 44, 44, 0.35);
+            background-position: right top;
         }
 
         &:focus{
@@ -120,6 +132,10 @@ img{
     width: 300px;
     padding: 40px;
     transition: 0.3s;
+
+    .nav-link:hover{
+        text-decoration: none;
+    }
 
         .btn-close{
             position: absolute;

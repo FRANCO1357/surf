@@ -6,7 +6,7 @@
             <div class="swiper-slide">
                 <div class="card-top d-flex flex-column align-items-center justify-content-around pt-3">
                     <img src="../../../public/images/test/IMG-20220922-WA0085.jpg" alt="">
-                    <p class="label-soft text-white p-2 d-inline">Servizio Aggiuntivo</p>
+                    <p class="label-soft text-white py-2 px-4 d-inline">Servizio Aggiuntivo</p>
                     <h3 class="text-white text-center">RUM BAR</h3>
                 </div>
                 <div class="card-body d-flex flex-column align-items-center justify-content-around py-4 px-5">
@@ -20,7 +20,7 @@
             <div class="swiper-slide">
                 <div class="card-top d-flex flex-column align-items-center justify-content-around pt-3">
                     <img src="../../../public/images/test/shooting 18.2.23-8.jpg" alt="">
-                    <p class="label-soft text-white p-2 d-inline">Servizio Aggiuntivo</p>
+                    <p class="label-soft text-white py-2 px-4 d-inline">Servizio Aggiuntivo</p>
                     <h3 class="text-white text-center">WHISKY BAR</h3>
                 </div>
                 <div class="card-body d-flex flex-column align-items-center justify-content-around py-4 px-5">
@@ -34,7 +34,7 @@
             <div class="swiper-slide">
                 <div class="card-top d-flex flex-column align-items-center justify-content-around pt-3">
                     <img src="../../../public/images/test/PHOTO-2023-02-20-18-31-43.jpg" alt="">
-                    <p class="label-soft text-white p-2 d-inline">Servizio Aggiuntivo</p>
+                    <p class="label-soft text-white py-2 px-4 d-inline">Servizio Aggiuntivo</p>
                     <h3 class="text-white text-center">TROPIC BAR</h3>
                 </div>
                 <div class="card-body d-flex flex-column align-items-center justify-content-around py-4 px-5">
@@ -48,7 +48,7 @@
             <div class="swiper-slide">
                 <div class="card-top d-flex flex-column align-items-center justify-content-around pt-3">
                     <img src="../../../public/images/test/PHOTO-2023-02-24-15-28-53.jpg" alt="">
-                    <p class="label-soft text-white p-2 d-inline">Servizio Aggiuntivo</p>
+                    <p class="label-soft text-white py-2 px-4 d-inline">Servizio Aggiuntivo</p>
                     <h3 class="text-white text-center">FLUO DRINK BAR</h3>
                 </div>
                 <div class="card-body d-flex flex-column align-items-center justify-content-around py-4 px-5">
@@ -62,7 +62,7 @@
             <div class="swiper-slide">
                 <div class="card-top d-flex flex-column align-items-center justify-content-around pt-3">
                     <img src="../../../public/images/test/IMG-20220922-WA0097.jpg" alt="">
-                    <p class="label-soft text-white p-2 d-inline">Servizio Aggiuntivo</p>
+                    <p class="label-soft text-white py-2 px-4 d-inline">Servizio Aggiuntivo</p>
                     <h3 class="text-white text-center">ESPRESSO MARTINI NEGATIVO</h3>
                 </div>
                 <div class="card-body d-flex flex-column align-items-center justify-content-around py-4 px-5">
@@ -94,7 +94,7 @@
             <div class="swiper-slide">
                 <div class="card-top d-flex flex-column align-items-center justify-content-around pt-3">
                     <img src="../../../public/images/test/IMG-20220922-WA0085.jpg" alt="">
-                    <p class="label-soft text-white p-2 d-inline">Servizio Aggiuntivo</p>
+                    <p class="label-soft text-white py-2 px-4 d-inline">Servizio Aggiuntivo</p>
                     <h3 class="text-white text-center">RUM BAR</h3>
                 </div>
                 <div class="card-body d-flex flex-column align-items-center justify-content-around py-4 px-5">
@@ -108,7 +108,7 @@
             <div class="swiper-slide">
                 <div class="card-top d-flex flex-column align-items-center justify-content-around pt-3">
                     <img src="../../../public/images/test/shooting 18.2.23-8.jpg" alt="">
-                    <p class="label-soft text-white p-2 d-inline">Servizio Aggiuntivo</p>
+                    <p class="label-soft text-white py-2 px-4 d-inline">Servizio Aggiuntivo</p>
                     <h3 class="text-white text-center">WHISKY BAR</h3>
                 </div>
                 <div class="card-body d-flex flex-column align-items-center justify-content-around py-4 px-5">
@@ -122,7 +122,7 @@
             <div class="swiper-slide">
                 <div class="card-top d-flex flex-column align-items-center justify-content-around pt-3">
                     <img src="../../../public/images/test/PHOTO-2023-02-20-18-31-43.jpg" alt="">
-                    <p class="label-soft text-white p-2 d-inline">Servizio Aggiuntivo</p>
+                    <p class="label-soft text-white py-2 px-4 d-inline">Servizio Aggiuntivo</p>
                     <h3 class="text-white text-center">TROPIC BAR</h3>
                 </div>
                 <div class="card-body d-flex flex-column align-items-center justify-content-around py-4 px-5">
@@ -136,7 +136,7 @@
             <div class="swiper-slide">
                 <div class="card-top d-flex flex-column align-items-center justify-content-around pt-3">
                     <img src="../../../public/images/test/PHOTO-2023-02-24-15-28-53.jpg" alt="">
-                    <p class="label-soft text-white p-2 d-inline">Servizio Aggiuntivo</p>
+                    <p class="label-soft text-white py-2 px-4 d-inline">Servizio Aggiuntivo</p>
                     <h3 class="text-white text-center">FLUO DRINK BAR</h3>
                 </div>
                 <div class="card-body d-flex flex-column align-items-center justify-content-around py-4 px-5">
@@ -150,7 +150,7 @@
             <div class="swiper-slide">
                 <div class="card-top d-flex flex-column align-items-center justify-content-around pt-3">
                     <img src="../../../public/images/test/IMG-20220922-WA0097.jpg" alt="">
-                    <p class="label-soft text-white p-2 d-inline">Servizio Aggiuntivo</p>
+                    <p class="label-soft text-white py-2 px-4 d-inline">Servizio Aggiuntivo</p>
                     <h3 class="text-white text-center">ESPRESSO MARTINI NEGATIVO</h3>
                 </div>
                 <div class="card-body d-flex flex-column align-items-center justify-content-around py-4 px-5">
@@ -183,7 +183,7 @@
             <div class="swiper-slide">
                 <div class="card-top d-flex flex-column align-items-center justify-content-around pt-3">
                     <img src="../../../public/images/test/IMG-20220922-WA0085.jpg" alt="">
-                    <p class="label-soft text-white p-2 d-inline">Servizio Aggiuntivo</p>
+                    <p class="label-soft text-white py-2 px-4 d-inline">Servizio Aggiuntivo</p>
                     <h3 class="text-white text-center">RUM BAR</h3>
                 </div>
                 <div class="card-body d-flex flex-column align-items-center justify-content-around py-4 px-5">
@@ -197,7 +197,7 @@
             <div class="swiper-slide">
                 <div class="card-top d-flex flex-column align-items-center justify-content-around pt-3">
                     <img src="../../../public/images/test/shooting 18.2.23-8.jpg" alt="">
-                    <p class="label-soft text-white p-2 d-inline">Servizio Aggiuntivo</p>
+                    <p class="label-soft text-white py-2 px-4 d-inline">Servizio Aggiuntivo</p>
                     <h3 class="text-white text-center">WHISKY BAR</h3>
                 </div>
                 <div class="card-body d-flex flex-column align-items-center justify-content-around py-4 px-5">
@@ -211,7 +211,7 @@
             <div class="swiper-slide">
                 <div class="card-top d-flex flex-column align-items-center justify-content-around pt-3">
                     <img src="../../../public/images/test/PHOTO-2023-02-20-18-31-43.jpg" alt="">
-                    <p class="label-soft text-white p-2 d-inline">Servizio Aggiuntivo</p>
+                    <p class="label-soft text-white py-2 px-4 d-inline">Servizio Aggiuntivo</p>
                     <h3 class="text-white text-center">TROPIC BAR</h3>
                 </div>
                 <div class="card-body d-flex flex-column align-items-center justify-content-around py-4 px-5">
@@ -225,7 +225,7 @@
             <div class="swiper-slide">
                 <div class="card-top d-flex flex-column align-items-center justify-content-around pt-3">
                     <img src="../../../public/images/test/PHOTO-2023-02-24-15-28-53.jpg" alt="">
-                    <p class="label-soft text-white p-2 d-inline">Servizio Aggiuntivo</p>
+                    <p class="label-soft text-white py-2 px-4 d-inline">Servizio Aggiuntivo</p>
                     <h3 class="text-white text-center">FLUO DRINK BAR</h3>
                 </div>
                 <div class="card-body d-flex flex-column align-items-center justify-content-around py-4 px-5">
@@ -239,7 +239,7 @@
             <div class="swiper-slide">
                 <div class="card-top d-flex flex-column align-items-center justify-content-around pt-3">
                     <img src="../../../public/images/test/IMG-20220922-WA0097.jpg" alt="">
-                    <p class="label-soft text-white p-2 d-inline">Servizio Aggiuntivo</p>
+                    <p class="label-soft text-white py-2 px-4 d-inline">Servizio Aggiuntivo</p>
                     <h3 class="text-white text-center">ESPRESSO MARTINI NEGATIVO</h3>
                 </div>
                 <div class="card-body d-flex flex-column align-items-center justify-content-around py-4 px-5">
@@ -382,13 +382,28 @@ h3{
         z-index: 1;
     }
 
-    .label-soft{
-        background-color: #b48c80;
-        font-family: 'Dancing Script', cursive;
-        font-size: 1.5rem;
-        position: absolute;
-        top: -20px;
-    }
+    .label-soft {
+            font-family: 'Dancing Script', cursive;
+            font-size: 1.5rem;
+            position: absolute;
+            top: -20px;
+            --clr-font-main: hsla(0 0% 20% / 100);
+            --btn-bg-1: rgb(142, 142, 142);
+            --btn-bg-2: rgb(49, 49, 55);
+            --btn-bg-color: hsla(360 100% 100% / 1);
+            --radii: 0.5em;
+            cursor: pointer;
+            font-size: 20px;
+            transition: 0.8s;
+            background-size: 280% auto;
+            background-image: linear-gradient(325deg, var(--btn-bg-2) 0%, var(--btn-bg-1) 55%, var(--btn-bg-2) 90%);
+            border-radius: 0px;
+            color: var(--btn-bg-color);
+
+            &:hover{
+                background-position: right top;
+            }
+        }
 }
 
 .card-body{

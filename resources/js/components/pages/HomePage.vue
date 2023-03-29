@@ -168,8 +168,8 @@
             </div>
             <div class="row py-5">
                 <p class="px-4">Tenereza eventi è un connubio di talento, professionalità e dinamismo, interpretato da tutti i nostri “attori” nelle proprie “parti”. <br> <br> Personale altamente qualificato e con grande esperienza, capace di adattarsi ai diversi contesti e stupire nello svolgimento del proprio lavoro, vissuto come uno “show” dove tutto deve essere semplicemente perfetto.</p>
+                <div id="anchor-preventivo" class="mb-5"></div>
             </div>
-            <div id="anchor-preventivo" class="mb-5"></div>
         </div>
         </div>
 
