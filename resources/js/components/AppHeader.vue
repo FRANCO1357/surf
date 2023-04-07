@@ -1,192 +1,302 @@
 <template>
     <header>
-        <nav class="navbar navbar-light bg-light">
-            <a class="btn-square d-flex align-items-center justify-content-center text-white text-decoration-none" href="tel:+393347540892">
-                <i class="fa-solid fa-phone"></i>
-            </a>
-            <router-link :to="{name:'home'}">
-                <a class="navbar-brand text-white ml-2" href="#"><img class="img-fluid" src="../../../public/images/test/logo-tenereza.png" alt=""></a>
-            </router-link>
-            <button @click="toggleMenu()" class="btn-square d-flex align-items-center justify-content-center" id="btn-menu" type="button">
-                <i class="fa-solid fa-bars text-white"></i>
-            </button>
-            <div class="nav-menu flex-column align-items-center" id="navbarMenu">
-                <button @click="toggleMenu()" class="btn-menu btn-square btn-close text-white d-flex align-items-center justify-content-center" id="btn-menu" type="button">
-                    <i class="fa-solid fa-xmark"></i>
-                </button>
-                <h2 class="my-5 text-white">Menu</h2>
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <router-link :to="{name:'home'}">
-                            <a @click="closeMenu()" class="nav-link py-3 text-white text-center border-bottom border-white">Home</a>
-                        </router-link>
-                        <a v-if="currentPage === 'home'" @click="closeMenu()" class="nav-link py-3 text-white text-center border-bottom border-white" href="#anchor-about">Chi Siamo</a>
-                        <a v-if="currentPage !== 'home'" @click="closeMenu()" class="nav-link py-3 text-white text-center border-bottom border-white" href="https://tnzbarcatering.com/#anchor-about">Chi Siamo</a>
-                        <a v-if="currentPage === 'home'" @click="closeMenu()" class="nav-link py-3 text-white text-center border-bottom border-white" href="#anchor-service">Bar Service</a>
-                        <a v-if="currentPage !== 'home'" @click="closeMenu()" class="nav-link py-3 text-white text-center border-bottom border-white" href="https://tnzbarcatering.com/#anchor-service">Bar Service</a>
-                        <a v-if="currentPage === 'home'" @click="closeMenu()" class="nav-link py-3 text-white text-center border-bottom border-white" href="#anchor-aggiuntivi">Servizi Aggiuntivi</a>
-                        <a v-if="currentPage !== 'home'" @click="closeMenu()" class="nav-link py-3 text-white text-center border-bottom border-white" href="https://tnzbarcatering.com/#anchor-aggiuntivi">Servizi Aggiuntivi</a>
-                        <a v-if="currentPage === 'home'" @click="closeMenu()" class="nav-link py-3 text-white text-center border-bottom border-white" href="#anchor-gallery">Gallery</a>
-                        <a v-if="currentPage === 'home'" @click="closeMenu()" class="nav-link py-3 text-white text-center border-bottom border-white" href="#anchor-preventivo">Contattaci</a>
-                        <a v-if="currentPage !== 'home'" @click="closeMenu()" class="nav-link py-3 text-white text-center border-bottom border-white" href="https://tnzbarcatering.com/#anchor-preventivo">Contattaci</a>
-                    </li>
-                </ul>
+        <AppParallax :is-light="isLight"/>
+        <nav id="myNav" :class="[isLight ? 'bg-white' : 'bg-black']">
+            <div class="logo">
+                <img :class="{'d-none' : isLight}" src="../../../public/images/immagini/logo.png" alt="">
+                <img :class="{'d-none' : !isLight}" src="../../../public/images/immagini/logo-light.png" alt="">
+            </div>
+            <div class="empty d-none d-md-block"></div>
+            <ul class="d-none d-md-flex">
+                <li>
+                    <a :class="[isLight ? 'text-black' : 'text-white']" href="#">HOME</a>
+                </li>
+                <li>
+                    <a :class="[isLight ? 'text-black' : 'text-white']" href="#">COMPONENT</a>
+                </li>
+                <li>
+                    <a :class="[isLight ? 'text-black' : 'text-white']" href="#">PORTFOLIO</a>
+                </li>
+                <li>
+                    <a :class="[isLight ? 'text-black' : 'text-white']" href="#">CONTACT</a>
+                </li>
+                <li>
+                    <a :class="[isLight ? 'text-black' : 'text-white']" href="#">SHOP</a>
+                </li>
+            </ul>
+            <div class="toggle">
+                <i :class="{'d-none' : isLight}" class="fa-solid fa-toggle-on fa-3x" @click="changeColor"></i>
+                <i :class="{'d-none' : !isLight}" class="fa-solid fa-toggle-off fa-3x" @click="changeColor"></i>
+            </div>
+            <div class="menu border-right-0">
+                <div class="wrapper-menu" @click="toggleMenu">
+                    <div :class="[isLight ? 'bg-black' : 'bg-white']" class="line-menu"></div>
+                    <div :class="[isLight ? 'bg-black' : 'bg-white']" class="line-menu"></div>
+                    <div :class="[isLight ? 'bg-black' : 'bg-white']" class="line-menu"></div>
+                </div>
+                <div class="steaky-menu" :class="{'open': menuOpen, }">
+                    <div class="x-container">
+                        <div class="x-shape" @click="toggleMenu">
+                            <div class="line line-1"></div>
+                            <div class="line line-2"></div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </nav>
     </header>
 </template>
 
 <script>
+import AppParallax from './AppParallax.vue';
+
 export default{
-    name: 'AppHeader',
-    data: () => ({
-        links: [
-            {name: 'home', label: 'Home'},
-            {name: 'about', label: 'Chi siamo'},
-        ]
-    }),
-    computed: {
-        currentPage() {
-            console.log(this.$route.name);
-            return this.$route.name
+    name: "AppHeader",
+    data() {
+        return {
+            isLight: false,
+            menuOpen: false,
+        };
+    },
+    props: {
+        isLight: {
+            type: Boolean,
+        },
+    },
+    computed: {},
+    methods: {
+        toggleMenu() {
+            this.menuOpen = !this.menuOpen;
+        },
+        changeColor() {
+            this.isLight = !this.isLight;
+            this.$emit("button-clicked", this.isLight);
         }
     },
-    methods:{
-      toggleMenu(){
-        const navbarMenu = document.getElementById('navbarMenu');
-        navbarMenu.classList.toggle('open')
-      },
-      closeMenu(){
-        const navbarMenu = document.getElementById('navbarMenu');
-        navbarMenu.classList.remove('open')
-      },
+    mounted() {
+        const nav = document.querySelector("nav");
+        const navTop = nav.offsetTop;
+        const offset = -10;
+        window.addEventListener("scroll", () => {
+            if (window.pageYOffset > navTop + offset) {
+                nav.classList.add("fixed-top");
+            }
+            else {
+                nav.classList.remove("fixed-top");
+            }
+        });
     },
-    mounted (){
-        window.addEventListener('scroll', function(){
-            const nav = this.document.querySelector('nav');
-            nav.classList.toggle('sticky', window.scrollY > 0);
-        })
-    }
+    components: { AppParallax }
 }
 </script>
 
 <style scoped lang="scss">
-
-nav{
-position: fixed;
-top: 0;
-left: 0;
-right: 0;
-z-index: 5;
-background-color: transparent !important;
-padding: 60px 60px;
-transition: 1s;
-
-img{
-    height: 100px;
-}
-
-    .btn-square{
-        width: 50px;
-        height: 50px;
-        background-color: transparent;
-        border-radius: 0;
-        border: 2px solid white;
-        font-size: 20px;
-        transition: 0.8s;
-
-        &:hover{
-            --clr-font-main: hsla(0 0% 20% / 100);
-            --btn-bg-1: rgb(142, 142, 142);
-            --btn-bg-2: rgb(49, 49, 55);
-            --btn-bg-color: hsla(360 100% 100% / 1);
-            --radii: 0.5em;
-            cursor: pointer;
-            font-size: 20px;
-            transition: 0.8s;
-            background-size: 280% auto;
-            background-image: linear-gradient(325deg, var(--btn-bg-2) 0%, var(--btn-bg-1) 55%, var(--btn-bg-2) 90%);
-            border: 2px solid white;
-            border-radius: 0px;
-            color: var(--btn-bg-color);
-            box-shadow: 0px 0px 20px rgba(56, 56, 56, 0.5), 0px 5px 5px -1px rgba(84, 84, 84, 0.25), inset 4px 4px 8px rgba(62, 62, 62, 0.5), inset -4px -4px 8px rgba(44, 44, 44, 0.35);
-            background-position: right top;
-        }
-
-        &:focus{
-            box-shadow: none;
-        }
-    }
-
-   
-    .nav-menu{
-    display: flex;
-    position: absolute;
-    top: 0;
-    right: -300px;
-    height: 100vh;
-    z-index: 20;
-    background-image: url('../../../public/images/test/tenereza-background.jpg');
-    background-size: 100vw;
-    background-position: top right;
-    width: 300px;
-    padding: 40px;
-    transition: 0.3s;
-
-    .nav-link:hover{
-        text-decoration: none;
-    }
-
-        .btn-close{
-            position: absolute;
-            top: 15px;
-            right: 15px;
-        }
-
-        a{
-        transition: 0.8s;
-
-           &:hover{
-            color: #b48c80 !important;
-           } 
-        }
-
-    }
-    .nav-menu.open{
-        right: 0;
-    }
-}
-
-ul{
+header{
     width: 100%;
-}
+    height: 100vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
-nav.sticky{
-    background-color: transparent !important;
-    background-image: url('../../../public/images/test/tenereza-background.jpg');
-    background-size: cover;
-    padding: 10px 60px;
-    transition: 1s;
+    > img{
+        position: fixed
+    }
 
-    img{
-        filter: invert(1);
-        height: 70px;
+    nav{
+        height: 100px;
+        width: 96%;
+        border: 1px solid;
+        position: absolute;
+        bottom: 0;
+        left: 2%;
+        display: flex;
+
+        &.fixed-top{
+            position: fixed;
+            top: 0;
+        }
+
+        > div{
+            height: 100%;
+            width: 12%;
+            border-right: 1px solid;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            > img{
+                height: 60%;
+            }
+        }
+
+        ul{
+            height: 100%;
+            width: 52%;
+            border-right: 1px solid;
+            align-items: center;
+            justify-content: space-between;
+            list-style-type: none;
+            margin: 0;
+            padding: 0 50px;
+        }
+
+        .logo{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-right: 1px solid;
+
+            img{
+            height: 50%;
+            animation-name: vibrate;
+            animation-duration: 1s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+            transform-origin: 50% 50%;
+            }
+            @keyframes vibrate {
+                0%{
+                    transform: translate(2px, 3px) rotate(0deg);
+                }
+                10%{
+                    transform: translate(1px, -1px) rotate(0deg);
+                }
+                20%{
+                    transform: translate(2px, 1px) rotate(-1deg);
+                }
+                30%{
+                    transform: translate(3px, -2px) rotate(1deg);
+                }
+                40%{
+                    transform: translate(-1px, 1px) rotate(-1deg);
+                }
+                50%{
+                    transform: translate(1px, 3px) rotate(0deg);
+                }
+                60%{
+                    transform: translate(-1px, 2px) rotate(-1deg);
+                }
+                70%{
+                    transform: translate(1px, 1px) rotate(1deg);
+                }
+                80%{
+                    transform: translate(2px, -1px) rotate(0deg);
+                }
+                90%{
+                    transform: translate(-2px, 1px) rotate(-1deg);
+                }
+                100%{
+                    transform: translate(2px, 3px) rotate(1deg);
+                }
+            }
+        }
+
+        .menu{
+
+            .wrapper-menu{
+                width: 50px;
+                cursor: pointer;
+                transition: 0.5s;
+            }
+            .line-menu{
+                
+                width: 100%;
+                height: 1px;
+                margin: 12px 0;
+                transition: 0.5s;
+            }
+
+            &:hover{
+                .line-menu {
+                    &:first-child {
+                    transform: translate(-20%);
+                    }
+
+                    &:last-child {
+                        transform: translate(+20%);
+                    }
+                }
+            }
+
+            .steaky-menu{
+                position: fixed;
+                z-index: 2;
+                background-color: black;
+                right: -100%;
+                top: 0;
+                bottom: 0;
+                right: 0;
+                left: 100%;
+                transition: 1s;
+
+                &.open{
+                    left: 0;
+                }
+
+                .x-container {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 50px;
+                    height: 50px;
+                    position: relative;
+                    top: 10px;
+                    left: 97vw;
+
+                    .x-shape {
+                        position: absolute;
+                        width: 50px;
+                        height: 50px;
+                        cursor: pointer;
+
+                        .line {
+                            position: absolute;
+                            background-color: white;
+                            width: 1px;
+                            height: 100%;
+                            top: 0;
+                            left: 0;
+                            transform-origin: center;
+                            transition: transform 0.3s ease-in-out;
+                        }
+
+                        .line-1 {
+                            transform: rotate(45deg);
+                        }
+
+                        .line-2 {
+                            transform: rotate(-45deg);
+                        }
+
+                        &:hover .line-1 {
+                            transform: rotate(90deg);
+                        }
+
+                        &:hover .line-2 {
+                            transform: rotate(0deg);
+                        }
+                    }
+                }                
+            }
+        }
     }
 }
 
 @media (max-width: 767px){
+    header{
         nav{
-            padding: 40px;
+            height: 80px;
+            > div{
+                width: calc(100% / 3);
+            }
 
-            img{
-                height: 80px;
+            .x-container{
+                left: 90vw !important;
             }
         }
-
-        nav.sticky{
-            padding: 5px 20px;
-        }
     }
+    
+}
 
-
-</style>
+</style> 

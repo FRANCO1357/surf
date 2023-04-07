@@ -18,7 +18,6 @@
     #not-found-page{
         color: white;
         height: 100vh;
-        background-image: url('../../../../public/images/test/grey-marble.jpg');
         background-size: cover;
         text-shadow: 0 0 10px rgb(0, 0, 0, 0.5);
 
