@@ -306,6 +306,73 @@ export default{
             top: 61%;
             left: 49%;
         }
+
+        @media(max-height: 800px){
+            img:nth-of-type(1), img:nth-of-type(2){
+            width: calc(35% + 35px);
+            position: absolute;
+            top: 3%;
+            left: 4%;
         }
+
+        img:nth-of-type(3), img:nth-of-type(4){
+            width: calc(35% + 35px);
+            position: absolute;
+            top: 4%;
+            left: 49%;
+        }
+
+        img:nth-of-type(5){
+            width: calc(32% + 40px);
+            position: absolute;
+            top: 23%;
+            left: 6%;
+        }
+
+        img:nth-of-type(6){
+            width: calc(27% + 40px);
+            position: absolute;
+            top: 25%;
+            left: 55%;
+        }
+
+        img:nth-of-type(7){
+            width: calc(20% + 50px);
+            position: absolute;
+            top: 44%;
+            left: 9%;
+        }
+
+        img:nth-of-type(8){
+            width: calc(25% + 50px);
+            position: absolute;
+            top: 43%;
+            left: 51%;
+        }
+
+        img:nth-of-type(9){
+            width: calc(26% + 40px);
+            position: absolute;
+            top: 58%;
+            left: 7%;
+        }
+
+        img:nth-of-type(10){
+            width: calc(62% + 80px);
+            position: absolute;
+            top: 60%;
+            left: 8%;
+        }
+
+        img:nth-of-type(11){
+            width: calc(26% + 70px);
+            position: absolute;
+            top: 57%;
+            left: 49%;
+        }
+        }
+        }
+
+        
     }
 </style>

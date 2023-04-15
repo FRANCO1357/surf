@@ -1,5 +1,5 @@
 <template>
-    <div :class="[isLight ? 'bg-white' : 'bg-black']">
+    <div class="app" :class="[isLight ? 'bg-white' : 'bg-black']">
         <AppHeader :is-light="isLight" @button-clicked="buttonClicked"/>
         <router-view :is-light="isLight" :projects="projects"></router-view>
         <AppFooter :is-light="isLight"/>
@@ -30,12 +30,20 @@ export default{
 </script>
 
 <style lang="scss">
+.app{
+    padding-bottom: 2%;
+}
+
 .bg-white{
     background-color: white;
     color: black;
     border-color: black;
 
     &:focus{
+        color: black;
+    }
+
+    &:hover{
         color: black;
     }
 }
@@ -48,10 +56,18 @@ export default{
     &:focus{
         color: white;
     }
+
+    &:hover{
+        color: white;
+    }
 }
 
 .text-white{
     color: white;
+
+    &:hover{
+        color: white;
+    }
 }
 
 .text-black{

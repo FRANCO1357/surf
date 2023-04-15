@@ -3,25 +3,37 @@
         <AppParallax :is-light="isLight"/>
         <nav id="myNav" :class="[isLight ? 'bg-white' : 'bg-black']">
             <div class="logo">
-                <img :class="{'d-none' : isLight}" src="../../../public/images/immagini/logo.png" alt="">
-                <img :class="{'d-none' : !isLight}" src="../../../public/images/immagini/logo-light.png" alt="">
+                <router-link  :to="{name:'home'}">
+                    <img :class="{'d-none' : isLight}" src="../../../public/images/immagini/logo.png" alt="">
+                    <img :class="{'d-none' : !isLight}" src="../../../public/images/immagini/logo-light.png" alt="">
+                </router-link>
             </div>
-            <div class="empty d-none d-md-block"></div>
-            <ul class="d-none d-md-flex">
+            <div class="empty d-none d-lg-block"></div>
+            <ul class="d-none d-lg-flex">
                 <li>
-                    <a :class="[isLight ? 'text-black' : 'text-white']" href="#">HOME</a>
+                    <router-link :to="{name:'home'}">
+                        <a :class="[isLight ? 'text-black' : 'text-white']" href="#">HOME</a>
+                    </router-link>
                 </li>
                 <li>
-                    <a :class="[isLight ? 'text-black' : 'text-white']" href="#">COMPONENT</a>
+                    <router-link :to="{name:'projects'}">
+                        <a :class="[isLight ? 'text-black' : 'text-white']" href="#">PROJECTS</a>
+                    </router-link>
                 </li>
                 <li>
-                    <a :class="[isLight ? 'text-black' : 'text-white']" href="#">PORTFOLIO</a>
+                    <router-link :to="{name:'components'}">
+                        <a :class="[isLight ? 'text-black' : 'text-white']" href="#">COMPONENTS</a>
+                    </router-link>
                 </li>
                 <li>
-                    <a :class="[isLight ? 'text-black' : 'text-white']" href="#">CONTACT</a>
+                    <router-link :to="{name:'about'}">
+                        <a :class="[isLight ? 'text-black' : 'text-white']" href="#">ABOUT</a>
+                    </router-link>
                 </li>
                 <li>
-                    <a :class="[isLight ? 'text-black' : 'text-white']" href="#">SHOP</a>
+                    <router-link :to="{name:'contacts'}">
+                        <a :class="[isLight ? 'text-black' : 'text-white']" href="#">CONTACTS</a>
+                    </router-link>
                 </li>
             </ul>
             <div class="toggle">
@@ -138,58 +150,65 @@ header{
             justify-content: space-between;
             list-style-type: none;
             margin: 0;
-            padding: 0 50px;
+            padding: 0 60px;
         }
 
         .logo{
-            display: flex;
-            align-items: center;
-            justify-content: center;
             border-right: 1px solid;
 
-            img{
-            height: 50%;
-            animation-name: vibrate;
-            animation-duration: 1s;
-            animation-timing-function: linear;
-            animation-iteration-count: infinite;
-            transform-origin: 50% 50%;
+            a{
+                width: 100%;
+                height: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                img{
+                    height: 50%;
+                    animation-name: vibrate;
+                    animation-duration: 1s;
+                    animation-timing-function: linear;
+                    animation-iteration-count: infinite;
+                    transform-origin: 50% 50%;
+                }
+                @keyframes vibrate {
+                    0%{
+                        transform: translate(2px, 3px) rotate(0deg);
+                    }
+                    10%{
+                        transform: translate(1px, -1px) rotate(0deg);
+                    }
+                    20%{
+                        transform: translate(2px, 1px) rotate(-1deg);
+                    }
+                    30%{
+                        transform: translate(3px, -2px) rotate(1deg);
+                    }
+                    40%{
+                        transform: translate(-1px, 1px) rotate(-1deg);
+                    }
+                    50%{
+                        transform: translate(1px, 3px) rotate(0deg);
+                    }
+                    60%{
+                        transform: translate(-1px, 2px) rotate(-1deg);
+                    }
+                    70%{
+                        transform: translate(1px, 1px) rotate(1deg);
+                    }
+                    80%{
+                        transform: translate(2px, -1px) rotate(0deg);
+                    }
+                    90%{
+                        transform: translate(-2px, 1px) rotate(-1deg);
+                    }
+                    100%{
+                        transform: translate(2px, 3px) rotate(1deg);
+                    }
+                }
             }
-            @keyframes vibrate {
-                0%{
-                    transform: translate(2px, 3px) rotate(0deg);
-                }
-                10%{
-                    transform: translate(1px, -1px) rotate(0deg);
-                }
-                20%{
-                    transform: translate(2px, 1px) rotate(-1deg);
-                }
-                30%{
-                    transform: translate(3px, -2px) rotate(1deg);
-                }
-                40%{
-                    transform: translate(-1px, 1px) rotate(-1deg);
-                }
-                50%{
-                    transform: translate(1px, 3px) rotate(0deg);
-                }
-                60%{
-                    transform: translate(-1px, 2px) rotate(-1deg);
-                }
-                70%{
-                    transform: translate(1px, 1px) rotate(1deg);
-                }
-                80%{
-                    transform: translate(2px, -1px) rotate(0deg);
-                }
-                90%{
-                    transform: translate(-2px, 1px) rotate(-1deg);
-                }
-                100%{
-                    transform: translate(2px, 3px) rotate(1deg);
-                }
-            }
+
+            
         }
 
         .menu{
@@ -283,7 +302,7 @@ header{
     }
 }
 
-@media (max-width: 767px){
+@media (max-width: 991px){
     header{
         nav{
             height: 80px;
