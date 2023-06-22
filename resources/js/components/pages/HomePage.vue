@@ -3,7 +3,7 @@
         <div class="container py-5">
             <div class="row d-flex">
                 <div class="text col-12 col-md-8">
-                    <h1>My personal website</h1>
+                    <h1>Surf</h1>
                     <h2>Tutto quello che so fare lo puoi trovare qua.</h2>
                     <p>Benvenuti nel mio sito web portfolio! Io sono Francesco Melani e sono sviluppatore web appassionato che ha lavorato su una vasta gamma di progetti, dai siti web aziendali alle applicazioni web complesse. La mia missione è quella di aiutare i miei clienti a raggiungere i loro obiettivi online attraverso soluzioni innovative e personalizzate. Scopri di più sui miei servizi e sulle mie competenze navigando il sito e non esitare a contattarmi per discutere di un progetto che abbia bisogno di un tocco creativo e professionale.</p>
                 </div>
