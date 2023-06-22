@@ -1,5 +1,5 @@
 <template>
-    <footer :class="[isLight ? 'bg-white' : 'bg-black']">
+    <footer :class="[isLight ? 'bg-white' : 'bg-black']" class="d-flex justify-content-center align-items-center">
         <div class="row">
             <div class="col-12 col-sm-4">
                 <div class="logo">
@@ -7,7 +7,7 @@
                     <img :class="{'d-none' : !isLight}" src="../../../public/images/immagini/logo-light.png" alt="">
                 </div>
             </div>
-            <div class="col-12 col-sm-4 d-flex flex-column justify-content-center align-items-center">
+            <div class="col-12 col-sm-4 d-flex flex-column justify-content-center align-items-center text-center text-sm-left">
                 <ul class="list-unstyled">
                     <li>
                         <router-link :to="{name:'home'}">
@@ -19,11 +19,11 @@
                             <a :class="[isLight ? 'text-black' : 'text-white']" href="#">PROJECTS</a>
                         </router-link>
                     </li>
-                    <li>
+                    <!-- <li>
                         <router-link :to="{name:'components'}">
                             <a :class="[isLight ? 'text-black' : 'text-white']" href="#">COMPONENTS</a>
                         </router-link>
-                    </li>
+                    </li> -->
                     <li>
                         <router-link :to="{name:'about'}">
                             <a :class="[isLight ? 'text-black' : 'text-white']" href="#">ABOUT</a>
@@ -36,12 +36,20 @@
                     </li>
                 </ul>
             </div>
-            <div class="col-12 col-sm-4 d-flex flex-column justify-content-center align-items-center">
+            <div class="col-12 col-sm-4 d-flex flex-column justify-content-center align-items-center text-center text-sm-left">
                 <ul class="list-unstyled">
-                    <li><a href="" :class="[isLight ? 'text-black' : 'text-white']">Pippo</a></li>
-                    <li><a href="" :class="[isLight ? 'text-black' : 'text-white']">Pippo</a></li>
-                    <li><a href="" :class="[isLight ? 'text-black' : 'text-white']">Pippo</a></li>
-                    <li><a href="" :class="[isLight ? 'text-black' : 'text-white']">Pippo</a></li>
+                    <li><a href="https://github.com/FRANCO1357" :class="[isLight ? 'text-black' : 'text-white']">GITHUB</a></li>
+                    <li><a href="https://www.linkedin.com/in/francesco-melani-4052a9178/" :class="[isLight ? 'text-black' : 'text-white']">LINKEDIN</a></li>
+                    <li>
+                        <router-link :to="{name:'privacy-policy'}">
+                            <a :class="[isLight ? 'text-black' : 'text-white']" href="#">PRIVACY POLICY</a>
+                        </router-link>
+                    </li>
+                    <li>
+                        <router-link :to="{name:'cookie-policy'}">
+                            <a :class="[isLight ? 'text-black' : 'text-white']" href="#">COOKIE POLICY</a>
+                        </router-link>
+                    </li>
                 </ul>
             </div>
         </div>

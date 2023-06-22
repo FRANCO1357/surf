@@ -30,10 +30,6 @@ export default{
 </script>
 
 <style lang="scss">
-.app{
-    padding-bottom: 2%;
-}
-
 .bg-white{
     background-color: white;
     color: black;

@@ -1,7 +1,7 @@
 <template>
-    <div class="row pt-5" :class="[isLight ? 'bg-white' : 'bg-black']">
-        <div class="col-12 col-lg-4 pt-5 pr-5">
-            <h5 class="bg-soft text-white d-inline">SENTITI LIBERO...</h5>
+    <div class="row" :class="[isLight ? 'bg-white' : 'bg-black']">
+        <div class="col-12 col-lg-4 pr-5">
+            <h5 class="d-inline">SENTITI LIBERO...</h5>
             <h3 class="py-3">DI LASCIARMI I TUOI CONTATTI</h3>
             <p>Se desideri ricevere un preventivo lascia qua sotto i tuoi dati e ti ricontatterò il prima possibile!</p>
         </div>
@@ -26,9 +26,9 @@
                 </div>
                 <button id="submit" type="submit" :class="[isLight ? 'bg-white' : 'bg-black']">Invia</button>
             </form>
-            <div v-if="sent" class="d-flex flex-column align-items-center justify-content-center py-4 px-5 mt-4" id="sent-data">
+            <div v-if="sent" class="d-flex flex-column align-items-center justify-content-center py-4 px-5 mt-4" id="sent-data" :class="[isLight ? 'bg-white' : 'bg-black']">
                 <i class="fa-solid fa-circle-check fa-3x mb-3"></i>
-                <p class="text-center">Grazie per averci lasciato i tuoi dati, ti ricontatteremo al più presto!</p>
+                <p class="text-center">Grazie per averci lasciato i tuoi dati, ti ricontatterò al più presto!</p>
             </div>
         </div>
         
@@ -85,7 +85,7 @@ export default{
         },
         saveData() {
             if (this.validateForm()) {
-            axios.post('https://tnzbarcatering.com/api/contact', {
+            axios.post('https://francescomelani.com/api/contact', {
                 name: this.name,
                 email: this.email,
                 phone: this.phone,
@@ -172,8 +172,6 @@ form{
 
 }
 #sent-data{
-    background-color: rgb(204, 255, 219);
-    border-radius: 10px;
-    border: 1px solid rgb(182, 238, 199);
+    border: 1px solid;
 }
 </style>

@@ -1,32 +1,26 @@
 <template>
     <main :class="[isLight ? 'bg-white' : 'bg-black']">
-        <div class="container py-5 h-100">
+        <div class="container py-4 h-100">
             <div class="row h-100">
                 <div class="left col-12 col-md-6 h-100">
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit, recusandae ullam explicabo obcaecati itaque voluptatem. Perferendis sapiente fuga temporibus expedita excepturi ut provident, autem veniam libero alias aliquid qui dolores?
-                    Dolorem nobis deserunt dolores eaque necessitatibus cum. Velit repudiandae neque animi natus perspiciatis iure incidunt facere minima, fugit iste quas autem soluta, odit, facilis obcaecati rem excepturi voluptatibus porro. Quibusdam?
-                    Rem ea nostrum voluptas ipsum quos, non excepturi, fugiat error eligendi dignissimos aspernatur odio laudantium quae quas, cumque temporibus doloremque? Facere sapiente consequatur libero temporibus tenetur ipsum reprehenderit accusantium velit.
-                    Accusamus explicabo ab odit animi obcaecati rem natus quos expedita dolorum est velit perferendis esse, repudiandae fugiat soluta rerum quibusdam! Obcaecati, quidem. Sint sapiente ipsa reprehenderit, facere saepe maxime ipsam!
-                    Eligendi natus, unde nemo consequuntur, harum commodi eum earum incidunt minus dolorem dolorum maiores explicabo esse aspernatur qui optio quasi consequatur non hic, ipsam veritatis voluptatem! Soluta illum consequatur magni?
-                    Sunt, nobis doloremque placeat, quod nemo magni suscipit voluptatibus fuga voluptatum laudantium quis tenetur. Commodi aliquid illo sint eum optio nulla. Accusamus dolorum officiis delectus blanditiis ratione porro, aspernatur qui.
-                    Aliquam sapiente architecto ad quasi dolores. Soluta dolorum numquam maiores iure ad in aliquam quibusdam praesentium? Nihil, voluptatem commodi fuga voluptates, sint officiis quo unde vero ex culpa dicta distinctio.
-                    Eius dolorem asperiores ipsa voluptatem magni, sit nihil omnis nulla exercitationem minus iure rem inventore numquam in accusantium ea sed itaque dignissimos natus porro accusamus commodi, fugiat, et libero. Dolor.
-                    Sapiente hic maiores expedita illo dolores, reiciendis voluptate quis, voluptatibus eos odio praesentium? Sequi sapiente, nihil repudiandae debitis dolorum, at eligendi totam hic ad enim veritatis reprehenderit tenetur autem quibusdam?
-                    Quam, doloribus! Voluptatum animi nemo nulla expedita architecto totam. Nihil vel nemo repellendus deserunt voluptate quis, alias dolorum tempore eum commodi quaerat dolor eos officia? Deserunt, repudiandae! Cupiditate, cumque aperiam?
-                    Repellat consequatur velit perferendis. Illo fugiat officiis qui similique, assumenda unde nemo a. In soluta ipsa cumque aliquid, dolores architecto. Odit harum inventore et modi id ullam repellendus qui excepturi.
-                    Error repudiandae quae perferendis at laudantium id odio ex? Rerum eius fugiat inventore? Incidunt mollitia consequuntur rerum, asperiores, qui est vel impedit eligendi earum illum suscipit inventore aperiam veniam perferendis.
-                    Omnis nulla sed eveniet perspiciatis impedit quod qui ducimus minus. Dolorem, provident totam, exercitationem nulla culpa ad voluptatum aut deserunt quo harum, molestias a doloribus nam ipsam architecto minus molestiae?
-                    Saepe molestiae similique error dolorum! Magnam, reprehenderit illum laudantium iste maiores ad distinctio vitae unde beatae dicta impedit possimus enim! Pariatur excepturi fugit iste modi impedit explicabo ab aliquam? Quidem!
-                    Obcaecati inventore hic consectetur neque recusandae reprehenderit nisi perspiciatis molestias ratione quod aut, culpa maxime nemo, minima asperiores, amet impedit eum consequatur illo dolore quidem magni ducimus. Neque, asperiores perferendis.
-                    Ad illum unde amet beatae doloremque labore tempore eligendi delectus fugit veritatis minima eius placeat, ipsa obcaecati quibusdam necessitatibus vero, incidunt sequi. Voluptates sapiente dicta odio labore dolor molestias corporis?
-                    Ipsa earum voluptatibus optio in maxime, ad officia eaque animi magnam inventore aliquam neque cum aut molestias. Deleniti et voluptates ducimus dolore, explicabo quasi illo. Doloremque fugiat voluptas unde harum!
-                    Officia at illo quis tempora. Ex placeat corrupti minima recusandae non, pariatur iusto adipisci culpa odio molestiae voluptatum corporis autem tenetur ipsa facilis odit omnis dicta illo praesentium blanditiis atque.
-                    Voluptate minima reiciendis aliquam odit minus recusandae ratione quia, repellendus voluptates alias. Quisquam, reprehenderit ratione, ipsa, ipsam rem quam quia aperiam error vero aliquam nulla culpa consectetur saepe tempore quo!
-                    Delectus, ducimus ratione dolorum, incidunt, similique fugit quia nesciunt neque porro soluta ipsum dolore quas laudantium mollitia optio odit? Eos earum vel magni beatae molestiae deserunt eius dolorem minima explicabo.</p>
+                    <p>Benvenuti nella mia pagina "Chi Siamo"! Mi presento, io sono Francesco Melani e sono uno sviluppatore web appassionato con anni di esperienza nella progettazione e sviluppo di siti web e applicazioni web complesse. Ho lavorato con un'ampia gamma di clienti, dalle piccole imprese locali alle grandi aziende internazionali, aiutandoli a raggiungere i loro obiettivi online attraverso soluzioni personalizzate e innovative. <br><br>
+
+                        La mia passione per lo sviluppo web è nata molti anni fa, quando ho deciso di creare il mio primo sito web. Da allora, ho continuato a coltivare questa passione, acquisendo sempre più conoscenze e competenze nel campo della programmazione web. Oggi, sono orgoglioso di essere in grado di offrire ai miei clienti soluzioni all'avanguardia che li aiutino ad avere successo online. <br><br>
+
+                        Sono un professionista altamente qualificato, con una solida formazione accademica in informatica. Ho acquisito molte competenze e conoscenze attraverso anni di esperienza, ma sono sempre alla ricerca di nuove sfide e opportunità per crescere professionalmente. Mi piace lavorare con i miei clienti per capire le loro esigenze e offrire loro soluzioni personalizzate che soddisfino le loro aspettative e superino le loro aspettative. <br><br>
+
+                        Il mio approccio allo sviluppo web è basato sull'attenzione ai dettagli e sulla qualità del lavoro. Credo che la chiave per un sito web di successo sia la capacità di fornire ai propri utenti un'esperienza d'uso eccellente. Per questo motivo, mi concentro su ogni aspetto del progetto, dalla progettazione dell'interfaccia utente alla scrittura del codice, per assicurarmi che il risultato finale sia perfetto sotto ogni aspetto. <br><br>
+
+                        Oltre alla mia esperienza e alle mie competenze tecniche, offro anche un'ottima capacità di problem solving e di comunicazione. Mi piace lavorare con i miei clienti per comprendere le loro esigenze e offrire loro soluzioni personalizzate che soddisfino le loro aspettative e superino le loro aspettative. <br><br>
+
+                        Sono appassionato di ciò che faccio e cerco sempre di migliorarmi. Mi tengo costantemente aggiornato sulle ultime tendenze e tecnologie nel campo dello sviluppo web, in modo da offrire ai miei clienti le soluzioni più innovative e all'avanguardia. <br><br>
+
+                        Se stai cercando un professionista esperto e appassionato per il tuo prossimo progetto web, non esitare a contattarmi. Sarei lieto di discutere con te delle tue esigenze e di come posso aiutarti a raggiungere i tuoi obiettivi online. Grazie per aver visitato il mio sito web portfolio!
+                    </p>
                 </div>
                 <div class="right col-12 col-md-6 d-flex justify-content-center align-items-center h-100">
-                    <figure class="col-12 col-sm-4">
-                        <img class="img-fluid" src="../../../../public/images/immagini/avatar.webp" alt="">
+                    <figure>
+                        <img class="img-fluid" src="../../../../public/images/immagini/avatar.webp" alt="Francesco Melani Avatar">
                     </figure>
                 </div>
             </div>
@@ -49,12 +43,22 @@ export default{
 main{
     background-color: black;
     position: relative;
-    z-index: 2;
-    height: 60vh;
+    z-index: 1;
+    height: calc(100vh - 298px);
     overflow: hidden;
 
     .left{
         overflow: scroll;
+    }
+}
+
+@media (max-width: 767px){
+    main{
+        height: auto;
+
+        .row{
+            flex-direction: column-reverse;
+        }
     }
 }
 </style>

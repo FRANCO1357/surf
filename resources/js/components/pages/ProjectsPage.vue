@@ -3,7 +3,7 @@
         <div class="container pb-5">
             <div class="projects">
                 <div class="typewriter text-center">
-                    <h2>Tutti miei progetti</h2>
+                    <h2>Tutti i miei progetti</h2>
                 </div>
                 <div class="row">
                     <div v-for="project in projects" :key="project.id" class="col-12 col-md-6 p-0">
@@ -44,7 +44,7 @@ export default {
 main {
     background-color: black;
     position: relative;
-    z-index: 2;
+    z-index: 1;
 
     .projects {
         display: flex;

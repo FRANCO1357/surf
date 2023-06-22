@@ -1,7 +1,9 @@
 <template>
-    <div>
-        <h2>Components</h2>
-    </div>
+    <main>
+        <div class="container py-5">
+            <h2 class="text-center">Components</h2>
+        </div>
+    </main>
 </template>
 
 <script>
@@ -11,5 +13,7 @@ export default{
 </script>
 
 <style scoped lang="scss">
-
+main{
+    min-height: 90vh;
+}
 </style>

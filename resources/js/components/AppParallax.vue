@@ -1,16 +1,16 @@
 <template>
     <section>
-        <img class="img-fluid layer" data-speed="1" :class="{'d-none' : isLight}" src="../../../public/images/immagini/html.png" alt="" @mousemove="parallax">
-        <img class="img-fluid layer" data-speed="1" :class="{'d-none' : !isLight}" src="../../../public/images/immagini/html-light.png" alt="" @mousemove="parallax">
-        <img class="img-fluid layer" data-speed="2" :class="{'d-none' : isLight}" src="../../../public/images/immagini/css.png" alt="" @mousemove="parallax">
-        <img class="img-fluid layer" data-speed="2" :class="{'d-none' : !isLight}" src="../../../public/images/immagini/css-light.png" alt="" @mousemove="parallax">
-        <img class="img-fluid layer" data-speed="4" src="../../../public/images/immagini/sass.png" alt="" @mousemove="parallax">
-        <img class="img-fluid layer" data-speed="2" src="../../../public/images/immagini/bootstrap.png" alt="" @mousemove="parallax">
-        <img class="img-fluid layer" data-speed="2" src="../../../public/images/immagini/javascript.png" alt="" @mousemove="parallax">
-        <img class="img-fluid layer" data-speed="2" src="../../../public/images/immagini/vue.png" alt="" @mousemove="parallax"> 
-        <img class="img-fluid layer" data-speed="4" src="../../../public/images/immagini/php.png" alt="" @mousemove="parallax"> 
-        <img class="img-fluid layer" data-speed="2" src="../../../public/images/immagini/laravel.png" alt="" @mousemove="parallax"> 
-        <img class="img-fluid layer" data-speed="3" src="../../../public/images/immagini/mysql.png" alt="" @mousemove="parallax"> 
+        <img class="img-fluid layer" data-speed="1" :class="{'d-none' : isLight}" src="../../../public/images/immagini/html.png" alt="Francesco Melani HTML" @mousemove="parallax">
+        <img class="img-fluid layer" data-speed="1" :class="{'d-none' : !isLight}" src="../../../public/images/immagini/html-light.png" alt="Francesco Melani HTML" @mousemove="parallax">
+        <img class="img-fluid layer" data-speed="2" :class="{'d-none' : isLight}" src="../../../public/images/immagini/css.png" alt="Francesco Melani CSS" @mousemove="parallax">
+        <img class="img-fluid layer" data-speed="2" :class="{'d-none' : !isLight}" src="../../../public/images/immagini/css-light.png" alt="Francesco Melani CSS" @mousemove="parallax">
+        <img class="img-fluid layer" data-speed="4" src="../../../public/images/immagini/sass.png" alt="Francesco Melani SASS" @mousemove="parallax">
+        <img class="img-fluid layer" data-speed="2" src="../../../public/images/immagini/bootstrap.png" alt="Francesco Melani BOOTSTRAP" @mousemove="parallax">
+        <img class="img-fluid layer" data-speed="2" src="../../../public/images/immagini/javascript.png" alt="Francesco Melani JAVASCRIPT" @mousemove="parallax">
+        <img class="img-fluid layer" data-speed="2" src="../../../public/images/immagini/vue.png" alt="Francesco Melani VUE" @mousemove="parallax"> 
+        <img class="img-fluid layer" data-speed="4" src="../../../public/images/immagini/php.png" alt="Francesco Melani PHP" @mousemove="parallax"> 
+        <img class="img-fluid layer" data-speed="2" src="../../../public/images/immagini/laravel.png" alt="Francesco Melani LARAVEL" @mousemove="parallax"> 
+        <img class="img-fluid layer" data-speed="3" src="../../../public/images/immagini/mysql.png" alt="Francesco Melani MYSQL" @mousemove="parallax"> 
     </section>
 </template>
 
@@ -306,73 +306,76 @@ export default{
             top: 61%;
             left: 49%;
         }
+    }
 
-        @media(max-height: 800px){
-            img:nth-of-type(1), img:nth-of-type(2){
-            width: calc(35% + 35px);
+        // sotto i 390
+        @media (max-width: 390px){
+        img:nth-of-type(1), img:nth-of-type(2){
+            width: calc(35% + 30px);
             position: absolute;
             top: 3%;
-            left: 4%;
+            left: 5%;
         }
 
         img:nth-of-type(3), img:nth-of-type(4){
-            width: calc(35% + 35px);
+            width: calc(35% + 30px);
             position: absolute;
             top: 4%;
-            left: 49%;
+            left: 50%;
         }
 
         img:nth-of-type(5){
-            width: calc(32% + 40px);
+            width: calc(32% + 30px);
             position: absolute;
-            top: 23%;
-            left: 6%;
+            top: 25%;
+            left: 8%;
         }
 
         img:nth-of-type(6){
-            width: calc(27% + 40px);
+            width: calc(27% + 30px);
             position: absolute;
-            top: 25%;
-            left: 55%;
+            top: 27%;
+            left: 56%;
         }
 
         img:nth-of-type(7){
-            width: calc(20% + 50px);
+            width: calc(20% + 30px);
             position: absolute;
-            top: 44%;
-            left: 9%;
+            top: 47%;
+            left: 10%;
         }
 
         img:nth-of-type(8){
-            width: calc(25% + 50px);
+            width: calc(25% + 30px);
             position: absolute;
-            top: 43%;
-            left: 51%;
+            top: 46%;
+            left: 53%;
         }
 
         img:nth-of-type(9){
             width: calc(26% + 40px);
             position: absolute;
-            top: 58%;
+            top: 60%;
             left: 7%;
         }
 
         img:nth-of-type(10){
-            width: calc(62% + 80px);
+            width: calc(62% + 50px);
             position: absolute;
-            top: 60%;
-            left: 8%;
+            top: 62%;
+            left: 9%;
         }
 
         img:nth-of-type(11){
-            width: calc(26% + 70px);
+            width: calc(26% + 60px);
             position: absolute;
-            top: 57%;
-            left: 49%;
+            top: 60%;
+            left: 50%;
         }
-        }
-        }
+    }
+
+}
 
         
-    }
+    
 </style>

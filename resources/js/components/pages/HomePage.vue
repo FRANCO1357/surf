@@ -4,16 +4,19 @@
             <div class="row d-flex">
                 <div class="text col-12 col-md-8">
                     <h1>My personal website</h1>
-                    <p class="animated-text">Tutto quello che so fare lo puoi trovare qua.</p>
+                    <h2>Tutto quello che so fare lo puoi trovare qua.</h2>
+                    <p>Benvenuti nel mio sito web portfolio! Io sono Francesco Melani e sono sviluppatore web appassionato che ha lavorato su una vasta gamma di progetti, dai siti web aziendali alle applicazioni web complesse. La mia missione è quella di aiutare i miei clienti a raggiungere i loro obiettivi online attraverso soluzioni innovative e personalizzate. Scopri di più sui miei servizi e sulle mie competenze navigando il sito e non esitare a contattarmi per discutere di un progetto che abbia bisogno di un tocco creativo e professionale.</p>
                 </div>
                 <figure class="col-12 col-sm-4">
-                    <img class="img-fluid" src="../../../../public/images/immagini/avatar.webp" alt="">
+                    <img class="img-fluid" src="../../../../public/images/immagini/avatar.webp" alt="Francesco Melani Avatar">
                 </figure>
             </div> 
-            <div class="projects">
+            <div class="projects position-relative mb-5 pb-5">
                 <div class="typewriter text-center">
                     <h2>Alcuni miei progetti</h2>
                 </div>
+                <!-- <div class="pacman"></div>
+                <div class="dot"></div> -->
                 <div class="row">
                     <div v-for="(project, index) in projects.slice(0, 6)" :key="project.id" class="col-12 col-md-6 p-0">
                         <a href="" class="project-card" :class="[isLight ? 'bg-white' : 'bg-black']">
@@ -67,11 +70,11 @@ main{
     .text{
 
         h1{
-            font-size: 14px;
+            font-size: 18px;
             margin: 30px 0;
         }
 
-        p{
+        h2{
             font-size: 52px;
             line-height: 60px;
             font-weight: 100;
@@ -100,9 +103,9 @@ main{
     .projects{
             display: flex;
             justify-content: center;
-            align-items: center;
             flex-wrap: wrap;
             margin-top: 60px;
+            min-height: 500px;
 
             .typewriter h2 {
                 font-size: 2.5em;
@@ -115,6 +118,90 @@ main{
                 typing 3.5s steps(30, end),
                 blink-caret .5s step-end infinite;
             }
+
+            $time: 0.4s;
+
+@mixin animation($name) {
+  @-webkit-keyframes #{$name} {@content;}
+  @-moz-keyframes #{$name} {@content;}
+  @-o-keyframes #{$name} {@content;}
+  @keyframes #{$name} {@content;}
+}
+
+@include animation(up) {
+  0%, 100% {
+    transform: rotate(0);
+  } 
+  50% {
+    transform: rotate(-30deg);
+  }
+}
+
+@include animation(down) {
+  0%, 100% {
+    transform: rotate(0);
+  } 
+  50% {
+    transform: rotate(30deg);
+  }
+}
+
+@include animation(r-to-l) {
+  100% {
+    margin-left: -1px;
+  } 
+}
+
+@mixin use-animation($name, $time){
+  -webkit-animation: $name $time infinite;
+  -moz-animation: $name $time infinite;
+  -o-animation: $name $time infinite;
+  animation: $name $time infinite;
+}
+
+.pacman{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+  
+  .pacman:before, .pacman:after{
+    content: '';
+    background: #ffda07;
+    width: 100px;
+    height: 50px;
+    margin-left: - 100px/2;
+    margin-top: - 50px;
+    border-radius: 50px 50px 0 0;
+    display: block;
+    @include use-animation(up, $time);
+  }
+  
+  .pacman:after {
+    margin-top: -1px;
+    border-radius: 0 0 50px 50px;
+    @include use-animation(down, $time);
+  } 
+  
+  .dot{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 10px;
+    height: 10px;
+    margin-top: - 5px;
+    margin-left: 30px;
+    border-radius: 50%;
+    background: white;
+    z-index: -1;
+    box-shadow: 30px 0 0 white,
+                60px 0 0 white,
+                90px 0 0 white,
+                120px 0 0 white,
+                150px 0 0 white;
+    @include use-animation(r-to-l, $time);
+  }
 
             /* The typing effect */
             @keyframes typing {
@@ -210,9 +297,10 @@ main{
     main{
         .text{
             text-align: center;
-            p{
-                font-size: 36px;
-                line-height: 40px;
+            h2{
+                font-size: 42px;
+                line-height: 50px;
+                margin-bottom: 24px;
             }
         }
 
@@ -225,4 +313,5 @@ main{
         }
     }
 }
+
 </style>

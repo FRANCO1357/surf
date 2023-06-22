@@ -1,2 +1,4 @@
-User-agent: *
-Disallow:
+https://www.francescomelani.com/
+https://www.francescomelani.com/projects
+https://www.francescomelani.com/about
+https://www.francescomelani.com/contacts

@@ -17,7 +17,7 @@
 <style scoped lang="scss">
     #not-found-page{
         color: white;
-        height: 100vh;
+        height: 80vh;
         background-size: cover;
         text-shadow: 0 0 10px rgb(0, 0, 0, 0.5);
 

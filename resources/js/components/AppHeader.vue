@@ -1,11 +1,11 @@
 <template>
-    <header>
-        <AppParallax :is-light="isLight"/>
-        <nav id="myNav" :class="[isLight ? 'bg-white' : 'bg-black']">
+    <header :class="[currentPage === 'home' ? 'full-height' : 'low-height']">
+        <AppParallax :is-light="isLight" v-if="currentPage === 'home'"/>
+        <nav id="myNavHome" :class="[isLight ? 'bg-white' : 'bg-black']" v-if="currentPage === 'home'">
             <div class="logo">
                 <router-link  :to="{name:'home'}">
-                    <img :class="{'d-none' : isLight}" src="../../../public/images/immagini/logo.png" alt="">
-                    <img :class="{'d-none' : !isLight}" src="../../../public/images/immagini/logo-light.png" alt="">
+                    <img :class="{'d-none' : isLight}" src="../../../public/images/immagini/logo.png" alt="Francesco Melani Logo">
+                    <img :class="{'d-none' : !isLight}" src="../../../public/images/immagini/logo-light.png" alt="Francesco Melani Logo">
                 </router-link>
             </div>
             <div class="empty d-none d-lg-block"></div>
@@ -20,11 +20,11 @@
                         <a :class="[isLight ? 'text-black' : 'text-white']" href="#">PROJECTS</a>
                     </router-link>
                 </li>
-                <li>
+                <!-- <li>
                     <router-link :to="{name:'components'}">
                         <a :class="[isLight ? 'text-black' : 'text-white']" href="#">COMPONENTS</a>
                     </router-link>
-                </li>
+                </li> -->
                 <li>
                     <router-link :to="{name:'about'}">
                         <a :class="[isLight ? 'text-black' : 'text-white']" href="#">ABOUT</a>
@@ -46,13 +46,120 @@
                     <div :class="[isLight ? 'bg-black' : 'bg-white']" class="line-menu"></div>
                     <div :class="[isLight ? 'bg-black' : 'bg-white']" class="line-menu"></div>
                 </div>
-                <div class="steaky-menu" :class="{'open': menuOpen, }">
+                <div class="steaky-menu d-flex justify-content-center align-items-center" :class="{'open': menuOpen, 'bg-white': isLight, 'bg-black': !isLight }">
+                    <img @click="toggleMenu" :class="{'d-none' : isLight}" class="img-fluid" role="button" src="../../../public/images/immagini/x-dark.png" alt="Francesco Melani X">
+                    <img @click="toggleMenu" :class="{'d-none' : !isLight}" class="img-fluid" role="button" src="../../../public/images/immagini/x-light.png" alt="Francesco Melani X">
+                    <ul class="d-flex justify-content-center align-items-center flex-column border-0">
+                        <li>
+                            <router-link :to="{name:'home'}">
+                                <a @click="toggleMenu" :class="[isLight ? 'text-black' : 'text-white']" href="#">HOME</a>
+                            </router-link>
+                        </li>
+                        <li>
+                            <router-link :to="{name:'projects'}">
+                                <a @click="toggleMenu" :class="[isLight ? 'text-black' : 'text-white']" href="#">PROJECTS</a>
+                            </router-link>
+                        </li>
+                        <!-- <li>
+                            <router-link :to="{name:'components'}">
+                                <a @click="toggleMenu" :class="[isLight ? 'text-black' : 'text-white']" href="#">COMPONENTS</a>
+                            </router-link>
+                        </li> -->
+                        <li>
+                            <router-link :to="{name:'about'}">
+                                <a @click="toggleMenu" :class="[isLight ? 'text-black' : 'text-white']" href="#">ABOUT</a>
+                            </router-link>
+                        </li>
+                        <li>
+                            <router-link :to="{name:'contacts'}">
+                                <a @click="toggleMenu" :class="[isLight ? 'text-black' : 'text-white']" href="#">CONTACTS</a>
+                            </router-link>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <nav id="myNav" :class="[isLight ? 'bg-white' : 'bg-black']" v-if="currentPage !== 'home'">
+            <div class="logo">
+                <router-link  :to="{name:'home'}">
+                    <img :class="{'d-none' : isLight}" src="../../../public/images/immagini/logo.png" alt="Francesco Melani Logo">
+                    <img :class="{'d-none' : !isLight}" src="../../../public/images/immagini/logo-light.png" alt="Francesco Melani Logo">
+                </router-link>
+            </div>
+            <div class="empty d-none d-lg-block"></div>
+            <ul class="d-none d-lg-flex">
+                <li>
+                    <router-link :to="{name:'home'}">
+                        <a :class="[isLight ? 'text-black' : 'text-white']" href="#">HOME</a>
+                    </router-link>
+                </li>
+                <li>
+                    <router-link :to="{name:'projects'}">
+                        <a :class="[isLight ? 'text-black' : 'text-white']" href="#">PROJECTS</a>
+                    </router-link>
+                </li>
+                <!-- <li>
+                    <router-link :to="{name:'components'}">
+                        <a :class="[isLight ? 'text-black' : 'text-white']" href="#">COMPONENTS</a>
+                    </router-link>
+                </li> -->
+                <li>
+                    <router-link :to="{name:'about'}">
+                        <a :class="[isLight ? 'text-black' : 'text-white']" href="#">ABOUT</a>
+                    </router-link>
+                </li>
+                <li>
+                    <router-link :to="{name:'contacts'}">
+                        <a :class="[isLight ? 'text-black' : 'text-white']" href="#">CONTACTS</a>
+                    </router-link>
+                </li>
+            </ul>
+            <div class="toggle">
+                <i :class="{'d-none' : isLight}" class="fa-solid fa-toggle-on fa-3x" @click="changeColor"></i>
+                <i :class="{'d-none' : !isLight}" class="fa-solid fa-toggle-off fa-3x" @click="changeColor"></i>
+            </div>
+            <div class="menu border-right-0">
+                <div class="wrapper-menu" @click="toggleMenu">
+                    <div :class="[isLight ? 'bg-black' : 'bg-white']" class="line-menu"></div>
+                    <div :class="[isLight ? 'bg-black' : 'bg-white']" class="line-menu"></div>
+                    <div :class="[isLight ? 'bg-black' : 'bg-white']" class="line-menu"></div>
+                </div>
+                <div class="steaky-menu d-flex justify-content-center align-items-center" :class="{'open': menuOpen, 'bg-white': isLight, 'bg-black': !isLight }">
+                    <img @click="toggleMenu" :class="{'d-none' : isLight}" role="button" src="../../../public/images/immagini/x-dark.png" alt="Francesco Melani X">
+                    <img @click="toggleMenu" :class="{'d-none' : !isLight}" role="button" src="../../../public/images/immagini/x-light.png" alt="Francesco Melani X">
                     <div class="x-container">
                         <div class="x-shape" @click="toggleMenu">
                             <div class="line line-1"></div>
                             <div class="line line-2"></div>
                         </div>
                     </div>
+                    <ul class="d-flex justify-content-center align-items-center flex-column border-0">
+                        <li>
+                            <router-link :to="{name:'home'}">
+                                <a @click="toggleMenu" :class="[isLight ? 'text-black' : 'text-white']" href="#">HOME</a>
+                            </router-link>
+                        </li>
+                        <li>
+                            <router-link :to="{name:'projects'}">
+                                <a @click="toggleMenu" :class="[isLight ? 'text-black' : 'text-white']" href="#">PROJECTS</a>
+                            </router-link>
+                        </li>
+                        <!-- <li>
+                            <router-link :to="{name:'components'}">
+                                <a @click="toggleMenu" :class="[isLight ? 'text-black' : 'text-white']" href="#">COMPONENTS</a>
+                            </router-link>
+                        </li> -->
+                        <li>
+                            <router-link :to="{name:'about'}">
+                                <a @click="toggleMenu" :class="[isLight ? 'text-black' : 'text-white']" href="#">ABOUT</a>
+                            </router-link>
+                        </li>
+                        <li>
+                            <router-link :to="{name:'contacts'}">
+                                <a @click="toggleMenu" :class="[isLight ? 'text-black' : 'text-white']" href="#">CONTACTS</a>
+                            </router-link>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </nav>
@@ -75,7 +182,12 @@ export default{
             type: Boolean,
         },
     },
-    computed: {},
+    computed: {
+        currentPage() {
+            console.log(this.$route.name);
+            return this.$route.name
+        }
+    },
     methods: {
         toggleMenu() {
             this.menuOpen = !this.menuOpen;
@@ -86,7 +198,8 @@ export default{
         }
     },
     mounted() {
-        const nav = document.querySelector("nav");
+        const nav = document.getElementById('myNavHome');
+        console.log(nav);
         const navTop = nav.offsetTop;
         const offset = -10;
         window.addEventListener("scroll", () => {
@@ -105,11 +218,19 @@ export default{
 <style scoped lang="scss">
 header{
     width: 100%;
-    height: 100vh;
     position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
+
+    &.full-height{
+        height: 100vh;
+    }
+
+    &.low-height{
+        height: 100px;
+        z-index: 2;
+    }
 
     > img{
         position: fixed
@@ -119,12 +240,20 @@ header{
         height: 100px;
         width: 96%;
         border: 1px solid;
-        position: absolute;
-        bottom: 0;
         left: 2%;
         display: flex;
 
-        &.fixed-top{
+        &#myNavHome{
+            position: absolute;
+            bottom: 0;
+
+            &.fixed-top{
+                position: fixed;
+                top: 0;
+            }
+        }
+
+        &#myNav{
             position: fixed;
             top: 0;
         }
@@ -150,7 +279,7 @@ header{
             justify-content: space-between;
             list-style-type: none;
             margin: 0;
-            padding: 0 60px;
+            padding: 0 100px;
         }
 
         .logo{
@@ -239,6 +368,7 @@ header{
             }
 
             .steaky-menu{
+                width: 100vw;
                 position: fixed;
                 z-index: 2;
                 background-color: black;
@@ -249,54 +379,25 @@ header{
                 left: 100%;
                 transition: 1s;
 
+                li{
+                    font-size: 2rem;
+                }
+
                 &.open{
                     left: 0;
                 }
 
-                .x-container {
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    width: 50px;
-                    height: 50px;
-                    position: relative;
-                    top: 10px;
-                    left: 97vw;
+                img{
+                    width: calc(2% + 30px);
+                    position: absolute;
+                    top: 20px;
+                    right: 20px;
+                    transition: 0.5s;
 
-                    .x-shape {
-                        position: absolute;
-                        width: 50px;
-                        height: 50px;
-                        cursor: pointer;
-
-                        .line {
-                            position: absolute;
-                            background-color: white;
-                            width: 1px;
-                            height: 100%;
-                            top: 0;
-                            left: 0;
-                            transform-origin: center;
-                            transition: transform 0.3s ease-in-out;
-                        }
-
-                        .line-1 {
-                            transform: rotate(45deg);
-                        }
-
-                        .line-2 {
-                            transform: rotate(-45deg);
-                        }
-
-                        &:hover .line-1 {
-                            transform: rotate(90deg);
-                        }
-
-                        &:hover .line-2 {
-                            transform: rotate(0deg);
-                        }
+                    &:hover{
+                        transform: rotate(90deg);
                     }
-                }                
+                }          
             }
         }
     }
@@ -310,8 +411,12 @@ header{
                 width: calc(100% / 3);
             }
 
-            .x-container{
-                left: 90vw !important;
+            .menu{
+                .steaky-menu{
+                    li{
+                        font-size: 1rem;
+                    }
+                }
             }
         }
     }
