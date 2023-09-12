@@ -1,5 +1,6 @@
 <template>
     <main>
+        import AppForm from '../AppForm.vue';
         <section id="jumbotron">
             <div class="row align-items-center my-5">
                 <div class="col-12 col-md-5 p-5 p-md-0">
@@ -36,37 +37,92 @@
                 </div>
             </div>
         </section>
-        <section id="surfboards" class="bg-black">
+        <section id="surfboards" class="bg-black py-5">
             <div class="container">
                 <div class="row">
-                    <div class="col-6 col-md-2 px-0 px-lg-5">
-                        <img src="../../../../public/images/surf/surfboard-1.png" alt="" class="img-fluid p-3">
+                    <div class="col-6 col-md-4 col-lg-2 py-3 d-flex align-items-center justify-content-center">
+                        <img src="../../../../public/images/surf/surfboard-1.png" alt="" class="w-50 p-3">
                     </div>
-                    <div class="col-6 col-md-2 px-0 px-lg-5">
-                        <img src="../../../../public/images/surf/surfboard-2.png" alt="" class="img-fluid p-3">
+                    <div class="col-6 col-md-4 col-lg-2 py-3 d-flex align-items-center justify-content-center">
+                        <img src="../../../../public/images/surf/surfboard-2.png" alt="" class="w-50 p-3">
                     </div>
-                    <div class="col-6 col-md-2 px-0 px-lg-5">
-                        <img src="../../../../public/images/surf/surfboard-3.png" alt="" class="img-fluid p-3">
+                    <div class="col-6 col-md-4 col-lg-2 py-3 d-flex align-items-center justify-content-center">
+                        <img src="../../../../public/images/surf/surfboard-3.png" alt="" class="w-50 p-3">
                     </div>
-                    <div class="col-6 col-md-2 px-0 px-lg-5">
-                        <img src="../../../../public/images/surf/surfboard-4.png" alt="" class="img-fluid p-3">
+                    <div class="col-6 col-md-4 col-lg-2 py-3 d-flex align-items-center justify-content-center">
+                        <img src="../../../../public/images/surf/surfboard-4.png" alt="" class="w-50 p-3">
                     </div>
-                    <div class="col-6 col-md-2 px-0 px-lg-5">
-                        <img src="../../../../public/images/surf/surfboard-5.png" alt="" class="img-fluid p-3">
+                    <div class="col-6 col-md-4 col-lg-2 py-3 d-flex align-items-center justify-content-center">
+                        <img src="../../../../public/images/surf/surfboard-5.png" alt="" class="w-50 p-3">
                     </div>
-                    <div class="col-6 col-md-2 d-f0 px-lg-5 d-flex align-items-center justify-content-center">
+                    <div class="col-6 col-md-4 col-lg-2 d-f0 px-lg-5 d-flex align-items-center justify-content-center">
                         <i class="fa-regular fa-plus fa-3x"></i>
                     </div>
                 </div>
+            </div>
+        </section>
+        <section id="products" class="bg-white py-5">
+            <div class="container py-5">
+                <h4>SHOP PRODUCTS</h4>
+                <h2 class="my-4">CAREFULLY SELECTED <br> SURFBOARDS THAT ROCKS</h2>
+                <h4>LOREM IPSUM DOLOR SIT AMET, <br> CONSECTETUR ADIPISICING ELIT, SED DO <br> EIUSMOD TEMPOR INCIDIDUNT UT
+                    <br> LABORE ET DOLORE MAO.
+                </h4>
+                <span class="my-4"></span>
+                <div class="row py-4">
+                    <div class="col-6 col-lg-3 p-3 text-center">
+                        <img src="../../../../public/images/surf/surfboard-product-1.jpeg" alt="" class="img-fluid">
+                        <h3 class="mt-5">Titolo</h3>
+                        <p>230€ - 370€</p>
+                    </div>
+                    <div class="col-6 col-lg-3 p-3 text-center">
+                        <img src="../../../../public/images/surf/surfboard-product-2.jpeg" alt="" class="img-fluid">
+                        <h3 class="mt-5">Titolo</h3>
+                        <p>230€</p>
+                    </div>
+                    <div class="col-6 col-lg-3 p-3 text-center">
+                        <img src="../../../../public/images/surf/surfboard-product-3.jpeg" alt="" class="img-fluid">
+                        <h3 class="mt-5">Titolo</h3>
+                        <p>230€</p>
+                    </div>
+                    <div class="col-6 col-lg-3 p-3 text-center">
+                        <img src="../../../../public/images/surf/surfboard-product-4.jpeg" alt="" class="img-fluid">
+                        <h3 class="mt-5">Titolo</h3>
+                        <p>230€</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="pics"></section>
+        <section id="waves">
+            <div class="container py-5">
+                <h2 class="text-black mt-5">LIVE<span>FOR <br> THE</span>SURFING <br> &WAVES</h2>
+                <h4 class="mt-5">MORBI SED NEQUE. FUSCE <br> CONGUE. NAM PHARETRA <br> LEO. DONEC INTERDUM <br> LIBERO.
+                    MAECENAS <br>
+                    SEMPER FACILISIS <br>
+                    HENDRERIT.
+                </h4>
+            </div>
+        </section>
+        <section id="contact">
+            <div class="container py-5">
+                <h2 class="text-center mt-5">STAY TUNED <br>
+                    GET SURFING TIPS & NEWS</h2>
+                <AppForm />
+                <p class="text-center mt-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam aliquam
+                    architecto dolorum illum nesciunt officiis aspernatur error suscipit eligendi sunt veniam nobis ipsam
+                    veritatis voluptatum vero, porro quo delectus voluptas.</p>
             </div>
         </section>
     </main>
 </template>
 
 <script>
+import AppForm from '../AppForm.vue';
 
 export default {
     name: "HomePage",
+    components: { AppForm }
 }
 </script>
 
@@ -118,9 +174,73 @@ export default {
     }
 }
 
+#products {
+    h2 {
+        font-size: 3rem;
+        font-weight: 900;
+        line-height: 3rem;
+    }
+
+    h4 {
+        font-size: 1rem;
+    }
+
+    span {
+        display: block;
+        height: 3px;
+        width: 320px;
+        background-color: yellow;
+    }
+
+    p {
+        color: grey;
+    }
+}
+
+#pics {
+    height: 500px;
+    background-image: url(../../../../public/images/surf/surf-pics.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#waves {
+    min-height: 750px;
+    background-image: url(../../../../public/images/surf/background-white-shadow.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right;
+
+    h2 {
+        font-size: 4rem;
+        font-weight: 900;
+        line-height: 4rem;
+
+        span {
+            color: yellow;
+        }
+    }
+}
+
+#contact {
+    min-height: 80vh;
+    background-image: url(../../../../public/images/surf/background-dark.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right;
+    background-attachment: fixed;
+
+    h2 {
+        font-size: 3rem;
+        font-weight: 900;
+        line-height: 3rem;
+    }
+}
+
 @media (max-width: 767px) {
     #jumbotron {
         padding-top: 20px;
+
         .text {
             h1 {
                 font-size: 10vw;
@@ -129,6 +249,27 @@ export default {
                 left: 60px;
             }
         }
+    }
+
+    #products {
+        text-align: center;
+
+        h2 {
+            font-size: 2.2rem;
+            line-height: 2.2rem;
+        }
+    }
+
+    #waves {
+
+        h2 {
+            font-size: 2.2rem;
+            line-height: 2.2rem;
+        }
+    }
+
+    #pics {
+        height: 300px;
     }
 }
 </style>
